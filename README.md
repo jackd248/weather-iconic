@@ -14,7 +14,7 @@ Originally made for my weather app [temps](https://jackd248.github.io/temps/).
 ```
 
 ##Included Icons
-Here's an incomplete list of the included icons:
+Here's an complete list of the included icons:
 
 * barometer
 * celsius
