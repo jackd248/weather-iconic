@@ -1,5 +1,4 @@
-# Weather Iconic
-
+Weather Iconic
 =====================
 
 A minimal weather iconset  containing 63 icons available as webfont, png and svg. 
