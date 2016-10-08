@@ -1,10 +1,10 @@
-Weather Iconic
+# Weather Iconic
 
 =====================
 
 A minimal weather iconset  containing 63 icons available as webfont, png and svg. 
 
-Originally made for my weather app [temps](https://jackd248.github.io/temps/)
+Originally made for my weather app [temps](https://jackd248.github.io/temps/).
 
 ![Weather iconic](https://github.com/jackd248/weather-iconic/blob/master/iconset.jpg)
 
