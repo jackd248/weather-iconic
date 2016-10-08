@@ -1,0 +1,216 @@
+@font-face {
+  font-family: 'weather-iconic';
+  src:  url('../fonts/weather-iconic.eot?t717ad');
+  src:  url('../fonts/weather-iconic.eot?t717ad#iefix') format('embedded-opentype'),
+    url('../fonts/weather-iconic.ttf?t717ad') format('truetype'),
+    url('../fonts/weather-iconic.woff?t717ad') format('woff'),
+    url('../fonts/weather-iconic.svg?t717ad#weather-iconic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="weather-"], [class*=" weather-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'weather-iconic' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.weather-barometer:before {
+  content: "\e900";
+}
+.weather-celsius:before {
+  content: "\e901";
+}
+.weather-cloud:before {
+  content: "\e902";
+}
+.weather-cloud-down:before {
+  content: "\e903";
+}
+.weather-cloud-fog:before {
+  content: "\e904";
+}
+.weather-cloud-rain:before {
+  content: "\e905";
+}
+.weather-cloud-rain-single:before {
+  content: "\e906";
+}
+.weather-cloud-snow:before {
+  content: "\e907";
+}
+.weather-cloud-snow-single:before {
+  content: "\e908";
+}
+.weather-cloud-up:before {
+  content: "\e909";
+}
+.weather-cloud-wind:before {
+  content: "\e90a";
+}
+.weather-clouds:before {
+  content: "\e90b";
+}
+.weather-compass:before {
+  content: "\e90c";
+}
+.weather-compass-east:before {
+  content: "\e90d";
+}
+.weather-compass-north:before {
+  content: "\e90e";
+}
+.weather-compass-north-east:before {
+  content: "\e90f";
+}
+.weather-compass-north-west:before {
+  content: "\e910";
+}
+.weather-compass-south:before {
+  content: "\e911";
+}
+.weather-compass-south-east:before {
+  content: "\e912";
+}
+.weather-compass-south-west:before {
+  content: "\e913";
+}
+.weather-compass-west:before {
+  content: "\e914";
+}
+.weather-fahrenheit:before {
+  content: "\e915";
+}
+.weather-fog:before {
+  content: "\e916";
+}
+.weather-hail:before {
+  content: "\e917";
+}
+.weather-lightning:before {
+  content: "\e918";
+}
+.weather-moon:before {
+  content: "\e919";
+}
+.weather-moon-cloud:before {
+  content: "\e91a";
+}
+.weather-moon-cloud-lightning:before {
+  content: "\e91b";
+}
+.weather-moon-cloud-rain:before {
+  content: "\e91c";
+}
+.weather-moon-cloud-snow:before {
+  content: "\e91d";
+}
+.weather-moon-cloud-wind:before {
+  content: "\e91e";
+}
+.weather-moon-first-quarter:before {
+  content: "\e91f";
+}
+.weather-moon-fog:before {
+  content: "\e920";
+}
+.weather-moon-fullmoon:before {
+  content: "\e921";
+}
+.weather-moon-last-quarter:before {
+  content: "\e922";
+}
+.weather-moon-newmoon:before {
+  content: "\e923";
+}
+.weather-moon-waning-crescent:before {
+  content: "\e924";
+}
+.weather-moon-waning-gibbous:before {
+  content: "\e925";
+}
+.weather-moon-waxing-crescent:before {
+  content: "\e926";
+}
+.weather-moon-waxing-gibbous:before {
+  content: "\e927";
+}
+.weather-rainbow:before {
+  content: "\e928";
+}
+.weather-raindrop:before {
+  content: "\e929";
+}
+.weather-refresh:before {
+  content: "\e92a";
+}
+.weather-snowflake:before {
+  content: "\e92b";
+}
+.weather-sun:before {
+  content: "\e92c";
+}
+.weather-sun-cloud:before {
+  content: "\e92d";
+}
+.weather-sun-cloud-lightning:before {
+  content: "\e92e";
+}
+.weather-sun-cloud-rain:before {
+  content: "\e92f";
+}
+.weather-sun-cloud-snow:before {
+  content: "\e930";
+}
+.weather-sun-cloud-wind:before {
+  content: "\e931";
+}
+.weather-sun-fog:before {
+  content: "\e932";
+}
+.weather-sun-low:before {
+  content: "\e933";
+}
+.weather-sun-medium:before {
+  content: "\e934";
+}
+.weather-sunrise:before {
+  content: "\e935";
+}
+.weather-sunset:before {
+  content: "\e936";
+}
+.weather-thermometer-cold:before {
+  content: "\e937";
+}
+.weather-thermometer-hot:before {
+  content: "\e938";
+}
+.weather-thermometer-medium:before {
+  content: "\e939";
+}
+.weather-tornado:before {
+  content: "\e93a";
+}
+.weather-umbrella:before {
+  content: "\e93b";
+}
+.weather-wind:before {
+  content: "\e93c";
+}
+.weather-wind-high:before {
+  content: "\e93d";
+}
+.weather-windsock:before {
+  content: "\e93e";
+}
+
