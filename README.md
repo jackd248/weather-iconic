@@ -7,13 +7,13 @@ Originally made for my weather app [temps](https://jackd248.github.io/temps/).
 
 ![Weather iconic](https://github.com/jackd248/weather-iconic/blob/master/iconset.jpg)
 
-##Usage
+## Usage
 
 ```html
 <span class="weather-sun"></span> sun
 ```
 
-##Included Icons
+## Included Icons
 Here's an complete list of the included icons:
 
 * barometer
