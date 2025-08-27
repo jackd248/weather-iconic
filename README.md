@@ -96,271 +96,271 @@ All 63 weather icons with visual previews:
 <table>
 <tr>
   <td align="center">
-    <img src="dist/png/48px/barometer.png" width="32" height="32" alt="barometer"><br>
+    <img src="dist/png/48px/barometer.png" width="48" height="48" alt="barometer"><br>
     <sub style="display:inline-block;height:40px;"><code>barometer</code></sub>
   </td>
   <td align="center">
-    <img src="dist/png/48px/celsius.png" width="32" height="32" alt="celsius"><br>
+    <img src="dist/png/48px/celsius.png" width="48" height="48" alt="celsius"><br>
     <sub style="display:inline-block;height:40px;"><code>celsius</code></sub>
   </td>
   <td align="center">
-    <img src="dist/png/48px/cloud.png" width="32" height="32" alt="cloud"><br>
+    <img src="dist/png/48px/cloud.png" width="48" height="48" alt="cloud"><br>
     <sub style="display:inline-block;height:40px;"><code>cloud</code></sub>
   </td>
   <td align="center">
-    <img src="dist/png/48px/cloud-down.png" width="32" height="32" alt="cloud-down"><br>
+    <img src="dist/png/48px/cloud-down.png" width="48" height="48" alt="cloud-down"><br>
     <sub style="display:inline-block;height:40px;"><code>cloud-down</code></sub>
   </td>
   <td align="center">
-    <img src="dist/png/48px/cloud-fog.png" width="32" height="32" alt="cloud-fog"><br>
+    <img src="dist/png/48px/cloud-fog.png" width="48" height="48" alt="cloud-fog"><br>
     <sub style="display:inline-block;height:40px;"><code>cloud-fog</code></sub>
   </td>
   <td align="center">
-    <img src="dist/png/48px/cloud-rain.png" width="32" height="32" alt="cloud-rain"><br>
+    <img src="dist/png/48px/cloud-rain.png" width="48" height="48" alt="cloud-rain"><br>
     <sub style="display:inline-block;height:40px;"><code>cloud-rain</code></sub>
   </td>
   <td align="center">
-    <img src="dist/png/48px/cloud-rain-single.png" width="32" height="32" alt="cloud-rain-single"><br>
+    <img src="dist/png/48px/cloud-rain-single.png" width="48" height="48" alt="cloud-rain-single"><br>
     <sub style="display:inline-block;height:40px;"><code>cloud-rain-single</code></sub>
   </td>
 </tr>
 <tr>
   <td align="center">
-    <img src="dist/png/48px/cloud-snow.png" width="32" height="32" alt="cloud-snow"><br>
+    <img src="dist/png/48px/cloud-snow.png" width="48" height="48" alt="cloud-snow"><br>
     <sub style="display:inline-block;height:40px;"><code>cloud-snow</code></sub>
   </td>
   <td align="center">
-    <img src="dist/png/48px/cloud-snow-single.png" width="32" height="32" alt="cloud-snow-single"><br>
+    <img src="dist/png/48px/cloud-snow-single.png" width="48" height="48" alt="cloud-snow-single"><br>
     <sub style="display:inline-block;height:40px;"><code>cloud-snow-single</code></sub>
   </td>
   <td align="center">
-    <img src="dist/png/48px/cloud-up.png" width="32" height="32" alt="cloud-up"><br>
+    <img src="dist/png/48px/cloud-up.png" width="48" height="48" alt="cloud-up"><br>
     <sub style="display:inline-block;height:40px;"><code>cloud-up</code></sub>
   </td>
   <td align="center">
-    <img src="dist/png/48px/cloud-wind.png" width="32" height="32" alt="cloud-wind"><br>
+    <img src="dist/png/48px/cloud-wind.png" width="48" height="48" alt="cloud-wind"><br>
     <sub style="display:inline-block;height:40px;"><code>cloud-wind</code></sub>
   </td>
   <td align="center">
-    <img src="dist/png/48px/clouds.png" width="32" height="32" alt="clouds"><br>
+    <img src="dist/png/48px/clouds.png" width="48" height="48" alt="clouds"><br>
     <sub style="display:inline-block;height:40px;"><code>clouds</code></sub>
   </td>
   <td align="center">
-    <img src="dist/png/48px/compass.png" width="32" height="32" alt="compass"><br>
+    <img src="dist/png/48px/compass.png" width="48" height="48" alt="compass"><br>
     <sub style="display:inline-block;height:40px;"><code>compass</code></sub>
   </td>
   <td align="center">
-    <img src="dist/png/48px/compass-east.png" width="32" height="32" alt="compass-east"><br>
+    <img src="dist/png/48px/compass-east.png" width="48" height="48" alt="compass-east"><br>
     <sub style="display:inline-block;height:40px;"><code>compass-east</code></sub>
   </td>
 </tr>
 <tr>
   <td align="center">
-    <img src="dist/png/48px/compass-north.png" width="32" height="32" alt="compass-north"><br>
+    <img src="dist/png/48px/compass-north.png" width="48" height="48" alt="compass-north"><br>
     <sub style="display:inline-block;height:40px;"><code>compass-north</code></sub>
   </td>
   <td align="center">
-    <img src="dist/png/48px/compass-north-east.png" width="32" height="32" alt="compass-north-east"><br>
+    <img src="dist/png/48px/compass-north-east.png" width="48" height="48" alt="compass-north-east"><br>
     <sub style="display:inline-block;height:40px;"><code>compass-north-east</code></sub>
   </td>
   <td align="center">
-    <img src="dist/png/48px/compass-north-west.png" width="32" height="32" alt="compass-north-west"><br>
+    <img src="dist/png/48px/compass-north-west.png" width="48" height="48" alt="compass-north-west"><br>
     <sub style="display:inline-block;height:40px;"><code>compass-north-west</code></sub>
   </td>
   <td align="center">
-    <img src="dist/png/48px/compass-south.png" width="32" height="32" alt="compass-south"><br>
+    <img src="dist/png/48px/compass-south.png" width="48" height="48" alt="compass-south"><br>
     <sub style="display:inline-block;height:40px;"><code>compass-south</code></sub>
   </td>
   <td align="center">
-    <img src="dist/png/48px/compass-south-east.png" width="32" height="32" alt="compass-south-east"><br>
+    <img src="dist/png/48px/compass-south-east.png" width="48" height="48" alt="compass-south-east"><br>
     <sub style="display:inline-block;height:40px;"><code>compass-south-east</code></sub>
   </td>
   <td align="center">
-    <img src="dist/png/48px/compass-south-west.png" width="32" height="32" alt="compass-south-west"><br>
+    <img src="dist/png/48px/compass-south-west.png" width="48" height="48" alt="compass-south-west"><br>
     <sub style="display:inline-block;height:40px;"><code>compass-south-west</code></sub>
   </td>
   <td align="center">
-    <img src="dist/png/48px/compass-west.png" width="32" height="32" alt="compass-west"><br>
+    <img src="dist/png/48px/compass-west.png" width="48" height="48" alt="compass-west"><br>
     <sub style="display:inline-block;height:40px;"><code>compass-west</code></sub>
   </td>
 </tr>
 <tr>
   <td align="center">
-    <img src="dist/png/48px/fahrenheit.png" width="32" height="32" alt="fahrenheit"><br>
+    <img src="dist/png/48px/fahrenheit.png" width="48" height="48" alt="fahrenheit"><br>
     <sub style="display:inline-block;height:40px;"><code>fahrenheit</code></sub>
   </td>
   <td align="center">
-    <img src="dist/png/48px/fog.png" width="32" height="32" alt="fog"><br>
+    <img src="dist/png/48px/fog.png" width="48" height="48" alt="fog"><br>
     <sub style="display:inline-block;height:40px;"><code>fog</code></sub>
   </td>
   <td align="center">
-    <img src="dist/png/48px/hail.png" width="32" height="32" alt="hail"><br>
+    <img src="dist/png/48px/hail.png" width="48" height="48" alt="hail"><br>
     <sub style="display:inline-block;height:40px;"><code>hail</code></sub>
   </td>
   <td align="center">
-    <img src="dist/png/48px/lightning.png" width="32" height="32" alt="lightning"><br>
+    <img src="dist/png/48px/lightning.png" width="48" height="48" alt="lightning"><br>
     <sub style="display:inline-block;height:40px;"><code>lightning</code></sub>
   </td>
   <td align="center">
-    <img src="dist/png/48px/moon.png" width="32" height="32" alt="moon"><br>
+    <img src="dist/png/48px/moon.png" width="48" height="48" alt="moon"><br>
     <sub style="display:inline-block;height:40px;"><code>moon</code></sub>
   </td>
   <td align="center">
-    <img src="dist/png/48px/moon-cloud.png" width="32" height="32" alt="moon-cloud"><br>
+    <img src="dist/png/48px/moon-cloud.png" width="48" height="48" alt="moon-cloud"><br>
     <sub style="display:inline-block;height:40px;"><code>moon-cloud</code></sub>
   </td>
   <td align="center">
-    <img src="dist/png/48px/moon-cloud-lightning.png" width="32" height="32" alt="moon-cloud-lightning"><br>
+    <img src="dist/png/48px/moon-cloud-lightning.png" width="48" height="48" alt="moon-cloud-lightning"><br>
     <sub style="display:inline-block;height:40px;"><code>moon-cloud-lightning</code></sub>
   </td>
 </tr>
 <tr>
   <td align="center">
-    <img src="dist/png/48px/moon-cloud-rain.png" width="32" height="32" alt="moon-cloud-rain"><br>
+    <img src="dist/png/48px/moon-cloud-rain.png" width="48" height="48" alt="moon-cloud-rain"><br>
     <sub style="display:inline-block;height:40px;"><code>moon-cloud-rain</code></sub>
   </td>
   <td align="center">
-    <img src="dist/png/48px/moon-cloud-snow.png" width="32" height="32" alt="moon-cloud-snow"><br>
+    <img src="dist/png/48px/moon-cloud-snow.png" width="48" height="48" alt="moon-cloud-snow"><br>
     <sub style="display:inline-block;height:40px;"><code>moon-cloud-snow</code></sub>
   </td>
   <td align="center">
-    <img src="dist/png/48px/moon-cloud-wind.png" width="32" height="32" alt="moon-cloud-wind"><br>
+    <img src="dist/png/48px/moon-cloud-wind.png" width="48" height="48" alt="moon-cloud-wind"><br>
     <sub style="display:inline-block;height:40px;"><code>moon-cloud-wind</code></sub>
   </td>
   <td align="center">
-    <img src="dist/png/48px/moon-first-quarter.png" width="32" height="32" alt="moon-first-quarter"><br>
+    <img src="dist/png/48px/moon-first-quarter.png" width="48" height="48" alt="moon-first-quarter"><br>
     <sub style="display:inline-block;height:40px;"><code>moon-first-quarter</code></sub>
   </td>
   <td align="center">
-    <img src="dist/png/48px/moon-fog.png" width="32" height="32" alt="moon-fog"><br>
+    <img src="dist/png/48px/moon-fog.png" width="48" height="48" alt="moon-fog"><br>
     <sub style="display:inline-block;height:40px;"><code>moon-fog</code></sub>
   </td>
   <td align="center">
-    <img src="dist/png/48px/moon-fullmoon.png" width="32" height="32" alt="moon-fullmoon"><br>
+    <img src="dist/png/48px/moon-fullmoon.png" width="48" height="48" alt="moon-fullmoon"><br>
     <sub style="display:inline-block;height:40px;"><code>moon-fullmoon</code></sub>
   </td>
   <td align="center">
-    <img src="dist/png/48px/moon-last-quarter.png" width="32" height="32" alt="moon-last-quarter"><br>
+    <img src="dist/png/48px/moon-last-quarter.png" width="48" height="48" alt="moon-last-quarter"><br>
     <sub style="display:inline-block;height:40px;"><code>moon-last-quarter</code></sub>
   </td>
 </tr>
 <tr>
   <td align="center">
-    <img src="dist/png/48px/moon-newmoon.png" width="32" height="32" alt="moon-newmoon"><br>
+    <img src="dist/png/48px/moon-newmoon.png" width="48" height="48" alt="moon-newmoon"><br>
     <sub style="display:inline-block;height:40px;"><code>moon-newmoon</code></sub>
   </td>
   <td align="center">
-    <img src="dist/png/48px/moon-waning-crescent.png" width="32" height="32" alt="moon-waning-crescent"><br>
+    <img src="dist/png/48px/moon-waning-crescent.png" width="48" height="48" alt="moon-waning-crescent"><br>
     <sub style="display:inline-block;height:40px;"><code>moon-waning-crescent</code></sub>
   </td>
   <td align="center">
-    <img src="dist/png/48px/moon-waning-gibbous.png" width="32" height="32" alt="moon-waning-gibbous"><br>
+    <img src="dist/png/48px/moon-waning-gibbous.png" width="48" height="48" alt="moon-waning-gibbous"><br>
     <sub style="display:inline-block;height:40px;"><code>moon-waning-gibbous</code></sub>
   </td>
   <td align="center">
-    <img src="dist/png/48px/moon-waxing-crescent.png" width="32" height="32" alt="moon-waxing-crescent"><br>
+    <img src="dist/png/48px/moon-waxing-crescent.png" width="48" height="48" alt="moon-waxing-crescent"><br>
     <sub style="display:inline-block;height:40px;"><code>moon-waxing-crescent</code></sub>
   </td>
   <td align="center">
-    <img src="dist/png/48px/moon-waxing-gibbous.png" width="32" height="32" alt="moon-waxing-gibbous"><br>
+    <img src="dist/png/48px/moon-waxing-gibbous.png" width="48" height="48" alt="moon-waxing-gibbous"><br>
     <sub style="display:inline-block;height:40px;"><code>moon-waxing-gibbous</code></sub>
   </td>
   <td align="center">
-    <img src="dist/png/48px/rainbow.png" width="32" height="32" alt="rainbow"><br>
+    <img src="dist/png/48px/rainbow.png" width="48" height="48" alt="rainbow"><br>
     <sub style="display:inline-block;height:40px;"><code>rainbow</code></sub>
   </td>
   <td align="center">
-    <img src="dist/png/48px/raindrop.png" width="32" height="32" alt="raindrop"><br>
+    <img src="dist/png/48px/raindrop.png" width="48" height="48" alt="raindrop"><br>
     <sub style="display:inline-block;height:40px;"><code>raindrop</code></sub>
   </td>
 </tr>
 <tr>
   <td align="center">
-    <img src="dist/png/48px/refresh.png" width="32" height="32" alt="refresh"><br>
+    <img src="dist/png/48px/refresh.png" width="48" height="48" alt="refresh"><br>
     <sub style="display:inline-block;height:40px;"><code>refresh</code></sub>
   </td>
   <td align="center">
-    <img src="dist/png/48px/snowflake.png" width="32" height="32" alt="snowflake"><br>
+    <img src="dist/png/48px/snowflake.png" width="48" height="48" alt="snowflake"><br>
     <sub style="display:inline-block;height:40px;"><code>snowflake</code></sub>
   </td>
   <td align="center">
-    <img src="dist/png/48px/sun.png" width="32" height="32" alt="sun"><br>
+    <img src="dist/png/48px/sun.png" width="48" height="48" alt="sun"><br>
     <sub style="display:inline-block;height:40px;"><code>sun</code></sub>
   </td>
   <td align="center">
-    <img src="dist/png/48px/sun-cloud.png" width="32" height="32" alt="sun-cloud"><br>
+    <img src="dist/png/48px/sun-cloud.png" width="48" height="48" alt="sun-cloud"><br>
     <sub style="display:inline-block;height:40px;"><code>sun-cloud</code></sub>
   </td>
   <td align="center">
-    <img src="dist/png/48px/sun-cloud-lightning.png" width="32" height="32" alt="sun-cloud-lightning"><br>
+    <img src="dist/png/48px/sun-cloud-lightning.png" width="48" height="48" alt="sun-cloud-lightning"><br>
     <sub style="display:inline-block;height:40px;"><code>sun-cloud-lightning</code></sub>
   </td>
   <td align="center">
-    <img src="dist/png/48px/sun-cloud-rain.png" width="32" height="32" alt="sun-cloud-rain"><br>
+    <img src="dist/png/48px/sun-cloud-rain.png" width="48" height="48" alt="sun-cloud-rain"><br>
     <sub style="display:inline-block;height:40px;"><code>sun-cloud-rain</code></sub>
   </td>
   <td align="center">
-    <img src="dist/png/48px/sun-cloud-snow.png" width="32" height="32" alt="sun-cloud-snow"><br>
+    <img src="dist/png/48px/sun-cloud-snow.png" width="48" height="48" alt="sun-cloud-snow"><br>
     <sub style="display:inline-block;height:40px;"><code>sun-cloud-snow</code></sub>
   </td>
 </tr>
 <tr>
   <td align="center">
-    <img src="dist/png/48px/sun-cloud-wind.png" width="32" height="32" alt="sun-cloud-wind"><br>
+    <img src="dist/png/48px/sun-cloud-wind.png" width="48" height="48" alt="sun-cloud-wind"><br>
     <sub style="display:inline-block;height:40px;"><code>sun-cloud-wind</code></sub>
   </td>
   <td align="center">
-    <img src="dist/png/48px/sun-fog.png" width="32" height="32" alt="sun-fog"><br>
+    <img src="dist/png/48px/sun-fog.png" width="48" height="48" alt="sun-fog"><br>
     <sub style="display:inline-block;height:40px;"><code>sun-fog</code></sub>
   </td>
   <td align="center">
-    <img src="dist/png/48px/sun-low.png" width="32" height="32" alt="sun-low"><br>
+    <img src="dist/png/48px/sun-low.png" width="48" height="48" alt="sun-low"><br>
     <sub style="display:inline-block;height:40px;"><code>sun-low</code></sub>
   </td>
   <td align="center">
-    <img src="dist/png/48px/sun-medium.png" width="32" height="32" alt="sun-medium"><br>
+    <img src="dist/png/48px/sun-medium.png" width="48" height="48" alt="sun-medium"><br>
     <sub style="display:inline-block;height:40px;"><code>sun-medium</code></sub>
   </td>
   <td align="center">
-    <img src="dist/png/48px/sunrise.png" width="32" height="32" alt="sunrise"><br>
+    <img src="dist/png/48px/sunrise.png" width="48" height="48" alt="sunrise"><br>
     <sub style="display:inline-block;height:40px;"><code>sunrise</code></sub>
   </td>
   <td align="center">
-    <img src="dist/png/48px/sunset.png" width="32" height="32" alt="sunset"><br>
+    <img src="dist/png/48px/sunset.png" width="48" height="48" alt="sunset"><br>
     <sub style="display:inline-block;height:40px;"><code>sunset</code></sub>
   </td>
   <td align="center">
-    <img src="dist/png/48px/thermometer-cold.png" width="32" height="32" alt="thermometer-cold"><br>
+    <img src="dist/png/48px/thermometer-cold.png" width="48" height="48" alt="thermometer-cold"><br>
     <sub style="display:inline-block;height:40px;"><code>thermometer-cold</code></sub>
   </td>
 </tr>
 <tr>
   <td align="center">
-    <img src="dist/png/48px/thermometer-hot.png" width="32" height="32" alt="thermometer-hot"><br>
+    <img src="dist/png/48px/thermometer-hot.png" width="48" height="48" alt="thermometer-hot"><br>
     <sub style="display:inline-block;height:40px;"><code>thermometer-hot</code></sub>
   </td>
   <td align="center">
-    <img src="dist/png/48px/thermometer-medium.png" width="32" height="32" alt="thermometer-medium"><br>
+    <img src="dist/png/48px/thermometer-medium.png" width="48" height="48" alt="thermometer-medium"><br>
     <sub style="display:inline-block;height:40px;"><code>thermometer-medium</code></sub>
   </td>
   <td align="center">
-    <img src="dist/png/48px/tornado.png" width="32" height="32" alt="tornado"><br>
+    <img src="dist/png/48px/tornado.png" width="48" height="48" alt="tornado"><br>
     <sub style="display:inline-block;height:40px;"><code>tornado</code></sub>
   </td>
   <td align="center">
-    <img src="dist/png/48px/umbrella.png" width="32" height="32" alt="umbrella"><br>
+    <img src="dist/png/48px/umbrella.png" width="48" height="48" alt="umbrella"><br>
     <sub style="display:inline-block;height:40px;"><code>umbrella</code></sub>
   </td>
   <td align="center">
-    <img src="dist/png/48px/wind.png" width="32" height="32" alt="wind"><br>
+    <img src="dist/png/48px/wind.png" width="48" height="48" alt="wind"><br>
     <sub style="display:inline-block;height:40px;"><code>wind</code></sub>
   </td>
   <td align="center">
-    <img src="dist/png/48px/wind-high.png" width="32" height="32" alt="wind-high"><br>
+    <img src="dist/png/48px/wind-high.png" width="48" height="48" alt="wind-high"><br>
     <sub style="display:inline-block;height:40px;"><code>wind-high</code></sub>
   </td>
   <td align="center">
-    <img src="dist/png/48px/windsock.png" width="32" height="32" alt="windsock"><br>
+    <img src="dist/png/48px/windsock.png" width="48" height="48" alt="windsock"><br>
     <sub style="display:inline-block;height:40px;"><code>windsock</code></sub>
   </td>
 </tr>
