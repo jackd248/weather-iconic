@@ -1,0 +1,103 @@
+{
+  "name": "@weather-iconic/icons",
+  "version": "2.0.0",
+  "description": "Modern weather icon library with 63 icons available as React components, Vue components, and optimized SVGs",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.esm.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.esm.js",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./react": {
+      "import": "./dist/react/index.esm.js",
+      "require": "./dist/react/index.js",
+      "types": "./dist/react/index.d.ts"
+    },
+    "./vue": {
+      "import": "./dist/vue/index.esm.js",
+      "require": "./dist/vue/index.js",
+      "types": "./dist/vue/index.d.ts"
+    },
+    "./sprites": "./dist/sprites.svg",
+    "./fonts": "./dist/fonts/",
+    "./fonts/css": "./dist/weather-iconic.css",
+    "./fonts/scss": "./dist/weather-iconic.scss",
+    "./png": "./dist/png/",
+    "./png-utils": "./dist/png-utils.js",
+    "./icon-constants": "./dist/icon-constants.js"
+  },
+  "files": [
+    "dist/**/*",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build:clean": "rimraf dist",
+    "build:icons": "node scripts/build-icons.js",
+    "build:components": "node scripts/generate-components.js",
+    "build:types": "node scripts/generate-types.js",
+    "build:sprite": "node scripts/generate-sprite.js",
+    "build:fonts": "node scripts/generate-fonts.js",
+    "build:png": "node scripts/generate-png-simple.js",
+    "build:vite": "vite build",
+    "build": "npm run build:clean && npm run build:icons && npm run build:components && npm run build:types && npm run build:vite && npm run build:sprite && npm run build:fonts && npm run build:png",
+    "dev": "vite dev",
+    "preview": "vite preview",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "icons",
+    "weather",
+    "svg",
+    "react",
+    "vue",
+    "typescript",
+    "icon-font"
+  ],
+  "author": "Weather Iconic Team",
+  "license": "CC-BY-SA-3.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/weather-iconic/weather-iconic.git"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@vitejs/plugin-react": "^4.0.0",
+    "@vitejs/plugin-vue": "^4.0.0",
+    "fantasticon": "^3.0.0",
+    "puppeteer": "^21.0.0",
+    "rimraf": "^5.0.0",
+    "sharp": "^0.33.0",
+    "svgo": "^3.0.0",
+    "typescript": "^5.0.0",
+    "vite": "^5.0.0",
+    "vite-plugin-dts": "^3.0.0",
+    "vitest": "^1.0.0"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "vue": ">=3.0.0"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    },
+    "vue": {
+      "optional": true
+    }
+  }
+}

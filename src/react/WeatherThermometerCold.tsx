@@ -1,0 +1,30 @@
+import React from 'react'
+import type { IconProps } from '../types'
+
+export const WeatherThermometerCold = React.forwardRef<SVGSVGElement, IconProps>(({
+  size = 24,
+  color = 'currentColor',
+  className,
+  style,
+  title,
+  ...props
+}, ref) => (
+  <svg
+    ref={ref}
+    width={size}
+    height={size}
+    viewBox="0 0 32 32"
+    fill={color}
+    className={className}
+    style={style}
+    role={title ? 'img' : 'presentation'}
+    aria-hidden={title ? 'false' : 'true'}
+    aria-label={title}
+    {...props}
+  >
+    {title && <title>{title}</title>}
+    <path d="M20.064 19.968c.224.416.512 1.12.512 1.856a3.754 3.754 0 0 1-3.776 3.904 3.85 3.85 0 0 1-3.84-3.84c0-.8.192-1.6.608-2.176V9.632c0-1.856 1.472-3.36 3.264-3.36s3.264 1.504 3.264 3.36c0 .064 0 .128-.032.192zm-3.296 3.904c1.12 0 2.016-.896 2.016-2.016 0-.32-.16-.8-.416-1.216-.16-.224-.16-.512-.096-.768V9.632c0-.832-.672-1.568-1.472-1.568s-1.44.704-1.44 1.568v10.432a.9.9 0 0 1-.32.672c-.192.32-.288.704-.288 1.12 0 1.12.896 2.016 2.016 2.016m.032-4.704c.48 0 .896.416.896.896v1.952c0 .48-.384.896-.896.896a.894.894 0 0 1-.896-.896v-1.952c0-.512.416-.896.896-.896"/>
+  </svg>
+))
+
+WeatherThermometerCold.displayName = 'WeatherThermometerCold'

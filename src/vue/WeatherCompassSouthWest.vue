@@ -1,0 +1,32 @@
+<template>
+  <svg
+    :width="size"
+    :height="size"
+    viewBox="0 0 32 32"
+    :fill="color"
+    :class="className"
+    :style="style"
+    :role="title ? 'img' : 'presentation'"
+    :aria-hidden="title ? 'false' : 'true'"
+    :aria-label="title"
+    v-bind="$attrs"
+  >
+    <title v-if="title">{{ title }}</title>
+    <path d="M21.92 10.112c3.232 3.232 3.232 8.512 0 11.744a8.23 8.23 0 0 1-5.856 2.432 8.23 8.23 0 0 1-5.856-2.432c-3.232-3.232-3.232-8.512 0-11.744 1.536-1.568 3.616-2.432 5.856-2.432 2.208 0 4.288.864 5.856 2.432m-1.248 10.496c2.528-2.528 2.528-6.656 0-9.184-1.216-1.216-2.848-1.888-4.608-1.888s-3.36.672-4.608 1.888c-2.528 2.528-2.528 6.656 0 9.184a6.57 6.57 0 0 0 4.608 1.888c1.728 0 3.36-.672 4.608-1.888m-6.016-6.08c.8-.8 2.08-.8 2.88 0s.8 2.08 0 2.88c-1.344 1.344-4.448 1.568-4.448 1.568s.224-3.136 1.568-4.448m1.856 1.888a.62.62 0 0 0 0-.896.647.647 0 0 0-.896 0 .62.62 0 0 0 0 .896c.256.256.64.256.896 0"/>
+  </svg>
+</template>
+
+<script setup lang="ts">
+interface Props {
+  size?: number | string
+  color?: string
+  className?: string
+  style?: Record<string, any>
+  title?: string
+}
+
+withDefaults(defineProps<Props>(), {
+  size: 24,
+  color: 'currentColor'
+})
+</script>

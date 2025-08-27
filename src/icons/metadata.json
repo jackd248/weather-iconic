@@ -1,0 +1,512 @@
+{
+  "icons": [
+    {
+      "name": "barometer",
+      "pascalName": "Barometer",
+      "kebabName": "barometer",
+      "size": 1372,
+      "originalSize": 1372,
+      "compression": "0.0"
+    },
+    {
+      "name": "celsius",
+      "pascalName": "Celsius",
+      "kebabName": "celsius",
+      "size": 1016,
+      "originalSize": 1016,
+      "compression": "0.0"
+    },
+    {
+      "name": "cloud-down",
+      "pascalName": "CloudDown",
+      "kebabName": "cloud-down",
+      "size": 1319,
+      "originalSize": 1319,
+      "compression": "0.0"
+    },
+    {
+      "name": "cloud-fog",
+      "pascalName": "CloudFog",
+      "kebabName": "cloud-fog",
+      "size": 976,
+      "originalSize": 976,
+      "compression": "0.0"
+    },
+    {
+      "name": "cloud-rain-single",
+      "pascalName": "CloudRainSingle",
+      "kebabName": "cloud-rain-single",
+      "size": 1325,
+      "originalSize": 1325,
+      "compression": "0.0"
+    },
+    {
+      "name": "cloud-rain",
+      "pascalName": "CloudRain",
+      "kebabName": "cloud-rain",
+      "size": 1378,
+      "originalSize": 1378,
+      "compression": "0.0"
+    },
+    {
+      "name": "cloud-snow-single",
+      "pascalName": "CloudSnowSingle",
+      "kebabName": "cloud-snow-single",
+      "size": 1531,
+      "originalSize": 1531,
+      "compression": "0.0"
+    },
+    {
+      "name": "cloud-snow",
+      "pascalName": "CloudSnow",
+      "kebabName": "cloud-snow",
+      "size": 1412,
+      "originalSize": 1412,
+      "compression": "0.0"
+    },
+    {
+      "name": "cloud-up",
+      "pascalName": "CloudUp",
+      "kebabName": "cloud-up",
+      "size": 1252,
+      "originalSize": 1252,
+      "compression": "0.0"
+    },
+    {
+      "name": "cloud-wind",
+      "pascalName": "CloudWind",
+      "kebabName": "cloud-wind",
+      "size": 1461,
+      "originalSize": 1461,
+      "compression": "0.0"
+    },
+    {
+      "name": "cloud",
+      "pascalName": "Cloud",
+      "kebabName": "cloud",
+      "size": 1026,
+      "originalSize": 1026,
+      "compression": "0.0"
+    },
+    {
+      "name": "clouds",
+      "pascalName": "Clouds",
+      "kebabName": "clouds",
+      "size": 1295,
+      "originalSize": 1295,
+      "compression": "0.0"
+    },
+    {
+      "name": "compass-east",
+      "pascalName": "CompassEast",
+      "kebabName": "compass-east",
+      "size": 929,
+      "originalSize": 929,
+      "compression": "0.0"
+    },
+    {
+      "name": "compass-north-east",
+      "pascalName": "CompassNorthEast",
+      "kebabName": "compass-north-east",
+      "size": 936,
+      "originalSize": 936,
+      "compression": "0.0"
+    },
+    {
+      "name": "compass-north-west",
+      "pascalName": "CompassNorthWest",
+      "kebabName": "compass-north-west",
+      "size": 942,
+      "originalSize": 942,
+      "compression": "0.0"
+    },
+    {
+      "name": "compass-north",
+      "pascalName": "CompassNorth",
+      "kebabName": "compass-north",
+      "size": 932,
+      "originalSize": 932,
+      "compression": "0.0"
+    },
+    {
+      "name": "compass-south-east",
+      "pascalName": "CompassSouthEast",
+      "kebabName": "compass-south-east",
+      "size": 921,
+      "originalSize": 921,
+      "compression": "0.0"
+    },
+    {
+      "name": "compass-south-west",
+      "pascalName": "CompassSouthWest",
+      "kebabName": "compass-south-west",
+      "size": 943,
+      "originalSize": 943,
+      "compression": "0.0"
+    },
+    {
+      "name": "compass-south",
+      "pascalName": "CompassSouth",
+      "kebabName": "compass-south",
+      "size": 906,
+      "originalSize": 906,
+      "compression": "0.0"
+    },
+    {
+      "name": "compass-west",
+      "pascalName": "CompassWest",
+      "kebabName": "compass-west",
+      "size": 935,
+      "originalSize": 935,
+      "compression": "0.0"
+    },
+    {
+      "name": "compass",
+      "pascalName": "Compass",
+      "kebabName": "compass",
+      "size": 808,
+      "originalSize": 808,
+      "compression": "0.0"
+    },
+    {
+      "name": "fahrenheit",
+      "pascalName": "Fahrenheit",
+      "kebabName": "fahrenheit",
+      "size": 798,
+      "originalSize": 798,
+      "compression": "0.0"
+    },
+    {
+      "name": "fog",
+      "pascalName": "Fog",
+      "kebabName": "fog",
+      "size": 946,
+      "originalSize": 946,
+      "compression": "0.0"
+    },
+    {
+      "name": "hail",
+      "pascalName": "Hail",
+      "kebabName": "hail",
+      "size": 1429,
+      "originalSize": 1429,
+      "compression": "0.0"
+    },
+    {
+      "name": "lightning",
+      "pascalName": "Lightning",
+      "kebabName": "lightning",
+      "size": 1305,
+      "originalSize": 1305,
+      "compression": "0.0"
+    },
+    {
+      "name": "moon-cloud-lightning",
+      "pascalName": "MoonCloudLightning",
+      "kebabName": "moon-cloud-lightning",
+      "size": 1581,
+      "originalSize": 1581,
+      "compression": "0.0"
+    },
+    {
+      "name": "moon-cloud-rain",
+      "pascalName": "MoonCloudRain",
+      "kebabName": "moon-cloud-rain",
+      "size": 1668,
+      "originalSize": 1668,
+      "compression": "0.0"
+    },
+    {
+      "name": "moon-cloud-snow",
+      "pascalName": "MoonCloudSnow",
+      "kebabName": "moon-cloud-snow",
+      "size": 1683,
+      "originalSize": 1683,
+      "compression": "0.0"
+    },
+    {
+      "name": "moon-cloud-wind",
+      "pascalName": "MoonCloudWind",
+      "kebabName": "moon-cloud-wind",
+      "size": 1727,
+      "originalSize": 1727,
+      "compression": "0.0"
+    },
+    {
+      "name": "moon-cloud",
+      "pascalName": "MoonCloud",
+      "kebabName": "moon-cloud",
+      "size": 1222,
+      "originalSize": 1222,
+      "compression": "0.0"
+    },
+    {
+      "name": "moon-first-quarter",
+      "pascalName": "MoonFirstQuarter",
+      "kebabName": "moon-first-quarter",
+      "size": 508,
+      "originalSize": 508,
+      "compression": "0.0"
+    },
+    {
+      "name": "moon-fog",
+      "pascalName": "MoonFog",
+      "kebabName": "moon-fog",
+      "size": 1247,
+      "originalSize": 1247,
+      "compression": "0.0"
+    },
+    {
+      "name": "moon-fullmoon",
+      "pascalName": "MoonFullmoon",
+      "kebabName": "moon-fullmoon",
+      "size": 445,
+      "originalSize": 445,
+      "compression": "0.0"
+    },
+    {
+      "name": "moon-last-quarter",
+      "pascalName": "MoonLastQuarter",
+      "kebabName": "moon-last-quarter",
+      "size": 538,
+      "originalSize": 538,
+      "compression": "0.0"
+    },
+    {
+      "name": "moon-newmoon",
+      "pascalName": "MoonNewmoon",
+      "kebabName": "moon-newmoon",
+      "size": 566,
+      "originalSize": 566,
+      "compression": "0.0"
+    },
+    {
+      "name": "moon-waning-crescent",
+      "pascalName": "MoonWaningCrescent",
+      "kebabName": "moon-waning-crescent",
+      "size": 665,
+      "originalSize": 665,
+      "compression": "0.0"
+    },
+    {
+      "name": "moon-waning-gibbous",
+      "pascalName": "MoonWaningGibbous",
+      "kebabName": "moon-waning-gibbous",
+      "size": 606,
+      "originalSize": 606,
+      "compression": "0.0"
+    },
+    {
+      "name": "moon-waxing-crescent",
+      "pascalName": "MoonWaxingCrescent",
+      "kebabName": "moon-waxing-crescent",
+      "size": 583,
+      "originalSize": 583,
+      "compression": "0.0"
+    },
+    {
+      "name": "moon-waxing-gibbous",
+      "pascalName": "MoonWaxingGibbous",
+      "kebabName": "moon-waxing-gibbous",
+      "size": 584,
+      "originalSize": 584,
+      "compression": "0.0"
+    },
+    {
+      "name": "moon",
+      "pascalName": "Moon",
+      "kebabName": "moon",
+      "size": 755,
+      "originalSize": 755,
+      "compression": "0.0"
+    },
+    {
+      "name": "rainbow",
+      "pascalName": "Rainbow",
+      "kebabName": "rainbow",
+      "size": 1431,
+      "originalSize": 1431,
+      "compression": "0.0"
+    },
+    {
+      "name": "raindrop",
+      "pascalName": "Raindrop",
+      "kebabName": "raindrop",
+      "size": 742,
+      "originalSize": 742,
+      "compression": "0.0"
+    },
+    {
+      "name": "refresh",
+      "pascalName": "Refresh",
+      "kebabName": "refresh",
+      "size": 774,
+      "originalSize": 774,
+      "compression": "0.0"
+    },
+    {
+      "name": "snowflake",
+      "pascalName": "Snowflake",
+      "kebabName": "snowflake",
+      "size": 1802,
+      "originalSize": 1802,
+      "compression": "0.0"
+    },
+    {
+      "name": "sun-cloud-lightning",
+      "pascalName": "SunCloudLightning",
+      "kebabName": "sun-cloud-lightning",
+      "size": 2042,
+      "originalSize": 2042,
+      "compression": "0.0"
+    },
+    {
+      "name": "sun-cloud-rain",
+      "pascalName": "SunCloudRain",
+      "kebabName": "sun-cloud-rain",
+      "size": 2080,
+      "originalSize": 2080,
+      "compression": "0.0"
+    },
+    {
+      "name": "sun-cloud-snow",
+      "pascalName": "SunCloudSnow",
+      "kebabName": "sun-cloud-snow",
+      "size": 2585,
+      "originalSize": 2585,
+      "compression": "0.0"
+    },
+    {
+      "name": "sun-cloud-wind",
+      "pascalName": "SunCloudWind",
+      "kebabName": "sun-cloud-wind",
+      "size": 2177,
+      "originalSize": 2177,
+      "compression": "0.0"
+    },
+    {
+      "name": "sun-cloud",
+      "pascalName": "SunCloud",
+      "kebabName": "sun-cloud",
+      "size": 1671,
+      "originalSize": 1671,
+      "compression": "0.0"
+    },
+    {
+      "name": "sun-fog",
+      "pascalName": "SunFog",
+      "kebabName": "sun-fog",
+      "size": 1047,
+      "originalSize": 1047,
+      "compression": "0.0"
+    },
+    {
+      "name": "sun-low",
+      "pascalName": "SunLow",
+      "kebabName": "sun-low",
+      "size": 1104,
+      "originalSize": 1104,
+      "compression": "0.0"
+    },
+    {
+      "name": "sun-medium",
+      "pascalName": "SunMedium",
+      "kebabName": "sun-medium",
+      "size": 1390,
+      "originalSize": 1390,
+      "compression": "0.0"
+    },
+    {
+      "name": "sun",
+      "pascalName": "Sun",
+      "kebabName": "sun",
+      "size": 1594,
+      "originalSize": 1594,
+      "compression": "0.0"
+    },
+    {
+      "name": "sunrise",
+      "pascalName": "Sunrise",
+      "kebabName": "sunrise",
+      "size": 1169,
+      "originalSize": 1169,
+      "compression": "0.0"
+    },
+    {
+      "name": "sunset",
+      "pascalName": "Sunset",
+      "kebabName": "sunset",
+      "size": 1131,
+      "originalSize": 1131,
+      "compression": "0.0"
+    },
+    {
+      "name": "thermometer-cold",
+      "pascalName": "ThermometerCold",
+      "kebabName": "thermometer-cold",
+      "size": 898,
+      "originalSize": 898,
+      "compression": "0.0"
+    },
+    {
+      "name": "thermometer-hot",
+      "pascalName": "ThermometerHot",
+      "kebabName": "thermometer-hot",
+      "size": 869,
+      "originalSize": 869,
+      "compression": "0.0"
+    },
+    {
+      "name": "thermometer-medium",
+      "pascalName": "ThermometerMedium",
+      "kebabName": "thermometer-medium",
+      "size": 937,
+      "originalSize": 937,
+      "compression": "0.0"
+    },
+    {
+      "name": "tornado",
+      "pascalName": "Tornado",
+      "kebabName": "tornado",
+      "size": 2236,
+      "originalSize": 2236,
+      "compression": "0.0"
+    },
+    {
+      "name": "umbrella",
+      "pascalName": "Umbrella",
+      "kebabName": "umbrella",
+      "size": 1131,
+      "originalSize": 1131,
+      "compression": "0.0"
+    },
+    {
+      "name": "wind-high",
+      "pascalName": "WindHigh",
+      "kebabName": "wind-high",
+      "size": 1603,
+      "originalSize": 1603,
+      "compression": "0.0"
+    },
+    {
+      "name": "wind",
+      "pascalName": "Wind",
+      "kebabName": "wind",
+      "size": 1070,
+      "originalSize": 1070,
+      "compression": "0.0"
+    },
+    {
+      "name": "windsock",
+      "pascalName": "Windsock",
+      "kebabName": "windsock",
+      "size": 988,
+      "originalSize": 988,
+      "compression": "0.0"
+    }
+  ],
+  "totalIcons": 63,
+  "totalSize": 74942,
+  "totalOriginalSize": 74942,
+  "buildDate": "2025-08-27T12:49:29.896Z"
+}

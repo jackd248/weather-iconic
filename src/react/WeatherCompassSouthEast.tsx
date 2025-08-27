@@ -1,0 +1,30 @@
+import React from 'react'
+import type { IconProps } from '../types'
+
+export const WeatherCompassSouthEast = React.forwardRef<SVGSVGElement, IconProps>(({
+  size = 24,
+  color = 'currentColor',
+  className,
+  style,
+  title,
+  ...props
+}, ref) => (
+  <svg
+    ref={ref}
+    width={size}
+    height={size}
+    viewBox="0 0 32 32"
+    fill={color}
+    className={className}
+    style={style}
+    role={title ? 'img' : 'presentation'}
+    aria-hidden={title ? 'false' : 'true'}
+    aria-label={title}
+    {...props}
+  >
+    {title && <title>{title}</title>}
+    <path d="M21.952 10.144A8.23 8.23 0 0 1 24.384 16a8.23 8.23 0 0 1-2.432 5.856c-3.232 3.232-8.512 3.232-11.744 0-1.6-1.568-2.432-3.648-2.432-5.856s.864-4.288 2.432-5.856c3.232-3.232 8.512-3.232 11.744 0m-1.28 10.464A6.57 6.57 0 0 0 22.56 16c0-1.728-.672-3.36-1.888-4.608-2.528-2.528-6.656-2.528-9.184 0C10.272 12.608 9.6 14.24 9.6 16s.672 3.36 1.888 4.608c2.528 2.528 6.656 2.528 9.184 0m-6.08-6.08c.8-.8 2.08-.8 2.88 0 1.344 1.344 1.568 4.448 1.568 4.448s-3.104-.256-4.448-1.568c-.8-.8-.8-2.08 0-2.88m1.888 1.888a.62.62 0 0 0 0-.896.62.62 0 0 0-.896 0 .68.68 0 0 0 0 .896c.256.256.64.256.896 0"/>
+  </svg>
+))
+
+WeatherCompassSouthEast.displayName = 'WeatherCompassSouthEast'

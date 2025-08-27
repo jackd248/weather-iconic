@@ -1,0 +1,1718 @@
+{
+  "icons": [
+    "barometer",
+    "celsius",
+    "cloud-down",
+    "cloud-fog",
+    "cloud-rain-single",
+    "cloud-rain",
+    "cloud-snow-single",
+    "cloud-snow",
+    "cloud-up",
+    "cloud-wind",
+    "cloud",
+    "clouds",
+    "compass-east",
+    "compass-north-east",
+    "compass-north-west",
+    "compass-north",
+    "compass-south-east",
+    "compass-south-west",
+    "compass-south",
+    "compass-west",
+    "compass",
+    "fahrenheit",
+    "fog",
+    "hail",
+    "lightning",
+    "moon-cloud-lightning",
+    "moon-cloud-rain",
+    "moon-cloud-snow",
+    "moon-cloud-wind",
+    "moon-cloud",
+    "moon-first-quarter",
+    "moon-fog",
+    "moon-fullmoon",
+    "moon-last-quarter",
+    "moon-newmoon",
+    "moon-waning-crescent",
+    "moon-waning-gibbous",
+    "moon-waxing-crescent",
+    "moon-waxing-gibbous",
+    "moon",
+    "rainbow",
+    "raindrop",
+    "refresh",
+    "snowflake",
+    "sun-cloud-lightning",
+    "sun-cloud-rain",
+    "sun-cloud-snow",
+    "sun-cloud-wind",
+    "sun-cloud",
+    "sun-fog",
+    "sun-low",
+    "sun-medium",
+    "sun",
+    "sunrise",
+    "sunset",
+    "thermometer-cold",
+    "thermometer-hot",
+    "thermometer-medium",
+    "tornado",
+    "umbrella",
+    "wind-high",
+    "wind",
+    "windsock"
+  ],
+  "sizes": [
+    16,
+    24,
+    32,
+    48,
+    64,
+    128
+  ],
+  "totalFiles": 378,
+  "totalSize": 219130,
+  "generatedAt": "2025-08-27T12:54:11.892Z",
+  "results": {
+    "barometer": {
+      "16px": {
+        "bytes": 276,
+        "path": "./dist/png/16px/barometer.png"
+      },
+      "24px": {
+        "bytes": 373,
+        "path": "./dist/png/24px/barometer.png"
+      },
+      "32px": {
+        "bytes": 492,
+        "path": "./dist/png/32px/barometer.png"
+      },
+      "48px": {
+        "bytes": 645,
+        "path": "./dist/png/48px/barometer.png"
+      },
+      "64px": {
+        "bytes": 800,
+        "path": "./dist/png/64px/barometer.png"
+      },
+      "128px": {
+        "bytes": 1558,
+        "path": "./dist/png/128px/barometer.png"
+      }
+    },
+    "celsius": {
+      "16px": {
+        "bytes": 271,
+        "path": "./dist/png/16px/celsius.png"
+      },
+      "24px": {
+        "bytes": 374,
+        "path": "./dist/png/24px/celsius.png"
+      },
+      "32px": {
+        "bytes": 438,
+        "path": "./dist/png/32px/celsius.png"
+      },
+      "48px": {
+        "bytes": 564,
+        "path": "./dist/png/48px/celsius.png"
+      },
+      "64px": {
+        "bytes": 672,
+        "path": "./dist/png/64px/celsius.png"
+      },
+      "128px": {
+        "bytes": 1178,
+        "path": "./dist/png/128px/celsius.png"
+      }
+    },
+    "cloud-down": {
+      "16px": {
+        "bytes": 306,
+        "path": "./dist/png/16px/cloud-down.png"
+      },
+      "24px": {
+        "bytes": 403,
+        "path": "./dist/png/24px/cloud-down.png"
+      },
+      "32px": {
+        "bytes": 479,
+        "path": "./dist/png/32px/cloud-down.png"
+      },
+      "48px": {
+        "bytes": 606,
+        "path": "./dist/png/48px/cloud-down.png"
+      },
+      "64px": {
+        "bytes": 697,
+        "path": "./dist/png/64px/cloud-down.png"
+      },
+      "128px": {
+        "bytes": 1246,
+        "path": "./dist/png/128px/cloud-down.png"
+      }
+    },
+    "cloud-fog": {
+      "16px": {
+        "bytes": 263,
+        "path": "./dist/png/16px/cloud-fog.png"
+      },
+      "24px": {
+        "bytes": 310,
+        "path": "./dist/png/24px/cloud-fog.png"
+      },
+      "32px": {
+        "bytes": 382,
+        "path": "./dist/png/32px/cloud-fog.png"
+      },
+      "48px": {
+        "bytes": 455,
+        "path": "./dist/png/48px/cloud-fog.png"
+      },
+      "64px": {
+        "bytes": 536,
+        "path": "./dist/png/64px/cloud-fog.png"
+      },
+      "128px": {
+        "bytes": 834,
+        "path": "./dist/png/128px/cloud-fog.png"
+      }
+    },
+    "cloud-rain-single": {
+      "16px": {
+        "bytes": 324,
+        "path": "./dist/png/16px/cloud-rain-single.png"
+      },
+      "24px": {
+        "bytes": 429,
+        "path": "./dist/png/24px/cloud-rain-single.png"
+      },
+      "32px": {
+        "bytes": 497,
+        "path": "./dist/png/32px/cloud-rain-single.png"
+      },
+      "48px": {
+        "bytes": 662,
+        "path": "./dist/png/48px/cloud-rain-single.png"
+      },
+      "64px": {
+        "bytes": 773,
+        "path": "./dist/png/64px/cloud-rain-single.png"
+      },
+      "128px": {
+        "bytes": 1350,
+        "path": "./dist/png/128px/cloud-rain-single.png"
+      }
+    },
+    "cloud-rain": {
+      "16px": {
+        "bytes": 309,
+        "path": "./dist/png/16px/cloud-rain.png"
+      },
+      "24px": {
+        "bytes": 403,
+        "path": "./dist/png/24px/cloud-rain.png"
+      },
+      "32px": {
+        "bytes": 473,
+        "path": "./dist/png/32px/cloud-rain.png"
+      },
+      "48px": {
+        "bytes": 637,
+        "path": "./dist/png/48px/cloud-rain.png"
+      },
+      "64px": {
+        "bytes": 742,
+        "path": "./dist/png/64px/cloud-rain.png"
+      },
+      "128px": {
+        "bytes": 1259,
+        "path": "./dist/png/128px/cloud-rain.png"
+      }
+    },
+    "cloud-snow-single": {
+      "16px": {
+        "bytes": 293,
+        "path": "./dist/png/16px/cloud-snow-single.png"
+      },
+      "24px": {
+        "bytes": 379,
+        "path": "./dist/png/24px/cloud-snow-single.png"
+      },
+      "32px": {
+        "bytes": 456,
+        "path": "./dist/png/32px/cloud-snow-single.png"
+      },
+      "48px": {
+        "bytes": 603,
+        "path": "./dist/png/48px/cloud-snow-single.png"
+      },
+      "64px": {
+        "bytes": 726,
+        "path": "./dist/png/64px/cloud-snow-single.png"
+      },
+      "128px": {
+        "bytes": 1315,
+        "path": "./dist/png/128px/cloud-snow-single.png"
+      }
+    },
+    "cloud-snow": {
+      "16px": {
+        "bytes": 297,
+        "path": "./dist/png/16px/cloud-snow.png"
+      },
+      "24px": {
+        "bytes": 364,
+        "path": "./dist/png/24px/cloud-snow.png"
+      },
+      "32px": {
+        "bytes": 478,
+        "path": "./dist/png/32px/cloud-snow.png"
+      },
+      "48px": {
+        "bytes": 619,
+        "path": "./dist/png/48px/cloud-snow.png"
+      },
+      "64px": {
+        "bytes": 758,
+        "path": "./dist/png/64px/cloud-snow.png"
+      },
+      "128px": {
+        "bytes": 1390,
+        "path": "./dist/png/128px/cloud-snow.png"
+      }
+    },
+    "cloud-up": {
+      "16px": {
+        "bytes": 317,
+        "path": "./dist/png/16px/cloud-up.png"
+      },
+      "24px": {
+        "bytes": 395,
+        "path": "./dist/png/24px/cloud-up.png"
+      },
+      "32px": {
+        "bytes": 484,
+        "path": "./dist/png/32px/cloud-up.png"
+      },
+      "48px": {
+        "bytes": 605,
+        "path": "./dist/png/48px/cloud-up.png"
+      },
+      "64px": {
+        "bytes": 736,
+        "path": "./dist/png/64px/cloud-up.png"
+      },
+      "128px": {
+        "bytes": 1236,
+        "path": "./dist/png/128px/cloud-up.png"
+      }
+    },
+    "cloud-wind": {
+      "16px": {
+        "bytes": 303,
+        "path": "./dist/png/16px/cloud-wind.png"
+      },
+      "24px": {
+        "bytes": 392,
+        "path": "./dist/png/24px/cloud-wind.png"
+      },
+      "32px": {
+        "bytes": 466,
+        "path": "./dist/png/32px/cloud-wind.png"
+      },
+      "48px": {
+        "bytes": 564,
+        "path": "./dist/png/48px/cloud-wind.png"
+      },
+      "64px": {
+        "bytes": 692,
+        "path": "./dist/png/64px/cloud-wind.png"
+      },
+      "128px": {
+        "bytes": 1214,
+        "path": "./dist/png/128px/cloud-wind.png"
+      }
+    },
+    "cloud": {
+      "16px": {
+        "bytes": 281,
+        "path": "./dist/png/16px/cloud.png"
+      },
+      "24px": {
+        "bytes": 352,
+        "path": "./dist/png/24px/cloud.png"
+      },
+      "32px": {
+        "bytes": 404,
+        "path": "./dist/png/32px/cloud.png"
+      },
+      "48px": {
+        "bytes": 510,
+        "path": "./dist/png/48px/cloud.png"
+      },
+      "64px": {
+        "bytes": 603,
+        "path": "./dist/png/64px/cloud.png"
+      },
+      "128px": {
+        "bytes": 988,
+        "path": "./dist/png/128px/cloud.png"
+      }
+    },
+    "clouds": {
+      "16px": {
+        "bytes": 308,
+        "path": "./dist/png/16px/clouds.png"
+      },
+      "24px": {
+        "bytes": 417,
+        "path": "./dist/png/24px/clouds.png"
+      },
+      "32px": {
+        "bytes": 492,
+        "path": "./dist/png/32px/clouds.png"
+      },
+      "48px": {
+        "bytes": 646,
+        "path": "./dist/png/48px/clouds.png"
+      },
+      "64px": {
+        "bytes": 819,
+        "path": "./dist/png/64px/clouds.png"
+      },
+      "128px": {
+        "bytes": 1447,
+        "path": "./dist/png/128px/clouds.png"
+      }
+    },
+    "compass-east": {
+      "16px": {
+        "bytes": 206,
+        "path": "./dist/png/16px/compass-east.png"
+      },
+      "24px": {
+        "bytes": 361,
+        "path": "./dist/png/24px/compass-east.png"
+      },
+      "32px": {
+        "bytes": 431,
+        "path": "./dist/png/32px/compass-east.png"
+      },
+      "48px": {
+        "bytes": 568,
+        "path": "./dist/png/48px/compass-east.png"
+      },
+      "64px": {
+        "bytes": 721,
+        "path": "./dist/png/64px/compass-east.png"
+      },
+      "128px": {
+        "bytes": 1321,
+        "path": "./dist/png/128px/compass-east.png"
+      }
+    },
+    "compass-north-east": {
+      "16px": {
+        "bytes": 252,
+        "path": "./dist/png/16px/compass-north-east.png"
+      },
+      "24px": {
+        "bytes": 336,
+        "path": "./dist/png/24px/compass-north-east.png"
+      },
+      "32px": {
+        "bytes": 431,
+        "path": "./dist/png/32px/compass-north-east.png"
+      },
+      "48px": {
+        "bytes": 596,
+        "path": "./dist/png/48px/compass-north-east.png"
+      },
+      "64px": {
+        "bytes": 680,
+        "path": "./dist/png/64px/compass-north-east.png"
+      },
+      "128px": {
+        "bytes": 1297,
+        "path": "./dist/png/128px/compass-north-east.png"
+      }
+    },
+    "compass-north-west": {
+      "16px": {
+        "bytes": 253,
+        "path": "./dist/png/16px/compass-north-west.png"
+      },
+      "24px": {
+        "bytes": 347,
+        "path": "./dist/png/24px/compass-north-west.png"
+      },
+      "32px": {
+        "bytes": 408,
+        "path": "./dist/png/32px/compass-north-west.png"
+      },
+      "48px": {
+        "bytes": 578,
+        "path": "./dist/png/48px/compass-north-west.png"
+      },
+      "64px": {
+        "bytes": 709,
+        "path": "./dist/png/64px/compass-north-west.png"
+      },
+      "128px": {
+        "bytes": 1264,
+        "path": "./dist/png/128px/compass-north-west.png"
+      }
+    },
+    "compass-north": {
+      "16px": {
+        "bytes": 243,
+        "path": "./dist/png/16px/compass-north.png"
+      },
+      "24px": {
+        "bytes": 342,
+        "path": "./dist/png/24px/compass-north.png"
+      },
+      "32px": {
+        "bytes": 430,
+        "path": "./dist/png/32px/compass-north.png"
+      },
+      "48px": {
+        "bytes": 568,
+        "path": "./dist/png/48px/compass-north.png"
+      },
+      "64px": {
+        "bytes": 714,
+        "path": "./dist/png/64px/compass-north.png"
+      },
+      "128px": {
+        "bytes": 1332,
+        "path": "./dist/png/128px/compass-north.png"
+      }
+    },
+    "compass-south-east": {
+      "16px": {
+        "bytes": 242,
+        "path": "./dist/png/16px/compass-south-east.png"
+      },
+      "24px": {
+        "bytes": 336,
+        "path": "./dist/png/24px/compass-south-east.png"
+      },
+      "32px": {
+        "bytes": 434,
+        "path": "./dist/png/32px/compass-south-east.png"
+      },
+      "48px": {
+        "bytes": 557,
+        "path": "./dist/png/48px/compass-south-east.png"
+      },
+      "64px": {
+        "bytes": 701,
+        "path": "./dist/png/64px/compass-south-east.png"
+      },
+      "128px": {
+        "bytes": 1237,
+        "path": "./dist/png/128px/compass-south-east.png"
+      }
+    },
+    "compass-south-west": {
+      "16px": {
+        "bytes": 246,
+        "path": "./dist/png/16px/compass-south-west.png"
+      },
+      "24px": {
+        "bytes": 347,
+        "path": "./dist/png/24px/compass-south-west.png"
+      },
+      "32px": {
+        "bytes": 453,
+        "path": "./dist/png/32px/compass-south-west.png"
+      },
+      "48px": {
+        "bytes": 581,
+        "path": "./dist/png/48px/compass-south-west.png"
+      },
+      "64px": {
+        "bytes": 714,
+        "path": "./dist/png/64px/compass-south-west.png"
+      },
+      "128px": {
+        "bytes": 1302,
+        "path": "./dist/png/128px/compass-south-west.png"
+      }
+    },
+    "compass-south": {
+      "16px": {
+        "bytes": 248,
+        "path": "./dist/png/16px/compass-south.png"
+      },
+      "24px": {
+        "bytes": 346,
+        "path": "./dist/png/24px/compass-south.png"
+      },
+      "32px": {
+        "bytes": 440,
+        "path": "./dist/png/32px/compass-south.png"
+      },
+      "48px": {
+        "bytes": 589,
+        "path": "./dist/png/48px/compass-south.png"
+      },
+      "64px": {
+        "bytes": 743,
+        "path": "./dist/png/64px/compass-south.png"
+      },
+      "128px": {
+        "bytes": 1343,
+        "path": "./dist/png/128px/compass-south.png"
+      }
+    },
+    "compass-west": {
+      "16px": {
+        "bytes": 211,
+        "path": "./dist/png/16px/compass-west.png"
+      },
+      "24px": {
+        "bytes": 341,
+        "path": "./dist/png/24px/compass-west.png"
+      },
+      "32px": {
+        "bytes": 439,
+        "path": "./dist/png/32px/compass-west.png"
+      },
+      "48px": {
+        "bytes": 559,
+        "path": "./dist/png/48px/compass-west.png"
+      },
+      "64px": {
+        "bytes": 705,
+        "path": "./dist/png/64px/compass-west.png"
+      },
+      "128px": {
+        "bytes": 1281,
+        "path": "./dist/png/128px/compass-west.png"
+      }
+    },
+    "compass": {
+      "16px": {
+        "bytes": 229,
+        "path": "./dist/png/16px/compass.png"
+      },
+      "24px": {
+        "bytes": 352,
+        "path": "./dist/png/24px/compass.png"
+      },
+      "32px": {
+        "bytes": 454,
+        "path": "./dist/png/32px/compass.png"
+      },
+      "48px": {
+        "bytes": 551,
+        "path": "./dist/png/48px/compass.png"
+      },
+      "64px": {
+        "bytes": 717,
+        "path": "./dist/png/64px/compass.png"
+      },
+      "128px": {
+        "bytes": 1333,
+        "path": "./dist/png/128px/compass.png"
+      }
+    },
+    "fahrenheit": {
+      "16px": {
+        "bytes": 248,
+        "path": "./dist/png/16px/fahrenheit.png"
+      },
+      "24px": {
+        "bytes": 291,
+        "path": "./dist/png/24px/fahrenheit.png"
+      },
+      "32px": {
+        "bytes": 337,
+        "path": "./dist/png/32px/fahrenheit.png"
+      },
+      "48px": {
+        "bytes": 414,
+        "path": "./dist/png/48px/fahrenheit.png"
+      },
+      "64px": {
+        "bytes": 448,
+        "path": "./dist/png/64px/fahrenheit.png"
+      },
+      "128px": {
+        "bytes": 682,
+        "path": "./dist/png/128px/fahrenheit.png"
+      }
+    },
+    "fog": {
+      "16px": {
+        "bytes": 212,
+        "path": "./dist/png/16px/fog.png"
+      },
+      "24px": {
+        "bytes": 260,
+        "path": "./dist/png/24px/fog.png"
+      },
+      "32px": {
+        "bytes": 293,
+        "path": "./dist/png/32px/fog.png"
+      },
+      "48px": {
+        "bytes": 327,
+        "path": "./dist/png/48px/fog.png"
+      },
+      "64px": {
+        "bytes": 375,
+        "path": "./dist/png/64px/fog.png"
+      },
+      "128px": {
+        "bytes": 497,
+        "path": "./dist/png/128px/fog.png"
+      }
+    },
+    "hail": {
+      "16px": {
+        "bytes": 320,
+        "path": "./dist/png/16px/hail.png"
+      },
+      "24px": {
+        "bytes": 398,
+        "path": "./dist/png/24px/hail.png"
+      },
+      "32px": {
+        "bytes": 498,
+        "path": "./dist/png/32px/hail.png"
+      },
+      "48px": {
+        "bytes": 616,
+        "path": "./dist/png/48px/hail.png"
+      },
+      "64px": {
+        "bytes": 746,
+        "path": "./dist/png/64px/hail.png"
+      },
+      "128px": {
+        "bytes": 1311,
+        "path": "./dist/png/128px/hail.png"
+      }
+    },
+    "lightning": {
+      "16px": {
+        "bytes": 324,
+        "path": "./dist/png/16px/lightning.png"
+      },
+      "24px": {
+        "bytes": 407,
+        "path": "./dist/png/24px/lightning.png"
+      },
+      "32px": {
+        "bytes": 485,
+        "path": "./dist/png/32px/lightning.png"
+      },
+      "48px": {
+        "bytes": 613,
+        "path": "./dist/png/48px/lightning.png"
+      },
+      "64px": {
+        "bytes": 772,
+        "path": "./dist/png/64px/lightning.png"
+      },
+      "128px": {
+        "bytes": 1334,
+        "path": "./dist/png/128px/lightning.png"
+      }
+    },
+    "moon-cloud-lightning": {
+      "16px": {
+        "bytes": 339,
+        "path": "./dist/png/16px/moon-cloud-lightning.png"
+      },
+      "24px": {
+        "bytes": 445,
+        "path": "./dist/png/24px/moon-cloud-lightning.png"
+      },
+      "32px": {
+        "bytes": 533,
+        "path": "./dist/png/32px/moon-cloud-lightning.png"
+      },
+      "48px": {
+        "bytes": 723,
+        "path": "./dist/png/48px/moon-cloud-lightning.png"
+      },
+      "64px": {
+        "bytes": 888,
+        "path": "./dist/png/64px/moon-cloud-lightning.png"
+      },
+      "128px": {
+        "bytes": 1712,
+        "path": "./dist/png/128px/moon-cloud-lightning.png"
+      }
+    },
+    "moon-cloud-rain": {
+      "16px": {
+        "bytes": 348,
+        "path": "./dist/png/16px/moon-cloud-rain.png"
+      },
+      "24px": {
+        "bytes": 418,
+        "path": "./dist/png/24px/moon-cloud-rain.png"
+      },
+      "32px": {
+        "bytes": 531,
+        "path": "./dist/png/32px/moon-cloud-rain.png"
+      },
+      "48px": {
+        "bytes": 709,
+        "path": "./dist/png/48px/moon-cloud-rain.png"
+      },
+      "64px": {
+        "bytes": 883,
+        "path": "./dist/png/64px/moon-cloud-rain.png"
+      },
+      "128px": {
+        "bytes": 1629,
+        "path": "./dist/png/128px/moon-cloud-rain.png"
+      }
+    },
+    "moon-cloud-snow": {
+      "16px": {
+        "bytes": 331,
+        "path": "./dist/png/16px/moon-cloud-snow.png"
+      },
+      "24px": {
+        "bytes": 442,
+        "path": "./dist/png/24px/moon-cloud-snow.png"
+      },
+      "32px": {
+        "bytes": 546,
+        "path": "./dist/png/32px/moon-cloud-snow.png"
+      },
+      "48px": {
+        "bytes": 718,
+        "path": "./dist/png/48px/moon-cloud-snow.png"
+      },
+      "64px": {
+        "bytes": 911,
+        "path": "./dist/png/64px/moon-cloud-snow.png"
+      },
+      "128px": {
+        "bytes": 1736,
+        "path": "./dist/png/128px/moon-cloud-snow.png"
+      }
+    },
+    "moon-cloud-wind": {
+      "16px": {
+        "bytes": 334,
+        "path": "./dist/png/16px/moon-cloud-wind.png"
+      },
+      "24px": {
+        "bytes": 418,
+        "path": "./dist/png/24px/moon-cloud-wind.png"
+      },
+      "32px": {
+        "bytes": 515,
+        "path": "./dist/png/32px/moon-cloud-wind.png"
+      },
+      "48px": {
+        "bytes": 656,
+        "path": "./dist/png/48px/moon-cloud-wind.png"
+      },
+      "64px": {
+        "bytes": 814,
+        "path": "./dist/png/64px/moon-cloud-wind.png"
+      },
+      "128px": {
+        "bytes": 1502,
+        "path": "./dist/png/128px/moon-cloud-wind.png"
+      }
+    },
+    "moon-cloud": {
+      "16px": {
+        "bytes": 312,
+        "path": "./dist/png/16px/moon-cloud.png"
+      },
+      "24px": {
+        "bytes": 402,
+        "path": "./dist/png/24px/moon-cloud.png"
+      },
+      "32px": {
+        "bytes": 483,
+        "path": "./dist/png/32px/moon-cloud.png"
+      },
+      "48px": {
+        "bytes": 605,
+        "path": "./dist/png/48px/moon-cloud.png"
+      },
+      "64px": {
+        "bytes": 756,
+        "path": "./dist/png/64px/moon-cloud.png"
+      },
+      "128px": {
+        "bytes": 1330,
+        "path": "./dist/png/128px/moon-cloud.png"
+      }
+    },
+    "moon-first-quarter": {
+      "16px": {
+        "bytes": 203,
+        "path": "./dist/png/16px/moon-first-quarter.png"
+      },
+      "24px": {
+        "bytes": 244,
+        "path": "./dist/png/24px/moon-first-quarter.png"
+      },
+      "32px": {
+        "bytes": 336,
+        "path": "./dist/png/32px/moon-first-quarter.png"
+      },
+      "48px": {
+        "bytes": 432,
+        "path": "./dist/png/48px/moon-first-quarter.png"
+      },
+      "64px": {
+        "bytes": 508,
+        "path": "./dist/png/64px/moon-first-quarter.png"
+      },
+      "128px": {
+        "bytes": 797,
+        "path": "./dist/png/128px/moon-first-quarter.png"
+      }
+    },
+    "moon-fog": {
+      "16px": {
+        "bytes": 288,
+        "path": "./dist/png/16px/moon-fog.png"
+      },
+      "24px": {
+        "bytes": 360,
+        "path": "./dist/png/24px/moon-fog.png"
+      },
+      "32px": {
+        "bytes": 417,
+        "path": "./dist/png/32px/moon-fog.png"
+      },
+      "48px": {
+        "bytes": 508,
+        "path": "./dist/png/48px/moon-fog.png"
+      },
+      "64px": {
+        "bytes": 598,
+        "path": "./dist/png/64px/moon-fog.png"
+      },
+      "128px": {
+        "bytes": 1011,
+        "path": "./dist/png/128px/moon-fog.png"
+      }
+    },
+    "moon-fullmoon": {
+      "16px": {
+        "bytes": 191,
+        "path": "./dist/png/16px/moon-fullmoon.png"
+      },
+      "24px": {
+        "bytes": 215,
+        "path": "./dist/png/24px/moon-fullmoon.png"
+      },
+      "32px": {
+        "bytes": 285,
+        "path": "./dist/png/32px/moon-fullmoon.png"
+      },
+      "48px": {
+        "bytes": 350,
+        "path": "./dist/png/48px/moon-fullmoon.png"
+      },
+      "64px": {
+        "bytes": 416,
+        "path": "./dist/png/64px/moon-fullmoon.png"
+      },
+      "128px": {
+        "bytes": 656,
+        "path": "./dist/png/128px/moon-fullmoon.png"
+      }
+    },
+    "moon-last-quarter": {
+      "16px": {
+        "bytes": 199,
+        "path": "./dist/png/16px/moon-last-quarter.png"
+      },
+      "24px": {
+        "bytes": 268,
+        "path": "./dist/png/24px/moon-last-quarter.png"
+      },
+      "32px": {
+        "bytes": 349,
+        "path": "./dist/png/32px/moon-last-quarter.png"
+      },
+      "48px": {
+        "bytes": 434,
+        "path": "./dist/png/48px/moon-last-quarter.png"
+      },
+      "64px": {
+        "bytes": 518,
+        "path": "./dist/png/64px/moon-last-quarter.png"
+      },
+      "128px": {
+        "bytes": 861,
+        "path": "./dist/png/128px/moon-last-quarter.png"
+      }
+    },
+    "moon-newmoon": {
+      "16px": {
+        "bytes": 204,
+        "path": "./dist/png/16px/moon-newmoon.png"
+      },
+      "24px": {
+        "bytes": 262,
+        "path": "./dist/png/24px/moon-newmoon.png"
+      },
+      "32px": {
+        "bytes": 325,
+        "path": "./dist/png/32px/moon-newmoon.png"
+      },
+      "48px": {
+        "bytes": 498,
+        "path": "./dist/png/48px/moon-newmoon.png"
+      },
+      "64px": {
+        "bytes": 573,
+        "path": "./dist/png/64px/moon-newmoon.png"
+      },
+      "128px": {
+        "bytes": 942,
+        "path": "./dist/png/128px/moon-newmoon.png"
+      }
+    },
+    "moon-waning-crescent": {
+      "16px": {
+        "bytes": 233,
+        "path": "./dist/png/16px/moon-waning-crescent.png"
+      },
+      "24px": {
+        "bytes": 305,
+        "path": "./dist/png/24px/moon-waning-crescent.png"
+      },
+      "32px": {
+        "bytes": 376,
+        "path": "./dist/png/32px/moon-waning-crescent.png"
+      },
+      "48px": {
+        "bytes": 454,
+        "path": "./dist/png/48px/moon-waning-crescent.png"
+      },
+      "64px": {
+        "bytes": 537,
+        "path": "./dist/png/64px/moon-waning-crescent.png"
+      },
+      "128px": {
+        "bytes": 976,
+        "path": "./dist/png/128px/moon-waning-crescent.png"
+      }
+    },
+    "moon-waning-gibbous": {
+      "16px": {
+        "bytes": 215,
+        "path": "./dist/png/16px/moon-waning-gibbous.png"
+      },
+      "24px": {
+        "bytes": 299,
+        "path": "./dist/png/24px/moon-waning-gibbous.png"
+      },
+      "32px": {
+        "bytes": 345,
+        "path": "./dist/png/32px/moon-waning-gibbous.png"
+      },
+      "48px": {
+        "bytes": 502,
+        "path": "./dist/png/48px/moon-waning-gibbous.png"
+      },
+      "64px": {
+        "bytes": 555,
+        "path": "./dist/png/64px/moon-waning-gibbous.png"
+      },
+      "128px": {
+        "bytes": 950,
+        "path": "./dist/png/128px/moon-waning-gibbous.png"
+      }
+    },
+    "moon-waxing-crescent": {
+      "16px": {
+        "bytes": 214,
+        "path": "./dist/png/16px/moon-waxing-crescent.png"
+      },
+      "24px": {
+        "bytes": 276,
+        "path": "./dist/png/24px/moon-waxing-crescent.png"
+      },
+      "32px": {
+        "bytes": 345,
+        "path": "./dist/png/32px/moon-waxing-crescent.png"
+      },
+      "48px": {
+        "bytes": 467,
+        "path": "./dist/png/48px/moon-waxing-crescent.png"
+      },
+      "64px": {
+        "bytes": 552,
+        "path": "./dist/png/64px/moon-waxing-crescent.png"
+      },
+      "128px": {
+        "bytes": 895,
+        "path": "./dist/png/128px/moon-waxing-crescent.png"
+      }
+    },
+    "moon-waxing-gibbous": {
+      "16px": {
+        "bytes": 227,
+        "path": "./dist/png/16px/moon-waxing-gibbous.png"
+      },
+      "24px": {
+        "bytes": 293,
+        "path": "./dist/png/24px/moon-waxing-gibbous.png"
+      },
+      "32px": {
+        "bytes": 356,
+        "path": "./dist/png/32px/moon-waxing-gibbous.png"
+      },
+      "48px": {
+        "bytes": 465,
+        "path": "./dist/png/48px/moon-waxing-gibbous.png"
+      },
+      "64px": {
+        "bytes": 568,
+        "path": "./dist/png/64px/moon-waxing-gibbous.png"
+      },
+      "128px": {
+        "bytes": 974,
+        "path": "./dist/png/128px/moon-waxing-gibbous.png"
+      }
+    },
+    "moon": {
+      "16px": {
+        "bytes": 252,
+        "path": "./dist/png/16px/moon.png"
+      },
+      "24px": {
+        "bytes": 311,
+        "path": "./dist/png/24px/moon.png"
+      },
+      "32px": {
+        "bytes": 370,
+        "path": "./dist/png/32px/moon.png"
+      },
+      "48px": {
+        "bytes": 465,
+        "path": "./dist/png/48px/moon.png"
+      },
+      "64px": {
+        "bytes": 545,
+        "path": "./dist/png/64px/moon.png"
+      },
+      "128px": {
+        "bytes": 957,
+        "path": "./dist/png/128px/moon.png"
+      }
+    },
+    "rainbow": {
+      "16px": {
+        "bytes": 317,
+        "path": "./dist/png/16px/rainbow.png"
+      },
+      "24px": {
+        "bytes": 400,
+        "path": "./dist/png/24px/rainbow.png"
+      },
+      "32px": {
+        "bytes": 478,
+        "path": "./dist/png/32px/rainbow.png"
+      },
+      "48px": {
+        "bytes": 626,
+        "path": "./dist/png/48px/rainbow.png"
+      },
+      "64px": {
+        "bytes": 810,
+        "path": "./dist/png/64px/rainbow.png"
+      },
+      "128px": {
+        "bytes": 1527,
+        "path": "./dist/png/128px/rainbow.png"
+      }
+    },
+    "raindrop": {
+      "16px": {
+        "bytes": 271,
+        "path": "./dist/png/16px/raindrop.png"
+      },
+      "24px": {
+        "bytes": 365,
+        "path": "./dist/png/24px/raindrop.png"
+      },
+      "32px": {
+        "bytes": 428,
+        "path": "./dist/png/32px/raindrop.png"
+      },
+      "48px": {
+        "bytes": 560,
+        "path": "./dist/png/48px/raindrop.png"
+      },
+      "64px": {
+        "bytes": 707,
+        "path": "./dist/png/64px/raindrop.png"
+      },
+      "128px": {
+        "bytes": 1208,
+        "path": "./dist/png/128px/raindrop.png"
+      }
+    },
+    "refresh": {
+      "16px": {
+        "bytes": 258,
+        "path": "./dist/png/16px/refresh.png"
+      },
+      "24px": {
+        "bytes": 313,
+        "path": "./dist/png/24px/refresh.png"
+      },
+      "32px": {
+        "bytes": 372,
+        "path": "./dist/png/32px/refresh.png"
+      },
+      "48px": {
+        "bytes": 471,
+        "path": "./dist/png/48px/refresh.png"
+      },
+      "64px": {
+        "bytes": 537,
+        "path": "./dist/png/64px/refresh.png"
+      },
+      "128px": {
+        "bytes": 874,
+        "path": "./dist/png/128px/refresh.png"
+      }
+    },
+    "snowflake": {
+      "16px": {
+        "bytes": 279,
+        "path": "./dist/png/16px/snowflake.png"
+      },
+      "24px": {
+        "bytes": 379,
+        "path": "./dist/png/24px/snowflake.png"
+      },
+      "32px": {
+        "bytes": 466,
+        "path": "./dist/png/32px/snowflake.png"
+      },
+      "48px": {
+        "bytes": 600,
+        "path": "./dist/png/48px/snowflake.png"
+      },
+      "64px": {
+        "bytes": 728,
+        "path": "./dist/png/64px/snowflake.png"
+      },
+      "128px": {
+        "bytes": 1330,
+        "path": "./dist/png/128px/snowflake.png"
+      }
+    },
+    "sun-cloud-lightning": {
+      "16px": {
+        "bytes": 357,
+        "path": "./dist/png/16px/sun-cloud-lightning.png"
+      },
+      "24px": {
+        "bytes": 467,
+        "path": "./dist/png/24px/sun-cloud-lightning.png"
+      },
+      "32px": {
+        "bytes": 555,
+        "path": "./dist/png/32px/sun-cloud-lightning.png"
+      },
+      "48px": {
+        "bytes": 745,
+        "path": "./dist/png/48px/sun-cloud-lightning.png"
+      },
+      "64px": {
+        "bytes": 963,
+        "path": "./dist/png/64px/sun-cloud-lightning.png"
+      },
+      "128px": {
+        "bytes": 1775,
+        "path": "./dist/png/128px/sun-cloud-lightning.png"
+      }
+    },
+    "sun-cloud-rain": {
+      "16px": {
+        "bytes": 354,
+        "path": "./dist/png/16px/sun-cloud-rain.png"
+      },
+      "24px": {
+        "bytes": 461,
+        "path": "./dist/png/24px/sun-cloud-rain.png"
+      },
+      "32px": {
+        "bytes": 563,
+        "path": "./dist/png/32px/sun-cloud-rain.png"
+      },
+      "48px": {
+        "bytes": 723,
+        "path": "./dist/png/48px/sun-cloud-rain.png"
+      },
+      "64px": {
+        "bytes": 939,
+        "path": "./dist/png/64px/sun-cloud-rain.png"
+      },
+      "128px": {
+        "bytes": 1659,
+        "path": "./dist/png/128px/sun-cloud-rain.png"
+      }
+    },
+    "sun-cloud-snow": {
+      "16px": {
+        "bytes": 356,
+        "path": "./dist/png/16px/sun-cloud-snow.png"
+      },
+      "24px": {
+        "bytes": 471,
+        "path": "./dist/png/24px/sun-cloud-snow.png"
+      },
+      "32px": {
+        "bytes": 558,
+        "path": "./dist/png/32px/sun-cloud-snow.png"
+      },
+      "48px": {
+        "bytes": 774,
+        "path": "./dist/png/48px/sun-cloud-snow.png"
+      },
+      "64px": {
+        "bytes": 979,
+        "path": "./dist/png/64px/sun-cloud-snow.png"
+      },
+      "128px": {
+        "bytes": 1796,
+        "path": "./dist/png/128px/sun-cloud-snow.png"
+      }
+    },
+    "sun-cloud-wind": {
+      "16px": {
+        "bytes": 342,
+        "path": "./dist/png/16px/sun-cloud-wind.png"
+      },
+      "24px": {
+        "bytes": 450,
+        "path": "./dist/png/24px/sun-cloud-wind.png"
+      },
+      "32px": {
+        "bytes": 552,
+        "path": "./dist/png/32px/sun-cloud-wind.png"
+      },
+      "48px": {
+        "bytes": 731,
+        "path": "./dist/png/48px/sun-cloud-wind.png"
+      },
+      "64px": {
+        "bytes": 915,
+        "path": "./dist/png/64px/sun-cloud-wind.png"
+      },
+      "128px": {
+        "bytes": 1661,
+        "path": "./dist/png/128px/sun-cloud-wind.png"
+      }
+    },
+    "sun-cloud": {
+      "16px": {
+        "bytes": 321,
+        "path": "./dist/png/16px/sun-cloud.png"
+      },
+      "24px": {
+        "bytes": 417,
+        "path": "./dist/png/24px/sun-cloud.png"
+      },
+      "32px": {
+        "bytes": 517,
+        "path": "./dist/png/32px/sun-cloud.png"
+      },
+      "48px": {
+        "bytes": 632,
+        "path": "./dist/png/48px/sun-cloud.png"
+      },
+      "64px": {
+        "bytes": 794,
+        "path": "./dist/png/64px/sun-cloud.png"
+      },
+      "128px": {
+        "bytes": 1410,
+        "path": "./dist/png/128px/sun-cloud.png"
+      }
+    },
+    "sun-fog": {
+      "16px": {
+        "bytes": 284,
+        "path": "./dist/png/16px/sun-fog.png"
+      },
+      "24px": {
+        "bytes": 357,
+        "path": "./dist/png/24px/sun-fog.png"
+      },
+      "32px": {
+        "bytes": 413,
+        "path": "./dist/png/32px/sun-fog.png"
+      },
+      "48px": {
+        "bytes": 518,
+        "path": "./dist/png/48px/sun-fog.png"
+      },
+      "64px": {
+        "bytes": 652,
+        "path": "./dist/png/64px/sun-fog.png"
+      },
+      "128px": {
+        "bytes": 1093,
+        "path": "./dist/png/128px/sun-fog.png"
+      }
+    },
+    "sun-low": {
+      "16px": {
+        "bytes": 278,
+        "path": "./dist/png/16px/sun-low.png"
+      },
+      "24px": {
+        "bytes": 323,
+        "path": "./dist/png/24px/sun-low.png"
+      },
+      "32px": {
+        "bytes": 391,
+        "path": "./dist/png/32px/sun-low.png"
+      },
+      "48px": {
+        "bytes": 457,
+        "path": "./dist/png/48px/sun-low.png"
+      },
+      "64px": {
+        "bytes": 541,
+        "path": "./dist/png/64px/sun-low.png"
+      },
+      "128px": {
+        "bytes": 831,
+        "path": "./dist/png/128px/sun-low.png"
+      }
+    },
+    "sun-medium": {
+      "16px": {
+        "bytes": 302,
+        "path": "./dist/png/16px/sun-medium.png"
+      },
+      "24px": {
+        "bytes": 376,
+        "path": "./dist/png/24px/sun-medium.png"
+      },
+      "32px": {
+        "bytes": 426,
+        "path": "./dist/png/32px/sun-medium.png"
+      },
+      "48px": {
+        "bytes": 548,
+        "path": "./dist/png/48px/sun-medium.png"
+      },
+      "64px": {
+        "bytes": 645,
+        "path": "./dist/png/64px/sun-medium.png"
+      },
+      "128px": {
+        "bytes": 1106,
+        "path": "./dist/png/128px/sun-medium.png"
+      }
+    },
+    "sun": {
+      "16px": {
+        "bytes": 218,
+        "path": "./dist/png/16px/sun.png"
+      },
+      "24px": {
+        "bytes": 294,
+        "path": "./dist/png/24px/sun.png"
+      },
+      "32px": {
+        "bytes": 376,
+        "path": "./dist/png/32px/sun.png"
+      },
+      "48px": {
+        "bytes": 554,
+        "path": "./dist/png/48px/sun.png"
+      },
+      "64px": {
+        "bytes": 727,
+        "path": "./dist/png/64px/sun.png"
+      },
+      "128px": {
+        "bytes": 1289,
+        "path": "./dist/png/128px/sun.png"
+      }
+    },
+    "sunrise": {
+      "16px": {
+        "bytes": 268,
+        "path": "./dist/png/16px/sunrise.png"
+      },
+      "24px": {
+        "bytes": 338,
+        "path": "./dist/png/24px/sunrise.png"
+      },
+      "32px": {
+        "bytes": 373,
+        "path": "./dist/png/32px/sunrise.png"
+      },
+      "48px": {
+        "bytes": 471,
+        "path": "./dist/png/48px/sunrise.png"
+      },
+      "64px": {
+        "bytes": 546,
+        "path": "./dist/png/64px/sunrise.png"
+      },
+      "128px": {
+        "bytes": 842,
+        "path": "./dist/png/128px/sunrise.png"
+      }
+    },
+    "sunset": {
+      "16px": {
+        "bytes": 272,
+        "path": "./dist/png/16px/sunset.png"
+      },
+      "24px": {
+        "bytes": 324,
+        "path": "./dist/png/24px/sunset.png"
+      },
+      "32px": {
+        "bytes": 383,
+        "path": "./dist/png/32px/sunset.png"
+      },
+      "48px": {
+        "bytes": 447,
+        "path": "./dist/png/48px/sunset.png"
+      },
+      "64px": {
+        "bytes": 547,
+        "path": "./dist/png/64px/sunset.png"
+      },
+      "128px": {
+        "bytes": 842,
+        "path": "./dist/png/128px/sunset.png"
+      }
+    },
+    "thermometer-cold": {
+      "16px": {
+        "bytes": 240,
+        "path": "./dist/png/16px/thermometer-cold.png"
+      },
+      "24px": {
+        "bytes": 298,
+        "path": "./dist/png/24px/thermometer-cold.png"
+      },
+      "32px": {
+        "bytes": 324,
+        "path": "./dist/png/32px/thermometer-cold.png"
+      },
+      "48px": {
+        "bytes": 399,
+        "path": "./dist/png/48px/thermometer-cold.png"
+      },
+      "64px": {
+        "bytes": 468,
+        "path": "./dist/png/64px/thermometer-cold.png"
+      },
+      "128px": {
+        "bytes": 710,
+        "path": "./dist/png/128px/thermometer-cold.png"
+      }
+    },
+    "thermometer-hot": {
+      "16px": {
+        "bytes": 210,
+        "path": "./dist/png/16px/thermometer-hot.png"
+      },
+      "24px": {
+        "bytes": 285,
+        "path": "./dist/png/24px/thermometer-hot.png"
+      },
+      "32px": {
+        "bytes": 324,
+        "path": "./dist/png/32px/thermometer-hot.png"
+      },
+      "48px": {
+        "bytes": 377,
+        "path": "./dist/png/48px/thermometer-hot.png"
+      },
+      "64px": {
+        "bytes": 433,
+        "path": "./dist/png/64px/thermometer-hot.png"
+      },
+      "128px": {
+        "bytes": 716,
+        "path": "./dist/png/128px/thermometer-hot.png"
+      }
+    },
+    "thermometer-medium": {
+      "16px": {
+        "bytes": 240,
+        "path": "./dist/png/16px/thermometer-medium.png"
+      },
+      "24px": {
+        "bytes": 281,
+        "path": "./dist/png/24px/thermometer-medium.png"
+      },
+      "32px": {
+        "bytes": 319,
+        "path": "./dist/png/32px/thermometer-medium.png"
+      },
+      "48px": {
+        "bytes": 392,
+        "path": "./dist/png/48px/thermometer-medium.png"
+      },
+      "64px": {
+        "bytes": 442,
+        "path": "./dist/png/64px/thermometer-medium.png"
+      },
+      "128px": {
+        "bytes": 723,
+        "path": "./dist/png/128px/thermometer-medium.png"
+      }
+    },
+    "tornado": {
+      "16px": {
+        "bytes": 325,
+        "path": "./dist/png/16px/tornado.png"
+      },
+      "24px": {
+        "bytes": 413,
+        "path": "./dist/png/24px/tornado.png"
+      },
+      "32px": {
+        "bytes": 474,
+        "path": "./dist/png/32px/tornado.png"
+      },
+      "48px": {
+        "bytes": 662,
+        "path": "./dist/png/48px/tornado.png"
+      },
+      "64px": {
+        "bytes": 831,
+        "path": "./dist/png/64px/tornado.png"
+      },
+      "128px": {
+        "bytes": 1478,
+        "path": "./dist/png/128px/tornado.png"
+      }
+    },
+    "umbrella": {
+      "16px": {
+        "bytes": 276,
+        "path": "./dist/png/16px/umbrella.png"
+      },
+      "24px": {
+        "bytes": 365,
+        "path": "./dist/png/24px/umbrella.png"
+      },
+      "32px": {
+        "bytes": 441,
+        "path": "./dist/png/32px/umbrella.png"
+      },
+      "48px": {
+        "bytes": 562,
+        "path": "./dist/png/48px/umbrella.png"
+      },
+      "64px": {
+        "bytes": 674,
+        "path": "./dist/png/64px/umbrella.png"
+      },
+      "128px": {
+        "bytes": 1182,
+        "path": "./dist/png/128px/umbrella.png"
+      }
+    },
+    "wind-high": {
+      "16px": {
+        "bytes": 333,
+        "path": "./dist/png/16px/wind-high.png"
+      },
+      "24px": {
+        "bytes": 394,
+        "path": "./dist/png/24px/wind-high.png"
+      },
+      "32px": {
+        "bytes": 492,
+        "path": "./dist/png/32px/wind-high.png"
+      },
+      "48px": {
+        "bytes": 607,
+        "path": "./dist/png/48px/wind-high.png"
+      },
+      "64px": {
+        "bytes": 781,
+        "path": "./dist/png/64px/wind-high.png"
+      },
+      "128px": {
+        "bytes": 1357,
+        "path": "./dist/png/128px/wind-high.png"
+      }
+    },
+    "wind": {
+      "16px": {
+        "bytes": 280,
+        "path": "./dist/png/16px/wind.png"
+      },
+      "24px": {
+        "bytes": 335,
+        "path": "./dist/png/24px/wind.png"
+      },
+      "32px": {
+        "bytes": 381,
+        "path": "./dist/png/32px/wind.png"
+      },
+      "48px": {
+        "bytes": 441,
+        "path": "./dist/png/48px/wind.png"
+      },
+      "64px": {
+        "bytes": 536,
+        "path": "./dist/png/64px/wind.png"
+      },
+      "128px": {
+        "bytes": 862,
+        "path": "./dist/png/128px/wind.png"
+      }
+    },
+    "windsock": {
+      "16px": {
+        "bytes": 270,
+        "path": "./dist/png/16px/windsock.png"
+      },
+      "24px": {
+        "bytes": 322,
+        "path": "./dist/png/24px/windsock.png"
+      },
+      "32px": {
+        "bytes": 376,
+        "path": "./dist/png/32px/windsock.png"
+      },
+      "48px": {
+        "bytes": 463,
+        "path": "./dist/png/48px/windsock.png"
+      },
+      "64px": {
+        "bytes": 516,
+        "path": "./dist/png/64px/windsock.png"
+      },
+      "128px": {
+        "bytes": 839,
+        "path": "./dist/png/128px/windsock.png"
+      }
+    }
+  }
+}
