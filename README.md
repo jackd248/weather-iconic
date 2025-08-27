@@ -1,5 +1,6 @@
 <div align="center">
 
+![Icon](dist/png/128px/sun-cloud-rain.png)
 # Weather Iconic
 
 </div>
@@ -7,6 +8,7 @@
 A minimal weather iconset containing 63 icons available as **React components**, **Vue components**, **optimized SVGs** and **sprite collections**. 
 
 ## ✨Features
+- 63 minimal weather icons
 - TypeScript support with auto-completion
 - Tree-shaking for optimal bundle sizes
 - Accessibility features (ARIA labels)
@@ -17,6 +19,17 @@ A minimal weather iconset containing 63 icons available as **React components**,
 
 > [!NOTE]
 > Originally made for the weather app [temps](https://jackd248.github.io/temps/).
+
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+  - [React Components](#react-components)
+  - [Vue Components](#vue-components)
+  - [Webfonts](#webfonts)
+  - [PNG Images](#png-images)
+  - [SVG Sprites](#svg-sprites)
+- [Icons](#icons)
+- [Development](#development)
 
 ## 🔥 Installation
 
@@ -84,271 +97,271 @@ All 63 weather icons with visual previews:
 <tr>
   <td align="center">
     <img src="dist/png/48px/barometer.png" width="32" height="32" alt="barometer"><br>
-    <sub><code>barometer</code></sub>
+    <sub style="display:inline-block;height:40px;"><code>barometer</code></sub>
   </td>
   <td align="center">
     <img src="dist/png/48px/celsius.png" width="32" height="32" alt="celsius"><br>
-    <sub><code>celsius</code></sub>
+    <sub style="display:inline-block;height:40px;"><code>celsius</code></sub>
   </td>
   <td align="center">
     <img src="dist/png/48px/cloud.png" width="32" height="32" alt="cloud"><br>
-    <sub><code>cloud</code></sub>
+    <sub style="display:inline-block;height:40px;"><code>cloud</code></sub>
   </td>
   <td align="center">
     <img src="dist/png/48px/cloud-down.png" width="32" height="32" alt="cloud-down"><br>
-    <sub><code>cloud-down</code></sub>
+    <sub style="display:inline-block;height:40px;"><code>cloud-down</code></sub>
   </td>
   <td align="center">
     <img src="dist/png/48px/cloud-fog.png" width="32" height="32" alt="cloud-fog"><br>
-    <sub><code>cloud-fog</code></sub>
+    <sub style="display:inline-block;height:40px;"><code>cloud-fog</code></sub>
   </td>
   <td align="center">
     <img src="dist/png/48px/cloud-rain.png" width="32" height="32" alt="cloud-rain"><br>
-    <sub><code>cloud-rain</code></sub>
+    <sub style="display:inline-block;height:40px;"><code>cloud-rain</code></sub>
   </td>
   <td align="center">
     <img src="dist/png/48px/cloud-rain-single.png" width="32" height="32" alt="cloud-rain-single"><br>
-    <sub><code>cloud-rain-single</code></sub>
+    <sub style="display:inline-block;height:40px;"><code>cloud-rain-single</code></sub>
   </td>
 </tr>
 <tr>
   <td align="center">
     <img src="dist/png/48px/cloud-snow.png" width="32" height="32" alt="cloud-snow"><br>
-    <sub><code>cloud-snow</code></sub>
+    <sub style="display:inline-block;height:40px;"><code>cloud-snow</code></sub>
   </td>
   <td align="center">
     <img src="dist/png/48px/cloud-snow-single.png" width="32" height="32" alt="cloud-snow-single"><br>
-    <sub><code>cloud-snow-single</code></sub>
+    <sub style="display:inline-block;height:40px;"><code>cloud-snow-single</code></sub>
   </td>
   <td align="center">
     <img src="dist/png/48px/cloud-up.png" width="32" height="32" alt="cloud-up"><br>
-    <sub><code>cloud-up</code></sub>
+    <sub style="display:inline-block;height:40px;"><code>cloud-up</code></sub>
   </td>
   <td align="center">
     <img src="dist/png/48px/cloud-wind.png" width="32" height="32" alt="cloud-wind"><br>
-    <sub><code>cloud-wind</code></sub>
+    <sub style="display:inline-block;height:40px;"><code>cloud-wind</code></sub>
   </td>
   <td align="center">
     <img src="dist/png/48px/clouds.png" width="32" height="32" alt="clouds"><br>
-    <sub><code>clouds</code></sub>
+    <sub style="display:inline-block;height:40px;"><code>clouds</code></sub>
   </td>
   <td align="center">
     <img src="dist/png/48px/compass.png" width="32" height="32" alt="compass"><br>
-    <sub><code>compass</code></sub>
+    <sub style="display:inline-block;height:40px;"><code>compass</code></sub>
   </td>
   <td align="center">
     <img src="dist/png/48px/compass-east.png" width="32" height="32" alt="compass-east"><br>
-    <sub><code>compass-east</code></sub>
+    <sub style="display:inline-block;height:40px;"><code>compass-east</code></sub>
   </td>
 </tr>
 <tr>
   <td align="center">
     <img src="dist/png/48px/compass-north.png" width="32" height="32" alt="compass-north"><br>
-    <sub><code>compass-north</code></sub>
+    <sub style="display:inline-block;height:40px;"><code>compass-north</code></sub>
   </td>
   <td align="center">
     <img src="dist/png/48px/compass-north-east.png" width="32" height="32" alt="compass-north-east"><br>
-    <sub><code>compass-north-east</code></sub>
+    <sub style="display:inline-block;height:40px;"><code>compass-north-east</code></sub>
   </td>
   <td align="center">
     <img src="dist/png/48px/compass-north-west.png" width="32" height="32" alt="compass-north-west"><br>
-    <sub><code>compass-north-west</code></sub>
+    <sub style="display:inline-block;height:40px;"><code>compass-north-west</code></sub>
   </td>
   <td align="center">
     <img src="dist/png/48px/compass-south.png" width="32" height="32" alt="compass-south"><br>
-    <sub><code>compass-south</code></sub>
+    <sub style="display:inline-block;height:40px;"><code>compass-south</code></sub>
   </td>
   <td align="center">
     <img src="dist/png/48px/compass-south-east.png" width="32" height="32" alt="compass-south-east"><br>
-    <sub><code>compass-south-east</code></sub>
+    <sub style="display:inline-block;height:40px;"><code>compass-south-east</code></sub>
   </td>
   <td align="center">
     <img src="dist/png/48px/compass-south-west.png" width="32" height="32" alt="compass-south-west"><br>
-    <sub><code>compass-south-west</code></sub>
+    <sub style="display:inline-block;height:40px;"><code>compass-south-west</code></sub>
   </td>
   <td align="center">
     <img src="dist/png/48px/compass-west.png" width="32" height="32" alt="compass-west"><br>
-    <sub><code>compass-west</code></sub>
+    <sub style="display:inline-block;height:40px;"><code>compass-west</code></sub>
   </td>
 </tr>
 <tr>
   <td align="center">
     <img src="dist/png/48px/fahrenheit.png" width="32" height="32" alt="fahrenheit"><br>
-    <sub><code>fahrenheit</code></sub>
+    <sub style="display:inline-block;height:40px;"><code>fahrenheit</code></sub>
   </td>
   <td align="center">
     <img src="dist/png/48px/fog.png" width="32" height="32" alt="fog"><br>
-    <sub><code>fog</code></sub>
+    <sub style="display:inline-block;height:40px;"><code>fog</code></sub>
   </td>
   <td align="center">
     <img src="dist/png/48px/hail.png" width="32" height="32" alt="hail"><br>
-    <sub><code>hail</code></sub>
+    <sub style="display:inline-block;height:40px;"><code>hail</code></sub>
   </td>
   <td align="center">
     <img src="dist/png/48px/lightning.png" width="32" height="32" alt="lightning"><br>
-    <sub><code>lightning</code></sub>
+    <sub style="display:inline-block;height:40px;"><code>lightning</code></sub>
   </td>
   <td align="center">
     <img src="dist/png/48px/moon.png" width="32" height="32" alt="moon"><br>
-    <sub><code>moon</code></sub>
+    <sub style="display:inline-block;height:40px;"><code>moon</code></sub>
   </td>
   <td align="center">
     <img src="dist/png/48px/moon-cloud.png" width="32" height="32" alt="moon-cloud"><br>
-    <sub><code>moon-cloud</code></sub>
+    <sub style="display:inline-block;height:40px;"><code>moon-cloud</code></sub>
   </td>
   <td align="center">
     <img src="dist/png/48px/moon-cloud-lightning.png" width="32" height="32" alt="moon-cloud-lightning"><br>
-    <sub><code>moon-cloud-lightning</code></sub>
+    <sub style="display:inline-block;height:40px;"><code>moon-cloud-lightning</code></sub>
   </td>
 </tr>
 <tr>
   <td align="center">
     <img src="dist/png/48px/moon-cloud-rain.png" width="32" height="32" alt="moon-cloud-rain"><br>
-    <sub><code>moon-cloud-rain</code></sub>
+    <sub style="display:inline-block;height:40px;"><code>moon-cloud-rain</code></sub>
   </td>
   <td align="center">
     <img src="dist/png/48px/moon-cloud-snow.png" width="32" height="32" alt="moon-cloud-snow"><br>
-    <sub><code>moon-cloud-snow</code></sub>
+    <sub style="display:inline-block;height:40px;"><code>moon-cloud-snow</code></sub>
   </td>
   <td align="center">
     <img src="dist/png/48px/moon-cloud-wind.png" width="32" height="32" alt="moon-cloud-wind"><br>
-    <sub><code>moon-cloud-wind</code></sub>
+    <sub style="display:inline-block;height:40px;"><code>moon-cloud-wind</code></sub>
   </td>
   <td align="center">
     <img src="dist/png/48px/moon-first-quarter.png" width="32" height="32" alt="moon-first-quarter"><br>
-    <sub><code>moon-first-quarter</code></sub>
+    <sub style="display:inline-block;height:40px;"><code>moon-first-quarter</code></sub>
   </td>
   <td align="center">
     <img src="dist/png/48px/moon-fog.png" width="32" height="32" alt="moon-fog"><br>
-    <sub><code>moon-fog</code></sub>
+    <sub style="display:inline-block;height:40px;"><code>moon-fog</code></sub>
   </td>
   <td align="center">
     <img src="dist/png/48px/moon-fullmoon.png" width="32" height="32" alt="moon-fullmoon"><br>
-    <sub><code>moon-fullmoon</code></sub>
+    <sub style="display:inline-block;height:40px;"><code>moon-fullmoon</code></sub>
   </td>
   <td align="center">
     <img src="dist/png/48px/moon-last-quarter.png" width="32" height="32" alt="moon-last-quarter"><br>
-    <sub><code>moon-last-quarter</code></sub>
+    <sub style="display:inline-block;height:40px;"><code>moon-last-quarter</code></sub>
   </td>
 </tr>
 <tr>
   <td align="center">
     <img src="dist/png/48px/moon-newmoon.png" width="32" height="32" alt="moon-newmoon"><br>
-    <sub><code>moon-newmoon</code></sub>
+    <sub style="display:inline-block;height:40px;"><code>moon-newmoon</code></sub>
   </td>
   <td align="center">
     <img src="dist/png/48px/moon-waning-crescent.png" width="32" height="32" alt="moon-waning-crescent"><br>
-    <sub><code>moon-waning-crescent</code></sub>
+    <sub style="display:inline-block;height:40px;"><code>moon-waning-crescent</code></sub>
   </td>
   <td align="center">
     <img src="dist/png/48px/moon-waning-gibbous.png" width="32" height="32" alt="moon-waning-gibbous"><br>
-    <sub><code>moon-waning-gibbous</code></sub>
+    <sub style="display:inline-block;height:40px;"><code>moon-waning-gibbous</code></sub>
   </td>
   <td align="center">
     <img src="dist/png/48px/moon-waxing-crescent.png" width="32" height="32" alt="moon-waxing-crescent"><br>
-    <sub><code>moon-waxing-crescent</code></sub>
+    <sub style="display:inline-block;height:40px;"><code>moon-waxing-crescent</code></sub>
   </td>
   <td align="center">
     <img src="dist/png/48px/moon-waxing-gibbous.png" width="32" height="32" alt="moon-waxing-gibbous"><br>
-    <sub><code>moon-waxing-gibbous</code></sub>
+    <sub style="display:inline-block;height:40px;"><code>moon-waxing-gibbous</code></sub>
   </td>
   <td align="center">
     <img src="dist/png/48px/rainbow.png" width="32" height="32" alt="rainbow"><br>
-    <sub><code>rainbow</code></sub>
+    <sub style="display:inline-block;height:40px;"><code>rainbow</code></sub>
   </td>
   <td align="center">
     <img src="dist/png/48px/raindrop.png" width="32" height="32" alt="raindrop"><br>
-    <sub><code>raindrop</code></sub>
+    <sub style="display:inline-block;height:40px;"><code>raindrop</code></sub>
   </td>
 </tr>
 <tr>
   <td align="center">
     <img src="dist/png/48px/refresh.png" width="32" height="32" alt="refresh"><br>
-    <sub><code>refresh</code></sub>
+    <sub style="display:inline-block;height:40px;"><code>refresh</code></sub>
   </td>
   <td align="center">
     <img src="dist/png/48px/snowflake.png" width="32" height="32" alt="snowflake"><br>
-    <sub><code>snowflake</code></sub>
+    <sub style="display:inline-block;height:40px;"><code>snowflake</code></sub>
   </td>
   <td align="center">
     <img src="dist/png/48px/sun.png" width="32" height="32" alt="sun"><br>
-    <sub><code>sun</code></sub>
+    <sub style="display:inline-block;height:40px;"><code>sun</code></sub>
   </td>
   <td align="center">
     <img src="dist/png/48px/sun-cloud.png" width="32" height="32" alt="sun-cloud"><br>
-    <sub><code>sun-cloud</code></sub>
+    <sub style="display:inline-block;height:40px;"><code>sun-cloud</code></sub>
   </td>
   <td align="center">
     <img src="dist/png/48px/sun-cloud-lightning.png" width="32" height="32" alt="sun-cloud-lightning"><br>
-    <sub><code>sun-cloud-lightning</code></sub>
+    <sub style="display:inline-block;height:40px;"><code>sun-cloud-lightning</code></sub>
   </td>
   <td align="center">
     <img src="dist/png/48px/sun-cloud-rain.png" width="32" height="32" alt="sun-cloud-rain"><br>
-    <sub><code>sun-cloud-rain</code></sub>
+    <sub style="display:inline-block;height:40px;"><code>sun-cloud-rain</code></sub>
   </td>
   <td align="center">
     <img src="dist/png/48px/sun-cloud-snow.png" width="32" height="32" alt="sun-cloud-snow"><br>
-    <sub><code>sun-cloud-snow</code></sub>
+    <sub style="display:inline-block;height:40px;"><code>sun-cloud-snow</code></sub>
   </td>
 </tr>
 <tr>
   <td align="center">
     <img src="dist/png/48px/sun-cloud-wind.png" width="32" height="32" alt="sun-cloud-wind"><br>
-    <sub><code>sun-cloud-wind</code></sub>
+    <sub style="display:inline-block;height:40px;"><code>sun-cloud-wind</code></sub>
   </td>
   <td align="center">
     <img src="dist/png/48px/sun-fog.png" width="32" height="32" alt="sun-fog"><br>
-    <sub><code>sun-fog</code></sub>
+    <sub style="display:inline-block;height:40px;"><code>sun-fog</code></sub>
   </td>
   <td align="center">
     <img src="dist/png/48px/sun-low.png" width="32" height="32" alt="sun-low"><br>
-    <sub><code>sun-low</code></sub>
+    <sub style="display:inline-block;height:40px;"><code>sun-low</code></sub>
   </td>
   <td align="center">
     <img src="dist/png/48px/sun-medium.png" width="32" height="32" alt="sun-medium"><br>
-    <sub><code>sun-medium</code></sub>
+    <sub style="display:inline-block;height:40px;"><code>sun-medium</code></sub>
   </td>
   <td align="center">
     <img src="dist/png/48px/sunrise.png" width="32" height="32" alt="sunrise"><br>
-    <sub><code>sunrise</code></sub>
+    <sub style="display:inline-block;height:40px;"><code>sunrise</code></sub>
   </td>
   <td align="center">
     <img src="dist/png/48px/sunset.png" width="32" height="32" alt="sunset"><br>
-    <sub><code>sunset</code></sub>
+    <sub style="display:inline-block;height:40px;"><code>sunset</code></sub>
   </td>
   <td align="center">
     <img src="dist/png/48px/thermometer-cold.png" width="32" height="32" alt="thermometer-cold"><br>
-    <sub><code>thermometer-cold</code></sub>
+    <sub style="display:inline-block;height:40px;"><code>thermometer-cold</code></sub>
   </td>
 </tr>
 <tr>
   <td align="center">
     <img src="dist/png/48px/thermometer-hot.png" width="32" height="32" alt="thermometer-hot"><br>
-    <sub><code>thermometer-hot</code></sub>
+    <sub style="display:inline-block;height:40px;"><code>thermometer-hot</code></sub>
   </td>
   <td align="center">
     <img src="dist/png/48px/thermometer-medium.png" width="32" height="32" alt="thermometer-medium"><br>
-    <sub><code>thermometer-medium</code></sub>
+    <sub style="display:inline-block;height:40px;"><code>thermometer-medium</code></sub>
   </td>
   <td align="center">
     <img src="dist/png/48px/tornado.png" width="32" height="32" alt="tornado"><br>
-    <sub><code>tornado</code></sub>
+    <sub style="display:inline-block;height:40px;"><code>tornado</code></sub>
   </td>
   <td align="center">
     <img src="dist/png/48px/umbrella.png" width="32" height="32" alt="umbrella"><br>
-    <sub><code>umbrella</code></sub>
+    <sub style="display:inline-block;height:40px;"><code>umbrella</code></sub>
   </td>
   <td align="center">
     <img src="dist/png/48px/wind.png" width="32" height="32" alt="wind"><br>
-    <sub><code>wind</code></sub>
+    <sub style="display:inline-block;height:40px;"><code>wind</code></sub>
   </td>
   <td align="center">
     <img src="dist/png/48px/wind-high.png" width="32" height="32" alt="wind-high"><br>
-    <sub><code>wind-high</code></sub>
+    <sub style="display:inline-block;height:40px;"><code>wind-high</code></sub>
   </td>
   <td align="center">
     <img src="dist/png/48px/windsock.png" width="32" height="32" alt="windsock"><br>
-    <sub><code>windsock</code></sub>
+    <sub style="display:inline-block;height:40px;"><code>windsock</code></sub>
   </td>
 </tr>
 </table>
