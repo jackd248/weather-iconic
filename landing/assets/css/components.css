@@ -49,15 +49,29 @@
 
 /* Hero Section Component */
 .hero {
-    background: var(--surface);
-    padding: 4rem 0 6rem;
+    background: linear-gradient(135deg, var(--surface) 0%, rgba(128, 187, 178, 0.05) 100%);
+    padding: 5rem 0 7rem;
     position: relative;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -30%;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(128, 187, 178, 0.1) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
 }
 
 .hero-content {
     display: grid;
-    grid-template-columns: 1fr auto;
-    gap: 4rem;
+    grid-template-columns: 1fr 400px;
+    gap: 5rem;
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
@@ -67,70 +81,292 @@
 }
 
 .hero-main {
-    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
 }
 
-.hero-preview {
+.hero-visual {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.logo {
+/* Hero Badge */
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(128, 187, 178, 0.1);
+    border: 1px solid rgba(128, 187, 178, 0.2);
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--primary-dark);
+    width: fit-content;
+}
+
+.badge-icon {
+    font-size: 0.75rem;
+}
+
+.badge-separator {
+    color: var(--primary-color);
+    opacity: 0.6;
+}
+
+/* Hero Title */
+.hero-title {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.hero-logo {
+    width: 56px;
+    height: 56px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(128, 187, 178, 0.2);
+}
+
+.hero-title h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin: 0;
+    line-height: 1.1;
+}
+
+.hero-tagline {
+    font-size: 1.125rem;
+    color: var(--primary-color);
+    font-weight: 500;
+    margin: 0;
+}
+
+/* Hero Description */
+.hero-description {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    color: var(--text-secondary);
+    margin: 0;
+    max-width: 500px;
+}
+
+.hero-description strong {
+    color: var(--primary-dark);
+    font-weight: 600;
+}
+
+/* Hero Stats */
+.hero-stats {
+    display: flex;
+    gap: 2rem;
+    margin: 1rem 0;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    line-height: 1;
+}
+
+.stat-label {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Hero Actions */
+.hero-actions {
+    display: flex;
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.btn-large {
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 12px;
+}
+
+.btn-icon {
+    font-size: 1rem;
+}
+
+/* Quick Install */
+.hero-quick-install {
     display: flex;
     align-items: center;
     gap: 1rem;
-    margin-bottom: 1rem;
+    margin-top: 2rem;
 }
 
-.logo-icon {
-    width: 48px;
-    height: 48px;
+.quick-install-label {
+    font-size: 0.875rem;
+    color: var(--text-tertiary);
+    font-weight: 500;
+}
+
+.quick-install-command {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--background);
+    border: 1px solid var(--border-light);
+    padding: 0.5rem 0.75rem;
     border-radius: 8px;
+    font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
 }
 
-/* Icon Slideshow Component */
-.icon-slideshow {
+.quick-install-command code {
+    font-size: 0.875rem;
+    color: var(--text-primary);
+    background: none;
+}
+
+.copy-btn-mini {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 0.875rem;
+    opacity: 0.6;
+    transition: opacity 0.2s ease;
+    padding: 0.25rem;
+    border-radius: 4px;
+}
+
+.copy-btn-mini:hover {
+    opacity: 1;
+    background: var(--surface-hover);
+}
+
+/* Icon Showcase Component */
+.icon-showcase {
+    position: relative;
+    width: 350px;
+    height: 350px;
+}
+
+.showcase-grid {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.showcase-icon {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 20px rgba(128, 187, 178, 0.15);
+    transition: all 0.6s ease;
+    border: 1px solid rgba(128, 187, 178, 0.1);
+}
+
+.showcase-icon svg {
+    width: 36px;
+    height: 36px;
+    fill: var(--primary-color);
+    transition: all 0.4s ease;
+}
+
+.showcase-icon-1 {
+    grid-column: 1;
+    grid-row: 1;
+    animation: float 3s ease-in-out infinite;
+}
+
+.showcase-icon-2 {
+    grid-column: 3;
+    grid-row: 1;
+    animation: float 3s ease-in-out infinite 0.5s;
+}
+
+.showcase-icon-3 {
+    grid-column: 2;
+    grid-row: 2;
+    animation: float 3s ease-in-out infinite 1s;
+    transform: scale(1.1);
+}
+
+.showcase-icon-4 {
+    grid-column: 1;
+    grid-row: 3;
+    animation: float 3s ease-in-out infinite 1.5s;
+}
+
+.showcase-icon-5 {
+    grid-column: 3;
+    grid-row: 3;
+    animation: float 3s ease-in-out infinite 2s;
+}
+
+.showcase-icon-6 {
+    grid-column: 2;
+    grid-row: 3;
+    animation: float 3s ease-in-out infinite 2.5s;
+}
+
+.showcase-icon:hover {
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 8px 30px rgba(128, 187, 178, 0.25);
+}
+
+.showcase-icon:hover svg {
+    fill: var(--primary-dark);
+    transform: scale(1.2);
+}
+
+.showcase-glow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 200px;
     height: 200px;
-    position: relative;
-}
-
-.slideshow-container {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    background: rgba(255, 255, 255, 0.1);
+    background: radial-gradient(circle, rgba(128, 187, 178, 0.1) 0%, transparent 70%);
     border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    backdrop-filter: blur(10px);
-    border: 2px solid rgba(255, 255, 255, 0.2);
+    z-index: -1;
+    animation: pulse 4s ease-in-out infinite;
 }
 
-.slide {
-    position: absolute;
-    opacity: 0;
-    transform: scale(0.8);
-    transition: all 0.8s ease-in-out;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-10px) rotate(2deg);
+    }
 }
 
-.slide.active {
-    opacity: 1;
-    transform: scale(1);
-}
-
-.preview-icon {
-    width: 80px;
-    height: 80px;
-    fill: var(--primary-dark);
-    filter: drop-shadow(0 4px 8px rgba(128, 187, 178, 0.3));
+@keyframes pulse {
+    0%, 100% {
+        opacity: 0.3;
+        transform: translate(-50%, -50%) scale(1);
+    }
+    50% {
+        opacity: 0.6;
+        transform: translate(-50%, -50%) scale(1.1);
+    }
 }
 
 /* Weather Card Component */
