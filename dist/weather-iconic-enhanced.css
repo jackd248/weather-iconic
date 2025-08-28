@@ -1,16 +1,323 @@
-/* Weather Iconic - Enhanced CSS */
+/* Weather Iconic - Enhanced CSS with Dark Mode Support */
+
+/* CSS Custom Properties for theming */
+:root {
+  --weather-icon-color: #333333;
+  --weather-icon-bg: transparent;
+  --weather-preview-bg: #f5f5f5;
+  --weather-preview-border: #ddd;
+  --weather-label-color: #666666;
+  --weather-label-bg: #ddd;
+  
+  /* Weather-specific colors */
+  --weather-sun-color: #ffa500;
+  --weather-cloud-color: #87ceeb;
+  --weather-rain-color: #4682b4;
+  --weather-snow-color: #f0f8ff;
+  --weather-lightning-color: #ffff00;
+  
+  /* Semantic colors */
+  --weather-primary: #007bff;
+  --weather-secondary: #6c757d;
+  --weather-success: #28a745;
+  --weather-info: #17a2b8;
+  --weather-warning: #ffc107;
+  --weather-danger: #dc3545;
+}
+
+/* Dark mode variables */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --weather-icon-color: #ffffff;
+    --weather-icon-bg: transparent;
+    --weather-preview-bg: #2d3748;
+    --weather-preview-border: #4a5568;
+    --weather-label-color: #a0aec0;
+    --weather-label-bg: #4a5568;
+    
+    /* Weather-specific colors - adjusted for dark mode */
+    --weather-sun-color: #fbb040;
+    --weather-cloud-color: #9ca3af;
+    --weather-rain-color: #60a5fa;
+    --weather-snow-color: #e5e7eb;
+    --weather-lightning-color: #fde047;
+    
+    /* Semantic colors - dark mode variants */
+    --weather-primary: #3b82f6;
+    --weather-secondary: #9ca3af;
+    --weather-success: #10b981;
+    --weather-info: #06b6d4;
+    --weather-warning: #f59e0b;
+    --weather-danger: #ef4444;
+  }
+}
+
+/* Manual dark mode toggle support */
+[data-theme="dark"] {
+  --weather-icon-color: #ffffff;
+  --weather-icon-bg: transparent;
+  --weather-preview-bg: #2d3748;
+  --weather-preview-border: #4a5568;
+  --weather-label-color: #a0aec0;
+  --weather-label-bg: #4a5568;
+  
+  /* Weather-specific colors - adjusted for dark mode */
+  --weather-sun-color: #fbb040;
+  --weather-cloud-color: #9ca3af;
+  --weather-rain-color: #60a5fa;
+  --weather-snow-color: #e5e7eb;
+  --weather-lightning-color: #fde047;
+  
+  /* Semantic colors - dark mode variants */
+  --weather-primary: #3b82f6;
+  --weather-secondary: #9ca3af;
+  --weather-success: #10b981;
+  --weather-info: #06b6d4;
+  --weather-warning: #f59e0b;
+  --weather-danger: #ef4444;
+}
+
+[data-theme="light"] {
+  --weather-icon-color: #333333;
+  --weather-icon-bg: transparent;
+  --weather-preview-bg: #f5f5f5;
+  --weather-preview-border: #ddd;
+  --weather-label-color: #666666;
+  --weather-label-bg: #ddd;
+  
+  /* Weather-specific colors */
+  --weather-sun-color: #ffa500;
+  --weather-cloud-color: #87ceeb;
+  --weather-rain-color: #4682b4;
+  --weather-snow-color: #f0f8ff;
+  --weather-lightning-color: #ffff00;
+  
+  /* Semantic colors */
+  --weather-primary: #007bff;
+  --weather-secondary: #6c757d;
+  --weather-success: #28a745;
+  --weather-info: #17a2b8;
+  --weather-warning: #ffc107;
+  --weather-danger: #dc3545;
+}
+
+/* Font definition with corrected paths */
 @font-face {
-  font-family: 'weather-iconic';
-  src: url('./fonts/weather-iconic.woff2') format('woff2'),
-       url('./fonts/weather-iconic.woff') format('woff'),
-       url('./fonts/weather-iconic.ttf') format('truetype');
+  font-family: "weather-iconic";
+  src: url("fonts/weather-iconic.woff2") format("woff2"),
+       url("fonts/weather-iconic.woff") format("woff"),
+       url("fonts/weather-iconic.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
+/* Base weather icon styles with CSS variables */
+.weather:before {
+  font-family: weather-iconic !important;
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  color: var(--weather-icon-color);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Individual icon classes - same as original but with CSS variables support */
+.weather.weather-barometer:before {
+  content: "\e900";
+}
+.weather.weather-celsius:before {
+  content: "\e901";
+}
+.weather.weather-cloud-down:before {
+  content: "\e902";
+}
+.weather.weather-cloud-fog:before {
+  content: "\e903";
+}
+.weather.weather-cloud-rain-single:before {
+  content: "\e904";
+}
+.weather.weather-cloud-rain:before {
+  content: "\e905";
+}
+.weather.weather-cloud-snow-single:before {
+  content: "\e906";
+}
+.weather.weather-cloud-snow:before {
+  content: "\e907";
+}
+.weather.weather-cloud-up:before {
+  content: "\e908";
+}
+.weather.weather-cloud-wind:before {
+  content: "\e909";
+}
+.weather.weather-cloud:before {
+  content: "\e90a";
+}
+.weather.weather-clouds:before {
+  content: "\e90b";
+}
+.weather.weather-compass-east:before {
+  content: "\e90c";
+}
+.weather.weather-compass-north-east:before {
+  content: "\e90d";
+}
+.weather.weather-compass-north-west:before {
+  content: "\e90e";
+}
+.weather.weather-compass-north:before {
+  content: "\e90f";
+}
+.weather.weather-compass-south-east:before {
+  content: "\e910";
+}
+.weather.weather-compass-south-west:before {
+  content: "\e911";
+}
+.weather.weather-compass-south:before {
+  content: "\e912";
+}
+.weather.weather-compass-west:before {
+  content: "\e913";
+}
+.weather.weather-compass:before {
+  content: "\e914";
+}
+.weather.weather-fahrenheit:before {
+  content: "\e915";
+}
+.weather.weather-fog:before {
+  content: "\e916";
+}
+.weather.weather-hail:before {
+  content: "\e917";
+}
+.weather.weather-lightning:before {
+  content: "\e918";
+}
+.weather.weather-moon-cloud-lightning:before {
+  content: "\e919";
+}
+.weather.weather-moon-cloud-rain:before {
+  content: "\e91a";
+}
+.weather.weather-moon-cloud-snow:before {
+  content: "\e91b";
+}
+.weather.weather-moon-cloud-wind:before {
+  content: "\e91c";
+}
+.weather.weather-moon-cloud:before {
+  content: "\e91d";
+}
+.weather.weather-moon-first-quarter:before {
+  content: "\e91e";
+}
+.weather.weather-moon-fog:before {
+  content: "\e91f";
+}
+.weather.weather-moon-fullmoon:before {
+  content: "\e920";
+}
+.weather.weather-moon-last-quarter:before {
+  content: "\e921";
+}
+.weather.weather-moon-newmoon:before {
+  content: "\e922";
+}
+.weather.weather-moon-waning-crescent:before {
+  content: "\e923";
+}
+.weather.weather-moon-waning-gibbous:before {
+  content: "\e924";
+}
+.weather.weather-moon-waxing-crescent:before {
+  content: "\e925";
+}
+.weather.weather-moon-waxing-gibbous:before {
+  content: "\e926";
+}
+.weather.weather-moon:before {
+  content: "\e927";
+}
+.weather.weather-rainbow:before {
+  content: "\e928";
+}
+.weather.weather-raindrop:before {
+  content: "\e929";
+}
+.weather.weather-refresh:before {
+  content: "\e92a";
+}
+.weather.weather-snowflake:before {
+  content: "\e92b";
+}
+.weather.weather-sun-cloud-lightning:before {
+  content: "\e92c";
+}
+.weather.weather-sun-cloud-rain:before {
+  content: "\e92d";
+}
+.weather.weather-sun-cloud-snow:before {
+  content: "\e92e";
+}
+.weather.weather-sun-cloud-wind:before {
+  content: "\e92f";
+}
+.weather.weather-sun-cloud:before {
+  content: "\e930";
+}
+.weather.weather-sun-fog:before {
+  content: "\e931";
+}
+.weather.weather-sun-low:before {
+  content: "\e932";
+}
+.weather.weather-sun-medium:before {
+  content: "\e933";
+}
+.weather.weather-sun:before {
+  content: "\e934";
+}
+.weather.weather-sunrise:before {
+  content: "\e935";
+}
+.weather.weather-sunset:before {
+  content: "\e936";
+}
+.weather.weather-thermometer-cold:before {
+  content: "\e937";
+}
+.weather.weather-thermometer-hot:before {
+  content: "\e938";
+}
+.weather.weather-thermometer-medium:before {
+  content: "\e939";
+}
+.weather.weather-tornado:before {
+  content: "\e93a";
+}
+.weather.weather-umbrella:before {
+  content: "\e93b";
+}
+.weather.weather-wind-high:before {
+  content: "\e93c";
+}
+.weather.weather-wind:before {
+  content: "\e93d";
+}
+.weather.weather-windsock:before {
+  content: "\e93e";
+}
+
+/* Alternative class names for modern usage */
 .weather-icon {
-  /* Base icon styles */
   font-family: 'weather-iconic' !important;
   speak: never;
   font-style: normal;
@@ -18,205 +325,12 @@
   font-variant: normal;
   text-transform: none;
   line-height: 1;
-  
-  /* Better Font Rendering */
+  color: var(--weather-icon-color);
+  background: var(--weather-icon-bg);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  
-  /* Modern improvements */
   font-feature-settings: normal;
   font-variation-settings: normal;
-}
-
-/* Individual icon classes */
-.weather-barometer:before {
-  content: "\e900";
-}
-.weather-celsius:before {
-  content: "\e901";
-}
-.weather-cloud-down:before {
-  content: "\e902";
-}
-.weather-cloud-fog:before {
-  content: "\e903";
-}
-.weather-cloud-rain-single:before {
-  content: "\e904";
-}
-.weather-cloud-rain:before {
-  content: "\e905";
-}
-.weather-cloud-snow-single:before {
-  content: "\e906";
-}
-.weather-cloud-snow:before {
-  content: "\e907";
-}
-.weather-cloud-up:before {
-  content: "\e908";
-}
-.weather-cloud-wind:before {
-  content: "\e909";
-}
-.weather-cloud:before {
-  content: "\e90a";
-}
-.weather-clouds:before {
-  content: "\e90b";
-}
-.weather-compass-east:before {
-  content: "\e90c";
-}
-.weather-compass-north-east:before {
-  content: "\e90d";
-}
-.weather-compass-north-west:before {
-  content: "\e90e";
-}
-.weather-compass-north:before {
-  content: "\e90f";
-}
-.weather-compass-south-east:before {
-  content: "\e910";
-}
-.weather-compass-south-west:before {
-  content: "\e911";
-}
-.weather-compass-south:before {
-  content: "\e912";
-}
-.weather-compass-west:before {
-  content: "\e913";
-}
-.weather-compass:before {
-  content: "\e914";
-}
-.weather-fahrenheit:before {
-  content: "\e915";
-}
-.weather-fog:before {
-  content: "\e916";
-}
-.weather-hail:before {
-  content: "\e917";
-}
-.weather-lightning:before {
-  content: "\e918";
-}
-.weather-moon-cloud-lightning:before {
-  content: "\e919";
-}
-.weather-moon-cloud-rain:before {
-  content: "\e91a";
-}
-.weather-moon-cloud-snow:before {
-  content: "\e91b";
-}
-.weather-moon-cloud-wind:before {
-  content: "\e91c";
-}
-.weather-moon-cloud:before {
-  content: "\e91d";
-}
-.weather-moon-first-quarter:before {
-  content: "\e91e";
-}
-.weather-moon-fog:before {
-  content: "\e91f";
-}
-.weather-moon-fullmoon:before {
-  content: "\e920";
-}
-.weather-moon-last-quarter:before {
-  content: "\e921";
-}
-.weather-moon-newmoon:before {
-  content: "\e922";
-}
-.weather-moon-waning-crescent:before {
-  content: "\e923";
-}
-.weather-moon-waning-gibbous:before {
-  content: "\e924";
-}
-.weather-moon-waxing-crescent:before {
-  content: "\e925";
-}
-.weather-moon-waxing-gibbous:before {
-  content: "\e926";
-}
-.weather-moon:before {
-  content: "\e927";
-}
-.weather-rainbow:before {
-  content: "\e928";
-}
-.weather-raindrop:before {
-  content: "\e929";
-}
-.weather-refresh:before {
-  content: "\e92a";
-}
-.weather-snowflake:before {
-  content: "\e92b";
-}
-.weather-sun-cloud-lightning:before {
-  content: "\e92c";
-}
-.weather-sun-cloud-rain:before {
-  content: "\e92d";
-}
-.weather-sun-cloud-snow:before {
-  content: "\e92e";
-}
-.weather-sun-cloud-wind:before {
-  content: "\e92f";
-}
-.weather-sun-cloud:before {
-  content: "\e930";
-}
-.weather-sun-fog:before {
-  content: "\e931";
-}
-.weather-sun-low:before {
-  content: "\e932";
-}
-.weather-sun-medium:before {
-  content: "\e933";
-}
-.weather-sun:before {
-  content: "\e934";
-}
-.weather-sunrise:before {
-  content: "\e935";
-}
-.weather-sunset:before {
-  content: "\e936";
-}
-.weather-thermometer-cold:before {
-  content: "\e937";
-}
-.weather-thermometer-hot:before {
-  content: "\e938";
-}
-.weather-thermometer-medium:before {
-  content: "\e939";
-}
-.weather-tornado:before {
-  content: "\e93a";
-}
-.weather-umbrella:before {
-  content: "\e93b";
-}
-.weather-wind-high:before {
-  content: "\e93c";
-}
-.weather-wind:before {
-  content: "\e93d";
-}
-.weather-windsock:before {
-  content: "\e93e";
 }
 
 /* Size variations */
@@ -247,17 +361,50 @@
   50% { opacity: 0.5; }
 }
 
-/* Color utilities */
-.weather-icon--primary { color: #007bff; }
-.weather-icon--secondary { color: #6c757d; }
-.weather-icon--success { color: #28a745; }
-.weather-icon--info { color: #17a2b8; }
-.weather-icon--warning { color: #ffc107; }
-.weather-icon--danger { color: #dc3545; }
+/* Color utilities using CSS variables for dark mode support */
+.weather-icon--primary { color: var(--weather-primary); }
+.weather-icon--secondary { color: var(--weather-secondary); }
+.weather-icon--success { color: var(--weather-success); }
+.weather-icon--info { color: var(--weather-info); }
+.weather-icon--warning { color: var(--weather-warning); }
+.weather-icon--danger { color: var(--weather-danger); }
 
-/* Weather-specific colors */
-.weather-sun { color: #ffa500; }
-.weather-cloud { color: #87ceeb; }
-.weather-rain { color: #4682b4; }
-.weather-snow { color: #f0f8ff; }
-.weather-lightning { color: #ffff00; }
+/* Weather-specific colors using CSS variables */
+.weather-sun { color: var(--weather-sun-color); }
+.weather-cloud { color: var(--weather-cloud-color); }
+.weather-rain { color: var(--weather-rain-color); }
+.weather-snow { color: var(--weather-snow-color); }
+.weather-lightning { color: var(--weather-lightning-color); }
+
+/* Dark mode utility classes */
+.weather-icon--dark-mode {
+  color: var(--weather-icon-color);
+}
+
+/* Preview container styles for dark mode support */
+.weather-preview {
+  background: var(--weather-preview-bg);
+  border: 1px solid var(--weather-preview-border);
+  border-radius: 3px;
+  color: var(--weather-icon-color);
+}
+
+.weather-preview .label {
+  background: var(--weather-label-bg);
+  color: var(--weather-label-color);
+}
+
+/* Theme toggle support */
+.weather-theme-toggle {
+  background: var(--weather-icon-bg);
+  border: 1px solid var(--weather-preview-border);
+  color: var(--weather-icon-color);
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.weather-theme-toggle:hover {
+  background: var(--weather-preview-bg);
+}
