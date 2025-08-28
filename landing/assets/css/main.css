@@ -3,8 +3,8 @@
    Import all CSS modules
    ======================================== */
 
-@import url('utilities.css');
-@import url('components.css');
+@import url('./utilities.css');
+@import url('./components.css');
 
 /* Additional main styles that don't fit in utilities or components */
 

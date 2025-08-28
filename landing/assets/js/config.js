@@ -31,10 +31,10 @@ window.WeatherIconic.config = {
         secondary: '#666666'
     },
 
-    // API endpoints
+    // API endpoints (relative to landing page root)
     endpoints: {
-        metadata: '../src/icons/metadata.json',
-        sprites: '../dist/sprites.svg'
+        metadata: './src/icons/metadata.json',
+        sprites: './dist/sprites.svg'
     },
 
     // Animation settings
@@ -46,6 +46,7 @@ window.WeatherIconic.config = {
     // Download settings
     downloads: {
         pngSizes: [64, 48, 32, 24, 16],
+        pngBasePath: './dist/png/',
         githubReleasesUrl: 'https://github.com/your-username/weather-iconic/releases/latest'
     },
 

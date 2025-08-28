@@ -21,7 +21,9 @@ let ICON_METADATA = null;
 // Load icon metadata to get accurate multi-color information
 async function loadIconMetadata() {
     try {
-        const response = await fetch('../src/icons/metadata.json');
+        const config = window.WeatherIconic?.config;
+        const metadataUrl = config?.endpoints?.metadata || './src/icons/metadata.json';
+        const response = await fetch(metadataUrl);
         const metadata = await response.json();
         ICON_METADATA = metadata;
         MULTI_COLOR_ICONS = metadata.multiColorIcons || [];
@@ -73,7 +75,9 @@ function loadSpriteContent() {
         return spriteLoadPromise;
     }
     
-    spriteLoadPromise = fetch('../dist/sprites.svg')
+    const config = window.WeatherIconic?.config;
+    const spritesUrl = config?.endpoints?.sprites || './dist/sprites.svg';
+    spriteLoadPromise = fetch(spritesUrl)
         .then(response => response.text())
         .then(svgText => {
             const parser = new DOMParser();
@@ -413,7 +417,9 @@ async function downloadIcon(iconName, format = 'svg') {
 
 async function downloadSVGIcon(iconName) {
     // Fetch the sprite SVG
-    const response = await fetch('../dist/sprites.svg');
+    const config = window.WeatherIconic?.config;
+    const spritesUrl = config?.endpoints?.sprites || './dist/sprites.svg';
+    const response = await fetch(spritesUrl);
     const svgText = await response.text();
     
     // Parse the SVG to find the specific icon
@@ -442,7 +448,9 @@ async function downloadSVGIcon(iconName) {
 
 async function downloadPNGIcon(iconName) {
     // Try to find PNG file in dist/png directory
-    const sizes = [64, 48, 32, 24, 16];
+    const config = window.WeatherIconic?.config;
+    const pngBasePath = config?.downloads?.pngBasePath || './dist/png/';
+    const sizes = config?.downloads?.pngSizes || [64, 48, 32, 24, 16];
     
     for (const size of sizes) {
         try {
@@ -451,9 +459,9 @@ async function downloadPNGIcon(iconName) {
             let pngUrl;
             
             if (isMultiColor) {
-                pngUrl = `../dist/png/${size}/${iconName}-teal-gray.png`;
+                pngUrl = `${pngBasePath}${size}/${iconName}-teal-gray.png`;
             } else {
-                pngUrl = `../dist/png/${size}/${iconName}.png`;
+                pngUrl = `${pngBasePath}${size}/${iconName}.png`;
             }
             
             const response = await fetch(pngUrl);
