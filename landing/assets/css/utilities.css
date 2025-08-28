@@ -1,0 +1,229 @@
+/* ========================================
+   WEATHER ICONIC - UTILITY STYLES
+   ======================================== */
+
+/* CSS Variables for theming */
+:root {
+    --primary-color: #80BBB2;
+    --primary-dark: #66A695;
+    --primary-light: #A6D1C7;
+    --accent-color: #B5D4D1;
+    --text-primary: #1a1a1a;
+    --text-secondary: #666666;
+    --text-tertiary: #999999;
+    --background: #ffffff;
+    --surface: #f8fffe;
+    --surface-hover: #f0f9f7;
+    --border-light: #e8f3f1;
+    --shadow: rgba(128, 187, 178, 0.1);
+    --shadow-hover: rgba(128, 187, 178, 0.2);
+}
+
+/* Base Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    color: var(--text-primary);
+    line-height: 1.6;
+    background: var(--background);
+}
+
+/* Container Utility */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Typography Utilities */
+h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: 0;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--text-primary);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.hero-subtitle {
+    font-size: 1.25rem;
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+/* Button Utilities */
+.btn-primary,
+.btn-secondary {
+    display: inline-block;
+    padding: 0.875rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+    border: 2px solid transparent;
+}
+
+.btn-primary {
+    background: var(--primary-color);
+    color: white;
+}
+
+.btn-primary:hover {
+    background: var(--primary-dark);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px var(--shadow-hover);
+}
+
+.btn-secondary {
+    background: transparent;
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-secondary:hover {
+    background: var(--primary-color);
+    color: white;
+    transform: translateY(-1px);
+}
+
+.btn-reset {
+    padding: 0.5rem 1rem;
+    background: var(--surface);
+    border: 1px solid var(--border-light);
+    border-radius: 4px;
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-reset:hover {
+    background: var(--surface-hover);
+    border-color: var(--primary-color);
+}
+
+/* Layout Utilities */
+.hero-actions {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+/* Loading State */
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.spinner {
+    width: 32px;
+    height: 32px;
+    border: 3px solid var(--border-light);
+    border-top-color: var(--primary-color);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Hidden State */
+.hidden {
+    display: none;
+}
+
+/* Animation Utilities */
+@keyframes slideIn {
+    0% { opacity: 0; transform: scale(0.8) rotate(-10deg); }
+    100% { opacity: 1; transform: scale(1) rotate(0deg); }
+}
+
+@keyframes slideOut {
+    0% { opacity: 1; transform: scale(1) rotate(0deg); }
+    100% { opacity: 0; transform: scale(0.8) rotate(10deg); }
+}
+
+/* Responsive Utilities */
+@media (max-width: 768px) {
+    .hero-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        text-align: center;
+    }
+    
+    .hero-main {
+        text-align: center;
+    }
+    
+    .toc-list {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    
+    .icon-slideshow {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .preview-icon {
+        width: 60px;
+        height: 60px;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.75rem;
+    }
+    
+    .hero-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .gallery-controls {
+        flex-direction: column;
+    }
+    
+    .search-box {
+        min-width: auto;
+        width: 100%;
+        max-width: 400px;
+    }
+    
+    .color-controls {
+        justify-content: center;
+    }
+}

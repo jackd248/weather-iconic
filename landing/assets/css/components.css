@@ -1,0 +1,353 @@
+/* ========================================
+   WEATHER ICONIC - COMPONENT STYLES
+   ======================================== */
+
+/* Table of Contents Component */
+.table-of-contents {
+    background: var(--primary-color);
+    padding: 0.5rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 8px var(--shadow);
+}
+
+.table-of-contents .container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.toc-toggle {
+    color: white;
+    font-weight: 500;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.toc-list {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.toc-list a {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    font-size: 0.875rem;
+    font-weight: 400;
+    transition: color 0.2s ease;
+}
+
+.toc-list a:hover {
+    color: white;
+}
+
+/* Hero Section Component */
+.hero {
+    background: var(--surface);
+    padding: 4rem 0 6rem;
+    position: relative;
+}
+
+.hero-content {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 4rem;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-main {
+    text-align: left;
+}
+
+.hero-preview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.logo-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+}
+
+/* Icon Slideshow Component */
+.icon-slideshow {
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+
+.slideshow-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.slide {
+    position: absolute;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: all 0.8s ease-in-out;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide.active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.preview-icon {
+    width: 80px;
+    height: 80px;
+    fill: var(--primary-dark);
+    filter: drop-shadow(0 4px 8px rgba(128, 187, 178, 0.3));
+}
+
+/* Weather Card Component */
+.weather-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 2px 12px var(--shadow);
+    transition: all 0.3s ease;
+    border: 1px solid var(--border-light);
+    position: relative;
+    overflow: hidden;
+}
+
+.weather-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 24px var(--shadow-hover);
+}
+
+.weather-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--card-accent, var(--primary-color));
+}
+
+.weather-card.sunny { --card-accent: #FDB462; }
+.weather-card.rainy { --card-accent: #80B1D3; }
+.weather-card.cloudy { --card-accent: #BEBADA; }
+.weather-card.snowy { --card-accent: #B3CDE3; }
+
+.weather-icon {
+    margin-bottom: 1rem;
+}
+
+.weather-icon svg {
+    width: 80px;
+    height: 80px;
+}
+
+.weather-card.sunny svg { fill: #FDB462; }
+.weather-card.rainy svg { fill: #80B1D3; }
+.weather-card.cloudy svg { fill: #BEBADA; }
+.weather-card.snowy svg { fill: #B3CDE3; }
+
+.example-icon {
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+.temperature {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: 0.5rem 0;
+}
+
+.condition {
+    color: var(--text-secondary);
+    font-weight: 400;
+}
+
+/* Icon Gallery Component */
+.gallery-controls {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.search-box {
+    position: relative;
+    min-width: 300px;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 0.875rem 1rem 0.875rem 3rem;
+    border: 2px solid var(--border-light);
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.2s ease;
+}
+
+.search-box input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+.search-icon {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    color: var(--text-tertiary);
+}
+
+.color-controls {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.color-controls label {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
+.color-controls input[type="color"] {
+    width: 40px;
+    height: 40px;
+    border: 2px solid var(--border-light);
+    border-radius: 6px;
+    cursor: pointer;
+    background: none;
+}
+
+/* Icon Item Component */
+.icon-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 1.25rem;
+}
+
+.icon-item {
+    background: white;
+    border: 1px solid var(--border-light);
+    border-radius: 12px;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    position: relative;
+}
+
+.icon-item:hover {
+    border-color: var(--primary-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px var(--shadow);
+}
+
+.icon-item svg {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 1rem;
+    transition: all 0.2s ease;
+}
+
+.icon-item:hover svg {
+    transform: scale(1.1);
+}
+
+.icon-name {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    font-weight: 500;
+    word-break: break-word;
+}
+
+.icon-item .download-actions {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    display: flex;
+    gap: 0.25rem;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.icon-item:hover .download-actions {
+    opacity: 1;
+}
+
+.download-btn {
+    width: 28px;
+    height: 20px;
+    background: var(--primary-color);
+    border: none;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+    font-size: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.download-btn:hover {
+    background: var(--primary-dark);
+    transform: translateY(-1px);
+}
+
+/* Multi-color support */
+.icon-item svg {
+    fill: var(--icon-primary-color, #80BBB2);
+}
+
+.icon-item.multi-color svg path:nth-child(1) {
+    fill: var(--icon-primary-color, #80BBB2);
+}
+
+.icon-item.multi-color svg path:nth-child(2) {
+    fill: var(--icon-secondary-color, #666666);
+}
+
+.icon-item.single-color svg,
+.icon-item.single-color svg path {
+    fill: var(--icon-primary-color, #80BBB2);
+}

@@ -1,0 +1,873 @@
+/* ========================================
+   WEATHER ICONIC - MAIN STYLES
+   Import all CSS modules
+   ======================================== */
+
+@import url('utilities.css');
+@import url('components.css');
+
+/* Additional main styles that don't fit in utilities or components */
+
+/* Section-specific styles */
+
+/* Features Section */
+.features {
+    padding: 4rem 0;
+    background: var(--surface);
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.feature-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 2px 8px var(--shadow);
+    transition: all 0.2s ease;
+    border: 1px solid var(--border-light);
+}
+
+.feature-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px var(--shadow-hover);
+}
+
+.feature-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.feature-card p {
+    color: var(--text-secondary);
+    margin-bottom: 0;
+}
+
+/* Header/Hero Section */
+.hero {
+    background: linear-gradient(135deg, var(--primary-light) 0%, var(--surface) 50%, var(--background) 100%);
+    padding: 4rem 0 6rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, 
+        rgba(128, 187, 178, 0.1) 0%, 
+        rgba(128, 187, 178, 0.05) 50%, 
+        transparent 100%);
+    pointer-events: none;
+}
+
+.hero-content {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 4rem;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-main {
+    text-align: left;
+}
+
+.hero-preview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.logo-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+}
+
+.hero-subtitle {
+    font-size: 1.25rem;
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+/* Icon Slideshow */
+.icon-slideshow {
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+
+.slideshow-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.slide {
+    position: absolute;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: all 0.8s ease-in-out;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide.active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.preview-icon {
+    width: 80px;
+    height: 80px;
+    fill: var(--primary-dark);
+    filter: drop-shadow(0 4px 8px rgba(128, 187, 178, 0.3));
+}
+
+/* Buttons */
+.btn-primary,
+.btn-secondary {
+    display: inline-block;
+    padding: 0.875rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+    border: 2px solid transparent;
+}
+
+.btn-primary {
+    background: var(--primary-color);
+    color: white;
+}
+
+.btn-primary:hover {
+    background: var(--primary-dark);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px var(--shadow-hover);
+}
+
+.btn-secondary {
+    background: transparent;
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-secondary:hover {
+    background: var(--primary-color);
+    color: white;
+    transform: translateY(-1px);
+}
+
+.btn-reset {
+    padding: 0.5rem 1rem;
+    background: var(--surface);
+    border: 1px solid var(--border-light);
+    border-radius: 4px;
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-reset:hover {
+    background: var(--surface-hover);
+    border-color: var(--primary-color);
+}
+
+/* Features Section */
+.features {
+    padding: 4rem 0;
+    background: var(--surface);
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.feature-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 2px 8px var(--shadow);
+    transition: all 0.2s ease;
+    border: 1px solid var(--border-light);
+}
+
+.feature-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px var(--shadow-hover);
+}
+
+.feature-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.feature-card p {
+    color: var(--text-secondary);
+    margin-bottom: 0;
+}
+
+/* Integration Section */
+.integration {
+    padding: 4rem 0;
+}
+
+.integration-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+    background: var(--surface);
+    padding: 0.5rem;
+    border-radius: 8px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tab-btn {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    background: transparent;
+    color: var(--text-secondary);
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.tab-btn.active,
+.tab-btn:hover {
+    background: var(--primary-color);
+    color: white;
+}
+
+.tab-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.tab-panel {
+    display: none;
+}
+
+.tab-panel.active {
+    display: block;
+}
+
+pre {
+    background: var(--surface);
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid var(--border-light);
+    overflow-x: auto;
+    font-size: 0.9rem;
+}
+
+code {
+    color: var(--text-primary);
+    font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+}
+
+/* Weather Examples */
+.examples {
+    padding: 4rem 0;
+    background: var(--surface);
+}
+
+.weather-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.weather-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 2px 12px var(--shadow);
+    transition: all 0.3s ease;
+    border: 1px solid var(--border-light);
+    position: relative;
+    overflow: hidden;
+}
+
+.weather-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 24px var(--shadow-hover);
+}
+
+.weather-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--card-accent, var(--primary-color));
+}
+
+.weather-card.sunny {
+    --card-accent: #FDB462;
+}
+
+.weather-card.rainy {
+    --card-accent: #80B1D3;
+}
+
+.weather-card.cloudy {
+    --card-accent: #BEBADA;
+}
+
+.weather-card.snowy {
+    --card-accent: #B3CDE3;
+}
+
+.weather-icon {
+    margin-bottom: 1rem;
+}
+
+.weather-icon svg {
+    width: 80px;
+    height: 80px;
+}
+
+.example-icon {
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+.weather-card.sunny svg {
+    fill: #FDB462;
+}
+
+.weather-card.rainy svg {
+    fill: #80B1D3;
+}
+
+.weather-card.cloudy svg {
+    fill: #BEBADA;
+}
+
+.weather-card.snowy svg {
+    fill: #B3CDE3;
+}
+
+.temperature {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: 0.5rem 0;
+}
+
+.condition {
+    color: var(--text-secondary);
+    font-weight: 400;
+}
+
+/* Gallery Section */
+.gallery {
+    padding: 4rem 0 6rem;
+}
+
+.gallery-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.gallery-controls {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.search-box {
+    position: relative;
+    min-width: 300px;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 0.875rem 1rem 0.875rem 3rem;
+    border: 2px solid var(--border-light);
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.2s ease;
+}
+
+.search-box input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+.search-icon {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    color: var(--text-tertiary);
+}
+
+.color-controls {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.color-controls label {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
+.color-controls input[type="color"] {
+    width: 40px;
+    height: 40px;
+    border: 2px solid var(--border-light);
+    border-radius: 6px;
+    cursor: pointer;
+    background: none;
+}
+
+.color-controls input[type="color"]::-webkit-color-swatch-wrapper {
+    padding: 0;
+    border-radius: 4px;
+}
+
+.color-controls input[type="color"]::-webkit-color-swatch {
+    border: none;
+    border-radius: 4px;
+}
+
+/* Icon Grid */
+.icon-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 1.25rem;
+}
+
+.icon-item {
+    background: white;
+    border: 1px solid var(--border-light);
+    border-radius: 12px;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    position: relative;
+}
+
+.icon-item:hover {
+    border-color: var(--primary-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px var(--shadow);
+}
+
+.icon-item svg {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 1rem;
+    transition: all 0.2s ease;
+}
+
+.icon-item .download-actions {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    display: flex;
+    gap: 0.25rem;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.icon-item:hover .download-actions {
+    opacity: 1;
+}
+
+.icon-name {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    font-weight: 500;
+    word-break: break-word;
+}
+
+.download-btn {
+    width: 28px;
+    height: 20px;
+    background: var(--primary-color);
+    border: none;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+    font-size: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.download-btn:hover {
+    background: var(--primary-dark);
+    transform: translateY(-1px);
+}
+
+/* Footer */
+.footer {
+    background: var(--surface);
+    padding: 2rem 0;
+    border-top: 1px solid var(--border-light);
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.footer p {
+    color: var(--text-secondary);
+    margin: 0;
+}
+
+.footer-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.footer-links a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+    color: var(--primary-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero {
+        padding: 3rem 0 4rem;
+    }
+    
+    .hero-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        text-align: center;
+    }
+    
+    .hero-main {
+        text-align: center;
+    }
+    
+    .toc-list {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    
+    .icon-slideshow {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .preview-icon {
+        width: 60px;
+        height: 60px;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.75rem;
+    }
+    
+    .hero-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .gallery-controls {
+        flex-direction: column;
+    }
+    
+    .search-box {
+        min-width: auto;
+        width: 100%;
+        max-width: 400px;
+    }
+    
+    .color-controls {
+        justify-content: center;
+    }
+    
+    .integration-tabs {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .tab-btn {
+        width: 100%;
+    }
+    
+    .footer .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .install-options,
+    .download-options {
+        grid-template-columns: 1fr;
+    }
+    
+    .install-command {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .install-command code {
+        text-align: center;
+        margin-bottom: 0.5rem;
+    }
+}
+
+/* Loading state */
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.spinner {
+    width: 32px;
+    height: 32px;
+    border: 3px solid var(--border-light);
+    border-top-color: var(--primary-color);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Hidden state */
+.hidden {
+    display: none;
+}
+
+/* Installation Section */
+.installation {
+    padding: 4rem 0;
+    background: var(--surface);
+}
+
+.install-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.install-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px var(--shadow);
+    border: 1px solid var(--border-light);
+}
+
+.install-card h3 {
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+    font-size: 1.125rem;
+}
+
+.install-command {
+    display: flex;
+    align-items: center;
+    background: var(--surface);
+    border: 1px solid var(--border-light);
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem 0;
+    gap: 1rem;
+}
+
+.install-command code {
+    flex: 1;
+    background: transparent;
+    padding: 0;
+    font-size: 0.875rem;
+    word-break: break-all;
+}
+
+.copy-btn {
+    padding: 0.5rem 1rem;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    cursor: pointer;
+    transition: background 0.2s ease;
+    white-space: nowrap;
+}
+
+.copy-btn:hover {
+    background: var(--primary-dark);
+}
+
+.install-card p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+/* Downloads Section */
+.downloads {
+    padding: 4rem 0;
+    background: var(--background);
+}
+
+.download-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.download-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px var(--shadow);
+    border: 1px solid var(--border-light);
+    text-align: center;
+}
+
+.download-card h3 {
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+    font-size: 1.125rem;
+}
+
+.download-card p {
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+}
+
+.download-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.download-info {
+    color: var(--text-tertiary);
+    font-size: 0.75rem;
+}
+
+/* Slideshow Animation */
+@keyframes slideIn {
+    0% { opacity: 0; transform: scale(0.8) rotate(-10deg); }
+    100% { opacity: 1; transform: scale(1) rotate(0deg); }
+}
+
+@keyframes slideOut {
+    0% { opacity: 1; transform: scale(1) rotate(0deg); }
+    100% { opacity: 0; transform: scale(0.8) rotate(10deg); }
+}
+
+/* Multi-color support - Enhanced for active color application */
+.icon-item svg {
+    fill: var(--icon-primary-color, #80BBB2);
+}
+
+.icon-item.multi-color svg path:nth-child(1) {
+    fill: var(--icon-primary-color, #80BBB2);
+}
+
+.icon-item.multi-color svg path:nth-child(2) {
+    fill: var(--icon-secondary-color, #666666);
+}
+
+.icon-item.single-color svg,
+.icon-item.single-color svg path {
+    fill: var(--icon-primary-color, #80BBB2);
+}
+
+/* Icon hover effects */
+.icon-item svg {
+    transition: transform 0.2s ease;
+}
+
+.icon-item:hover svg {
+    transform: scale(1.1);
+}
