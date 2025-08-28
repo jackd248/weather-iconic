@@ -4,27 +4,46 @@ import type { IconProps } from '../types'
 export const WeatherRaindrop = React.forwardRef<SVGSVGElement, IconProps>(({
   size = 24,
   color = 'currentColor',
+  multiColor = false,
+  primaryColor,
+  secondaryColor,
   className,
   style,
   title,
   ...props
-}, ref) => (
-  <svg
-    ref={ref}
-    width={size}
-    height={size}
-    viewBox="0 0 32 32"
-    fill={color}
-    className={className}
-    style={style}
-    role={title ? 'img' : 'presentation'}
-    aria-hidden={title ? 'false' : 'true'}
-    aria-label={title}
-    {...props}
-  >
-    {title && <title>{title}</title>}
-    <path d="M16.736 8.096c.256.192 6.016 5.024 6.016 10.656a6.583 6.583 0 0 1-6.592 6.592c-3.648 0-6.592-2.976-6.592-6.592 0-5.632 5.792-10.464 6.016-10.656.32-.288.8-.288 1.152 0m-.576 15.456c2.656 0 4.8-2.144 4.8-4.8 0-3.84-3.424-7.456-4.8-8.768-1.376 1.312-4.8 4.928-4.8 8.768 0 2.656 2.144 4.8 4.8 4.8m-1.184-7.52s1.76 1.44 1.76 3.072c0 .96-.8 1.76-1.76 1.76s-1.76-.8-1.76-1.76c0-1.632 1.76-3.072 1.76-3.072"/>
-  </svg>
-))
+}, ref) => {
+  const combinedClassName = `${className || ''} ${multiColor ? 'weather-multi-color weather-raindrop' : ''}`.trim()
+  const combinedStyle = multiColor ? {
+    ...style,
+    ...(primaryColor && { '--weather-primary-fill': primaryColor }),
+    ...(secondaryColor && { '--weather-secondary-fill': secondaryColor })
+  } as React.CSSProperties : style
+
+  return (
+    <svg
+      ref={ref}
+      width={size}
+      height={size}
+      viewBox="0 0 32 32"
+      fill={multiColor ? 'none' : color}
+      className={combinedClassName}
+      style={combinedStyle}
+      role={title ? 'img' : 'presentation'}
+      aria-hidden={title ? 'false' : 'true'}
+      aria-label={title}
+      {...props}
+    >
+      {title && <title>{title}</title>}
+      <path 
+        d="M14.976,16.032C14.976,16.032 13.216,17.472 13.216,19.104C13.216,20.064 14.016,20.864 14.976,20.864C15.936,20.864 16.736,20.064 16.736,19.104C16.736,17.472 14.976,16.032 14.976,16.032Z"
+        fill={multiColor ? (primaryColor || "currentColor") : color}
+      />
+      <path 
+        d="M16.736,8.096C16.384,7.808 15.904,7.808 15.584,8.096C15.36,8.288 9.568,13.12 9.568,18.752C9.568,22.368 12.512,25.344 16.16,25.344C19.808,25.344 22.752,22.4 22.752,18.752C22.752,13.12 16.992,8.288 16.736,8.096ZM16.16,23.552C13.504,23.552 11.36,21.408 11.36,18.752C11.36,14.912 14.784,11.296 16.16,9.984C17.536,11.296 20.96,14.912 20.96,18.752C20.96,21.408 18.816,23.552 16.16,23.552Z"
+        fill={multiColor ? (secondaryColor || "#666666") : color}
+      />
+    </svg>
+  )
+})
 
 WeatherRaindrop.displayName = 'WeatherRaindrop'

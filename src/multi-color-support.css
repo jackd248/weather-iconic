@@ -1,0 +1,80 @@
+/* Multi-Color Support for Weather Iconic Icons */
+
+/* Base multi-color class */
+.weather-multi-color {
+  /* CSS Custom Properties for multi-color support */
+  --weather-primary-fill: currentColor;
+  --weather-secondary-fill: #666666;
+}
+
+/* Path-specific styling for multi-color icons */
+.weather-multi-color svg path:first-child {
+  fill: var(--weather-primary-fill);
+}
+
+.weather-multi-color svg path:nth-child(2) {
+  fill: var(--weather-secondary-fill);
+}
+
+/* Special handling for icons with groups */
+.weather-multi-color svg g:first-child path {
+  fill: var(--weather-primary-fill);
+}
+
+.weather-multi-color svg g:nth-child(2) path {
+  fill: var(--weather-secondary-fill);
+}
+
+
+/* Utility classes for custom colors */
+.weather-primary-red { --weather-primary-fill: #dc3545; }
+.weather-primary-blue { --weather-primary-fill: #007bff; }
+.weather-primary-green { --weather-primary-fill: #28a745; }
+.weather-primary-yellow { --weather-primary-fill: #ffc107; }
+.weather-primary-orange { --weather-primary-fill: #fd7e14; }
+.weather-primary-purple { --weather-primary-fill: #6f42c1; }
+.weather-primary-teal { --weather-primary-fill: #80BBB2; }
+.weather-primary-pink { --weather-primary-fill: #e83e8c; }
+
+.weather-secondary-red { --weather-secondary-fill: #dc3545; }
+.weather-secondary-blue { --weather-secondary-fill: #007bff; }
+.weather-secondary-green { --weather-secondary-fill: #28a745; }
+.weather-secondary-yellow { --weather-secondary-fill: #ffc107; }
+.weather-secondary-orange { --weather-secondary-fill: #fd7e14; }
+.weather-secondary-purple { --weather-secondary-fill: #6f42c1; }
+.weather-secondary-teal { --weather-secondary-fill: #80BBB2; }
+.weather-secondary-pink { --weather-secondary-fill: #e83e8c; }
+
+/* Dark mode adjustments */
+@media (prefers-color-scheme: dark) {
+  .weather-multi-color {
+    --weather-secondary-fill: #cccccc;
+  }
+}
+
+[data-theme="dark"] .weather-multi-color {
+  --weather-secondary-fill: #cccccc;
+}
+
+/* Animation support for multi-color icons */
+.weather-multi-color.weather-icon--spin svg path {
+  transform-origin: center;
+}
+
+.weather-multi-color.weather-icon--pulse svg path:first-child {
+  animation: weather-pulse-primary 2s ease-in-out infinite;
+}
+
+.weather-multi-color.weather-icon--pulse svg path:nth-child(2) {
+  animation: weather-pulse-secondary 2s ease-in-out infinite 0.1s;
+}
+
+@keyframes weather-pulse-primary {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+@keyframes weather-pulse-secondary {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}

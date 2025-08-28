@@ -1,1 +1,1 @@
-{"version":3,"file":"WeatherCloud.d.ts","sourceRoot":"","sources":["../../src/react/WeatherCloud.tsx"],"names":[],"mappings":"AAGA,eAAO,MAAM,YAAY,KAwBvB,CAAA"}
+{"version":3,"file":"WeatherCloud.d.ts","sourceRoot":"","sources":["../../src/react/WeatherCloud.tsx"],"names":[],"mappings":"AAAA,OAAO,KAAK,MAAM,OAAO,CAAA;AACzB,OAAO,KAAK,EAAE,SAAS,EAAE,MAAM,UAAU,CAAA;AAEzC,eAAO,MAAM,YAAY,iFAuCvB,CAAA"}

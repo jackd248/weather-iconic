@@ -1,1 +1,1 @@
-{"version":3,"file":"WeatherCompassSouthWest.d.ts","sourceRoot":"","sources":["../../src/react/WeatherCompassSouthWest.tsx"],"names":[],"mappings":"AAGA,eAAO,MAAM,uBAAuB,KAwBlC,CAAA"}
+{"version":3,"file":"WeatherCompassSouthWest.d.ts","sourceRoot":"","sources":["../../src/react/WeatherCompassSouthWest.tsx"],"names":[],"mappings":"AAAA,OAAO,KAAK,MAAM,OAAO,CAAA;AACzB,OAAO,KAAK,EAAE,SAAS,EAAE,MAAM,UAAU,CAAA;AAEzC,eAAO,MAAM,uBAAuB,iFA2ClC,CAAA"}

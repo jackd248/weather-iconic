@@ -3,30 +3,61 @@
     :width="size"
     :height="size"
     viewBox="0 0 32 32"
-    :fill="color"
-    :class="className"
-    :style="style"
+    :fill="multiColor ? 'none' : color"
+    :class="combinedClassName"
+    :style="combinedStyle"
     :role="title ? 'img' : 'presentation'"
     :aria-hidden="title ? 'false' : 'true'"
     :aria-label="title"
     v-bind="$attrs"
   >
     <title v-if="title">{{ title }}</title>
-    <path d="M21.92 10.112a8.23 8.23 0 0 1 2.432 5.856 8.29 8.29 0 0 1-8.288 8.288 8.23 8.23 0 0 1-5.856-2.432C8.64 20.256 7.776 18.208 7.776 16c0-4.576 3.712-8.32 8.288-8.32 2.208 0 4.288.864 5.856 2.432m-5.856 12.352a6.5 6.5 0 0 0 6.496-6.496c0-1.728-.672-3.36-1.888-4.608s-2.848-1.888-4.608-1.888C12.48 9.504 9.568 12.416 9.568 16c0 1.728.672 3.36 1.888 4.576s2.848 1.888 4.608 1.888m0-8.512c1.152 0 2.048.896 2.048 2.048a2.04 2.04 0 0 1-2.048 2.048C14.208 18.048 11.84 16 11.84 16s2.368-2.048 4.224-2.048m.032 2.656c.32 0 .608-.256.608-.608s-.32-.608-.64-.608a.63.63 0 0 0-.608.608c0 .32.32.608.64.608"/>
+    <path 
+        d="M16.064,13.952C14.208,13.952 11.84,16 11.84,16C11.84,16 14.208,18.048 16.064,18.048C17.184,18.048 18.112,17.152 18.112,16C18.112,14.848 17.216,13.952 16.064,13.952ZM16.096,16.608C15.776,16.608 15.456,16.32 15.456,16C15.456,15.68 15.744,15.392 16.064,15.392C16.384,15.392 16.704,15.648 16.704,16C16.704,16.352 16.416,16.608 16.096,16.608Z"
+        :fill="multiColor ? (primaryColor || 'currentColor') : color"
+      />
+    <path 
+        d="M21.92,10.112C20.352,8.544 18.272,7.68 16.064,7.68C11.488,7.68 7.776,11.424 7.776,16C7.776,18.208 8.64,20.256 10.208,21.824C11.776,23.392 13.856,24.256 16.064,24.256C20.64,24.256 24.352,20.544 24.352,15.968C24.352,13.76 23.488,11.68 21.92,10.112ZM16.064,22.464C14.304,22.464 12.672,21.792 11.456,20.576C10.24,19.36 9.568,17.728 9.568,16C9.568,12.416 12.48,9.504 16.064,9.472C17.824,9.472 19.456,10.112 20.672,11.36C21.888,12.608 22.56,14.24 22.56,15.968C22.56,19.552 19.648,22.464 16.064,22.464Z"
+        :fill="multiColor ? (secondaryColor || '#666666') : color"
+      />
   </svg>
 </template>
 
 <script setup lang="ts">
+import { computed } from 'vue'
+
 interface Props {
   size?: number | string
   color?: string
+  multiColor?: boolean
+  primaryColor?: string
+  secondaryColor?: string
   className?: string
   style?: Record<string, any>
   title?: string
 }
 
-withDefaults(defineProps<Props>(), {
+const props = withDefaults(defineProps<Props>(), {
   size: 24,
-  color: 'currentColor'
+  color: 'currentColor',
+  multiColor: false
+})
+
+const combinedClassName = computed(() => {
+  const classes = [props.className]
+  if (props.multiColor) {
+    classes.push('weather-multi-color', 'weather-compass-west')
+  }
+  return classes.filter(Boolean).join(' ')
+})
+
+const combinedStyle = computed(() => {
+  if (!props.multiColor) return props.style
+  
+  return {
+    ...props.style,
+    ...(props.primaryColor && { '--weather-primary-fill': props.primaryColor }),
+    ...(props.secondaryColor && { '--weather-secondary-fill': props.secondaryColor })
+  }
 })
 </script>

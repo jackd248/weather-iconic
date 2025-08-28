@@ -1,0 +1,201 @@
+/* Weather Iconic Sprite CSS */
+.weather-sprite-container {
+  display: none;
+}
+
+.weather-sprite-icon {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1;
+}
+
+/* Individual sprite classes for CSS-only usage */
+.weather-sprite-barometer {
+  background-image: url('#weather-barometer');
+}
+.weather-sprite-celsius {
+  background-image: url('#weather-celsius');
+}
+.weather-sprite-cloud-down {
+  background-image: url('#weather-cloud-down');
+}
+.weather-sprite-cloud-fog {
+  background-image: url('#weather-cloud-fog');
+}
+.weather-sprite-cloud-rain-single {
+  background-image: url('#weather-cloud-rain-single');
+}
+.weather-sprite-cloud-rain {
+  background-image: url('#weather-cloud-rain');
+}
+.weather-sprite-cloud-snow-single {
+  background-image: url('#weather-cloud-snow-single');
+}
+.weather-sprite-cloud-snow {
+  background-image: url('#weather-cloud-snow');
+}
+.weather-sprite-cloud-up {
+  background-image: url('#weather-cloud-up');
+}
+.weather-sprite-cloud-wind {
+  background-image: url('#weather-cloud-wind');
+}
+.weather-sprite-cloud {
+  background-image: url('#weather-cloud');
+}
+.weather-sprite-clouds {
+  background-image: url('#weather-clouds');
+}
+.weather-sprite-compass-east {
+  background-image: url('#weather-compass-east');
+}
+.weather-sprite-compass-north-east {
+  background-image: url('#weather-compass-north-east');
+}
+.weather-sprite-compass-north-west {
+  background-image: url('#weather-compass-north-west');
+}
+.weather-sprite-compass-north {
+  background-image: url('#weather-compass-north');
+}
+.weather-sprite-compass-south-east {
+  background-image: url('#weather-compass-south-east');
+}
+.weather-sprite-compass-south-west {
+  background-image: url('#weather-compass-south-west');
+}
+.weather-sprite-compass-south {
+  background-image: url('#weather-compass-south');
+}
+.weather-sprite-compass-west {
+  background-image: url('#weather-compass-west');
+}
+.weather-sprite-compass {
+  background-image: url('#weather-compass');
+}
+.weather-sprite-fahrenheit {
+  background-image: url('#weather-fahrenheit');
+}
+.weather-sprite-fog {
+  background-image: url('#weather-fog');
+}
+.weather-sprite-hail {
+  background-image: url('#weather-hail');
+}
+.weather-sprite-lightning {
+  background-image: url('#weather-lightning');
+}
+.weather-sprite-moon-cloud-lightning {
+  background-image: url('#weather-moon-cloud-lightning');
+}
+.weather-sprite-moon-cloud-rain {
+  background-image: url('#weather-moon-cloud-rain');
+}
+.weather-sprite-moon-cloud-snow {
+  background-image: url('#weather-moon-cloud-snow');
+}
+.weather-sprite-moon-cloud-wind {
+  background-image: url('#weather-moon-cloud-wind');
+}
+.weather-sprite-moon-cloud {
+  background-image: url('#weather-moon-cloud');
+}
+.weather-sprite-moon-first-quarter {
+  background-image: url('#weather-moon-first-quarter');
+}
+.weather-sprite-moon-fog {
+  background-image: url('#weather-moon-fog');
+}
+.weather-sprite-moon-fullmoon {
+  background-image: url('#weather-moon-fullmoon');
+}
+.weather-sprite-moon-last-quarter {
+  background-image: url('#weather-moon-last-quarter');
+}
+.weather-sprite-moon-newmoon {
+  background-image: url('#weather-moon-newmoon');
+}
+.weather-sprite-moon-waning-crescent {
+  background-image: url('#weather-moon-waning-crescent');
+}
+.weather-sprite-moon-waning-gibbous {
+  background-image: url('#weather-moon-waning-gibbous');
+}
+.weather-sprite-moon-waxing-crescent {
+  background-image: url('#weather-moon-waxing-crescent');
+}
+.weather-sprite-moon-waxing-gibbous {
+  background-image: url('#weather-moon-waxing-gibbous');
+}
+.weather-sprite-moon {
+  background-image: url('#weather-moon');
+}
+.weather-sprite-rainbow {
+  background-image: url('#weather-rainbow');
+}
+.weather-sprite-raindrop {
+  background-image: url('#weather-raindrop');
+}
+.weather-sprite-refresh {
+  background-image: url('#weather-refresh');
+}
+.weather-sprite-snowflake {
+  background-image: url('#weather-snowflake');
+}
+.weather-sprite-sun-cloud-lightning {
+  background-image: url('#weather-sun-cloud-lightning');
+}
+.weather-sprite-sun-cloud-rain {
+  background-image: url('#weather-sun-cloud-rain');
+}
+.weather-sprite-sun-cloud-snow {
+  background-image: url('#weather-sun-cloud-snow');
+}
+.weather-sprite-sun-cloud-wind {
+  background-image: url('#weather-sun-cloud-wind');
+}
+.weather-sprite-sun-cloud {
+  background-image: url('#weather-sun-cloud');
+}
+.weather-sprite-sun-fog {
+  background-image: url('#weather-sun-fog');
+}
+.weather-sprite-sun-low {
+  background-image: url('#weather-sun-low');
+}
+.weather-sprite-sun-medium {
+  background-image: url('#weather-sun-medium');
+}
+.weather-sprite-sun {
+  background-image: url('#weather-sun');
+}
+.weather-sprite-sunrise {
+  background-image: url('#weather-sunrise');
+}
+.weather-sprite-sunset {
+  background-image: url('#weather-sunset');
+}
+.weather-sprite-thermometer-cold {
+  background-image: url('#weather-thermometer-cold');
+}
+.weather-sprite-thermometer-hot {
+  background-image: url('#weather-thermometer-hot');
+}
+.weather-sprite-thermometer-medium {
+  background-image: url('#weather-thermometer-medium');
+}
+.weather-sprite-tornado {
+  background-image: url('#weather-tornado');
+}
+.weather-sprite-umbrella {
+  background-image: url('#weather-umbrella');
+}
+.weather-sprite-wind-high {
+  background-image: url('#weather-wind-high');
+}
+.weather-sprite-wind {
+  background-image: url('#weather-wind');
+}
+.weather-sprite-windsock {
+  background-image: url('#weather-windsock');
+}

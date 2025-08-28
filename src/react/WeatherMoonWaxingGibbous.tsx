@@ -4,27 +4,46 @@ import type { IconProps } from '../types'
 export const WeatherMoonWaxingGibbous = React.forwardRef<SVGSVGElement, IconProps>(({
   size = 24,
   color = 'currentColor',
+  multiColor = false,
+  primaryColor,
+  secondaryColor,
   className,
   style,
   title,
   ...props
-}, ref) => (
-  <svg
-    ref={ref}
-    width={size}
-    height={size}
-    viewBox="0 0 32 32"
-    fill={color}
-    className={className}
-    style={style}
-    role={title ? 'img' : 'presentation'}
-    aria-hidden={title ? 'false' : 'true'}
-    aria-label={title}
-    {...props}
-  >
-    {title && <title>{title}</title>}
-    <path d="M15.84 8.064c4.16 0 7.52 3.36 7.52 7.52 0 4.128-3.36 7.52-7.52 7.52s-7.52-3.36-7.52-7.52 3.36-7.52 7.52-7.52m.448 13.216c2.944-.224 5.28-2.688 5.28-5.696S19.2 10.08 16.224 9.888c-1.184 1.024-1.984 3.168-1.984 5.664 0 2.56.768 4.736 2.048 5.728"/>
-  </svg>
-))
+}, ref) => {
+  const combinedClassName = `${className || ''} ${multiColor ? 'weather-multi-color weather-moon-waxing-gibbous' : ''}`.trim()
+  const combinedStyle = multiColor ? {
+    ...style,
+    ...(primaryColor && { '--weather-primary-fill': primaryColor }),
+    ...(secondaryColor && { '--weather-secondary-fill': secondaryColor })
+  } as React.CSSProperties : style
+
+  return (
+    <svg
+      ref={ref}
+      width={size}
+      height={size}
+      viewBox="0 0 32 32"
+      fill={multiColor ? 'none' : color}
+      className={combinedClassName}
+      style={combinedStyle}
+      role={title ? 'img' : 'presentation'}
+      aria-hidden={title ? 'false' : 'true'}
+      aria-label={title}
+      {...props}
+    >
+      {title && <title>{title}</title>}
+      <path 
+        d="M15.84,23.104C11.68,23.104 8.32,19.744 8.32,15.584C8.32,19.744 11.712,23.104 15.84,23.104ZM17.497,10.098C19.89,10.795 21.64,13.005 21.64,15.621C21.64,18.794 19.05,21.306 15.877,21.306C12.703,21.306 10.14,18.794 10.14,15.621C10.14,12.464 12.689,9.898 15.84,9.871L15.84,9.856C16.416,9.856 16.973,9.941 17.497,10.098ZM16.288,21.28C19.232,21.056 21.568,18.592 21.568,15.584C21.568,12.576 19.2,10.08 16.224,9.888C15.04,10.912 14.24,13.056 14.24,15.552C14.24,18.112 15.008,20.288 16.288,21.28Z"
+        fill={multiColor ? (primaryColor || "currentColor") : color}
+      />
+      <path 
+        d="M8.32,15.584C8.32,11.424 11.68,8.064 15.84,8.064C20,8.064 23.36,11.424 23.36,15.584C23.36,19.712 20,23.104 15.84,23.104C11.712,23.104 8.32,19.744 8.32,15.584ZM17.497,10.098C16.973,9.941 16.416,9.856 15.84,9.856L15.84,9.871C12.689,9.898 10.14,12.464 10.14,15.621C10.14,18.794 12.703,21.306 15.877,21.306C19.05,21.306 21.64,18.794 21.64,15.621C21.64,13.005 19.89,10.795 17.497,10.098Z"
+        fill={multiColor ? (secondaryColor || "#666666") : color}
+      />
+    </svg>
+  )
+})
 
 WeatherMoonWaxingGibbous.displayName = 'WeatherMoonWaxingGibbous'

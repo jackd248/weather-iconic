@@ -12,6 +12,44 @@ export interface BaseIconProps {
   style?: CSSProperties
   /** Accessible title for screen readers */
   title?: string
+  /** Enable multi-color mode for icons with multiple paths */
+  multiColor?: boolean
+  /** Primary color for multi-color icons (first path) */
+  primaryColor?: string
+  /** Secondary color for multi-color icons (second path) */
+  secondaryColor?: string
+}
+
+// Multi-color configuration interface
+export interface MultiColorConfig {
+  /** Enable multi-color support */
+  enabled: boolean
+  /** Primary color (first path/group) */
+  primary: string
+  /** Secondary color (second path/group) */
+  secondary: string
+  /** Custom CSS class for color scheme */
+  scheme?: string
+}
+
+// Predefined color schemes
+export type ColorScheme = 
+  | 'temperature-hot'
+  | 'temperature-cold'
+  | 'temperature-medium'
+  | 'sun-cloud'
+  | 'moon-cloud'
+  | 'cloud-rain'
+  | 'cloud-snow'
+  | 'lightning'
+  | 'custom'
+
+// Color scheme configurations
+export interface ColorSchemeConfig {
+  primary: string
+  secondary: string
+  darkModePrimary?: string
+  darkModeSecondary?: string
 }
 
 // React-specific icon props

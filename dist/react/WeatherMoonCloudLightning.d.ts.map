@@ -1,1 +1,1 @@
-{"version":3,"file":"WeatherMoonCloudLightning.d.ts","sourceRoot":"","sources":["../../src/react/WeatherMoonCloudLightning.tsx"],"names":[],"mappings":"AAGA,eAAO,MAAM,yBAAyB,KAwBpC,CAAA"}
+{"version":3,"file":"WeatherMoonCloudLightning.d.ts","sourceRoot":"","sources":["../../src/react/WeatherMoonCloudLightning.tsx"],"names":[],"mappings":"AAAA,OAAO,KAAK,MAAM,OAAO,CAAA;AACzB,OAAO,KAAK,EAAE,SAAS,EAAE,MAAM,UAAU,CAAA;AAEzC,eAAO,MAAM,yBAAyB,iFA2CpC,CAAA"}

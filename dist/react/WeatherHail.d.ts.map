@@ -1,1 +1,1 @@
-{"version":3,"file":"WeatherHail.d.ts","sourceRoot":"","sources":["../../src/react/WeatherHail.tsx"],"names":[],"mappings":"AAGA,eAAO,MAAM,WAAW,KAwBtB,CAAA"}
+{"version":3,"file":"WeatherHail.d.ts","sourceRoot":"","sources":["../../src/react/WeatherHail.tsx"],"names":[],"mappings":"AAAA,OAAO,KAAK,MAAM,OAAO,CAAA;AACzB,OAAO,KAAK,EAAE,SAAS,EAAE,MAAM,UAAU,CAAA;AAEzC,eAAO,MAAM,WAAW,iFA2CtB,CAAA"}

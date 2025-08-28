@@ -1,9 +1,9 @@
 @font-face {
     font-family: "weather-iconic";
-    src: url("./weather-iconic.woff2?5659338cc7e4ac82f9b88f86825fcd4f") format("woff2"),
-url("./weather-iconic.woff?5659338cc7e4ac82f9b88f86825fcd4f") format("woff"),
-url("./weather-iconic.ttf?5659338cc7e4ac82f9b88f86825fcd4f") format("truetype"),
-url("./weather-iconic.eot?5659338cc7e4ac82f9b88f86825fcd4f#iefix") format("embedded-opentype");
+    src: url("./weather-iconic.woff2?c0737c916c3e27b45637674e9a8b36e7") format("woff2"),
+url("./weather-iconic.woff?c0737c916c3e27b45637674e9a8b36e7") format("woff"),
+url("./weather-iconic.ttf?c0737c916c3e27b45637674e9a8b36e7") format("truetype"),
+url("./weather-iconic.eot?c0737c916c3e27b45637674e9a8b36e7#iefix") format("embedded-opentype");
 }
 
 .weather:before {

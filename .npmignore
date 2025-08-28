@@ -9,10 +9,6 @@ node_modules/
 tsconfig.json
 vite.config.js
 
-# Development docs
-CLAUDE.md
-EXAMPLES.md
-
 # Tests
 *.test.js
 *.spec.js

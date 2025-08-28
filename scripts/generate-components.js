@@ -27,34 +27,59 @@ const generateReactComponent = (iconData) => {
   const { name, pascalName, optimizedSvg } = iconData
   const paths = extractPaths(optimizedSvg)
   
+  // Extract individual paths for multi-color support
+  const pathMatches = optimizedSvg.match(/<path[^>]*>/g) || []
+  const pathElements = pathMatches.map((path, index) => {
+    // Extract the d attribute and other attributes
+    const dMatch = path.match(/d="([^"]*)"/)
+    const d = dMatch ? dMatch[1] : ''
+    
+    return `<path 
+        d="${d}"
+        fill={multiColor ? (${index === 0 ? 'primaryColor || "currentColor"' : 'secondaryColor || "#666666"'}) : color}
+      />`
+  }).join('\n      ')
+  
   return `import React from 'react'
 import type { IconProps } from '../types'
 
 export const Weather${pascalName} = React.forwardRef<SVGSVGElement, IconProps>(({
   size = 24,
   color = 'currentColor',
+  multiColor = false,
+  primaryColor,
+  secondaryColor,
   className,
   style,
   title,
   ...props
-}, ref) => (
-  <svg
-    ref={ref}
-    width={size}
-    height={size}
-    viewBox="0 0 32 32"
-    fill={color}
-    className={className}
-    style={style}
-    role={title ? 'img' : 'presentation'}
-    aria-hidden={title ? 'false' : 'true'}
-    aria-label={title}
-    {...props}
-  >
-    {title && <title>{title}</title>}
-    ${paths}
-  </svg>
-))
+}, ref) => {
+  const combinedClassName = \`\${className || ''} \${multiColor ? 'weather-multi-color weather-${name}' : ''}\`.trim()
+  const combinedStyle = multiColor ? {
+    ...style,
+    ...(primaryColor && { '--weather-primary-fill': primaryColor }),
+    ...(secondaryColor && { '--weather-secondary-fill': secondaryColor })
+  } as React.CSSProperties : style
+
+  return (
+    <svg
+      ref={ref}
+      width={size}
+      height={size}
+      viewBox="0 0 32 32"
+      fill={multiColor ? 'none' : color}
+      className={combinedClassName}
+      style={combinedStyle}
+      role={title ? 'img' : 'presentation'}
+      aria-hidden={title ? 'false' : 'true'}
+      aria-label={title}
+      {...props}
+    >
+      {title && <title>{title}</title>}
+      ${pathElements || paths}
+    </svg>
+  )
+})
 
 Weather${pascalName}.displayName = 'Weather${pascalName}'
 `
@@ -65,36 +90,72 @@ const generateVueComponent = (iconData) => {
   const { name, pascalName, optimizedSvg } = iconData
   const paths = extractPaths(optimizedSvg)
   
+  // Extract individual paths for multi-color support
+  const pathMatches = optimizedSvg.match(/<path[^>]*>/g) || []
+  const pathElements = pathMatches.map((path, index) => {
+    const dMatch = path.match(/d="([^"]*)"/)
+    const d = dMatch ? dMatch[1] : ''
+    
+    return `<path 
+        d="${d}"
+        :fill="multiColor ? (${index === 0 ? 'primaryColor || \'currentColor\'' : 'secondaryColor || \'#666666\''}) : color"
+      />`
+  }).join('\n    ')
+  
   return `<template>
   <svg
     :width="size"
     :height="size"
     viewBox="0 0 32 32"
-    :fill="color"
-    :class="className"
-    :style="style"
+    :fill="multiColor ? 'none' : color"
+    :class="combinedClassName"
+    :style="combinedStyle"
     :role="title ? 'img' : 'presentation'"
     :aria-hidden="title ? 'false' : 'true'"
     :aria-label="title"
     v-bind="$attrs"
   >
     <title v-if="title">{{ title }}</title>
-    ${paths}
+    ${pathElements || paths}
   </svg>
 </template>
 
 <script setup lang="ts">
+import { computed } from 'vue'
+
 interface Props {
   size?: number | string
   color?: string
+  multiColor?: boolean
+  primaryColor?: string
+  secondaryColor?: string
   className?: string
   style?: Record<string, any>
   title?: string
 }
 
-withDefaults(defineProps<Props>(), {
+const props = withDefaults(defineProps<Props>(), {
   size: 24,
-  color: 'currentColor'
+  color: 'currentColor',
+  multiColor: false
+})
+
+const combinedClassName = computed(() => {
+  const classes = [props.className]
+  if (props.multiColor) {
+    classes.push('weather-multi-color', 'weather-${name}')
+  }
+  return classes.filter(Boolean).join(' ')
+})
+
+const combinedStyle = computed(() => {
+  if (!props.multiColor) return props.style
+  
+  return {
+    ...props.style,
+    ...(props.primaryColor && { '--weather-primary-fill': props.primaryColor }),
+    ...(props.secondaryColor && { '--weather-secondary-fill': props.secondaryColor })
+  }
 })
 </script>
 `

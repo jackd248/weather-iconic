@@ -4,27 +4,46 @@ import type { IconProps } from '../types'
 export const WeatherCompassSouthWest = React.forwardRef<SVGSVGElement, IconProps>(({
   size = 24,
   color = 'currentColor',
+  multiColor = false,
+  primaryColor,
+  secondaryColor,
   className,
   style,
   title,
   ...props
-}, ref) => (
-  <svg
-    ref={ref}
-    width={size}
-    height={size}
-    viewBox="0 0 32 32"
-    fill={color}
-    className={className}
-    style={style}
-    role={title ? 'img' : 'presentation'}
-    aria-hidden={title ? 'false' : 'true'}
-    aria-label={title}
-    {...props}
-  >
-    {title && <title>{title}</title>}
-    <path d="M21.92 10.112c3.232 3.232 3.232 8.512 0 11.744a8.23 8.23 0 0 1-5.856 2.432 8.23 8.23 0 0 1-5.856-2.432c-3.232-3.232-3.232-8.512 0-11.744 1.536-1.568 3.616-2.432 5.856-2.432 2.208 0 4.288.864 5.856 2.432m-1.248 10.496c2.528-2.528 2.528-6.656 0-9.184-1.216-1.216-2.848-1.888-4.608-1.888s-3.36.672-4.608 1.888c-2.528 2.528-2.528 6.656 0 9.184a6.57 6.57 0 0 0 4.608 1.888c1.728 0 3.36-.672 4.608-1.888m-6.016-6.08c.8-.8 2.08-.8 2.88 0s.8 2.08 0 2.88c-1.344 1.344-4.448 1.568-4.448 1.568s.224-3.136 1.568-4.448m1.856 1.888a.62.62 0 0 0 0-.896.647.647 0 0 0-.896 0 .62.62 0 0 0 0 .896c.256.256.64.256.896 0"/>
-  </svg>
-))
+}, ref) => {
+  const combinedClassName = `${className || ''} ${multiColor ? 'weather-multi-color weather-compass-south-west' : ''}`.trim()
+  const combinedStyle = multiColor ? {
+    ...style,
+    ...(primaryColor && { '--weather-primary-fill': primaryColor }),
+    ...(secondaryColor && { '--weather-secondary-fill': secondaryColor })
+  } as React.CSSProperties : style
+
+  return (
+    <svg
+      ref={ref}
+      width={size}
+      height={size}
+      viewBox="0 0 32 32"
+      fill={multiColor ? 'none' : color}
+      className={combinedClassName}
+      style={combinedStyle}
+      role={title ? 'img' : 'presentation'}
+      aria-hidden={title ? 'false' : 'true'}
+      aria-label={title}
+      {...props}
+    >
+      {title && <title>{title}</title>}
+      <path 
+        d="M14.656,14.528C13.312,15.84 13.088,18.976 13.088,18.976C13.088,18.976 16.192,18.752 17.536,17.408C18.336,16.608 18.336,15.328 17.536,14.528C16.736,13.728 15.456,13.728 14.656,14.528ZM16.512,16.416C16.256,16.672 15.872,16.672 15.616,16.416C15.36,16.16 15.36,15.776 15.616,15.52C15.872,15.264 16.288,15.296 16.512,15.52C16.768,15.776 16.768,16.16 16.512,16.416Z"
+        fill={multiColor ? (primaryColor || "currentColor") : color}
+      />
+      <path 
+        d="M21.92,10.112C20.352,8.544 18.272,7.68 16.064,7.68C13.824,7.68 11.744,8.544 10.208,10.112C6.976,13.344 6.976,18.624 10.208,21.856C11.776,23.424 13.856,24.288 16.064,24.288C18.272,24.288 20.352,23.424 21.92,21.856C25.152,18.624 25.152,13.344 21.92,10.112ZM20.672,20.608C19.424,21.824 17.792,22.496 16.064,22.496C14.336,22.496 12.704,21.824 11.456,20.608C8.928,18.08 8.928,13.952 11.456,11.424C12.704,10.208 14.304,9.536 16.064,9.536C17.824,9.536 19.456,10.208 20.672,11.424C23.2,13.952 23.2,18.08 20.672,20.608Z"
+        fill={multiColor ? (secondaryColor || "#666666") : color}
+      />
+    </svg>
+  )
+})
 
 WeatherCompassSouthWest.displayName = 'WeatherCompassSouthWest'

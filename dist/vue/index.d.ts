@@ -144,6 +144,16 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>, {}, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<{
         size: {
             type: import('vue').PropType<string | number>;
@@ -162,9 +172,20 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>> & Readonly<{}>, {
         size: number | string;
         color: string;
+        multiColor: boolean;
     }, {}, {}, {}, string, import('vue').ComponentProvideOptions, true, {}, any>;
     readonly celsius: import('vue').DefineComponent<import('vue').ExtractPropTypes<{
         size: {
@@ -184,6 +205,16 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>, {}, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<{
         size: {
             type: import('vue').PropType<string | number>;
@@ -202,9 +233,20 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>> & Readonly<{}>, {
         size: number | string;
         color: string;
+        multiColor: boolean;
     }, {}, {}, {}, string, import('vue').ComponentProvideOptions, true, {}, any>;
     readonly 'cloud-down': import('vue').DefineComponent<import('vue').ExtractPropTypes<{
         size: {
@@ -224,6 +266,16 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>, {}, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<{
         size: {
             type: import('vue').PropType<string | number>;
@@ -242,9 +294,20 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>> & Readonly<{}>, {
         size: number | string;
         color: string;
+        multiColor: boolean;
     }, {}, {}, {}, string, import('vue').ComponentProvideOptions, true, {}, any>;
     readonly 'cloud-fog': import('vue').DefineComponent<import('vue').ExtractPropTypes<{
         size: {
@@ -264,6 +327,16 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>, {}, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<{
         size: {
             type: import('vue').PropType<string | number>;
@@ -282,9 +355,20 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>> & Readonly<{}>, {
         size: number | string;
         color: string;
+        multiColor: boolean;
     }, {}, {}, {}, string, import('vue').ComponentProvideOptions, true, {}, any>;
     readonly 'cloud-rain-single': import('vue').DefineComponent<import('vue').ExtractPropTypes<{
         size: {
@@ -304,6 +388,16 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>, {}, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<{
         size: {
             type: import('vue').PropType<string | number>;
@@ -322,9 +416,20 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>> & Readonly<{}>, {
         size: number | string;
         color: string;
+        multiColor: boolean;
     }, {}, {}, {}, string, import('vue').ComponentProvideOptions, true, {}, any>;
     readonly 'cloud-rain': import('vue').DefineComponent<import('vue').ExtractPropTypes<{
         size: {
@@ -344,6 +449,16 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>, {}, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<{
         size: {
             type: import('vue').PropType<string | number>;
@@ -362,9 +477,20 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>> & Readonly<{}>, {
         size: number | string;
         color: string;
+        multiColor: boolean;
     }, {}, {}, {}, string, import('vue').ComponentProvideOptions, true, {}, any>;
     readonly 'cloud-snow-single': import('vue').DefineComponent<import('vue').ExtractPropTypes<{
         size: {
@@ -384,6 +510,16 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>, {}, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<{
         size: {
             type: import('vue').PropType<string | number>;
@@ -402,9 +538,20 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>> & Readonly<{}>, {
         size: number | string;
         color: string;
+        multiColor: boolean;
     }, {}, {}, {}, string, import('vue').ComponentProvideOptions, true, {}, any>;
     readonly 'cloud-snow': import('vue').DefineComponent<import('vue').ExtractPropTypes<{
         size: {
@@ -424,6 +571,16 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>, {}, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<{
         size: {
             type: import('vue').PropType<string | number>;
@@ -442,9 +599,20 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>> & Readonly<{}>, {
         size: number | string;
         color: string;
+        multiColor: boolean;
     }, {}, {}, {}, string, import('vue').ComponentProvideOptions, true, {}, any>;
     readonly 'cloud-up': import('vue').DefineComponent<import('vue').ExtractPropTypes<{
         size: {
@@ -464,6 +632,16 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>, {}, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<{
         size: {
             type: import('vue').PropType<string | number>;
@@ -482,9 +660,20 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>> & Readonly<{}>, {
         size: number | string;
         color: string;
+        multiColor: boolean;
     }, {}, {}, {}, string, import('vue').ComponentProvideOptions, true, {}, any>;
     readonly 'cloud-wind': import('vue').DefineComponent<import('vue').ExtractPropTypes<{
         size: {
@@ -504,6 +693,16 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>, {}, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<{
         size: {
             type: import('vue').PropType<string | number>;
@@ -522,9 +721,20 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>> & Readonly<{}>, {
         size: number | string;
         color: string;
+        multiColor: boolean;
     }, {}, {}, {}, string, import('vue').ComponentProvideOptions, true, {}, any>;
     readonly cloud: import('vue').DefineComponent<import('vue').ExtractPropTypes<{
         size: {
@@ -544,6 +754,16 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>, {}, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<{
         size: {
             type: import('vue').PropType<string | number>;
@@ -562,9 +782,20 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>> & Readonly<{}>, {
         size: number | string;
         color: string;
+        multiColor: boolean;
     }, {}, {}, {}, string, import('vue').ComponentProvideOptions, true, {}, any>;
     readonly clouds: import('vue').DefineComponent<import('vue').ExtractPropTypes<{
         size: {
@@ -584,6 +815,16 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>, {}, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<{
         size: {
             type: import('vue').PropType<string | number>;
@@ -602,9 +843,20 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>> & Readonly<{}>, {
         size: number | string;
         color: string;
+        multiColor: boolean;
     }, {}, {}, {}, string, import('vue').ComponentProvideOptions, true, {}, any>;
     readonly 'compass-east': import('vue').DefineComponent<import('vue').ExtractPropTypes<{
         size: {
@@ -624,6 +876,16 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>, {}, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<{
         size: {
             type: import('vue').PropType<string | number>;
@@ -642,9 +904,20 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>> & Readonly<{}>, {
         size: number | string;
         color: string;
+        multiColor: boolean;
     }, {}, {}, {}, string, import('vue').ComponentProvideOptions, true, {}, any>;
     readonly 'compass-north-east': import('vue').DefineComponent<import('vue').ExtractPropTypes<{
         size: {
@@ -664,6 +937,16 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>, {}, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<{
         size: {
             type: import('vue').PropType<string | number>;
@@ -682,9 +965,20 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>> & Readonly<{}>, {
         size: number | string;
         color: string;
+        multiColor: boolean;
     }, {}, {}, {}, string, import('vue').ComponentProvideOptions, true, {}, any>;
     readonly 'compass-north-west': import('vue').DefineComponent<import('vue').ExtractPropTypes<{
         size: {
@@ -704,6 +998,16 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>, {}, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<{
         size: {
             type: import('vue').PropType<string | number>;
@@ -722,9 +1026,20 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>> & Readonly<{}>, {
         size: number | string;
         color: string;
+        multiColor: boolean;
     }, {}, {}, {}, string, import('vue').ComponentProvideOptions, true, {}, any>;
     readonly 'compass-north': import('vue').DefineComponent<import('vue').ExtractPropTypes<{
         size: {
@@ -744,6 +1059,16 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>, {}, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<{
         size: {
             type: import('vue').PropType<string | number>;
@@ -762,9 +1087,20 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>> & Readonly<{}>, {
         size: number | string;
         color: string;
+        multiColor: boolean;
     }, {}, {}, {}, string, import('vue').ComponentProvideOptions, true, {}, any>;
     readonly 'compass-south-east': import('vue').DefineComponent<import('vue').ExtractPropTypes<{
         size: {
@@ -784,6 +1120,16 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>, {}, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<{
         size: {
             type: import('vue').PropType<string | number>;
@@ -802,9 +1148,20 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>> & Readonly<{}>, {
         size: number | string;
         color: string;
+        multiColor: boolean;
     }, {}, {}, {}, string, import('vue').ComponentProvideOptions, true, {}, any>;
     readonly 'compass-south-west': import('vue').DefineComponent<import('vue').ExtractPropTypes<{
         size: {
@@ -824,6 +1181,16 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>, {}, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<{
         size: {
             type: import('vue').PropType<string | number>;
@@ -842,9 +1209,20 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>> & Readonly<{}>, {
         size: number | string;
         color: string;
+        multiColor: boolean;
     }, {}, {}, {}, string, import('vue').ComponentProvideOptions, true, {}, any>;
     readonly 'compass-south': import('vue').DefineComponent<import('vue').ExtractPropTypes<{
         size: {
@@ -864,6 +1242,16 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>, {}, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<{
         size: {
             type: import('vue').PropType<string | number>;
@@ -882,9 +1270,20 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>> & Readonly<{}>, {
         size: number | string;
         color: string;
+        multiColor: boolean;
     }, {}, {}, {}, string, import('vue').ComponentProvideOptions, true, {}, any>;
     readonly 'compass-west': import('vue').DefineComponent<import('vue').ExtractPropTypes<{
         size: {
@@ -904,6 +1303,16 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>, {}, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<{
         size: {
             type: import('vue').PropType<string | number>;
@@ -922,9 +1331,20 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>> & Readonly<{}>, {
         size: number | string;
         color: string;
+        multiColor: boolean;
     }, {}, {}, {}, string, import('vue').ComponentProvideOptions, true, {}, any>;
     readonly compass: import('vue').DefineComponent<import('vue').ExtractPropTypes<{
         size: {
@@ -944,6 +1364,16 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>, {}, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<{
         size: {
             type: import('vue').PropType<string | number>;
@@ -962,9 +1392,20 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>> & Readonly<{}>, {
         size: number | string;
         color: string;
+        multiColor: boolean;
     }, {}, {}, {}, string, import('vue').ComponentProvideOptions, true, {}, any>;
     readonly fahrenheit: import('vue').DefineComponent<import('vue').ExtractPropTypes<{
         size: {
@@ -984,6 +1425,16 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>, {}, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<{
         size: {
             type: import('vue').PropType<string | number>;
@@ -1002,9 +1453,20 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>> & Readonly<{}>, {
         size: number | string;
         color: string;
+        multiColor: boolean;
     }, {}, {}, {}, string, import('vue').ComponentProvideOptions, true, {}, any>;
     readonly fog: import('vue').DefineComponent<import('vue').ExtractPropTypes<{
         size: {
@@ -1024,6 +1486,16 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>, {}, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<{
         size: {
             type: import('vue').PropType<string | number>;
@@ -1042,9 +1514,20 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>> & Readonly<{}>, {
         size: number | string;
         color: string;
+        multiColor: boolean;
     }, {}, {}, {}, string, import('vue').ComponentProvideOptions, true, {}, any>;
     readonly hail: import('vue').DefineComponent<import('vue').ExtractPropTypes<{
         size: {
@@ -1064,6 +1547,16 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>, {}, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<{
         size: {
             type: import('vue').PropType<string | number>;
@@ -1082,9 +1575,20 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>> & Readonly<{}>, {
         size: number | string;
         color: string;
+        multiColor: boolean;
     }, {}, {}, {}, string, import('vue').ComponentProvideOptions, true, {}, any>;
     readonly lightning: import('vue').DefineComponent<import('vue').ExtractPropTypes<{
         size: {
@@ -1104,6 +1608,16 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>, {}, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<{
         size: {
             type: import('vue').PropType<string | number>;
@@ -1122,9 +1636,20 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>> & Readonly<{}>, {
         size: number | string;
         color: string;
+        multiColor: boolean;
     }, {}, {}, {}, string, import('vue').ComponentProvideOptions, true, {}, any>;
     readonly 'moon-cloud-lightning': import('vue').DefineComponent<import('vue').ExtractPropTypes<{
         size: {
@@ -1144,6 +1669,16 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>, {}, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<{
         size: {
             type: import('vue').PropType<string | number>;
@@ -1162,9 +1697,20 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>> & Readonly<{}>, {
         size: number | string;
         color: string;
+        multiColor: boolean;
     }, {}, {}, {}, string, import('vue').ComponentProvideOptions, true, {}, any>;
     readonly 'moon-cloud-rain': import('vue').DefineComponent<import('vue').ExtractPropTypes<{
         size: {
@@ -1184,6 +1730,16 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>, {}, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<{
         size: {
             type: import('vue').PropType<string | number>;
@@ -1202,9 +1758,20 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>> & Readonly<{}>, {
         size: number | string;
         color: string;
+        multiColor: boolean;
     }, {}, {}, {}, string, import('vue').ComponentProvideOptions, true, {}, any>;
     readonly 'moon-cloud-snow': import('vue').DefineComponent<import('vue').ExtractPropTypes<{
         size: {
@@ -1224,6 +1791,16 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>, {}, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<{
         size: {
             type: import('vue').PropType<string | number>;
@@ -1242,9 +1819,20 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>> & Readonly<{}>, {
         size: number | string;
         color: string;
+        multiColor: boolean;
     }, {}, {}, {}, string, import('vue').ComponentProvideOptions, true, {}, any>;
     readonly 'moon-cloud-wind': import('vue').DefineComponent<import('vue').ExtractPropTypes<{
         size: {
@@ -1264,6 +1852,16 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>, {}, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<{
         size: {
             type: import('vue').PropType<string | number>;
@@ -1282,9 +1880,20 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>> & Readonly<{}>, {
         size: number | string;
         color: string;
+        multiColor: boolean;
     }, {}, {}, {}, string, import('vue').ComponentProvideOptions, true, {}, any>;
     readonly 'moon-cloud': import('vue').DefineComponent<import('vue').ExtractPropTypes<{
         size: {
@@ -1304,6 +1913,16 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>, {}, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<{
         size: {
             type: import('vue').PropType<string | number>;
@@ -1322,9 +1941,20 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>> & Readonly<{}>, {
         size: number | string;
         color: string;
+        multiColor: boolean;
     }, {}, {}, {}, string, import('vue').ComponentProvideOptions, true, {}, any>;
     readonly 'moon-first-quarter': import('vue').DefineComponent<import('vue').ExtractPropTypes<{
         size: {
@@ -1344,6 +1974,16 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>, {}, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<{
         size: {
             type: import('vue').PropType<string | number>;
@@ -1362,9 +2002,20 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>> & Readonly<{}>, {
         size: number | string;
         color: string;
+        multiColor: boolean;
     }, {}, {}, {}, string, import('vue').ComponentProvideOptions, true, {}, any>;
     readonly 'moon-fog': import('vue').DefineComponent<import('vue').ExtractPropTypes<{
         size: {
@@ -1384,6 +2035,16 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>, {}, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<{
         size: {
             type: import('vue').PropType<string | number>;
@@ -1402,9 +2063,20 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>> & Readonly<{}>, {
         size: number | string;
         color: string;
+        multiColor: boolean;
     }, {}, {}, {}, string, import('vue').ComponentProvideOptions, true, {}, any>;
     readonly 'moon-fullmoon': import('vue').DefineComponent<import('vue').ExtractPropTypes<{
         size: {
@@ -1424,6 +2096,16 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>, {}, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<{
         size: {
             type: import('vue').PropType<string | number>;
@@ -1442,9 +2124,20 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>> & Readonly<{}>, {
         size: number | string;
         color: string;
+        multiColor: boolean;
     }, {}, {}, {}, string, import('vue').ComponentProvideOptions, true, {}, any>;
     readonly 'moon-last-quarter': import('vue').DefineComponent<import('vue').ExtractPropTypes<{
         size: {
@@ -1464,6 +2157,16 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>, {}, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<{
         size: {
             type: import('vue').PropType<string | number>;
@@ -1482,9 +2185,20 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>> & Readonly<{}>, {
         size: number | string;
         color: string;
+        multiColor: boolean;
     }, {}, {}, {}, string, import('vue').ComponentProvideOptions, true, {}, any>;
     readonly 'moon-newmoon': import('vue').DefineComponent<import('vue').ExtractPropTypes<{
         size: {
@@ -1504,6 +2218,16 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>, {}, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<{
         size: {
             type: import('vue').PropType<string | number>;
@@ -1522,9 +2246,20 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>> & Readonly<{}>, {
         size: number | string;
         color: string;
+        multiColor: boolean;
     }, {}, {}, {}, string, import('vue').ComponentProvideOptions, true, {}, any>;
     readonly 'moon-waning-crescent': import('vue').DefineComponent<import('vue').ExtractPropTypes<{
         size: {
@@ -1544,6 +2279,16 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>, {}, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<{
         size: {
             type: import('vue').PropType<string | number>;
@@ -1562,9 +2307,20 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>> & Readonly<{}>, {
         size: number | string;
         color: string;
+        multiColor: boolean;
     }, {}, {}, {}, string, import('vue').ComponentProvideOptions, true, {}, any>;
     readonly 'moon-waning-gibbous': import('vue').DefineComponent<import('vue').ExtractPropTypes<{
         size: {
@@ -1584,6 +2340,16 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>, {}, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<{
         size: {
             type: import('vue').PropType<string | number>;
@@ -1602,9 +2368,20 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>> & Readonly<{}>, {
         size: number | string;
         color: string;
+        multiColor: boolean;
     }, {}, {}, {}, string, import('vue').ComponentProvideOptions, true, {}, any>;
     readonly 'moon-waxing-crescent': import('vue').DefineComponent<import('vue').ExtractPropTypes<{
         size: {
@@ -1624,6 +2401,16 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>, {}, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<{
         size: {
             type: import('vue').PropType<string | number>;
@@ -1642,9 +2429,20 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>> & Readonly<{}>, {
         size: number | string;
         color: string;
+        multiColor: boolean;
     }, {}, {}, {}, string, import('vue').ComponentProvideOptions, true, {}, any>;
     readonly 'moon-waxing-gibbous': import('vue').DefineComponent<import('vue').ExtractPropTypes<{
         size: {
@@ -1664,6 +2462,16 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>, {}, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<{
         size: {
             type: import('vue').PropType<string | number>;
@@ -1682,9 +2490,20 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>> & Readonly<{}>, {
         size: number | string;
         color: string;
+        multiColor: boolean;
     }, {}, {}, {}, string, import('vue').ComponentProvideOptions, true, {}, any>;
     readonly moon: import('vue').DefineComponent<import('vue').ExtractPropTypes<{
         size: {
@@ -1704,6 +2523,16 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>, {}, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<{
         size: {
             type: import('vue').PropType<string | number>;
@@ -1722,9 +2551,20 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>> & Readonly<{}>, {
         size: number | string;
         color: string;
+        multiColor: boolean;
     }, {}, {}, {}, string, import('vue').ComponentProvideOptions, true, {}, any>;
     readonly rainbow: import('vue').DefineComponent<import('vue').ExtractPropTypes<{
         size: {
@@ -1744,6 +2584,16 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>, {}, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<{
         size: {
             type: import('vue').PropType<string | number>;
@@ -1762,9 +2612,20 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>> & Readonly<{}>, {
         size: number | string;
         color: string;
+        multiColor: boolean;
     }, {}, {}, {}, string, import('vue').ComponentProvideOptions, true, {}, any>;
     readonly raindrop: import('vue').DefineComponent<import('vue').ExtractPropTypes<{
         size: {
@@ -1784,6 +2645,16 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>, {}, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<{
         size: {
             type: import('vue').PropType<string | number>;
@@ -1802,9 +2673,20 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>> & Readonly<{}>, {
         size: number | string;
         color: string;
+        multiColor: boolean;
     }, {}, {}, {}, string, import('vue').ComponentProvideOptions, true, {}, any>;
     readonly refresh: import('vue').DefineComponent<import('vue').ExtractPropTypes<{
         size: {
@@ -1824,6 +2706,16 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>, {}, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<{
         size: {
             type: import('vue').PropType<string | number>;
@@ -1842,9 +2734,20 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>> & Readonly<{}>, {
         size: number | string;
         color: string;
+        multiColor: boolean;
     }, {}, {}, {}, string, import('vue').ComponentProvideOptions, true, {}, any>;
     readonly snowflake: import('vue').DefineComponent<import('vue').ExtractPropTypes<{
         size: {
@@ -1864,6 +2767,16 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>, {}, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<{
         size: {
             type: import('vue').PropType<string | number>;
@@ -1882,9 +2795,20 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>> & Readonly<{}>, {
         size: number | string;
         color: string;
+        multiColor: boolean;
     }, {}, {}, {}, string, import('vue').ComponentProvideOptions, true, {}, any>;
     readonly 'sun-cloud-lightning': import('vue').DefineComponent<import('vue').ExtractPropTypes<{
         size: {
@@ -1904,6 +2828,16 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>, {}, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<{
         size: {
             type: import('vue').PropType<string | number>;
@@ -1922,9 +2856,20 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>> & Readonly<{}>, {
         size: number | string;
         color: string;
+        multiColor: boolean;
     }, {}, {}, {}, string, import('vue').ComponentProvideOptions, true, {}, any>;
     readonly 'sun-cloud-rain': import('vue').DefineComponent<import('vue').ExtractPropTypes<{
         size: {
@@ -1944,6 +2889,16 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>, {}, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<{
         size: {
             type: import('vue').PropType<string | number>;
@@ -1962,9 +2917,20 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>> & Readonly<{}>, {
         size: number | string;
         color: string;
+        multiColor: boolean;
     }, {}, {}, {}, string, import('vue').ComponentProvideOptions, true, {}, any>;
     readonly 'sun-cloud-snow': import('vue').DefineComponent<import('vue').ExtractPropTypes<{
         size: {
@@ -1984,6 +2950,16 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>, {}, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<{
         size: {
             type: import('vue').PropType<string | number>;
@@ -2002,9 +2978,20 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>> & Readonly<{}>, {
         size: number | string;
         color: string;
+        multiColor: boolean;
     }, {}, {}, {}, string, import('vue').ComponentProvideOptions, true, {}, any>;
     readonly 'sun-cloud-wind': import('vue').DefineComponent<import('vue').ExtractPropTypes<{
         size: {
@@ -2024,6 +3011,16 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>, {}, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<{
         size: {
             type: import('vue').PropType<string | number>;
@@ -2042,9 +3039,20 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>> & Readonly<{}>, {
         size: number | string;
         color: string;
+        multiColor: boolean;
     }, {}, {}, {}, string, import('vue').ComponentProvideOptions, true, {}, any>;
     readonly 'sun-cloud': import('vue').DefineComponent<import('vue').ExtractPropTypes<{
         size: {
@@ -2064,6 +3072,16 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>, {}, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<{
         size: {
             type: import('vue').PropType<string | number>;
@@ -2082,9 +3100,20 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>> & Readonly<{}>, {
         size: number | string;
         color: string;
+        multiColor: boolean;
     }, {}, {}, {}, string, import('vue').ComponentProvideOptions, true, {}, any>;
     readonly 'sun-fog': import('vue').DefineComponent<import('vue').ExtractPropTypes<{
         size: {
@@ -2104,6 +3133,16 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>, {}, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<{
         size: {
             type: import('vue').PropType<string | number>;
@@ -2122,9 +3161,20 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>> & Readonly<{}>, {
         size: number | string;
         color: string;
+        multiColor: boolean;
     }, {}, {}, {}, string, import('vue').ComponentProvideOptions, true, {}, any>;
     readonly 'sun-low': import('vue').DefineComponent<import('vue').ExtractPropTypes<{
         size: {
@@ -2144,6 +3194,16 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>, {}, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<{
         size: {
             type: import('vue').PropType<string | number>;
@@ -2162,9 +3222,20 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>> & Readonly<{}>, {
         size: number | string;
         color: string;
+        multiColor: boolean;
     }, {}, {}, {}, string, import('vue').ComponentProvideOptions, true, {}, any>;
     readonly 'sun-medium': import('vue').DefineComponent<import('vue').ExtractPropTypes<{
         size: {
@@ -2184,6 +3255,16 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>, {}, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<{
         size: {
             type: import('vue').PropType<string | number>;
@@ -2202,9 +3283,20 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>> & Readonly<{}>, {
         size: number | string;
         color: string;
+        multiColor: boolean;
     }, {}, {}, {}, string, import('vue').ComponentProvideOptions, true, {}, any>;
     readonly sun: import('vue').DefineComponent<import('vue').ExtractPropTypes<{
         size: {
@@ -2224,6 +3316,16 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>, {}, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<{
         size: {
             type: import('vue').PropType<string | number>;
@@ -2242,9 +3344,20 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>> & Readonly<{}>, {
         size: number | string;
         color: string;
+        multiColor: boolean;
     }, {}, {}, {}, string, import('vue').ComponentProvideOptions, true, {}, any>;
     readonly sunrise: import('vue').DefineComponent<import('vue').ExtractPropTypes<{
         size: {
@@ -2264,6 +3377,16 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>, {}, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<{
         size: {
             type: import('vue').PropType<string | number>;
@@ -2282,9 +3405,20 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>> & Readonly<{}>, {
         size: number | string;
         color: string;
+        multiColor: boolean;
     }, {}, {}, {}, string, import('vue').ComponentProvideOptions, true, {}, any>;
     readonly sunset: import('vue').DefineComponent<import('vue').ExtractPropTypes<{
         size: {
@@ -2304,6 +3438,16 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>, {}, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<{
         size: {
             type: import('vue').PropType<string | number>;
@@ -2322,9 +3466,20 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>> & Readonly<{}>, {
         size: number | string;
         color: string;
+        multiColor: boolean;
     }, {}, {}, {}, string, import('vue').ComponentProvideOptions, true, {}, any>;
     readonly 'thermometer-cold': import('vue').DefineComponent<import('vue').ExtractPropTypes<{
         size: {
@@ -2344,6 +3499,16 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>, {}, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<{
         size: {
             type: import('vue').PropType<string | number>;
@@ -2362,9 +3527,20 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>> & Readonly<{}>, {
         size: number | string;
         color: string;
+        multiColor: boolean;
     }, {}, {}, {}, string, import('vue').ComponentProvideOptions, true, {}, any>;
     readonly 'thermometer-hot': import('vue').DefineComponent<import('vue').ExtractPropTypes<{
         size: {
@@ -2384,6 +3560,16 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>, {}, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<{
         size: {
             type: import('vue').PropType<string | number>;
@@ -2402,9 +3588,20 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>> & Readonly<{}>, {
         size: number | string;
         color: string;
+        multiColor: boolean;
     }, {}, {}, {}, string, import('vue').ComponentProvideOptions, true, {}, any>;
     readonly 'thermometer-medium': import('vue').DefineComponent<import('vue').ExtractPropTypes<{
         size: {
@@ -2424,6 +3621,16 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>, {}, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<{
         size: {
             type: import('vue').PropType<string | number>;
@@ -2442,9 +3649,20 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>> & Readonly<{}>, {
         size: number | string;
         color: string;
+        multiColor: boolean;
     }, {}, {}, {}, string, import('vue').ComponentProvideOptions, true, {}, any>;
     readonly tornado: import('vue').DefineComponent<import('vue').ExtractPropTypes<{
         size: {
@@ -2464,6 +3682,16 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>, {}, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<{
         size: {
             type: import('vue').PropType<string | number>;
@@ -2482,9 +3710,20 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>> & Readonly<{}>, {
         size: number | string;
         color: string;
+        multiColor: boolean;
     }, {}, {}, {}, string, import('vue').ComponentProvideOptions, true, {}, any>;
     readonly umbrella: import('vue').DefineComponent<import('vue').ExtractPropTypes<{
         size: {
@@ -2504,6 +3743,16 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>, {}, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<{
         size: {
             type: import('vue').PropType<string | number>;
@@ -2522,9 +3771,20 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>> & Readonly<{}>, {
         size: number | string;
         color: string;
+        multiColor: boolean;
     }, {}, {}, {}, string, import('vue').ComponentProvideOptions, true, {}, any>;
     readonly 'wind-high': import('vue').DefineComponent<import('vue').ExtractPropTypes<{
         size: {
@@ -2544,6 +3804,16 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>, {}, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<{
         size: {
             type: import('vue').PropType<string | number>;
@@ -2562,9 +3832,20 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>> & Readonly<{}>, {
         size: number | string;
         color: string;
+        multiColor: boolean;
     }, {}, {}, {}, string, import('vue').ComponentProvideOptions, true, {}, any>;
     readonly wind: import('vue').DefineComponent<import('vue').ExtractPropTypes<{
         size: {
@@ -2584,6 +3865,16 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>, {}, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<{
         size: {
             type: import('vue').PropType<string | number>;
@@ -2602,9 +3893,20 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>> & Readonly<{}>, {
         size: number | string;
         color: string;
+        multiColor: boolean;
     }, {}, {}, {}, string, import('vue').ComponentProvideOptions, true, {}, any>;
     readonly windsock: import('vue').DefineComponent<import('vue').ExtractPropTypes<{
         size: {
@@ -2624,6 +3926,16 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>, {}, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<{
         size: {
             type: import('vue').PropType<string | number>;
@@ -2642,9 +3954,20 @@ export declare const iconComponents: {
         title: {
             type: import('vue').PropType<string>;
         };
+        multiColor: {
+            type: import('vue').PropType<boolean>;
+            default: boolean;
+        };
+        primaryColor: {
+            type: import('vue').PropType<string>;
+        };
+        secondaryColor: {
+            type: import('vue').PropType<string>;
+        };
     }>> & Readonly<{}>, {
         size: number | string;
         color: string;
+        multiColor: boolean;
     }, {}, {}, {}, string, import('vue').ComponentProvideOptions, true, {}, any>;
 };
 //# sourceMappingURL=index.d.ts.map

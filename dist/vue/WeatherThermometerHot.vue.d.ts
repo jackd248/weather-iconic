@@ -1,6 +1,9 @@
 interface Props {
     size?: number | string;
     color?: string;
+    multiColor?: boolean;
+    primaryColor?: string;
+    secondaryColor?: string;
     className?: string;
     style?: Record<string, any>;
     title?: string;
@@ -8,12 +11,15 @@ interface Props {
 declare const _default: import('vue').DefineComponent<import('vue').ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<Props>, {
     size: number;
     color: string;
+    multiColor: boolean;
 }>>, {}, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToRuntimeProps<Props>, {
     size: number;
     color: string;
+    multiColor: boolean;
 }>>> & Readonly<{}>, {
     size: number | string;
     color: string;
+    multiColor: boolean;
 }, {}, {}, {}, string, import('vue').ComponentProvideOptions, true, {}, any>;
 export default _default;
 type __VLS_NonUndefinedable<T> = T extends undefined ? never : T;

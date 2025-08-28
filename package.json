@@ -26,12 +26,11 @@
     "./fonts": "./dist/fonts/",
     "./fonts/css": "./dist/weather-iconic.css",
     "./fonts/scss": "./dist/weather-iconic.scss",
-    "./png": "./dist/png/",
-    "./png-utils": "./dist/png-utils.js",
     "./icon-constants": "./dist/icon-constants.js"
   },
   "files": [
     "dist/**/*",
+    "!dist/png/**",
     "README.md",
     "LICENSE",
     "CHANGELOG.md"
@@ -76,6 +75,7 @@
   },
   "devDependencies": {
     "@types/node": "^20.0.0",
+    "@types/react": "^19.1.12",
     "@vitejs/plugin-react": "^4.0.0",
     "@vitejs/plugin-vue": "^4.0.0",
     "fantasticon": "^3.0.0",

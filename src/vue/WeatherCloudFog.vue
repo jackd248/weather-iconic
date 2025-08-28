@@ -3,30 +3,61 @@
     :width="size"
     :height="size"
     viewBox="0 0 32 32"
-    :fill="color"
-    :class="className"
-    :style="style"
+    :fill="multiColor ? 'none' : color"
+    :class="combinedClassName"
+    :style="combinedStyle"
     :role="title ? 'img' : 'presentation'"
     :aria-hidden="title ? 'false' : 'true'"
     :aria-label="title"
     v-bind="$attrs"
   >
     <title v-if="title">{{ title }}</title>
-    <path d="M8.416 15.84c-.416-.256-.544-.8-.288-1.248a5.39 5.39 0 0 1 5.408-2.528c1.088-1.696 2.944-2.688 4.96-2.688 3.168 0 5.792 2.464 5.952 5.632a.857.857 0 0 1-.864.928.857.857 0 0 1-.928-.864 4.12 4.12 0 0 0-4.128-3.936c-1.6 0-3.008.896-3.712 2.304a.946.946 0 0 1-1.056.48 3.63 3.63 0 0 0-4.096 1.6.86.86 0 0 1-.768.448.9.9 0 0 1-.48-.128M23.2 20.96c.512 0 .896.416.896.896s-.416.896-.896.896H11.776a.894.894 0 0 1-.896-.896c0-.48.416-.896.896-.896zm2.08-2.272c.512 0 .896.416.896.896s-.384.896-.896.896H9.088a.894.894 0 0 1-.896-.896c0-.48.416-.896.896-.896zm.512-1.376c0 .48-.384.896-.896.896H7.904a.894.894 0 0 1-.896-.896c0-.48.416-.896.896-.896h16.992c.512 0 .896.416.896.896"/>
+    <path 
+        d="M23.2,20.96C23.712,20.96 24.096,21.376 24.096,21.856C24.096,22.336 23.68,22.752 23.2,22.752L11.776,22.752C11.264,22.752 10.88,22.336 10.88,21.856C10.88,21.376 11.296,20.96 11.776,20.96L23.2,20.96ZM25.28,18.688C25.792,18.688 26.176,19.104 26.176,19.584C26.176,20.064 25.792,20.48 25.28,20.48L9.088,20.48C8.576,20.48 8.192,20.064 8.192,19.584C8.192,19.104 8.608,18.688 9.088,18.688L25.28,18.688ZM25.792,17.312C25.792,17.792 25.408,18.208 24.896,18.208L7.904,18.208C7.392,18.208 7.008,17.792 7.008,17.312C7.008,16.832 7.424,16.416 7.904,16.416L24.896,16.416C25.408,16.416 25.792,16.832 25.792,17.312Z"
+        :fill="multiColor ? (primaryColor || 'currentColor') : color"
+      />
+    <path 
+        d="M8.416,15.84C8.576,15.936 8.736,15.968 8.896,15.968C9.216,15.968 9.504,15.808 9.664,15.52C10.496,14.144 12.16,13.472 13.76,13.92C14.176,14.016 14.624,13.824 14.816,13.44C15.52,12.032 16.928,11.136 18.528,11.136C20.736,11.136 22.56,12.864 22.656,15.072C22.656,15.584 23.072,15.968 23.584,15.936C24.096,15.936 24.48,15.52 24.448,15.008C24.288,11.84 21.664,9.376 18.496,9.376C16.48,9.376 14.624,10.368 13.536,12.064C11.392,11.744 9.248,12.736 8.128,14.592C7.872,15.04 8,15.584 8.416,15.84Z"
+        :fill="multiColor ? (secondaryColor || '#666666') : color"
+      />
   </svg>
 </template>
 
 <script setup lang="ts">
+import { computed } from 'vue'
+
 interface Props {
   size?: number | string
   color?: string
+  multiColor?: boolean
+  primaryColor?: string
+  secondaryColor?: string
   className?: string
   style?: Record<string, any>
   title?: string
 }
 
-withDefaults(defineProps<Props>(), {
+const props = withDefaults(defineProps<Props>(), {
   size: 24,
-  color: 'currentColor'
+  color: 'currentColor',
+  multiColor: false
+})
+
+const combinedClassName = computed(() => {
+  const classes = [props.className]
+  if (props.multiColor) {
+    classes.push('weather-multi-color', 'weather-cloud-fog')
+  }
+  return classes.filter(Boolean).join(' ')
+})
+
+const combinedStyle = computed(() => {
+  if (!props.multiColor) return props.style
+  
+  return {
+    ...props.style,
+    ...(props.primaryColor && { '--weather-primary-fill': props.primaryColor }),
+    ...(props.secondaryColor && { '--weather-secondary-fill': props.secondaryColor })
+  }
 })
 </script>

@@ -1,1 +1,1 @@
-{"version":3,"file":"WeatherCompassNorth.d.ts","sourceRoot":"","sources":["../../src/react/WeatherCompassNorth.tsx"],"names":[],"mappings":"AAGA,eAAO,MAAM,mBAAmB,KAwB9B,CAAA"}
+{"version":3,"file":"WeatherCompassNorth.d.ts","sourceRoot":"","sources":["../../src/react/WeatherCompassNorth.tsx"],"names":[],"mappings":"AAAA,OAAO,KAAK,MAAM,OAAO,CAAA;AACzB,OAAO,KAAK,EAAE,SAAS,EAAE,MAAM,UAAU,CAAA;AAEzC,eAAO,MAAM,mBAAmB,iFA2C9B,CAAA"}

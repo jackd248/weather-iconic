@@ -72,39 +72,47 @@
     64,
     128
   ],
-  "totalFiles": 378,
-  "totalSize": 219130,
-  "generatedAt": "2025-08-27T12:54:11.892Z",
-  "results": {
+  "multiColorConfigs": [
+    {
+      "suffix": "-teal-gray",
+      "primaryColor": "#80BBB2",
+      "secondaryColor": "#666666",
+      "label": "Teal Primary, Gray Secondary"
+    }
+  ],
+  "totalFiles": 441,
+  "totalSize": 259203,
+  "generatedAt": "2025-08-28T14:21:26.589Z",
+  "standard": {
     "barometer": {
       "16px": {
-        "bytes": 276,
+        "bytes": 274,
         "path": "./dist/png/16px/barometer.png"
       },
       "24px": {
-        "bytes": 373,
+        "bytes": 391,
         "path": "./dist/png/24px/barometer.png"
       },
       "32px": {
-        "bytes": 492,
+        "bytes": 486,
         "path": "./dist/png/32px/barometer.png"
       },
       "48px": {
-        "bytes": 645,
+        "bytes": 652,
         "path": "./dist/png/48px/barometer.png"
       },
       "64px": {
-        "bytes": 800,
+        "bytes": 769,
         "path": "./dist/png/64px/barometer.png"
       },
       "128px": {
-        "bytes": 1558,
+        "bytes": 1563,
         "path": "./dist/png/128px/barometer.png"
       }
     },
     "celsius": {
       "16px": {
-        "bytes": 271,
+        "bytes": 263,
         "path": "./dist/png/16px/celsius.png"
       },
       "24px": {
@@ -120,107 +128,107 @@
         "path": "./dist/png/48px/celsius.png"
       },
       "64px": {
-        "bytes": 672,
+        "bytes": 684,
         "path": "./dist/png/64px/celsius.png"
       },
       "128px": {
-        "bytes": 1178,
+        "bytes": 1206,
         "path": "./dist/png/128px/celsius.png"
       }
     },
     "cloud-down": {
       "16px": {
-        "bytes": 306,
+        "bytes": 310,
         "path": "./dist/png/16px/cloud-down.png"
       },
       "24px": {
-        "bytes": 403,
+        "bytes": 382,
         "path": "./dist/png/24px/cloud-down.png"
       },
       "32px": {
-        "bytes": 479,
+        "bytes": 462,
         "path": "./dist/png/32px/cloud-down.png"
       },
       "48px": {
-        "bytes": 606,
+        "bytes": 613,
         "path": "./dist/png/48px/cloud-down.png"
       },
       "64px": {
-        "bytes": 697,
+        "bytes": 702,
         "path": "./dist/png/64px/cloud-down.png"
       },
       "128px": {
-        "bytes": 1246,
+        "bytes": 1260,
         "path": "./dist/png/128px/cloud-down.png"
       }
     },
     "cloud-fog": {
       "16px": {
-        "bytes": 263,
+        "bytes": 268,
         "path": "./dist/png/16px/cloud-fog.png"
       },
       "24px": {
-        "bytes": 310,
+        "bytes": 332,
         "path": "./dist/png/24px/cloud-fog.png"
       },
       "32px": {
-        "bytes": 382,
+        "bytes": 368,
         "path": "./dist/png/32px/cloud-fog.png"
       },
       "48px": {
-        "bytes": 455,
+        "bytes": 461,
         "path": "./dist/png/48px/cloud-fog.png"
       },
       "64px": {
-        "bytes": 536,
+        "bytes": 515,
         "path": "./dist/png/64px/cloud-fog.png"
       },
       "128px": {
-        "bytes": 834,
+        "bytes": 821,
         "path": "./dist/png/128px/cloud-fog.png"
       }
     },
     "cloud-rain-single": {
       "16px": {
-        "bytes": 324,
+        "bytes": 311,
         "path": "./dist/png/16px/cloud-rain-single.png"
       },
       "24px": {
-        "bytes": 429,
+        "bytes": 420,
         "path": "./dist/png/24px/cloud-rain-single.png"
       },
       "32px": {
-        "bytes": 497,
+        "bytes": 481,
         "path": "./dist/png/32px/cloud-rain-single.png"
       },
       "48px": {
-        "bytes": 662,
+        "bytes": 651,
         "path": "./dist/png/48px/cloud-rain-single.png"
       },
       "64px": {
-        "bytes": 773,
+        "bytes": 760,
         "path": "./dist/png/64px/cloud-rain-single.png"
       },
       "128px": {
-        "bytes": 1350,
+        "bytes": 1369,
         "path": "./dist/png/128px/cloud-rain-single.png"
       }
     },
     "cloud-rain": {
       "16px": {
-        "bytes": 309,
+        "bytes": 320,
         "path": "./dist/png/16px/cloud-rain.png"
       },
       "24px": {
-        "bytes": 403,
+        "bytes": 380,
         "path": "./dist/png/24px/cloud-rain.png"
       },
       "32px": {
-        "bytes": 473,
+        "bytes": 453,
         "path": "./dist/png/32px/cloud-rain.png"
       },
       "48px": {
-        "bytes": 637,
+        "bytes": 626,
         "path": "./dist/png/48px/cloud-rain.png"
       },
       "64px": {
@@ -228,51 +236,51 @@
         "path": "./dist/png/64px/cloud-rain.png"
       },
       "128px": {
-        "bytes": 1259,
+        "bytes": 1207,
         "path": "./dist/png/128px/cloud-rain.png"
       }
     },
     "cloud-snow-single": {
       "16px": {
-        "bytes": 293,
+        "bytes": 301,
         "path": "./dist/png/16px/cloud-snow-single.png"
       },
       "24px": {
-        "bytes": 379,
+        "bytes": 375,
         "path": "./dist/png/24px/cloud-snow-single.png"
       },
       "32px": {
-        "bytes": 456,
+        "bytes": 477,
         "path": "./dist/png/32px/cloud-snow-single.png"
       },
       "48px": {
-        "bytes": 603,
+        "bytes": 631,
         "path": "./dist/png/48px/cloud-snow-single.png"
       },
       "64px": {
-        "bytes": 726,
+        "bytes": 720,
         "path": "./dist/png/64px/cloud-snow-single.png"
       },
       "128px": {
-        "bytes": 1315,
+        "bytes": 1288,
         "path": "./dist/png/128px/cloud-snow-single.png"
       }
     },
     "cloud-snow": {
       "16px": {
-        "bytes": 297,
+        "bytes": 305,
         "path": "./dist/png/16px/cloud-snow.png"
       },
       "24px": {
-        "bytes": 364,
+        "bytes": 371,
         "path": "./dist/png/24px/cloud-snow.png"
       },
       "32px": {
-        "bytes": 478,
+        "bytes": 491,
         "path": "./dist/png/32px/cloud-snow.png"
       },
       "48px": {
-        "bytes": 619,
+        "bytes": 621,
         "path": "./dist/png/48px/cloud-snow.png"
       },
       "64px": {
@@ -280,43 +288,43 @@
         "path": "./dist/png/64px/cloud-snow.png"
       },
       "128px": {
-        "bytes": 1390,
+        "bytes": 1362,
         "path": "./dist/png/128px/cloud-snow.png"
       }
     },
     "cloud-up": {
       "16px": {
-        "bytes": 317,
+        "bytes": 295,
         "path": "./dist/png/16px/cloud-up.png"
       },
       "24px": {
-        "bytes": 395,
+        "bytes": 404,
         "path": "./dist/png/24px/cloud-up.png"
       },
       "32px": {
-        "bytes": 484,
+        "bytes": 473,
         "path": "./dist/png/32px/cloud-up.png"
       },
       "48px": {
-        "bytes": 605,
+        "bytes": 589,
         "path": "./dist/png/48px/cloud-up.png"
       },
       "64px": {
-        "bytes": 736,
+        "bytes": 727,
         "path": "./dist/png/64px/cloud-up.png"
       },
       "128px": {
-        "bytes": 1236,
+        "bytes": 1229,
         "path": "./dist/png/128px/cloud-up.png"
       }
     },
     "cloud-wind": {
       "16px": {
-        "bytes": 303,
+        "bytes": 301,
         "path": "./dist/png/16px/cloud-wind.png"
       },
       "24px": {
-        "bytes": 392,
+        "bytes": 380,
         "path": "./dist/png/24px/cloud-wind.png"
       },
       "32px": {
@@ -324,15 +332,15 @@
         "path": "./dist/png/32px/cloud-wind.png"
       },
       "48px": {
-        "bytes": 564,
+        "bytes": 575,
         "path": "./dist/png/48px/cloud-wind.png"
       },
       "64px": {
-        "bytes": 692,
+        "bytes": 701,
         "path": "./dist/png/64px/cloud-wind.png"
       },
       "128px": {
-        "bytes": 1214,
+        "bytes": 1231,
         "path": "./dist/png/128px/cloud-wind.png"
       }
     },
@@ -364,11 +372,11 @@
     },
     "clouds": {
       "16px": {
-        "bytes": 308,
+        "bytes": 324,
         "path": "./dist/png/16px/clouds.png"
       },
       "24px": {
-        "bytes": 417,
+        "bytes": 429,
         "path": "./dist/png/24px/clouds.png"
       },
       "32px": {
@@ -380,11 +388,11 @@
         "path": "./dist/png/48px/clouds.png"
       },
       "64px": {
-        "bytes": 819,
+        "bytes": 824,
         "path": "./dist/png/64px/clouds.png"
       },
       "128px": {
-        "bytes": 1447,
+        "bytes": 1503,
         "path": "./dist/png/128px/clouds.png"
       }
     },
@@ -394,23 +402,23 @@
         "path": "./dist/png/16px/compass-east.png"
       },
       "24px": {
-        "bytes": 361,
+        "bytes": 348,
         "path": "./dist/png/24px/compass-east.png"
       },
       "32px": {
-        "bytes": 431,
+        "bytes": 428,
         "path": "./dist/png/32px/compass-east.png"
       },
       "48px": {
-        "bytes": 568,
+        "bytes": 570,
         "path": "./dist/png/48px/compass-east.png"
       },
       "64px": {
-        "bytes": 721,
+        "bytes": 708,
         "path": "./dist/png/64px/compass-east.png"
       },
       "128px": {
-        "bytes": 1321,
+        "bytes": 1331,
         "path": "./dist/png/128px/compass-east.png"
       }
     },
@@ -420,23 +428,23 @@
         "path": "./dist/png/16px/compass-north-east.png"
       },
       "24px": {
-        "bytes": 336,
+        "bytes": 337,
         "path": "./dist/png/24px/compass-north-east.png"
       },
       "32px": {
-        "bytes": 431,
+        "bytes": 432,
         "path": "./dist/png/32px/compass-north-east.png"
       },
       "48px": {
-        "bytes": 596,
+        "bytes": 567,
         "path": "./dist/png/48px/compass-north-east.png"
       },
       "64px": {
-        "bytes": 680,
+        "bytes": 682,
         "path": "./dist/png/64px/compass-north-east.png"
       },
       "128px": {
-        "bytes": 1297,
+        "bytes": 1247,
         "path": "./dist/png/128px/compass-north-east.png"
       }
     },
@@ -446,67 +454,67 @@
         "path": "./dist/png/16px/compass-north-west.png"
       },
       "24px": {
-        "bytes": 347,
+        "bytes": 348,
         "path": "./dist/png/24px/compass-north-west.png"
       },
       "32px": {
-        "bytes": 408,
+        "bytes": 438,
         "path": "./dist/png/32px/compass-north-west.png"
       },
       "48px": {
-        "bytes": 578,
+        "bytes": 589,
         "path": "./dist/png/48px/compass-north-west.png"
       },
       "64px": {
-        "bytes": 709,
+        "bytes": 666,
         "path": "./dist/png/64px/compass-north-west.png"
       },
       "128px": {
-        "bytes": 1264,
+        "bytes": 1265,
         "path": "./dist/png/128px/compass-north-west.png"
       }
     },
     "compass-north": {
       "16px": {
-        "bytes": 243,
+        "bytes": 242,
         "path": "./dist/png/16px/compass-north.png"
       },
       "24px": {
-        "bytes": 342,
+        "bytes": 343,
         "path": "./dist/png/24px/compass-north.png"
       },
       "32px": {
-        "bytes": 430,
+        "bytes": 437,
         "path": "./dist/png/32px/compass-north.png"
       },
       "48px": {
-        "bytes": 568,
+        "bytes": 582,
         "path": "./dist/png/48px/compass-north.png"
       },
       "64px": {
-        "bytes": 714,
+        "bytes": 708,
         "path": "./dist/png/64px/compass-north.png"
       },
       "128px": {
-        "bytes": 1332,
+        "bytes": 1304,
         "path": "./dist/png/128px/compass-north.png"
       }
     },
     "compass-south-east": {
       "16px": {
-        "bytes": 242,
+        "bytes": 247,
         "path": "./dist/png/16px/compass-south-east.png"
       },
       "24px": {
-        "bytes": 336,
+        "bytes": 343,
         "path": "./dist/png/24px/compass-south-east.png"
       },
       "32px": {
-        "bytes": 434,
+        "bytes": 436,
         "path": "./dist/png/32px/compass-south-east.png"
       },
       "48px": {
-        "bytes": 557,
+        "bytes": 565,
         "path": "./dist/png/48px/compass-south-east.png"
       },
       "64px": {
@@ -514,111 +522,111 @@
         "path": "./dist/png/64px/compass-south-east.png"
       },
       "128px": {
-        "bytes": 1237,
+        "bytes": 1265,
         "path": "./dist/png/128px/compass-south-east.png"
       }
     },
     "compass-south-west": {
       "16px": {
-        "bytes": 246,
+        "bytes": 243,
         "path": "./dist/png/16px/compass-south-west.png"
       },
       "24px": {
-        "bytes": 347,
+        "bytes": 339,
         "path": "./dist/png/24px/compass-south-west.png"
       },
       "32px": {
-        "bytes": 453,
+        "bytes": 435,
         "path": "./dist/png/32px/compass-south-west.png"
       },
       "48px": {
-        "bytes": 581,
+        "bytes": 584,
         "path": "./dist/png/48px/compass-south-west.png"
       },
       "64px": {
-        "bytes": 714,
+        "bytes": 716,
         "path": "./dist/png/64px/compass-south-west.png"
       },
       "128px": {
-        "bytes": 1302,
+        "bytes": 1352,
         "path": "./dist/png/128px/compass-south-west.png"
       }
     },
     "compass-south": {
       "16px": {
-        "bytes": 248,
+        "bytes": 253,
         "path": "./dist/png/16px/compass-south.png"
       },
       "24px": {
-        "bytes": 346,
+        "bytes": 341,
         "path": "./dist/png/24px/compass-south.png"
       },
       "32px": {
-        "bytes": 440,
+        "bytes": 470,
         "path": "./dist/png/32px/compass-south.png"
       },
       "48px": {
-        "bytes": 589,
+        "bytes": 606,
         "path": "./dist/png/48px/compass-south.png"
       },
       "64px": {
-        "bytes": 743,
+        "bytes": 716,
         "path": "./dist/png/64px/compass-south.png"
       },
       "128px": {
-        "bytes": 1343,
+        "bytes": 1369,
         "path": "./dist/png/128px/compass-south.png"
       }
     },
     "compass-west": {
       "16px": {
-        "bytes": 211,
+        "bytes": 206,
         "path": "./dist/png/16px/compass-west.png"
       },
       "24px": {
-        "bytes": 341,
+        "bytes": 342,
         "path": "./dist/png/24px/compass-west.png"
       },
       "32px": {
-        "bytes": 439,
+        "bytes": 443,
         "path": "./dist/png/32px/compass-west.png"
       },
       "48px": {
-        "bytes": 559,
+        "bytes": 561,
         "path": "./dist/png/48px/compass-west.png"
       },
       "64px": {
-        "bytes": 705,
+        "bytes": 697,
         "path": "./dist/png/64px/compass-west.png"
       },
       "128px": {
-        "bytes": 1281,
+        "bytes": 1270,
         "path": "./dist/png/128px/compass-west.png"
       }
     },
     "compass": {
       "16px": {
-        "bytes": 229,
+        "bytes": 244,
         "path": "./dist/png/16px/compass.png"
       },
       "24px": {
-        "bytes": 352,
+        "bytes": 350,
         "path": "./dist/png/24px/compass.png"
       },
       "32px": {
-        "bytes": 454,
+        "bytes": 466,
         "path": "./dist/png/32px/compass.png"
       },
       "48px": {
-        "bytes": 551,
+        "bytes": 589,
         "path": "./dist/png/48px/compass.png"
       },
       "64px": {
-        "bytes": 717,
+        "bytes": 737,
         "path": "./dist/png/64px/compass.png"
       },
       "128px": {
-        "bytes": 1333,
+        "bytes": 1296,
         "path": "./dist/png/128px/compass.png"
       }
     },
@@ -644,33 +652,33 @@
         "path": "./dist/png/64px/fahrenheit.png"
       },
       "128px": {
-        "bytes": 682,
+        "bytes": 685,
         "path": "./dist/png/128px/fahrenheit.png"
       }
     },
     "fog": {
       "16px": {
-        "bytes": 212,
+        "bytes": 222,
         "path": "./dist/png/16px/fog.png"
       },
       "24px": {
-        "bytes": 260,
+        "bytes": 268,
         "path": "./dist/png/24px/fog.png"
       },
       "32px": {
-        "bytes": 293,
+        "bytes": 300,
         "path": "./dist/png/32px/fog.png"
       },
       "48px": {
-        "bytes": 327,
+        "bytes": 324,
         "path": "./dist/png/48px/fog.png"
       },
       "64px": {
-        "bytes": 375,
+        "bytes": 353,
         "path": "./dist/png/64px/fog.png"
       },
       "128px": {
-        "bytes": 497,
+        "bytes": 513,
         "path": "./dist/png/128px/fog.png"
       }
     },
@@ -680,231 +688,231 @@
         "path": "./dist/png/16px/hail.png"
       },
       "24px": {
-        "bytes": 398,
+        "bytes": 394,
         "path": "./dist/png/24px/hail.png"
       },
       "32px": {
-        "bytes": 498,
+        "bytes": 482,
         "path": "./dist/png/32px/hail.png"
       },
       "48px": {
-        "bytes": 616,
+        "bytes": 629,
         "path": "./dist/png/48px/hail.png"
       },
       "64px": {
-        "bytes": 746,
+        "bytes": 716,
         "path": "./dist/png/64px/hail.png"
       },
       "128px": {
-        "bytes": 1311,
+        "bytes": 1324,
         "path": "./dist/png/128px/hail.png"
       }
     },
     "lightning": {
       "16px": {
-        "bytes": 324,
+        "bytes": 311,
         "path": "./dist/png/16px/lightning.png"
       },
       "24px": {
-        "bytes": 407,
+        "bytes": 411,
         "path": "./dist/png/24px/lightning.png"
       },
       "32px": {
-        "bytes": 485,
+        "bytes": 482,
         "path": "./dist/png/32px/lightning.png"
       },
       "48px": {
-        "bytes": 613,
+        "bytes": 645,
         "path": "./dist/png/48px/lightning.png"
       },
       "64px": {
-        "bytes": 772,
+        "bytes": 753,
         "path": "./dist/png/64px/lightning.png"
       },
       "128px": {
-        "bytes": 1334,
+        "bytes": 1340,
         "path": "./dist/png/128px/lightning.png"
       }
     },
     "moon-cloud-lightning": {
       "16px": {
-        "bytes": 339,
+        "bytes": 338,
         "path": "./dist/png/16px/moon-cloud-lightning.png"
       },
       "24px": {
-        "bytes": 445,
+        "bytes": 422,
         "path": "./dist/png/24px/moon-cloud-lightning.png"
       },
       "32px": {
-        "bytes": 533,
+        "bytes": 547,
         "path": "./dist/png/32px/moon-cloud-lightning.png"
       },
       "48px": {
-        "bytes": 723,
+        "bytes": 712,
         "path": "./dist/png/48px/moon-cloud-lightning.png"
       },
       "64px": {
-        "bytes": 888,
+        "bytes": 924,
         "path": "./dist/png/64px/moon-cloud-lightning.png"
       },
       "128px": {
-        "bytes": 1712,
+        "bytes": 1704,
         "path": "./dist/png/128px/moon-cloud-lightning.png"
       }
     },
     "moon-cloud-rain": {
       "16px": {
-        "bytes": 348,
+        "bytes": 339,
         "path": "./dist/png/16px/moon-cloud-rain.png"
       },
       "24px": {
-        "bytes": 418,
+        "bytes": 429,
         "path": "./dist/png/24px/moon-cloud-rain.png"
       },
       "32px": {
-        "bytes": 531,
+        "bytes": 548,
         "path": "./dist/png/32px/moon-cloud-rain.png"
       },
       "48px": {
-        "bytes": 709,
+        "bytes": 707,
         "path": "./dist/png/48px/moon-cloud-rain.png"
       },
       "64px": {
-        "bytes": 883,
+        "bytes": 908,
         "path": "./dist/png/64px/moon-cloud-rain.png"
       },
       "128px": {
-        "bytes": 1629,
+        "bytes": 1630,
         "path": "./dist/png/128px/moon-cloud-rain.png"
       }
     },
     "moon-cloud-snow": {
       "16px": {
-        "bytes": 331,
+        "bytes": 320,
         "path": "./dist/png/16px/moon-cloud-snow.png"
       },
       "24px": {
-        "bytes": 442,
+        "bytes": 457,
         "path": "./dist/png/24px/moon-cloud-snow.png"
       },
       "32px": {
-        "bytes": 546,
+        "bytes": 548,
         "path": "./dist/png/32px/moon-cloud-snow.png"
       },
       "48px": {
-        "bytes": 718,
+        "bytes": 715,
         "path": "./dist/png/48px/moon-cloud-snow.png"
       },
       "64px": {
-        "bytes": 911,
+        "bytes": 889,
         "path": "./dist/png/64px/moon-cloud-snow.png"
       },
       "128px": {
-        "bytes": 1736,
+        "bytes": 1766,
         "path": "./dist/png/128px/moon-cloud-snow.png"
       }
     },
     "moon-cloud-wind": {
       "16px": {
-        "bytes": 334,
+        "bytes": 329,
         "path": "./dist/png/16px/moon-cloud-wind.png"
       },
       "24px": {
-        "bytes": 418,
+        "bytes": 421,
         "path": "./dist/png/24px/moon-cloud-wind.png"
       },
       "32px": {
-        "bytes": 515,
+        "bytes": 496,
         "path": "./dist/png/32px/moon-cloud-wind.png"
       },
       "48px": {
-        "bytes": 656,
+        "bytes": 644,
         "path": "./dist/png/48px/moon-cloud-wind.png"
       },
       "64px": {
-        "bytes": 814,
+        "bytes": 813,
         "path": "./dist/png/64px/moon-cloud-wind.png"
       },
       "128px": {
-        "bytes": 1502,
+        "bytes": 1498,
         "path": "./dist/png/128px/moon-cloud-wind.png"
       }
     },
     "moon-cloud": {
       "16px": {
-        "bytes": 312,
+        "bytes": 314,
         "path": "./dist/png/16px/moon-cloud.png"
       },
       "24px": {
-        "bytes": 402,
+        "bytes": 399,
         "path": "./dist/png/24px/moon-cloud.png"
       },
       "32px": {
-        "bytes": 483,
+        "bytes": 484,
         "path": "./dist/png/32px/moon-cloud.png"
       },
       "48px": {
-        "bytes": 605,
+        "bytes": 629,
         "path": "./dist/png/48px/moon-cloud.png"
       },
       "64px": {
-        "bytes": 756,
+        "bytes": 793,
         "path": "./dist/png/64px/moon-cloud.png"
       },
       "128px": {
-        "bytes": 1330,
+        "bytes": 1379,
         "path": "./dist/png/128px/moon-cloud.png"
       }
     },
     "moon-first-quarter": {
       "16px": {
-        "bytes": 203,
+        "bytes": 215,
         "path": "./dist/png/16px/moon-first-quarter.png"
       },
       "24px": {
-        "bytes": 244,
+        "bytes": 274,
         "path": "./dist/png/24px/moon-first-quarter.png"
       },
       "32px": {
-        "bytes": 336,
+        "bytes": 349,
         "path": "./dist/png/32px/moon-first-quarter.png"
       },
       "48px": {
-        "bytes": 432,
+        "bytes": 471,
         "path": "./dist/png/48px/moon-first-quarter.png"
       },
       "64px": {
-        "bytes": 508,
+        "bytes": 540,
         "path": "./dist/png/64px/moon-first-quarter.png"
       },
       "128px": {
-        "bytes": 797,
+        "bytes": 1013,
         "path": "./dist/png/128px/moon-first-quarter.png"
       }
     },
     "moon-fog": {
       "16px": {
-        "bytes": 288,
+        "bytes": 295,
         "path": "./dist/png/16px/moon-fog.png"
       },
       "24px": {
-        "bytes": 360,
+        "bytes": 358,
         "path": "./dist/png/24px/moon-fog.png"
       },
       "32px": {
-        "bytes": 417,
+        "bytes": 414,
         "path": "./dist/png/32px/moon-fog.png"
       },
       "48px": {
-        "bytes": 508,
+        "bytes": 511,
         "path": "./dist/png/48px/moon-fog.png"
       },
       "64px": {
-        "bytes": 598,
+        "bytes": 581,
         "path": "./dist/png/64px/moon-fog.png"
       },
       "128px": {
-        "bytes": 1011,
+        "bytes": 981,
         "path": "./dist/png/128px/moon-fog.png"
       }
     },
@@ -936,27 +944,27 @@
     },
     "moon-last-quarter": {
       "16px": {
-        "bytes": 199,
+        "bytes": 218,
         "path": "./dist/png/16px/moon-last-quarter.png"
       },
       "24px": {
-        "bytes": 268,
+        "bytes": 298,
         "path": "./dist/png/24px/moon-last-quarter.png"
       },
       "32px": {
-        "bytes": 349,
+        "bytes": 357,
         "path": "./dist/png/32px/moon-last-quarter.png"
       },
       "48px": {
-        "bytes": 434,
+        "bytes": 479,
         "path": "./dist/png/48px/moon-last-quarter.png"
       },
       "64px": {
-        "bytes": 518,
+        "bytes": 578,
         "path": "./dist/png/64px/moon-last-quarter.png"
       },
       "128px": {
-        "bytes": 861,
+        "bytes": 1011,
         "path": "./dist/png/128px/moon-last-quarter.png"
       }
     },
@@ -988,105 +996,105 @@
     },
     "moon-waning-crescent": {
       "16px": {
-        "bytes": 233,
+        "bytes": 250,
         "path": "./dist/png/16px/moon-waning-crescent.png"
       },
       "24px": {
-        "bytes": 305,
+        "bytes": 329,
         "path": "./dist/png/24px/moon-waning-crescent.png"
       },
       "32px": {
-        "bytes": 376,
+        "bytes": 379,
         "path": "./dist/png/32px/moon-waning-crescent.png"
       },
       "48px": {
-        "bytes": 454,
+        "bytes": 490,
         "path": "./dist/png/48px/moon-waning-crescent.png"
       },
       "64px": {
-        "bytes": 537,
+        "bytes": 587,
         "path": "./dist/png/64px/moon-waning-crescent.png"
       },
       "128px": {
-        "bytes": 976,
+        "bytes": 1079,
         "path": "./dist/png/128px/moon-waning-crescent.png"
       }
     },
     "moon-waning-gibbous": {
       "16px": {
-        "bytes": 215,
+        "bytes": 235,
         "path": "./dist/png/16px/moon-waning-gibbous.png"
       },
       "24px": {
-        "bytes": 299,
+        "bytes": 332,
         "path": "./dist/png/24px/moon-waning-gibbous.png"
       },
       "32px": {
-        "bytes": 345,
+        "bytes": 359,
         "path": "./dist/png/32px/moon-waning-gibbous.png"
       },
       "48px": {
-        "bytes": 502,
+        "bytes": 497,
         "path": "./dist/png/48px/moon-waning-gibbous.png"
       },
       "64px": {
-        "bytes": 555,
+        "bytes": 578,
         "path": "./dist/png/64px/moon-waning-gibbous.png"
       },
       "128px": {
-        "bytes": 950,
+        "bytes": 1102,
         "path": "./dist/png/128px/moon-waning-gibbous.png"
       }
     },
     "moon-waxing-crescent": {
       "16px": {
-        "bytes": 214,
+        "bytes": 223,
         "path": "./dist/png/16px/moon-waxing-crescent.png"
       },
       "24px": {
-        "bytes": 276,
+        "bytes": 290,
         "path": "./dist/png/24px/moon-waxing-crescent.png"
       },
       "32px": {
-        "bytes": 345,
+        "bytes": 394,
         "path": "./dist/png/32px/moon-waxing-crescent.png"
       },
       "48px": {
-        "bytes": 467,
+        "bytes": 488,
         "path": "./dist/png/48px/moon-waxing-crescent.png"
       },
       "64px": {
-        "bytes": 552,
+        "bytes": 594,
         "path": "./dist/png/64px/moon-waxing-crescent.png"
       },
       "128px": {
-        "bytes": 895,
+        "bytes": 1119,
         "path": "./dist/png/128px/moon-waxing-crescent.png"
       }
     },
     "moon-waxing-gibbous": {
       "16px": {
-        "bytes": 227,
+        "bytes": 232,
         "path": "./dist/png/16px/moon-waxing-gibbous.png"
       },
       "24px": {
-        "bytes": 293,
+        "bytes": 303,
         "path": "./dist/png/24px/moon-waxing-gibbous.png"
       },
       "32px": {
-        "bytes": 356,
+        "bytes": 373,
         "path": "./dist/png/32px/moon-waxing-gibbous.png"
       },
       "48px": {
-        "bytes": 465,
+        "bytes": 490,
         "path": "./dist/png/48px/moon-waxing-gibbous.png"
       },
       "64px": {
-        "bytes": 568,
+        "bytes": 647,
         "path": "./dist/png/64px/moon-waxing-gibbous.png"
       },
       "128px": {
-        "bytes": 974,
+        "bytes": 1108,
         "path": "./dist/png/128px/moon-waxing-gibbous.png"
       }
     },
@@ -1118,27 +1126,27 @@
     },
     "rainbow": {
       "16px": {
-        "bytes": 317,
+        "bytes": 318,
         "path": "./dist/png/16px/rainbow.png"
       },
       "24px": {
-        "bytes": 400,
+        "bytes": 413,
         "path": "./dist/png/24px/rainbow.png"
       },
       "32px": {
-        "bytes": 478,
+        "bytes": 496,
         "path": "./dist/png/32px/rainbow.png"
       },
       "48px": {
-        "bytes": 626,
+        "bytes": 650,
         "path": "./dist/png/48px/rainbow.png"
       },
       "64px": {
-        "bytes": 810,
+        "bytes": 817,
         "path": "./dist/png/64px/rainbow.png"
       },
       "128px": {
-        "bytes": 1527,
+        "bytes": 1494,
         "path": "./dist/png/128px/rainbow.png"
       }
     },
@@ -1148,23 +1156,23 @@
         "path": "./dist/png/16px/raindrop.png"
       },
       "24px": {
-        "bytes": 365,
+        "bytes": 362,
         "path": "./dist/png/24px/raindrop.png"
       },
       "32px": {
-        "bytes": 428,
+        "bytes": 433,
         "path": "./dist/png/32px/raindrop.png"
       },
       "48px": {
-        "bytes": 560,
+        "bytes": 545,
         "path": "./dist/png/48px/raindrop.png"
       },
       "64px": {
-        "bytes": 707,
+        "bytes": 704,
         "path": "./dist/png/64px/raindrop.png"
       },
       "128px": {
-        "bytes": 1208,
+        "bytes": 1209,
         "path": "./dist/png/128px/raindrop.png"
       }
     },
@@ -1222,45 +1230,45 @@
     },
     "sun-cloud-lightning": {
       "16px": {
-        "bytes": 357,
+        "bytes": 355,
         "path": "./dist/png/16px/sun-cloud-lightning.png"
       },
       "24px": {
-        "bytes": 467,
+        "bytes": 460,
         "path": "./dist/png/24px/sun-cloud-lightning.png"
       },
       "32px": {
-        "bytes": 555,
+        "bytes": 560,
         "path": "./dist/png/32px/sun-cloud-lightning.png"
       },
       "48px": {
-        "bytes": 745,
+        "bytes": 786,
         "path": "./dist/png/48px/sun-cloud-lightning.png"
       },
       "64px": {
-        "bytes": 963,
+        "bytes": 933,
         "path": "./dist/png/64px/sun-cloud-lightning.png"
       },
       "128px": {
-        "bytes": 1775,
+        "bytes": 1744,
         "path": "./dist/png/128px/sun-cloud-lightning.png"
       }
     },
     "sun-cloud-rain": {
       "16px": {
-        "bytes": 354,
+        "bytes": 357,
         "path": "./dist/png/16px/sun-cloud-rain.png"
       },
       "24px": {
-        "bytes": 461,
+        "bytes": 465,
         "path": "./dist/png/24px/sun-cloud-rain.png"
       },
       "32px": {
-        "bytes": 563,
+        "bytes": 565,
         "path": "./dist/png/32px/sun-cloud-rain.png"
       },
       "48px": {
-        "bytes": 723,
+        "bytes": 740,
         "path": "./dist/png/48px/sun-cloud-rain.png"
       },
       "64px": {
@@ -1268,163 +1276,163 @@
         "path": "./dist/png/64px/sun-cloud-rain.png"
       },
       "128px": {
-        "bytes": 1659,
+        "bytes": 1690,
         "path": "./dist/png/128px/sun-cloud-rain.png"
       }
     },
     "sun-cloud-snow": {
       "16px": {
-        "bytes": 356,
+        "bytes": 371,
         "path": "./dist/png/16px/sun-cloud-snow.png"
       },
       "24px": {
-        "bytes": 471,
+        "bytes": 475,
         "path": "./dist/png/24px/sun-cloud-snow.png"
       },
       "32px": {
-        "bytes": 558,
+        "bytes": 569,
         "path": "./dist/png/32px/sun-cloud-snow.png"
       },
       "48px": {
-        "bytes": 774,
+        "bytes": 775,
         "path": "./dist/png/48px/sun-cloud-snow.png"
       },
       "64px": {
-        "bytes": 979,
+        "bytes": 986,
         "path": "./dist/png/64px/sun-cloud-snow.png"
       },
       "128px": {
-        "bytes": 1796,
+        "bytes": 1831,
         "path": "./dist/png/128px/sun-cloud-snow.png"
       }
     },
     "sun-cloud-wind": {
       "16px": {
-        "bytes": 342,
+        "bytes": 354,
         "path": "./dist/png/16px/sun-cloud-wind.png"
       },
       "24px": {
-        "bytes": 450,
+        "bytes": 463,
         "path": "./dist/png/24px/sun-cloud-wind.png"
       },
       "32px": {
-        "bytes": 552,
+        "bytes": 542,
         "path": "./dist/png/32px/sun-cloud-wind.png"
       },
       "48px": {
-        "bytes": 731,
+        "bytes": 735,
         "path": "./dist/png/48px/sun-cloud-wind.png"
       },
       "64px": {
-        "bytes": 915,
+        "bytes": 929,
         "path": "./dist/png/64px/sun-cloud-wind.png"
       },
       "128px": {
-        "bytes": 1661,
+        "bytes": 1649,
         "path": "./dist/png/128px/sun-cloud-wind.png"
       }
     },
     "sun-cloud": {
       "16px": {
-        "bytes": 321,
+        "bytes": 313,
         "path": "./dist/png/16px/sun-cloud.png"
       },
       "24px": {
-        "bytes": 417,
+        "bytes": 431,
         "path": "./dist/png/24px/sun-cloud.png"
       },
       "32px": {
-        "bytes": 517,
+        "bytes": 505,
         "path": "./dist/png/32px/sun-cloud.png"
       },
       "48px": {
-        "bytes": 632,
+        "bytes": 655,
         "path": "./dist/png/48px/sun-cloud.png"
       },
       "64px": {
-        "bytes": 794,
+        "bytes": 793,
         "path": "./dist/png/64px/sun-cloud.png"
       },
       "128px": {
-        "bytes": 1410,
+        "bytes": 1473,
         "path": "./dist/png/128px/sun-cloud.png"
       }
     },
     "sun-fog": {
       "16px": {
-        "bytes": 284,
+        "bytes": 271,
         "path": "./dist/png/16px/sun-fog.png"
       },
       "24px": {
-        "bytes": 357,
+        "bytes": 358,
         "path": "./dist/png/24px/sun-fog.png"
       },
       "32px": {
-        "bytes": 413,
+        "bytes": 426,
         "path": "./dist/png/32px/sun-fog.png"
       },
       "48px": {
-        "bytes": 518,
+        "bytes": 535,
         "path": "./dist/png/48px/sun-fog.png"
       },
       "64px": {
-        "bytes": 652,
+        "bytes": 633,
         "path": "./dist/png/64px/sun-fog.png"
       },
       "128px": {
-        "bytes": 1093,
+        "bytes": 1107,
         "path": "./dist/png/128px/sun-fog.png"
       }
     },
     "sun-low": {
       "16px": {
-        "bytes": 278,
+        "bytes": 248,
         "path": "./dist/png/16px/sun-low.png"
       },
       "24px": {
-        "bytes": 323,
+        "bytes": 334,
         "path": "./dist/png/24px/sun-low.png"
       },
       "32px": {
-        "bytes": 391,
+        "bytes": 366,
         "path": "./dist/png/32px/sun-low.png"
       },
       "48px": {
-        "bytes": 457,
+        "bytes": 462,
         "path": "./dist/png/48px/sun-low.png"
       },
       "64px": {
-        "bytes": 541,
+        "bytes": 545,
         "path": "./dist/png/64px/sun-low.png"
       },
       "128px": {
-        "bytes": 831,
+        "bytes": 834,
         "path": "./dist/png/128px/sun-low.png"
       }
     },
     "sun-medium": {
       "16px": {
-        "bytes": 302,
+        "bytes": 308,
         "path": "./dist/png/16px/sun-medium.png"
       },
       "24px": {
-        "bytes": 376,
+        "bytes": 383,
         "path": "./dist/png/24px/sun-medium.png"
       },
       "32px": {
-        "bytes": 426,
+        "bytes": 427,
         "path": "./dist/png/32px/sun-medium.png"
       },
       "48px": {
-        "bytes": 548,
+        "bytes": 554,
         "path": "./dist/png/48px/sun-medium.png"
       },
       "64px": {
-        "bytes": 645,
+        "bytes": 661,
         "path": "./dist/png/64px/sun-medium.png"
       },
       "128px": {
-        "bytes": 1106,
+        "bytes": 1112,
         "path": "./dist/png/128px/sun-medium.png"
       }
     },
@@ -1456,131 +1464,131 @@
     },
     "sunrise": {
       "16px": {
-        "bytes": 268,
+        "bytes": 262,
         "path": "./dist/png/16px/sunrise.png"
       },
       "24px": {
-        "bytes": 338,
+        "bytes": 318,
         "path": "./dist/png/24px/sunrise.png"
       },
       "32px": {
-        "bytes": 373,
+        "bytes": 390,
         "path": "./dist/png/32px/sunrise.png"
       },
       "48px": {
-        "bytes": 471,
+        "bytes": 472,
         "path": "./dist/png/48px/sunrise.png"
       },
       "64px": {
-        "bytes": 546,
+        "bytes": 567,
         "path": "./dist/png/64px/sunrise.png"
       },
       "128px": {
-        "bytes": 842,
+        "bytes": 840,
         "path": "./dist/png/128px/sunrise.png"
       }
     },
     "sunset": {
       "16px": {
-        "bytes": 272,
+        "bytes": 259,
         "path": "./dist/png/16px/sunset.png"
       },
       "24px": {
-        "bytes": 324,
+        "bytes": 314,
         "path": "./dist/png/24px/sunset.png"
       },
       "32px": {
-        "bytes": 383,
+        "bytes": 386,
         "path": "./dist/png/32px/sunset.png"
       },
       "48px": {
-        "bytes": 447,
+        "bytes": 476,
         "path": "./dist/png/48px/sunset.png"
       },
       "64px": {
-        "bytes": 547,
+        "bytes": 546,
         "path": "./dist/png/64px/sunset.png"
       },
       "128px": {
-        "bytes": 842,
+        "bytes": 838,
         "path": "./dist/png/128px/sunset.png"
       }
     },
     "thermometer-cold": {
       "16px": {
-        "bytes": 240,
+        "bytes": 231,
         "path": "./dist/png/16px/thermometer-cold.png"
       },
       "24px": {
-        "bytes": 298,
+        "bytes": 278,
         "path": "./dist/png/24px/thermometer-cold.png"
       },
       "32px": {
-        "bytes": 324,
+        "bytes": 315,
         "path": "./dist/png/32px/thermometer-cold.png"
       },
       "48px": {
-        "bytes": 399,
+        "bytes": 406,
         "path": "./dist/png/48px/thermometer-cold.png"
       },
       "64px": {
-        "bytes": 468,
+        "bytes": 462,
         "path": "./dist/png/64px/thermometer-cold.png"
       },
       "128px": {
-        "bytes": 710,
+        "bytes": 704,
         "path": "./dist/png/128px/thermometer-cold.png"
       }
     },
     "thermometer-hot": {
       "16px": {
-        "bytes": 210,
+        "bytes": 231,
         "path": "./dist/png/16px/thermometer-hot.png"
       },
       "24px": {
-        "bytes": 285,
+        "bytes": 289,
         "path": "./dist/png/24px/thermometer-hot.png"
       },
       "32px": {
-        "bytes": 324,
+        "bytes": 327,
         "path": "./dist/png/32px/thermometer-hot.png"
       },
       "48px": {
-        "bytes": 377,
+        "bytes": 369,
         "path": "./dist/png/48px/thermometer-hot.png"
       },
       "64px": {
-        "bytes": 433,
+        "bytes": 450,
         "path": "./dist/png/64px/thermometer-hot.png"
       },
       "128px": {
-        "bytes": 716,
+        "bytes": 704,
         "path": "./dist/png/128px/thermometer-hot.png"
       }
     },
     "thermometer-medium": {
       "16px": {
-        "bytes": 240,
+        "bytes": 237,
         "path": "./dist/png/16px/thermometer-medium.png"
       },
       "24px": {
-        "bytes": 281,
+        "bytes": 292,
         "path": "./dist/png/24px/thermometer-medium.png"
       },
       "32px": {
-        "bytes": 319,
+        "bytes": 321,
         "path": "./dist/png/32px/thermometer-medium.png"
       },
       "48px": {
-        "bytes": 392,
+        "bytes": 399,
         "path": "./dist/png/48px/thermometer-medium.png"
       },
       "64px": {
-        "bytes": 442,
+        "bytes": 449,
         "path": "./dist/png/64px/thermometer-medium.png"
       },
       "128px": {
-        "bytes": 723,
+        "bytes": 739,
         "path": "./dist/png/128px/thermometer-medium.png"
       }
     },
@@ -1612,53 +1620,53 @@
     },
     "umbrella": {
       "16px": {
-        "bytes": 276,
+        "bytes": 268,
         "path": "./dist/png/16px/umbrella.png"
       },
       "24px": {
-        "bytes": 365,
+        "bytes": 362,
         "path": "./dist/png/24px/umbrella.png"
       },
       "32px": {
-        "bytes": 441,
+        "bytes": 439,
         "path": "./dist/png/32px/umbrella.png"
       },
       "48px": {
-        "bytes": 562,
+        "bytes": 564,
         "path": "./dist/png/48px/umbrella.png"
       },
       "64px": {
-        "bytes": 674,
+        "bytes": 670,
         "path": "./dist/png/64px/umbrella.png"
       },
       "128px": {
-        "bytes": 1182,
+        "bytes": 1197,
         "path": "./dist/png/128px/umbrella.png"
       }
     },
     "wind-high": {
       "16px": {
-        "bytes": 333,
+        "bytes": 325,
         "path": "./dist/png/16px/wind-high.png"
       },
       "24px": {
-        "bytes": 394,
+        "bytes": 411,
         "path": "./dist/png/24px/wind-high.png"
       },
       "32px": {
-        "bytes": 492,
+        "bytes": 488,
         "path": "./dist/png/32px/wind-high.png"
       },
       "48px": {
-        "bytes": 607,
+        "bytes": 625,
         "path": "./dist/png/48px/wind-high.png"
       },
       "64px": {
-        "bytes": 781,
+        "bytes": 769,
         "path": "./dist/png/64px/wind-high.png"
       },
       "128px": {
-        "bytes": 1357,
+        "bytes": 1358,
         "path": "./dist/png/128px/wind-high.png"
       }
     },
@@ -1668,7 +1676,7 @@
         "path": "./dist/png/16px/wind.png"
       },
       "24px": {
-        "bytes": 335,
+        "bytes": 332,
         "path": "./dist/png/24px/wind.png"
       },
       "32px": {
@@ -1676,42 +1684,674 @@
         "path": "./dist/png/32px/wind.png"
       },
       "48px": {
-        "bytes": 441,
+        "bytes": 454,
         "path": "./dist/png/48px/wind.png"
       },
       "64px": {
-        "bytes": 536,
+        "bytes": 538,
         "path": "./dist/png/64px/wind.png"
       },
       "128px": {
-        "bytes": 862,
+        "bytes": 844,
         "path": "./dist/png/128px/wind.png"
       }
     },
     "windsock": {
       "16px": {
-        "bytes": 270,
+        "bytes": 268,
         "path": "./dist/png/16px/windsock.png"
       },
       "24px": {
-        "bytes": 322,
+        "bytes": 328,
         "path": "./dist/png/24px/windsock.png"
       },
       "32px": {
-        "bytes": 376,
+        "bytes": 378,
         "path": "./dist/png/32px/windsock.png"
       },
       "48px": {
-        "bytes": 463,
+        "bytes": 436,
         "path": "./dist/png/48px/windsock.png"
       },
       "64px": {
-        "bytes": 516,
+        "bytes": 521,
         "path": "./dist/png/64px/windsock.png"
       },
       "128px": {
-        "bytes": 839,
+        "bytes": 847,
         "path": "./dist/png/128px/windsock.png"
+      }
+    }
+  },
+  "multiColor": {
+    "barometer": {
+      "-teal-gray": {
+        "bytes": 700,
+        "path": "./dist/png/48px-multi-color/barometer-teal-gray.png",
+        "colors": {
+          "primary": "#80BBB2",
+          "secondary": "#666666"
+        }
+      }
+    },
+    "celsius": {
+      "-teal-gray": {
+        "bytes": 626,
+        "path": "./dist/png/48px-multi-color/celsius-teal-gray.png",
+        "colors": {
+          "primary": "#80BBB2",
+          "secondary": "#666666"
+        }
+      }
+    },
+    "cloud-down": {
+      "-teal-gray": {
+        "bytes": 640,
+        "path": "./dist/png/48px-multi-color/cloud-down-teal-gray.png",
+        "colors": {
+          "primary": "#80BBB2",
+          "secondary": "#666666"
+        }
+      }
+    },
+    "cloud-fog": {
+      "-teal-gray": {
+        "bytes": 498,
+        "path": "./dist/png/48px-multi-color/cloud-fog-teal-gray.png",
+        "colors": {
+          "primary": "#80BBB2",
+          "secondary": "#666666"
+        }
+      }
+    },
+    "cloud-rain-single": {
+      "-teal-gray": {
+        "bytes": 716,
+        "path": "./dist/png/48px-multi-color/cloud-rain-single-teal-gray.png",
+        "colors": {
+          "primary": "#80BBB2",
+          "secondary": "#666666"
+        }
+      }
+    },
+    "cloud-rain": {
+      "-teal-gray": {
+        "bytes": 662,
+        "path": "./dist/png/48px-multi-color/cloud-rain-teal-gray.png",
+        "colors": {
+          "primary": "#80BBB2",
+          "secondary": "#666666"
+        }
+      }
+    },
+    "cloud-snow-single": {
+      "-teal-gray": {
+        "bytes": 701,
+        "path": "./dist/png/48px-multi-color/cloud-snow-single-teal-gray.png",
+        "colors": {
+          "primary": "#80BBB2",
+          "secondary": "#666666"
+        }
+      }
+    },
+    "cloud-snow": {
+      "-teal-gray": {
+        "bytes": 668,
+        "path": "./dist/png/48px-multi-color/cloud-snow-teal-gray.png",
+        "colors": {
+          "primary": "#80BBB2",
+          "secondary": "#666666"
+        }
+      }
+    },
+    "cloud-up": {
+      "-teal-gray": {
+        "bytes": 665,
+        "path": "./dist/png/48px-multi-color/cloud-up-teal-gray.png",
+        "colors": {
+          "primary": "#80BBB2",
+          "secondary": "#666666"
+        }
+      }
+    },
+    "cloud-wind": {
+      "-teal-gray": {
+        "bytes": 636,
+        "path": "./dist/png/48px-multi-color/cloud-wind-teal-gray.png",
+        "colors": {
+          "primary": "#80BBB2",
+          "secondary": "#666666"
+        }
+      }
+    },
+    "cloud": {
+      "-teal-gray": {
+        "bytes": 473,
+        "path": "./dist/png/48px-multi-color/cloud-teal-gray.png",
+        "colors": {
+          "primary": "#80BBB2",
+          "secondary": "#666666"
+        }
+      }
+    },
+    "clouds": {
+      "-teal-gray": {
+        "bytes": 779,
+        "path": "./dist/png/48px-multi-color/clouds-teal-gray.png",
+        "colors": {
+          "primary": "#80BBB2",
+          "secondary": "#666666"
+        }
+      }
+    },
+    "compass-east": {
+      "-teal-gray": {
+        "bytes": 585,
+        "path": "./dist/png/48px-multi-color/compass-east-teal-gray.png",
+        "colors": {
+          "primary": "#80BBB2",
+          "secondary": "#666666"
+        }
+      }
+    },
+    "compass-north-east": {
+      "-teal-gray": {
+        "bytes": 593,
+        "path": "./dist/png/48px-multi-color/compass-north-east-teal-gray.png",
+        "colors": {
+          "primary": "#80BBB2",
+          "secondary": "#666666"
+        }
+      }
+    },
+    "compass-north-west": {
+      "-teal-gray": {
+        "bytes": 586,
+        "path": "./dist/png/48px-multi-color/compass-north-west-teal-gray.png",
+        "colors": {
+          "primary": "#80BBB2",
+          "secondary": "#666666"
+        }
+      }
+    },
+    "compass-north": {
+      "-teal-gray": {
+        "bytes": 626,
+        "path": "./dist/png/48px-multi-color/compass-north-teal-gray.png",
+        "colors": {
+          "primary": "#80BBB2",
+          "secondary": "#666666"
+        }
+      }
+    },
+    "compass-south-east": {
+      "-teal-gray": {
+        "bytes": 597,
+        "path": "./dist/png/48px-multi-color/compass-south-east-teal-gray.png",
+        "colors": {
+          "primary": "#80BBB2",
+          "secondary": "#666666"
+        }
+      }
+    },
+    "compass-south-west": {
+      "-teal-gray": {
+        "bytes": 605,
+        "path": "./dist/png/48px-multi-color/compass-south-west-teal-gray.png",
+        "colors": {
+          "primary": "#80BBB2",
+          "secondary": "#666666"
+        }
+      }
+    },
+    "compass-south": {
+      "-teal-gray": {
+        "bytes": 614,
+        "path": "./dist/png/48px-multi-color/compass-south-teal-gray.png",
+        "colors": {
+          "primary": "#80BBB2",
+          "secondary": "#666666"
+        }
+      }
+    },
+    "compass-west": {
+      "-teal-gray": {
+        "bytes": 612,
+        "path": "./dist/png/48px-multi-color/compass-west-teal-gray.png",
+        "colors": {
+          "primary": "#80BBB2",
+          "secondary": "#666666"
+        }
+      }
+    },
+    "compass": {
+      "-teal-gray": {
+        "bytes": 625,
+        "path": "./dist/png/48px-multi-color/compass-teal-gray.png",
+        "colors": {
+          "primary": "#80BBB2",
+          "secondary": "#666666"
+        }
+      }
+    },
+    "fahrenheit": {
+      "-teal-gray": {
+        "bytes": 460,
+        "path": "./dist/png/48px-multi-color/fahrenheit-teal-gray.png",
+        "colors": {
+          "primary": "#80BBB2",
+          "secondary": "#666666"
+        }
+      }
+    },
+    "fog": {
+      "-teal-gray": {
+        "bytes": 333,
+        "path": "./dist/png/48px-multi-color/fog-teal-gray.png",
+        "colors": {
+          "primary": "#80BBB2",
+          "secondary": "#666666"
+        }
+      }
+    },
+    "hail": {
+      "-teal-gray": {
+        "bytes": 656,
+        "path": "./dist/png/48px-multi-color/hail-teal-gray.png",
+        "colors": {
+          "primary": "#80BBB2",
+          "secondary": "#666666"
+        }
+      }
+    },
+    "lightning": {
+      "-teal-gray": {
+        "bytes": 660,
+        "path": "./dist/png/48px-multi-color/lightning-teal-gray.png",
+        "colors": {
+          "primary": "#80BBB2",
+          "secondary": "#666666"
+        }
+      }
+    },
+    "moon-cloud-lightning": {
+      "-teal-gray": {
+        "bytes": 816,
+        "path": "./dist/png/48px-multi-color/moon-cloud-lightning-teal-gray.png",
+        "colors": {
+          "primary": "#80BBB2",
+          "secondary": "#666666"
+        }
+      }
+    },
+    "moon-cloud-rain": {
+      "-teal-gray": {
+        "bytes": 771,
+        "path": "./dist/png/48px-multi-color/moon-cloud-rain-teal-gray.png",
+        "colors": {
+          "primary": "#80BBB2",
+          "secondary": "#666666"
+        }
+      }
+    },
+    "moon-cloud-snow": {
+      "-teal-gray": {
+        "bytes": 791,
+        "path": "./dist/png/48px-multi-color/moon-cloud-snow-teal-gray.png",
+        "colors": {
+          "primary": "#80BBB2",
+          "secondary": "#666666"
+        }
+      }
+    },
+    "moon-cloud-wind": {
+      "-teal-gray": {
+        "bytes": 708,
+        "path": "./dist/png/48px-multi-color/moon-cloud-wind-teal-gray.png",
+        "colors": {
+          "primary": "#80BBB2",
+          "secondary": "#666666"
+        }
+      }
+    },
+    "moon-cloud": {
+      "-teal-gray": {
+        "bytes": 733,
+        "path": "./dist/png/48px-multi-color/moon-cloud-teal-gray.png",
+        "colors": {
+          "primary": "#80BBB2",
+          "secondary": "#666666"
+        }
+      }
+    },
+    "moon-first-quarter": {
+      "-teal-gray": {
+        "bytes": 482,
+        "path": "./dist/png/48px-multi-color/moon-first-quarter-teal-gray.png",
+        "colors": {
+          "primary": "#80BBB2",
+          "secondary": "#666666"
+        }
+      }
+    },
+    "moon-fog": {
+      "-teal-gray": {
+        "bytes": 628,
+        "path": "./dist/png/48px-multi-color/moon-fog-teal-gray.png",
+        "colors": {
+          "primary": "#80BBB2",
+          "secondary": "#666666"
+        }
+      }
+    },
+    "moon-fullmoon": {
+      "-teal-gray": {
+        "bytes": 355,
+        "path": "./dist/png/48px-multi-color/moon-fullmoon-teal-gray.png",
+        "colors": {
+          "primary": "#80BBB2",
+          "secondary": "#666666"
+        }
+      }
+    },
+    "moon-last-quarter": {
+      "-teal-gray": {
+        "bytes": 516,
+        "path": "./dist/png/48px-multi-color/moon-last-quarter-teal-gray.png",
+        "colors": {
+          "primary": "#80BBB2",
+          "secondary": "#666666"
+        }
+      }
+    },
+    "moon-newmoon": {
+      "-teal-gray": {
+        "bytes": 473,
+        "path": "./dist/png/48px-multi-color/moon-newmoon-teal-gray.png",
+        "colors": {
+          "primary": "#80BBB2",
+          "secondary": "#666666"
+        }
+      }
+    },
+    "moon-waning-crescent": {
+      "-teal-gray": {
+        "bytes": 540,
+        "path": "./dist/png/48px-multi-color/moon-waning-crescent-teal-gray.png",
+        "colors": {
+          "primary": "#80BBB2",
+          "secondary": "#666666"
+        }
+      }
+    },
+    "moon-waning-gibbous": {
+      "-teal-gray": {
+        "bytes": 562,
+        "path": "./dist/png/48px-multi-color/moon-waning-gibbous-teal-gray.png",
+        "colors": {
+          "primary": "#80BBB2",
+          "secondary": "#666666"
+        }
+      }
+    },
+    "moon-waxing-crescent": {
+      "-teal-gray": {
+        "bytes": 567,
+        "path": "./dist/png/48px-multi-color/moon-waxing-crescent-teal-gray.png",
+        "colors": {
+          "primary": "#80BBB2",
+          "secondary": "#666666"
+        }
+      }
+    },
+    "moon-waxing-gibbous": {
+      "-teal-gray": {
+        "bytes": 561,
+        "path": "./dist/png/48px-multi-color/moon-waxing-gibbous-teal-gray.png",
+        "colors": {
+          "primary": "#80BBB2",
+          "secondary": "#666666"
+        }
+      }
+    },
+    "moon": {
+      "-teal-gray": {
+        "bytes": 438,
+        "path": "./dist/png/48px-multi-color/moon-teal-gray.png",
+        "colors": {
+          "primary": "#80BBB2",
+          "secondary": "#666666"
+        }
+      }
+    },
+    "rainbow": {
+      "-teal-gray": {
+        "bytes": 718,
+        "path": "./dist/png/48px-multi-color/rainbow-teal-gray.png",
+        "colors": {
+          "primary": "#80BBB2",
+          "secondary": "#666666"
+        }
+      }
+    },
+    "raindrop": {
+      "-teal-gray": {
+        "bytes": 593,
+        "path": "./dist/png/48px-multi-color/raindrop-teal-gray.png",
+        "colors": {
+          "primary": "#80BBB2",
+          "secondary": "#666666"
+        }
+      }
+    },
+    "refresh": {
+      "-teal-gray": {
+        "bytes": 443,
+        "path": "./dist/png/48px-multi-color/refresh-teal-gray.png",
+        "colors": {
+          "primary": "#80BBB2",
+          "secondary": "#666666"
+        }
+      }
+    },
+    "snowflake": {
+      "-teal-gray": {
+        "bytes": 544,
+        "path": "./dist/png/48px-multi-color/snowflake-teal-gray.png",
+        "colors": {
+          "primary": "#80BBB2",
+          "secondary": "#666666"
+        }
+      }
+    },
+    "sun-cloud-lightning": {
+      "-teal-gray": {
+        "bytes": 830,
+        "path": "./dist/png/48px-multi-color/sun-cloud-lightning-teal-gray.png",
+        "colors": {
+          "primary": "#80BBB2",
+          "secondary": "#666666"
+        }
+      }
+    },
+    "sun-cloud-rain": {
+      "-teal-gray": {
+        "bytes": 761,
+        "path": "./dist/png/48px-multi-color/sun-cloud-rain-teal-gray.png",
+        "colors": {
+          "primary": "#80BBB2",
+          "secondary": "#666666"
+        }
+      }
+    },
+    "sun-cloud-snow": {
+      "-teal-gray": {
+        "bytes": 841,
+        "path": "./dist/png/48px-multi-color/sun-cloud-snow-teal-gray.png",
+        "colors": {
+          "primary": "#80BBB2",
+          "secondary": "#666666"
+        }
+      }
+    },
+    "sun-cloud-wind": {
+      "-teal-gray": {
+        "bytes": 812,
+        "path": "./dist/png/48px-multi-color/sun-cloud-wind-teal-gray.png",
+        "colors": {
+          "primary": "#80BBB2",
+          "secondary": "#666666"
+        }
+      }
+    },
+    "sun-cloud": {
+      "-teal-gray": {
+        "bytes": 767,
+        "path": "./dist/png/48px-multi-color/sun-cloud-teal-gray.png",
+        "colors": {
+          "primary": "#80BBB2",
+          "secondary": "#666666"
+        }
+      }
+    },
+    "sun-fog": {
+      "-teal-gray": {
+        "bytes": 629,
+        "path": "./dist/png/48px-multi-color/sun-fog-teal-gray.png",
+        "colors": {
+          "primary": "#80BBB2",
+          "secondary": "#666666"
+        }
+      }
+    },
+    "sun-low": {
+      "-teal-gray": {
+        "bytes": 504,
+        "path": "./dist/png/48px-multi-color/sun-low-teal-gray.png",
+        "colors": {
+          "primary": "#80BBB2",
+          "secondary": "#666666"
+        }
+      }
+    },
+    "sun-medium": {
+      "-teal-gray": {
+        "bytes": 604,
+        "path": "./dist/png/48px-multi-color/sun-medium-teal-gray.png",
+        "colors": {
+          "primary": "#80BBB2",
+          "secondary": "#666666"
+        }
+      }
+    },
+    "sun": {
+      "-teal-gray": {
+        "bytes": 529,
+        "path": "./dist/png/48px-multi-color/sun-teal-gray.png",
+        "colors": {
+          "primary": "#80BBB2",
+          "secondary": "#666666"
+        }
+      }
+    },
+    "sunrise": {
+      "-teal-gray": {
+        "bytes": 496,
+        "path": "./dist/png/48px-multi-color/sunrise-teal-gray.png",
+        "colors": {
+          "primary": "#80BBB2",
+          "secondary": "#666666"
+        }
+      }
+    },
+    "sunset": {
+      "-teal-gray": {
+        "bytes": 496,
+        "path": "./dist/png/48px-multi-color/sunset-teal-gray.png",
+        "colors": {
+          "primary": "#80BBB2",
+          "secondary": "#666666"
+        }
+      }
+    },
+    "thermometer-cold": {
+      "-teal-gray": {
+        "bytes": 395,
+        "path": "./dist/png/48px-multi-color/thermometer-cold-teal-gray.png",
+        "colors": {
+          "primary": "#80BBB2",
+          "secondary": "#666666"
+        }
+      }
+    },
+    "thermometer-hot": {
+      "-teal-gray": {
+        "bytes": 391,
+        "path": "./dist/png/48px-multi-color/thermometer-hot-teal-gray.png",
+        "colors": {
+          "primary": "#80BBB2",
+          "secondary": "#666666"
+        }
+      }
+    },
+    "thermometer-medium": {
+      "-teal-gray": {
+        "bytes": 413,
+        "path": "./dist/png/48px-multi-color/thermometer-medium-teal-gray.png",
+        "colors": {
+          "primary": "#80BBB2",
+          "secondary": "#666666"
+        }
+      }
+    },
+    "tornado": {
+      "-teal-gray": {
+        "bytes": 624,
+        "path": "./dist/png/48px-multi-color/tornado-teal-gray.png",
+        "colors": {
+          "primary": "#80BBB2",
+          "secondary": "#666666"
+        }
+      }
+    },
+    "umbrella": {
+      "-teal-gray": {
+        "bytes": 633,
+        "path": "./dist/png/48px-multi-color/umbrella-teal-gray.png",
+        "colors": {
+          "primary": "#80BBB2",
+          "secondary": "#666666"
+        }
+      }
+    },
+    "wind-high": {
+      "-teal-gray": {
+        "bytes": 687,
+        "path": "./dist/png/48px-multi-color/wind-high-teal-gray.png",
+        "colors": {
+          "primary": "#80BBB2",
+          "secondary": "#666666"
+        }
+      }
+    },
+    "wind": {
+      "-teal-gray": {
+        "bytes": 521,
+        "path": "./dist/png/48px-multi-color/wind-teal-gray.png",
+        "colors": {
+          "primary": "#80BBB2",
+          "secondary": "#666666"
+        }
+      }
+    },
+    "windsock": {
+      "-teal-gray": {
+        "bytes": 474,
+        "path": "./dist/png/48px-multi-color/windsock-teal-gray.png",
+        "colors": {
+          "primary": "#80BBB2",
+          "secondary": "#666666"
+        }
       }
     }
   }

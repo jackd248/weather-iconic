@@ -55,9 +55,14 @@ async function generateIconFonts() {
     // Generate fonts
     const results = await generateFonts(config)
     
-    // Generate enhanced CSS with modern features
+    // Generate enhanced CSS with modern features and multi-color support
     const enhancedCss = await generateEnhancedCSS(iconNames, results.codepoints)
     await writeFile(join(distDir, 'weather-iconic-enhanced.css'), enhancedCss)
+    
+    // Add multi-color support CSS
+    const multiColorCss = await readFile(join(rootDir, 'src/multi-color-support.css'), 'utf-8')
+    const combinedCss = enhancedCss + '\n\n' + multiColorCss
+    await writeFile(join(distDir, 'weather-iconic-enhanced.css'), combinedCss)
     
     // Generate icon constants for programmatic use
     const iconConstants = generateIconConstants(iconNames, results.codepoints)
