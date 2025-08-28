@@ -8,7 +8,7 @@ const rootDir = join(__dirname, '..')
 const sourceDir = join(rootDir, 'src/icons')
 const outputDir = join(rootDir, 'src/icons')
 
-// SVGO configuration for optimizing SVGs
+// SVGO configuration for optimizing SVGs while preserving multi-color structure
 const svgoConfig = {
   plugins: [
     'removeDoctype',
@@ -21,14 +21,15 @@ const svgoConfig = {
     'removeEmptyAttrs',
     'removeHiddenElems',
     'removeEmptyText',
-    'removeEmptyContainers',
+    // Keep groups for multi-color support - don't use 'removeEmptyContainers'
     'minifyStyles',
     'convertStyleToAttrs',
     'convertColors',
     'convertPathData',
     'convertTransform',
     'removeUselessStrokeAndFill',
-    'removeNonInheritableGroupAttrs',
+    // Keep group attributes for multi-color theming
+    // 'removeNonInheritableGroupAttrs',
     'removeViewBox',
     {
       name: 'removeAttrs',
@@ -43,6 +44,25 @@ const svgoConfig = {
           { fill: 'currentColor' },
           { viewBox: '0 0 32 32' }
         ]
+      }
+    },
+    // Add data attributes to groups for better multi-color support
+    {
+      name: 'addAttributesToGroups',
+      fn: (ast) => {
+        let groupIndex = 0
+        const visit = (node) => {
+          if (node.name === 'g') {
+            if (!node.attributes) node.attributes = {}
+            node.attributes['data-group'] = groupIndex.toString()
+            groupIndex++
+          }
+          if (node.children) {
+            node.children.forEach(visit)
+          }
+        }
+        visit(ast)
+        return ast
       }
     }
   ]
@@ -64,6 +84,27 @@ const extractPaths = (svgContent) => {
   const pathRegex = /<path[^>]*>/g
   const paths = svgContent.match(pathRegex) || []
   return paths.join('\n    ')
+}
+
+// Detect if SVG has multiple groups (multi-color support)
+const hasMultipleGroups = (svgContent) => {
+  const groupMatches = svgContent.match(/<g[^>]*>/g) || []
+  return groupMatches.length > 1
+}
+
+// Extract group information for multi-color analysis
+const analyzeGroups = (svgContent) => {
+  const groups = []
+  const groupRegex = /<g[^>]*>([\s\S]*?)<\/g>/g
+  let match
+  
+  while ((match = groupRegex.exec(svgContent)) !== null) {
+    const groupContent = match[1]
+    const paths = (groupContent.match(/<path[^>]*>/g) || []).length
+    groups.push({ paths })
+  }
+  
+  return groups
 }
 
 async function processIcons() {
@@ -88,6 +129,10 @@ async function processIcons() {
       const svgContent = await readFile(filePath, 'utf-8')
       const paths = extractPaths(svgContent)
       
+      // Analyze icon structure
+      const isMultiColor = hasMultipleGroups(svgContent)
+      const groups = analyzeGroups(svgContent)
+      
       // Create icon data object
       const iconData = {
         name: iconName,
@@ -96,7 +141,10 @@ async function processIcons() {
         svgContent,
         paths,
         size: svgContent.length,
-        originalSize: svgContent.length
+        originalSize: svgContent.length,
+        isMultiColor,
+        groups: groups.length,
+        groupData: groups
       }
       
       processedIcons.push(iconData)
@@ -111,8 +159,12 @@ async function processIcons() {
         kebabName: icon.kebabName,
         size: icon.size,
         originalSize: icon.originalSize,
-        compression: "0.0"
+        compression: "0.0",
+        isMultiColor: icon.isMultiColor,
+        groups: icon.groups,
+        groupData: icon.groupData
       })),
+      multiColorIcons: processedIcons.filter(icon => icon.isMultiColor).map(icon => icon.name),
       totalIcons: processedIcons.length,
       totalSize: processedIcons.reduce((sum, icon) => sum + icon.size, 0),
       totalOriginalSize: processedIcons.reduce((sum, icon) => sum + icon.size, 0),
