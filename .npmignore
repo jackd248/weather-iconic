@@ -4,6 +4,7 @@ scripts/
 node_modules/
 .git/
 .github/
+.claude/
 
 # Build configuration
 tsconfig.json
