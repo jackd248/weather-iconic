@@ -575,12 +575,13 @@ open index.html
 ```
 
 ### Package Information
-- **Bundle Sizes**: React (~96KB), Vue (~108KB), Sprite (~62KB)
-- **Optimization**: 36.4% size reduction from original SVGs
+- **Bundle Sizes**: React (~1.3MB), Vue (~1.5MB), SVG Sprite (~104KB)
+- **Total Package**: ~4.9MB (includes all formats and assets)
 - **Formats**: ESM + CommonJS with full TypeScript definitions
 - **Multi-Format**: React/Vue components, SVG sprites, webfonts, PNG exports
-- **PNG Sizes**: 16px, 24px, 32px, 48px, 64px, 128px, 256px (with @2x, @3x retina)
+- **PNG Sizes**: 16px, 24px, 32px, 48px, 64px, 128px (standard + multi-color variants)
 - **Font Formats**: WOFF2, WOFF, TTF, EOT for maximum browser support
+- **Node.js**: Requires Node.js >=16.0.0
 
 ## ⭐ License
 
