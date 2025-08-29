@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Iconic - Test Page</title>
+    
+    <!-- Include both CSS files -->
+    <link rel="stylesheet" href="node_modules/weather-iconic/dist/weather-iconic.css">
+    <link rel="stylesheet" href="node_modules/weather-iconic/dist/weather-iconic-enhanced.css">
+    
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            margin: 0;
+            padding: 2rem;
+            background: #f8f9fa;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .section {
+            background: white;
+            margin: 2rem 0;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .icon-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+        
+        .icon-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1rem;
+            border: 1px solid #e9ecef;
+            border-radius: 8px;
+            transition: all 0.2s ease;
+        }
+        
+        .icon-item:hover {
+            border-color: #80BBB2;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(128, 187, 178, 0.15);
+        }
+        
+        .icon-item .icon {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+            color: #80BBB2;
+        }
+        
+        .icon-item .name {
+            font-size: 0.75rem;
+            color: #666;
+            text-align: center;
+            word-break: break-word;
+        }
+        
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        h2 {
+            color: #80BBB2;
+            border-bottom: 2px solid #80BBB2;
+            padding-bottom: 0.5rem;
+        }
+        
+        .test-info {
+            background: #e3f2fd;
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid #2196F3;
+        }
+        
+        /* Multi-color specific styles */
+        .multi-color-grid .icon-item .icon {
+            color: #80BBB2;
+        }
+        
+        .sprite-grid .icon-item svg {
+            width: 32px;
+            height: 32px;
+            fill: #80BBB2;
+        }
+        
+        /* Multi-color sprite styles */
+        .multi-color-sprites .icon-item {
+            --weather-primary-fill: #80BBB2;
+            --weather-secondary-fill: #666666;
+        }
+        
+        .multi-color-sprites svg g:first-child {
+            fill: var(--weather-primary-fill);
+        }
+        
+        .multi-color-sprites svg g:nth-child(2) {
+            fill: var(--weather-secondary-fill);
+        }
+        
+        .multi-color-sprites svg g:first-child path {
+            fill: var(--weather-primary-fill);
+        }
+        
+        .multi-color-sprites svg g:nth-child(2) path {
+            fill: var(--weather-secondary-fill);
+        }
+        
+        /* PNG grid styles */
+        .png-grid .icon-item img {
+            width: 32px;
+            height: 32px;
+            object-fit: contain;
+        }
+        
+        /* Animation fixes - Higher specificity */
+        .weather-icon--spin,
+        .weather.weather-refresh.weather-icon--spin,
+        span.weather.weather-refresh.weather-icon--spin {
+            animation: weather-spin 2s linear infinite !important;
+            display: inline-block !important;
+        }
+
+        .weather-icon--pulse,
+        .weather.weather-lightning.weather-icon--pulse,
+        span.weather.weather-lightning.weather-icon--pulse {
+            animation: weather-pulse 2s ease-in-out infinite !important;
+            display: inline-block !important;
+        }
+
+        /* SVG animation support */
+        svg.weather-icon--spin {
+            animation: weather-spin 2s linear infinite !important;
+        }
+
+        svg.weather-icon--pulse {
+            animation: weather-pulse 2s ease-in-out infinite !important;
+        }
+
+        @keyframes weather-spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        @keyframes weather-pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Weather Iconic - Test Page</h1>
+        
+        <!-- Webfont Monocolor Section -->
+        <div class="section">
+            <h2>Webfont Icons - Monocolor</h2>
+            <div class="test-info">
+                <strong>Test:</strong> All 63 icons using CSS webfont with single color (#80BBB2)
+            </div>
+            <div class="icon-grid" id="monoColorGrid">
+                <!-- Icons will be populated by JavaScript -->
+            </div>
+        </div>
+        
+        <!-- Sprites Monocolor Section -->
+        <div class="section">
+            <h2>SVG Sprites - Monocolor</h2>
+            <div class="test-info">
+                <strong>Test:</strong> All icons using SVG sprites with single color fill
+            </div>
+            <div class="icon-grid sprite-grid" id="spriteGrid">
+                <!-- Icons will be populated by JavaScript -->
+            </div>
+        </div>
+        
+        <!-- Sprites Multi-color Section -->
+        <div class="section">
+            <h2>SVG Sprites - Multi-Color</h2>
+            <div class="test-info">
+                <strong>Test:</strong> Multi-color capable icons using SVG sprites with primary (#80BBB2) and secondary (#666666) colors
+            </div>
+            <div class="icon-grid multi-color-sprites" id="multiColorSpriteGrid">
+                <!-- Icons will be populated by JavaScript -->
+            </div>
+        </div>
+        
+        <!-- PNG Icons Section -->
+        <div class="section">
+            <h2>PNG Icons - Standard (32px)</h2>
+            <div class="test-info">
+                <strong>Test:</strong> All icons as PNG files in standard format
+            </div>
+            <div class="icon-grid png-grid" id="pngGrid">
+                <!-- Icons will be populated by JavaScript -->
+            </div>
+        </div>
+        
+        <!-- PNG Multi-color Section -->
+        <div class="section">
+            <h2>PNG Icons - Multi-Color (48px)</h2>
+            <div class="test-info">
+                <strong>Test:</strong> Multi-color PNG variants with teal-gray color scheme
+            </div>
+            <div class="icon-grid png-grid" id="pngMultiColorGrid">
+                <!-- Icons will be populated by JavaScript -->
+            </div>
+        </div>
+        
+        <!-- Size Variations Section -->
+        <div class="section">
+            <h2>Size Variations</h2>
+            <div class="test-info">
+                <strong>Test:</strong> Different icon sizes using utility classes
+            </div>
+            <div style="display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;">
+                <span class="weather weather-sun weather-icon--xs"></span> XS
+                <span class="weather weather-sun weather-icon--sm"></span> SM
+                <span class="weather weather-sun weather-icon--md"></span> MD
+                <span class="weather weather-sun weather-icon--lg"></span> LG
+                <span class="weather weather-sun weather-icon--xl"></span> XL
+                <span class="weather weather-sun weather-icon--2xl"></span> 2XL
+                <span class="weather weather-sun weather-icon--3xl"></span> 3XL
+            </div>
+        </div>
+        
+        <!-- Animation Test Section -->
+        <div class="section">
+            <h2>Animation Tests</h2>
+            <div class="test-info">
+                <strong>Test:</strong> Icon animations (spin and pulse)
+            </div>
+            <div style="display: flex; align-items: center; gap: 2rem; flex-wrap: wrap;">
+                <div style="text-align: center;">
+                    <span class="weather weather-refresh weather-icon--spin weather-icon--2xl" style="color: #80BBB2;"></span>
+                    <div>Webfont Spinning</div>
+                </div>
+                <div style="text-align: center;">
+                    <span class="weather weather-lightning weather-icon--pulse weather-icon--2xl" style="color: #80BBB2;"></span>
+                    <div>Webfont Pulsing</div>
+                </div>
+                <div style="text-align: center;">
+                    <svg width="48" height="48" class="weather-icon--spin" style="fill: #80BBB2;">
+                        <use href="../dist/sprites.svg#weather-wind"></use>
+                    </svg>
+                    <div>Sprite Spinning</div>
+                </div>
+                <div style="text-align: center;">
+                    <svg width="48" height="48" class="weather-icon--pulse" style="fill: #80BBB2;">
+                        <use href="../dist/sprites.svg#weather-lightning"></use>
+                    </svg>
+                    <div>Sprite Pulsing</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Icon names array (all 63 icons)
+        const iconNames = [
+            'barometer', 'celsius', 'cloud-down', 'cloud-fog', 'cloud-rain-single', 'cloud-rain',
+            'cloud-snow-single', 'cloud-snow', 'cloud-up', 'cloud-wind', 'cloud', 'clouds',
+            'compass-east', 'compass-north-east', 'compass-north-west', 'compass-north',
+            'compass-south-east', 'compass-south-west', 'compass-south', 'compass-west', 'compass',
+            'fahrenheit', 'fog', 'hail', 'lightning', 'moon-cloud-lightning', 'moon-cloud-rain',
+            'moon-cloud-snow', 'moon-cloud-wind', 'moon-cloud', 'moon-first-quarter', 'moon-fog',
+            'moon-fullmoon', 'moon-last-quarter', 'moon-newmoon', 'moon-waning-crescent',
+            'moon-waning-gibbous', 'moon-waxing-crescent', 'moon-waxing-gibbous', 'moon',
+            'rainbow', 'raindrop', 'refresh', 'snowflake', 'sun-cloud-lightning', 'sun-cloud-rain',
+            'sun-cloud-snow', 'sun-cloud-wind', 'sun-cloud', 'sun-fog', 'sun-low', 'sun-medium',
+            'sun', 'sunrise', 'sunset', 'thermometer-cold', 'thermometer-hot', 'thermometer-medium',
+            'tornado', 'umbrella', 'wind-high', 'wind', 'windsock'
+        ];
+
+        // Multi-color capable icons (detected from build system)
+        const multiColorIcons = [
+            'barometer', 'celsius', 'cloud-down', 'cloud-fog', 'cloud-rain-single', 'cloud-rain',
+            'cloud-snow-single', 'cloud-snow', 'cloud-up', 'cloud-wind', 'cloud', 'clouds',
+            'compass-east', 'compass-north-east', 'compass-north-west', 'compass-north',
+            'compass-south-east', 'compass-south-west', 'compass-south', 'compass-west', 'compass',
+            'fahrenheit', 'fog', 'hail', 'lightning', 'moon-cloud-lightning', 'moon-cloud-rain',
+            'moon-cloud-snow', 'moon-cloud-wind', 'moon-cloud', 'moon-first-quarter', 'moon-fog',
+            'moon-fullmoon', 'moon-last-quarter', 'moon-newmoon', 'moon-waning-crescent',
+            'moon-waning-gibbous', 'moon-waxing-crescent', 'moon-waxing-gibbous', 'moon',
+            'rainbow', 'raindrop', 'refresh', 'snowflake', 'sun-cloud-lightning', 'sun-cloud-rain',
+            'sun-cloud-snow', 'sun-cloud-wind', 'sun-cloud', 'sun-fog', 'sun-low', 'sun-medium',
+            'sun', 'sunrise', 'sunset', 'thermometer-cold', 'thermometer-hot', 'thermometer-medium',
+            'tornado', 'umbrella', 'wind-high', 'wind', 'windsock'
+        ];
+
+        // Populate monocolor webfont grid
+        function populateMonoColorGrid() {
+            const grid = document.getElementById('monoColorGrid');
+            iconNames.forEach(name => {
+                const item = document.createElement('div');
+                item.className = 'icon-item';
+                item.innerHTML = `
+                    <span class="weather weather-${name} icon"></span>
+                    <div class="name">${name}</div>
+                `;
+                grid.appendChild(item);
+            });
+        }
+
+        // Populate sprite grid
+        function populateSpriteGrid() {
+            const grid = document.getElementById('spriteGrid');
+            iconNames.forEach(name => {
+                const item = document.createElement('div');
+                item.className = 'icon-item';
+                item.innerHTML = `
+                    <svg class="icon" viewBox="0 0 32 32" width="32" height="32">
+                        <use href="../dist/sprites.svg#weather-${name}"></use>
+                    </svg>
+                    <div class="name">${name}</div>
+                `;
+                grid.appendChild(item);
+            });
+        }
+
+        // Load and populate multi-color sprite grid with inline SVG
+        async function populateMultiColorSpriteGrid() {
+            const grid = document.getElementById('multiColorSpriteGrid');
+            
+            try {
+                // Load the sprite SVG content
+                const response = await fetch('../dist/sprites.svg');
+                const svgText = await response.text();
+                const parser = new DOMParser();
+                const svgDoc = parser.parseFromString(svgText, 'image/svg+xml');
+                
+                multiColorIcons.forEach(name => {
+                    const symbol = svgDoc.querySelector(`#weather-${name}`);
+                    if (symbol) {
+                        const item = document.createElement('div');
+                        item.className = 'icon-item';
+                        
+                        // Create inline SVG with the symbol content
+                        const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+                        svg.setAttribute('class', 'icon');
+                        svg.setAttribute('viewBox', '0 0 32 32');
+                        svg.setAttribute('width', '32');
+                        svg.setAttribute('height', '32');
+                        svg.innerHTML = symbol.innerHTML;
+                        
+                        const nameDiv = document.createElement('div');
+                        nameDiv.className = 'name';
+                        nameDiv.textContent = `${name} (multi)`;
+                        
+                        item.appendChild(svg);
+                        item.appendChild(nameDiv);
+                        grid.appendChild(item);
+                    }
+                });
+            } catch (error) {
+                console.error('Error loading sprite SVG:', error);
+                // Fallback to regular sprites without multi-color
+                multiColorIcons.forEach(name => {
+                    const item = document.createElement('div');
+                    item.className = 'icon-item';
+                    item.innerHTML = `
+                        <svg class="icon" viewBox="0 0 32 32" width="32" height="32">
+                            <use href="../dist/sprites.svg#weather-${name}"></use>
+                        </svg>
+                        <div class="name">${name} (fallback)</div>
+                    `;
+                    grid.appendChild(item);
+                });
+            }
+        }
+
+        // Populate PNG grid
+        function populatePNGGrid() {
+            const grid = document.getElementById('pngGrid');
+            iconNames.forEach(name => {
+                const item = document.createElement('div');
+                item.className = 'icon-item';
+                item.innerHTML = `
+                    <img class="icon" src="../dist/png/32px/${name}.png" alt="${name}" loading="lazy">
+                    <div class="name">${name}</div>
+                `;
+                grid.appendChild(item);
+            });
+        }
+
+        // Populate multi-color PNG grid
+        function populateMultiColorPNGGrid() {
+            const grid = document.getElementById('pngMultiColorGrid');
+            multiColorIcons.forEach(name => {
+                const item = document.createElement('div');
+                item.className = 'icon-item';
+                item.innerHTML = `
+                    <img class="icon" src="../dist/png/48px-multi-color/${name}-teal-gray.png" alt="${name}" loading="lazy">
+                    <div class="name">${name} (teal-gray)</div>
+                `;
+                grid.appendChild(item);
+            });
+        }
+
+        // Initialize all grids
+        document.addEventListener('DOMContentLoaded', async function() {
+            populateMonoColorGrid();
+            populateSpriteGrid();
+            await populateMultiColorSpriteGrid();
+            populatePNGGrid();
+            populateMultiColorPNGGrid();
+            
+            console.log('✅ Test page loaded with', iconNames.length, 'icons');
+            console.log('📊 Multi-color icons:', multiColorIcons.length);
+            console.log('🖼️ PNG variants loaded');
+        });
+    </script>
+</body>
+</html>

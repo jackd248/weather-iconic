@@ -363,6 +363,9 @@ import { WeatherSun } from 'weather-iconic/vue'
 <i class="weather weather-cloud-rain weather-icon--lg"></i>
 ```
 
+> [!TIP]
+> See the [CodePen example](https://codepen.io/knrd/pen/bNVmbVG) for more details.
+
 ### PNG Images
 
 ![PNG Usage](dist/png/24px/sun.png) ![PNG Usage](dist/png/32px/sun.png) ![PNG Usage](dist/png/48px/sun.png)
@@ -560,6 +563,15 @@ npm run build:sprite     # Create SVG sprite
 npm run build:fonts      # Generate webfonts (WOFF2, WOFF, TTF, EOT)
 npm run build:png        # Export PNG images (multiple sizes + retina)
 npm run build           # Full build pipeline
+```
+
+### Testing
+
+```bash
+# open test page
+cd tests
+npm install
+open index.html
 ```
 
 ### Package Information
