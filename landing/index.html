@@ -237,12 +237,15 @@
             </div>
             <div class="tab-content">
                 <div class="tab-panel active" id="css">
-                    <pre><code>&lt;!-- Include the stylesheet --&gt;
-&lt;link rel="stylesheet" href="weather-iconic/weather-iconic.css"&gt;
+                    <pre><code>&lt;!-- Include the stylesheet via CDN --&gt;
+&lt;link rel="stylesheet" href="https://unpkg.com/weather-iconic/dist/weather-iconic.css"&gt;
+
+&lt;!-- Or if installed via npm --&gt;
+&lt;link rel="stylesheet" href="node_modules/weather-iconic/dist/weather-iconic.css"&gt;
 
 &lt;!-- Use icons with CSS classes --&gt;
-&lt;span class="weather-sun"&gt;&lt;/span&gt;
-&lt;span class="weather-cloud-rain"&gt;&lt;/span&gt;</code></pre>
+&lt;span class="weather weather-sun"&gt;&lt;/span&gt;
+&lt;span class="weather weather-cloud-rain"&gt;&lt;/span&gt;</code></pre>
                 </div>
                 <div class="tab-panel" id="react">
                     <pre><code>import { WeatherSun, WeatherCloudRain } from 'weather-iconic/react'
