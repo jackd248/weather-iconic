@@ -1,7 +1,7 @@
 {
   "name": "weather-iconic",
   "version": "2.0.0",
-  "description": "Modern weather icon library with 63 icons available as React components, Vue components, and optimized SVGs",
+  "description": "A minimal multi-color weather icon set containing 63 icons offered in multiple integration options.",
   "type": "module",
   "main": "./dist/index.js",
   "module": "./dist/index.esm.js",
@@ -67,11 +67,11 @@
     "typescript",
     "icon-font"
   ],
-  "author": "Weather Iconic Team",
+  "author": "Konrad Michalik",
   "license": "CC-BY-SA-3.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/weather-iconic/weather-iconic.git"
+    "url": "https://github.com/jackd248/weather-iconic.git"
   },
   "devDependencies": {
     "@types/node": "^20.0.0",
