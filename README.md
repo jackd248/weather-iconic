@@ -320,7 +320,7 @@ All 63 weather icons with exemplary multi-color visual previews:
 ## 🔥 Installation
 
 ```bash
-npm install @weather-iconic/icons
+npm install weather-iconic
 ```
 
 ## ⚡ Usage
@@ -330,7 +330,7 @@ npm install @weather-iconic/icons
 ![React Usage](dist/png/24px/sun.png) ![React Usage](dist/png/24px/cloud-rain.png)
 
 ```jsx
-import { WeatherSun, WeatherCloudRain } from '@weather-iconic/icons/react'
+import { WeatherSun, WeatherCloudRain } from 'weather-iconic/react'
 
 <WeatherSun size={32} color="orange" />
 <WeatherCloudRain size={24} color="blue" title="Rainy weather" />
@@ -346,7 +346,7 @@ import { WeatherSun, WeatherCloudRain } from '@weather-iconic/icons/react'
 </template>
 
 <script setup>
-import { WeatherSun } from '@weather-iconic/icons/vue'
+import { WeatherSun } from 'weather-iconic/vue'
 </script>
 ```
 
@@ -354,11 +354,13 @@ import { WeatherSun } from '@weather-iconic/icons/vue'
 
 ![Webfont Usage](dist/png/24px/sun.png) ![Webfont Usage](dist/png/24px/cloud-rain.png)
 
-```css
-@import '@weather-iconic/icons/fonts/css';
+```html
+<!-- Include the CSS -->
+<link rel="stylesheet" href="node_modules/weather-iconic/dist/weather-iconic.css">
 
-<i class="weather-sun"></i>
-<i class="weather-cloud-rain weather-icon--lg"></i>
+<!-- Use icons with proper classes -->
+<i class="weather weather-sun"></i>
+<i class="weather weather-cloud-rain weather-icon--lg"></i>
 ```
 
 ### PNG Images
@@ -366,7 +368,7 @@ import { WeatherSun } from '@weather-iconic/icons/vue'
 ![PNG Usage](dist/png/24px/sun.png) ![PNG Usage](dist/png/32px/sun.png) ![PNG Usage](dist/png/48px/sun.png)
 
 ```javascript
-import { getPNGPath } from '@weather-iconic/icons/png-utils'
+import { getPNGPath } from 'weather-iconic/png-utils'
 
 // Get PNG path
 const iconPath = getPNGPath('sun', 24) // 24px standard
@@ -382,7 +384,7 @@ const iconPath48 = getPNGPath('sun', 48) // 48px standard
 ![Sprite Usage](dist/png/24px/sun.png) ![Sprite Usage](dist/png/24px/moon.png)
 
 ```javascript
-import { loadSprite } from '@weather-iconic/icons/sprites'
+import { loadSprite } from 'weather-iconic/sprites'
 
 // Load sprite into DOM
 await loadSprite()
@@ -416,7 +418,7 @@ Pre-generated multi-color PNG icons are available at 48px with a teal/gray color
 </table>
 
 ```javascript
-import { getMultiColorPNGPath } from '@weather-iconic/icons/png-utils'
+import { getMultiColorPNGPath } from 'weather-iconic/png-utils'
 
 // Multi-color PNG variant
 const multiColorIcon = getMultiColorPNGPath('sun-cloud-lightning', '-teal-gray')
@@ -434,7 +436,7 @@ const multiColorIcon = getMultiColorPNGPath('sun-cloud-lightning', '-teal-gray')
 ![React Multi-Color](dist/png/48px-multi-color/sun-cloud-lightning-teal-gray.png)
 
 ```jsx
-import { WeatherSunCloudLightning } from '@weather-iconic/icons/react'
+import { WeatherSunCloudLightning } from 'weather-iconic/react'
 
 // Multi-color with custom colors
 <WeatherSunCloudLightning 
@@ -481,7 +483,7 @@ import { WeatherSunCloudLightning } from '@weather-iconic/icons/react'
 </template>
 
 <script setup>
-import { WeatherSunCloudLightning } from '@weather-iconic/icons/vue'
+import { WeatherSunCloudLightning } from 'weather-iconic/vue'
 </script>
 ```
 
@@ -489,16 +491,17 @@ import { WeatherSunCloudLightning } from '@weather-iconic/icons/vue'
 
 ![CSS Multi-Color](dist/png/48px-multi-color/sun-cloud-lightning-teal-gray.png)
 
-```css
-/* Include enhanced CSS for multi-color support */
-@import '@weather-iconic/icons/weather-iconic-enhanced.css';
+```html
+<!-- Include enhanced CSS for multi-color support -->
+<link rel="stylesheet" href="node_modules/weather-iconic/dist/weather-iconic-enhanced.css">
+```
 
+```css
 /* Basic multi-color usage with CSS custom properties */
 .weather-multi-color {
   --weather-primary-fill: #80BBB2;   /* Primary element color */
   --weather-secondary-fill: #666666; /* Secondary element color */
 }
-
 ```
 
 #### HTML Usage
