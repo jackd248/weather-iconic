@@ -1,5 +1,5 @@
 {
-  "name": "@weather-iconic/icons",
+  "name": "weather-iconic",
   "version": "2.0.0",
   "description": "Modern weather icon library with 63 icons available as React components, Vue components, and optimized SVGs",
   "type": "module",
