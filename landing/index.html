@@ -85,16 +85,28 @@
                                 <svg viewBox="0 0 32 32"><use href="./dist/sprites.svg#weather-cloud-rain"></use></svg>
                             </div>
                             <div class="showcase-icon showcase-icon-3">
-                                <svg viewBox="0 0 32 32"><use href="./dist/sprites.svg#weather-snowflake"></use></svg>
+                                <svg viewBox="0 0 32 32"><use href="./dist/sprites.svg#weather-wind"></use></svg>
                             </div>
                             <div class="showcase-icon showcase-icon-4">
-                                <svg viewBox="0 0 32 32"><use href="./dist/sprites.svg#weather-lightning"></use></svg>
+                                <svg viewBox="0 0 32 32"><use href="./dist/sprites.svg#weather-snowflake"></use></svg>
                             </div>
                             <div class="showcase-icon showcase-icon-5">
-                                <svg viewBox="0 0 32 32"><use href="./dist/sprites.svg#weather-moon-cloud"></use></svg>
+                                <svg viewBox="0 0 32 32"><use href="./dist/sprites.svg#weather-lightning"></use></svg>
                             </div>
                             <div class="showcase-icon showcase-icon-6">
+                                <svg viewBox="0 0 32 32"><use href="./dist/sprites.svg#weather-moon-cloud"></use></svg>
+                            </div>
+                            <div class="showcase-icon showcase-icon-7">
                                 <svg viewBox="0 0 32 32"><use href="./dist/sprites.svg#weather-thermometer-hot"></use></svg>
+                            </div>
+                            <div class="showcase-icon showcase-icon-8">
+                                <svg viewBox="0 0 32 32"><use href="./dist/sprites.svg#weather-rainbow"></use></svg>
+                            </div>
+                            <div class="showcase-icon showcase-icon-9">
+                                <svg viewBox="0 0 32 32"><use href="./dist/sprites.svg#weather-fog"></use></svg>
+                            </div>
+                            <div class="showcase-icon showcase-icon-10">
+                                <svg viewBox="0 0 32 32"><use href="./dist/sprites.svg#weather-hail"></use></svg>
                             </div>
                         </div>
                         <div class="showcase-glow"></div>
@@ -139,7 +151,7 @@
                 <div class="weather-card sunny">
                     <div class="weather-icon">
                         <svg class="icon-sun" viewBox="0 0 24 24">
-                            <use href="../dist/sprites.svg#weather-sun"></use>
+                            <use href="./dist/sprites.svg#weather-sun"></use>
                         </svg>
                     </div>
                     <div class="weather-info">
@@ -152,7 +164,7 @@
                 <div class="weather-card rainy">
                     <div class="weather-icon">
                         <svg class="icon-rain" viewBox="0 0 24 24">
-                            <use href="../dist/sprites.svg#weather-cloud-rain"></use>
+                            <use href="./dist/sprites.svg#weather-cloud-rain"></use>
                         </svg>
                     </div>
                     <div class="weather-info">
@@ -165,7 +177,7 @@
                 <div class="weather-card cloudy">
                     <div class="weather-icon">
                         <svg class="icon-cloud" viewBox="0 0 24 24">
-                            <use href="../dist/sprites.svg#weather-cloud"></use>
+                            <use href="./dist/sprites.svg#weather-cloud"></use>
                         </svg>
                     </div>
                     <div class="weather-info">
@@ -178,7 +190,7 @@
                 <div class="weather-card snowy">
                     <div class="weather-icon">
                         <svg class="icon-snow" viewBox="0 0 24 24">
-                            <use href="../dist/sprites.svg#weather-cloud-snow"></use>
+                            <use href="./dist/sprites.svg#weather-cloud-snow"></use>
                         </svg>
                     </div>
                     <div class="weather-info">
@@ -186,42 +198,6 @@
                         <div class="temperature">-2°C</div>
                         <div class="condition">Snowy</div>
                     </div>
-                </div>
-                <div class="tab-panel" id="sprite">
-                    <pre><code>&lt;!-- Method 1: Load sprite file --&gt;
-&lt;script&gt;
-  // Load sprite into DOM
-  fetch('weather-iconic/sprites.svg')
-    .then(response =&gt; response.text())
-    .then(svg =&gt; {
-      const div = document.createElement('div')
-      div.style.display = 'none'
-      div.innerHTML = svg
-      document.body.prepend(div)
-    })
-&lt;/script&gt;
-
-&lt;!-- Method 2: Include sprite inline --&gt;
-&lt;div style="display: none;"&gt;
-  &lt;svg&gt;&lt;use href="weather-iconic/sprites.svg"&gt;&lt;/use&gt;&lt;/svg&gt;
-&lt;/div&gt;
-
-&lt;!-- Use icons --&gt;
-&lt;svg width="32" height="32" fill="#80BBB2"&gt;
-  &lt;use href="#weather-sun"&gt;&lt;/use&gt;
-&lt;/svg&gt;
-&lt;svg width="32" height="32"&gt;
-  &lt;use href="#weather-cloud-rain"&gt;&lt;/use&gt;
-&lt;/svg&gt;
-
-&lt;!-- React/Vue sprite utility --&gt;
-import { SpriteIcon, loadSprite } from 'weather-iconic/sprite'
-
-// Load once in your app
-loadSprite('/path/to/sprites.svg')
-
-// Use anywhere
-&lt;SpriteIcon name="sun" size={32} color="#80BBB2" /&gt;</code></pre>
                 </div>
             </div>
         </div>
@@ -242,8 +218,8 @@ loadSprite('/path/to/sprites.svg')
                 <div class="install-card">
                     <h3>🔗 CDN</h3>
                     <div class="install-command">
-                        <code>&lt;link rel="stylesheet" href="https://unpkg.com/weather-iconic/dist/style.css"&gt;</code>
-                        <button class="copy-btn" onclick="copyToClipboard('<link rel=\"stylesheet\" href=\"https://unpkg.com/weather-iconic/dist/style.css\">')">Copy</button>
+                        <code>&lt;link rel="stylesheet" href="https://unpkg.com/weather-iconic/dist/weather-iconic.css"&gt;</code>
+                        <button class="copy-btn" onclick="copyToClipboard('<link rel=\"stylesheet\" href=\"https://unpkg.com/weather-iconic/dist/weather-iconic.css\">')">Copy</button>
                     </div>
                     <p>Direct CSS inclusion via CDN for quick prototyping</p>
                 </div>
@@ -262,7 +238,7 @@ loadSprite('/path/to/sprites.svg')
             <div class="tab-content">
                 <div class="tab-panel active" id="css">
                     <pre><code>&lt;!-- Include the stylesheet --&gt;
-&lt;link rel="stylesheet" href="weather-iconic/style.css"&gt;
+&lt;link rel="stylesheet" href="weather-iconic/weather-iconic.css"&gt;
 
 &lt;!-- Use icons with CSS classes --&gt;
 &lt;span class="weather-sun"&gt;&lt;/span&gt;
@@ -315,7 +291,7 @@ import { WeatherSun, WeatherCloudRain } from 'weather-iconic/vue'
                     <h3>🖼️ SVG Sprites</h3>
                     <p>Optimized SVG sprite file for web applications</p>
                     <div class="download-actions">
-                        <a href="../dist/sprites.svg" download="weather-iconic-sprites.svg" class="btn-primary">Download Sprite</a>
+                        <a href="./dist/sprites.svg" download="weather-iconic-sprites.svg" class="btn-primary">Download Sprite</a>
                         <div class="download-info">
                             <small>Single file • 100KB • All icons</small>
                         </div>
@@ -352,7 +328,6 @@ import { WeatherSun, WeatherCloudRain } from 'weather-iconic/vue'
                         <label for="secondaryColor">Secondary</label>
                         <input type="color" id="secondaryColor" value="#666666" />
                         <button id="resetColors" class="btn-reset">Reset</button>
-                        <button id="debugColors" class="btn-reset">Debug</button>
                     </div>
                 </div>
             </div>

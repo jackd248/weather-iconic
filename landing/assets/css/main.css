@@ -219,6 +219,8 @@
 .features {
     padding: 4rem 0;
     background: var(--surface);
+    position: relative;
+    z-index: 1;
 }
 
 .feature-grid {
@@ -631,13 +633,21 @@ code {
     }
     
     .showcase-grid {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
         gap: 0.5rem;
         padding: 1rem;
     }
     
+    .showcase-icon-4 { grid-column: 2; grid-row: 2; }
+    .showcase-icon-7 { display: none; }
+    .showcase-icon-8 { display: none; }
+    .showcase-icon-9 { display: none; }
+    .showcase-icon-10 { display: none; }
+    
     .showcase-icon svg {
-        width: 24px;
-        height: 24px;
+        width: 32px;
+        height: 32px;
     }
     
     .hero-stats {
