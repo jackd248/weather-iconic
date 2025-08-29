@@ -1,0 +1,1175 @@
+{
+  "icons": [
+    {
+      "name": "barometer",
+      "pascalName": "Barometer",
+      "kebabName": "barometer",
+      "size": 2329,
+      "originalSize": 2329,
+      "compression": "0.0",
+      "isMultiColor": true,
+      "groups": 2,
+      "groupData": [
+        {
+          "paths": 1
+        },
+        {
+          "paths": 1
+        }
+      ]
+    },
+    {
+      "name": "celsius",
+      "pascalName": "Celsius",
+      "kebabName": "celsius",
+      "size": 1581,
+      "originalSize": 1581,
+      "compression": "0.0",
+      "isMultiColor": true,
+      "groups": 2,
+      "groupData": [
+        {
+          "paths": 1
+        },
+        {
+          "paths": 1
+        }
+      ]
+    },
+    {
+      "name": "cloud-down",
+      "pascalName": "CloudDown",
+      "kebabName": "cloud-down",
+      "size": 2156,
+      "originalSize": 2156,
+      "compression": "0.0",
+      "isMultiColor": true,
+      "groups": 2,
+      "groupData": [
+        {
+          "paths": 1
+        },
+        {
+          "paths": 1
+        }
+      ]
+    },
+    {
+      "name": "cloud-fog",
+      "pascalName": "CloudFog",
+      "kebabName": "cloud-fog",
+      "size": 1720,
+      "originalSize": 1720,
+      "compression": "0.0",
+      "isMultiColor": true,
+      "groups": 2,
+      "groupData": [
+        {
+          "paths": 1
+        },
+        {
+          "paths": 1
+        }
+      ]
+    },
+    {
+      "name": "cloud-rain-single",
+      "pascalName": "CloudRainSingle",
+      "kebabName": "cloud-rain-single",
+      "size": 2078,
+      "originalSize": 2078,
+      "compression": "0.0",
+      "isMultiColor": true,
+      "groups": 2,
+      "groupData": [
+        {
+          "paths": 1
+        },
+        {
+          "paths": 1
+        }
+      ]
+    },
+    {
+      "name": "cloud-rain",
+      "pascalName": "CloudRain",
+      "kebabName": "cloud-rain",
+      "size": 2337,
+      "originalSize": 2337,
+      "compression": "0.0",
+      "isMultiColor": true,
+      "groups": 2,
+      "groupData": [
+        {
+          "paths": 1
+        },
+        {
+          "paths": 1
+        }
+      ]
+    },
+    {
+      "name": "cloud-snow-single",
+      "pascalName": "CloudSnowSingle",
+      "kebabName": "cloud-snow-single",
+      "size": 2458,
+      "originalSize": 2458,
+      "compression": "0.0",
+      "isMultiColor": true,
+      "groups": 2,
+      "groupData": [
+        {
+          "paths": 1
+        },
+        {
+          "paths": 1
+        }
+      ]
+    },
+    {
+      "name": "cloud-snow",
+      "pascalName": "CloudSnow",
+      "kebabName": "cloud-snow",
+      "size": 2957,
+      "originalSize": 2957,
+      "compression": "0.0",
+      "isMultiColor": true,
+      "groups": 2,
+      "groupData": [
+        {
+          "paths": 1
+        },
+        {
+          "paths": 1
+        }
+      ]
+    },
+    {
+      "name": "cloud-up",
+      "pascalName": "CloudUp",
+      "kebabName": "cloud-up",
+      "size": 2147,
+      "originalSize": 2147,
+      "compression": "0.0",
+      "isMultiColor": true,
+      "groups": 2,
+      "groupData": [
+        {
+          "paths": 1
+        },
+        {
+          "paths": 1
+        }
+      ]
+    },
+    {
+      "name": "cloud-wind",
+      "pascalName": "CloudWind",
+      "kebabName": "cloud-wind",
+      "size": 2369,
+      "originalSize": 2369,
+      "compression": "0.0",
+      "isMultiColor": true,
+      "groups": 2,
+      "groupData": [
+        {
+          "paths": 1
+        },
+        {
+          "paths": 1
+        }
+      ]
+    },
+    {
+      "name": "cloud",
+      "pascalName": "Cloud",
+      "kebabName": "cloud",
+      "size": 1026,
+      "originalSize": 1026,
+      "compression": "0.0",
+      "isMultiColor": false,
+      "groups": 1,
+      "groupData": [
+        {
+          "paths": 1
+        }
+      ]
+    },
+    {
+      "name": "clouds",
+      "pascalName": "Clouds",
+      "kebabName": "clouds",
+      "size": 4106,
+      "originalSize": 4106,
+      "compression": "0.0",
+      "isMultiColor": true,
+      "groups": 2,
+      "groupData": [
+        {
+          "paths": 1
+        },
+        {
+          "paths": 1
+        }
+      ]
+    },
+    {
+      "name": "compass-east",
+      "pascalName": "CompassEast",
+      "kebabName": "compass-east",
+      "size": 1472,
+      "originalSize": 1472,
+      "compression": "0.0",
+      "isMultiColor": true,
+      "groups": 2,
+      "groupData": [
+        {
+          "paths": 1
+        },
+        {
+          "paths": 1
+        }
+      ]
+    },
+    {
+      "name": "compass-north-east",
+      "pascalName": "CompassNorthEast",
+      "kebabName": "compass-north-east",
+      "size": 1531,
+      "originalSize": 1531,
+      "compression": "0.0",
+      "isMultiColor": true,
+      "groups": 2,
+      "groupData": [
+        {
+          "paths": 1
+        },
+        {
+          "paths": 1
+        }
+      ]
+    },
+    {
+      "name": "compass-north-west",
+      "pascalName": "CompassNorthWest",
+      "kebabName": "compass-north-west",
+      "size": 1509,
+      "originalSize": 1509,
+      "compression": "0.0",
+      "isMultiColor": true,
+      "groups": 2,
+      "groupData": [
+        {
+          "paths": 1
+        },
+        {
+          "paths": 1
+        }
+      ]
+    },
+    {
+      "name": "compass-north",
+      "pascalName": "CompassNorth",
+      "kebabName": "compass-north",
+      "size": 1499,
+      "originalSize": 1499,
+      "compression": "0.0",
+      "isMultiColor": true,
+      "groups": 2,
+      "groupData": [
+        {
+          "paths": 1
+        },
+        {
+          "paths": 1
+        }
+      ]
+    },
+    {
+      "name": "compass-south-east",
+      "pascalName": "CompassSouthEast",
+      "kebabName": "compass-south-east",
+      "size": 1488,
+      "originalSize": 1488,
+      "compression": "0.0",
+      "isMultiColor": true,
+      "groups": 2,
+      "groupData": [
+        {
+          "paths": 1
+        },
+        {
+          "paths": 1
+        }
+      ]
+    },
+    {
+      "name": "compass-south-west",
+      "pascalName": "CompassSouthWest",
+      "kebabName": "compass-south-west",
+      "size": 1531,
+      "originalSize": 1531,
+      "compression": "0.0",
+      "isMultiColor": true,
+      "groups": 2,
+      "groupData": [
+        {
+          "paths": 1
+        },
+        {
+          "paths": 1
+        }
+      ]
+    },
+    {
+      "name": "compass-south",
+      "pascalName": "CompassSouth",
+      "kebabName": "compass-south",
+      "size": 1523,
+      "originalSize": 1523,
+      "compression": "0.0",
+      "isMultiColor": true,
+      "groups": 2,
+      "groupData": [
+        {
+          "paths": 1
+        },
+        {
+          "paths": 1
+        }
+      ]
+    },
+    {
+      "name": "compass-west",
+      "pascalName": "CompassWest",
+      "kebabName": "compass-west",
+      "size": 1494,
+      "originalSize": 1494,
+      "compression": "0.0",
+      "isMultiColor": true,
+      "groups": 2,
+      "groupData": [
+        {
+          "paths": 1
+        },
+        {
+          "paths": 1
+        }
+      ]
+    },
+    {
+      "name": "compass",
+      "pascalName": "Compass",
+      "kebabName": "compass",
+      "size": 1370,
+      "originalSize": 1370,
+      "compression": "0.0",
+      "isMultiColor": true,
+      "groups": 2,
+      "groupData": [
+        {
+          "paths": 1
+        },
+        {
+          "paths": 1
+        }
+      ]
+    },
+    {
+      "name": "fahrenheit",
+      "pascalName": "Fahrenheit",
+      "kebabName": "fahrenheit",
+      "size": 1374,
+      "originalSize": 1374,
+      "compression": "0.0",
+      "isMultiColor": true,
+      "groups": 2,
+      "groupData": [
+        {
+          "paths": 1
+        },
+        {
+          "paths": 1
+        }
+      ]
+    },
+    {
+      "name": "fog",
+      "pascalName": "Fog",
+      "kebabName": "fog",
+      "size": 1627,
+      "originalSize": 1627,
+      "compression": "0.0",
+      "isMultiColor": true,
+      "groups": 2,
+      "groupData": [
+        {
+          "paths": 1
+        },
+        {
+          "paths": 1
+        }
+      ]
+    },
+    {
+      "name": "hail",
+      "pascalName": "Hail",
+      "kebabName": "hail",
+      "size": 2487,
+      "originalSize": 2487,
+      "compression": "0.0",
+      "isMultiColor": true,
+      "groups": 2,
+      "groupData": [
+        {
+          "paths": 1
+        },
+        {
+          "paths": 1
+        }
+      ]
+    },
+    {
+      "name": "lightning",
+      "pascalName": "Lightning",
+      "kebabName": "lightning",
+      "size": 2195,
+      "originalSize": 2195,
+      "compression": "0.0",
+      "isMultiColor": true,
+      "groups": 2,
+      "groupData": [
+        {
+          "paths": 1
+        },
+        {
+          "paths": 1
+        }
+      ]
+    },
+    {
+      "name": "moon-cloud-lightning",
+      "pascalName": "MoonCloudLightning",
+      "kebabName": "moon-cloud-lightning",
+      "size": 2552,
+      "originalSize": 2552,
+      "compression": "0.0",
+      "isMultiColor": true,
+      "groups": 2,
+      "groupData": [
+        {
+          "paths": 1
+        },
+        {
+          "paths": 1
+        }
+      ]
+    },
+    {
+      "name": "moon-cloud-rain",
+      "pascalName": "MoonCloudRain",
+      "kebabName": "moon-cloud-rain",
+      "size": 2711,
+      "originalSize": 2711,
+      "compression": "0.0",
+      "isMultiColor": true,
+      "groups": 2,
+      "groupData": [
+        {
+          "paths": 1
+        },
+        {
+          "paths": 1
+        }
+      ]
+    },
+    {
+      "name": "moon-cloud-snow",
+      "pascalName": "MoonCloudSnow",
+      "kebabName": "moon-cloud-snow",
+      "size": 3296,
+      "originalSize": 3296,
+      "compression": "0.0",
+      "isMultiColor": true,
+      "groups": 2,
+      "groupData": [
+        {
+          "paths": 1
+        },
+        {
+          "paths": 1
+        }
+      ]
+    },
+    {
+      "name": "moon-cloud-wind",
+      "pascalName": "MoonCloudWind",
+      "kebabName": "moon-cloud-wind",
+      "size": 2780,
+      "originalSize": 2780,
+      "compression": "0.0",
+      "isMultiColor": true,
+      "groups": 2,
+      "groupData": [
+        {
+          "paths": 1
+        },
+        {
+          "paths": 1
+        }
+      ]
+    },
+    {
+      "name": "moon-cloud",
+      "pascalName": "MoonCloud",
+      "kebabName": "moon-cloud",
+      "size": 2183,
+      "originalSize": 2183,
+      "compression": "0.0",
+      "isMultiColor": true,
+      "groups": 2,
+      "groupData": [
+        {
+          "paths": 1
+        },
+        {
+          "paths": 1
+        }
+      ]
+    },
+    {
+      "name": "moon-first-quarter",
+      "pascalName": "MoonFirstQuarter",
+      "kebabName": "moon-first-quarter",
+      "size": 1295,
+      "originalSize": 1295,
+      "compression": "0.0",
+      "isMultiColor": true,
+      "groups": 2,
+      "groupData": [
+        {
+          "paths": 1
+        },
+        {
+          "paths": 1
+        }
+      ]
+    },
+    {
+      "name": "moon-fog",
+      "pascalName": "MoonFog",
+      "kebabName": "moon-fog",
+      "size": 2225,
+      "originalSize": 2225,
+      "compression": "0.0",
+      "isMultiColor": true,
+      "groups": 2,
+      "groupData": [
+        {
+          "paths": 1
+        },
+        {
+          "paths": 1
+        }
+      ]
+    },
+    {
+      "name": "moon-fullmoon",
+      "pascalName": "MoonFullmoon",
+      "kebabName": "moon-fullmoon",
+      "size": 445,
+      "originalSize": 445,
+      "compression": "0.0",
+      "isMultiColor": false,
+      "groups": 1,
+      "groupData": [
+        {
+          "paths": 1
+        }
+      ]
+    },
+    {
+      "name": "moon-last-quarter",
+      "pascalName": "MoonLastQuarter",
+      "kebabName": "moon-last-quarter",
+      "size": 1325,
+      "originalSize": 1325,
+      "compression": "0.0",
+      "isMultiColor": true,
+      "groups": 2,
+      "groupData": [
+        {
+          "paths": 1
+        },
+        {
+          "paths": 1
+        }
+      ]
+    },
+    {
+      "name": "moon-newmoon",
+      "pascalName": "MoonNewmoon",
+      "kebabName": "moon-newmoon",
+      "size": 566,
+      "originalSize": 566,
+      "compression": "0.0",
+      "isMultiColor": false,
+      "groups": 1,
+      "groupData": [
+        {
+          "paths": 1
+        }
+      ]
+    },
+    {
+      "name": "moon-waning-crescent",
+      "pascalName": "MoonWaningCrescent",
+      "kebabName": "moon-waning-crescent",
+      "size": 1920,
+      "originalSize": 1920,
+      "compression": "0.0",
+      "isMultiColor": true,
+      "groups": 2,
+      "groupData": [
+        {
+          "paths": 1
+        },
+        {
+          "paths": 1
+        }
+      ]
+    },
+    {
+      "name": "moon-waning-gibbous",
+      "pascalName": "MoonWaningGibbous",
+      "kebabName": "moon-waning-gibbous",
+      "size": 1569,
+      "originalSize": 1569,
+      "compression": "0.0",
+      "isMultiColor": true,
+      "groups": 2,
+      "groupData": [
+        {
+          "paths": 1
+        },
+        {
+          "paths": 1
+        }
+      ]
+    },
+    {
+      "name": "moon-waxing-crescent",
+      "pascalName": "MoonWaxingCrescent",
+      "kebabName": "moon-waxing-crescent",
+      "size": 1397,
+      "originalSize": 1397,
+      "compression": "0.0",
+      "isMultiColor": true,
+      "groups": 2,
+      "groupData": [
+        {
+          "paths": 1
+        },
+        {
+          "paths": 1
+        }
+      ]
+    },
+    {
+      "name": "moon-waxing-gibbous",
+      "pascalName": "MoonWaxingGibbous",
+      "kebabName": "moon-waxing-gibbous",
+      "size": 1473,
+      "originalSize": 1473,
+      "compression": "0.0",
+      "isMultiColor": true,
+      "groups": 2,
+      "groupData": [
+        {
+          "paths": 1
+        },
+        {
+          "paths": 1
+        }
+      ]
+    },
+    {
+      "name": "moon",
+      "pascalName": "Moon",
+      "kebabName": "moon",
+      "size": 755,
+      "originalSize": 755,
+      "compression": "0.0",
+      "isMultiColor": false,
+      "groups": 1,
+      "groupData": [
+        {
+          "paths": 1
+        }
+      ]
+    },
+    {
+      "name": "rainbow",
+      "pascalName": "Rainbow",
+      "kebabName": "rainbow",
+      "size": 2215,
+      "originalSize": 2215,
+      "compression": "0.0",
+      "isMultiColor": true,
+      "groups": 2,
+      "groupData": [
+        {
+          "paths": 1
+        },
+        {
+          "paths": 1
+        }
+      ]
+    },
+    {
+      "name": "raindrop",
+      "pascalName": "Raindrop",
+      "kebabName": "raindrop",
+      "size": 1227,
+      "originalSize": 1227,
+      "compression": "0.0",
+      "isMultiColor": true,
+      "groups": 2,
+      "groupData": [
+        {
+          "paths": 1
+        },
+        {
+          "paths": 1
+        }
+      ]
+    },
+    {
+      "name": "refresh",
+      "pascalName": "Refresh",
+      "kebabName": "refresh",
+      "size": 774,
+      "originalSize": 774,
+      "compression": "0.0",
+      "isMultiColor": false,
+      "groups": 1,
+      "groupData": [
+        {
+          "paths": 1
+        }
+      ]
+    },
+    {
+      "name": "snowflake",
+      "pascalName": "Snowflake",
+      "kebabName": "snowflake",
+      "size": 1802,
+      "originalSize": 1802,
+      "compression": "0.0",
+      "isMultiColor": false,
+      "groups": 1,
+      "groupData": [
+        {
+          "paths": 1
+        }
+      ]
+    },
+    {
+      "name": "sun-cloud-lightning",
+      "pascalName": "SunCloudLightning",
+      "kebabName": "sun-cloud-lightning",
+      "size": 3321,
+      "originalSize": 3321,
+      "compression": "0.0",
+      "isMultiColor": true,
+      "groups": 2,
+      "groupData": [
+        {
+          "paths": 1
+        },
+        {
+          "paths": 1
+        }
+      ]
+    },
+    {
+      "name": "sun-cloud-rain",
+      "pascalName": "SunCloudRain",
+      "kebabName": "sun-cloud-rain",
+      "size": 3344,
+      "originalSize": 3344,
+      "compression": "0.0",
+      "isMultiColor": true,
+      "groups": 2,
+      "groupData": [
+        {
+          "paths": 1
+        },
+        {
+          "paths": 1
+        }
+      ]
+    },
+    {
+      "name": "sun-cloud-snow",
+      "pascalName": "SunCloudSnow",
+      "kebabName": "sun-cloud-snow",
+      "size": 4705,
+      "originalSize": 4705,
+      "compression": "0.0",
+      "isMultiColor": true,
+      "groups": 2,
+      "groupData": [
+        {
+          "paths": 1
+        },
+        {
+          "paths": 1
+        }
+      ]
+    },
+    {
+      "name": "sun-cloud-wind",
+      "pascalName": "SunCloudWind",
+      "kebabName": "sun-cloud-wind",
+      "size": 3500,
+      "originalSize": 3500,
+      "compression": "0.0",
+      "isMultiColor": true,
+      "groups": 2,
+      "groupData": [
+        {
+          "paths": 1
+        },
+        {
+          "paths": 1
+        }
+      ]
+    },
+    {
+      "name": "sun-cloud",
+      "pascalName": "SunCloud",
+      "kebabName": "sun-cloud",
+      "size": 3921,
+      "originalSize": 3921,
+      "compression": "0.0",
+      "isMultiColor": true,
+      "groups": 2,
+      "groupData": [
+        {
+          "paths": 1
+        },
+        {
+          "paths": 1
+        }
+      ]
+    },
+    {
+      "name": "sun-fog",
+      "pascalName": "SunFog",
+      "kebabName": "sun-fog",
+      "size": 1813,
+      "originalSize": 1813,
+      "compression": "0.0",
+      "isMultiColor": true,
+      "groups": 2,
+      "groupData": [
+        {
+          "paths": 1
+        },
+        {
+          "paths": 1
+        }
+      ]
+    },
+    {
+      "name": "sun-low",
+      "pascalName": "SunLow",
+      "kebabName": "sun-low",
+      "size": 1896,
+      "originalSize": 1896,
+      "compression": "0.0",
+      "isMultiColor": true,
+      "groups": 2,
+      "groupData": [
+        {
+          "paths": 1
+        },
+        {
+          "paths": 1
+        }
+      ]
+    },
+    {
+      "name": "sun-medium",
+      "pascalName": "SunMedium",
+      "kebabName": "sun-medium",
+      "size": 2397,
+      "originalSize": 2397,
+      "compression": "0.0",
+      "isMultiColor": true,
+      "groups": 2,
+      "groupData": [
+        {
+          "paths": 1
+        },
+        {
+          "paths": 1
+        }
+      ]
+    },
+    {
+      "name": "sun",
+      "pascalName": "Sun",
+      "kebabName": "sun",
+      "size": 1594,
+      "originalSize": 1594,
+      "compression": "0.0",
+      "isMultiColor": false,
+      "groups": 1,
+      "groupData": [
+        {
+          "paths": 1
+        }
+      ]
+    },
+    {
+      "name": "sunrise",
+      "pascalName": "Sunrise",
+      "kebabName": "sunrise",
+      "size": 2015,
+      "originalSize": 2015,
+      "compression": "0.0",
+      "isMultiColor": true,
+      "groups": 2,
+      "groupData": [
+        {
+          "paths": 1
+        },
+        {
+          "paths": 1
+        }
+      ]
+    },
+    {
+      "name": "sunset",
+      "pascalName": "Sunset",
+      "kebabName": "sunset",
+      "size": 1937,
+      "originalSize": 1937,
+      "compression": "0.0",
+      "isMultiColor": true,
+      "groups": 2,
+      "groupData": [
+        {
+          "paths": 1
+        },
+        {
+          "paths": 1
+        }
+      ]
+    },
+    {
+      "name": "thermometer-cold",
+      "pascalName": "ThermometerCold",
+      "kebabName": "thermometer-cold",
+      "size": 1498,
+      "originalSize": 1498,
+      "compression": "0.0",
+      "isMultiColor": true,
+      "groups": 2,
+      "groupData": [
+        {
+          "paths": 1
+        },
+        {
+          "paths": 1
+        }
+      ]
+    },
+    {
+      "name": "thermometer-hot",
+      "pascalName": "ThermometerHot",
+      "kebabName": "thermometer-hot",
+      "size": 1440,
+      "originalSize": 1440,
+      "compression": "0.0",
+      "isMultiColor": true,
+      "groups": 2,
+      "groupData": [
+        {
+          "paths": 1
+        },
+        {
+          "paths": 1
+        }
+      ]
+    },
+    {
+      "name": "thermometer-medium",
+      "pascalName": "ThermometerMedium",
+      "kebabName": "thermometer-medium",
+      "size": 1556,
+      "originalSize": 1556,
+      "compression": "0.0",
+      "isMultiColor": true,
+      "groups": 2,
+      "groupData": [
+        {
+          "paths": 1
+        },
+        {
+          "paths": 1
+        }
+      ]
+    },
+    {
+      "name": "tornado",
+      "pascalName": "Tornado",
+      "kebabName": "tornado",
+      "size": 2236,
+      "originalSize": 2236,
+      "compression": "0.0",
+      "isMultiColor": false,
+      "groups": 1,
+      "groupData": [
+        {
+          "paths": 1
+        }
+      ]
+    },
+    {
+      "name": "umbrella",
+      "pascalName": "Umbrella",
+      "kebabName": "umbrella",
+      "size": 1813,
+      "originalSize": 1813,
+      "compression": "0.0",
+      "isMultiColor": true,
+      "groups": 2,
+      "groupData": [
+        {
+          "paths": 1
+        },
+        {
+          "paths": 1
+        }
+      ]
+    },
+    {
+      "name": "wind-high",
+      "pascalName": "WindHigh",
+      "kebabName": "wind-high",
+      "size": 2568,
+      "originalSize": 2568,
+      "compression": "0.0",
+      "isMultiColor": true,
+      "groups": 2,
+      "groupData": [
+        {
+          "paths": 1
+        },
+        {
+          "paths": 1
+        }
+      ]
+    },
+    {
+      "name": "wind",
+      "pascalName": "Wind",
+      "kebabName": "wind",
+      "size": 1794,
+      "originalSize": 1794,
+      "compression": "0.0",
+      "isMultiColor": true,
+      "groups": 2,
+      "groupData": [
+        {
+          "paths": 1
+        },
+        {
+          "paths": 1
+        }
+      ]
+    },
+    {
+      "name": "windsock",
+      "pascalName": "Windsock",
+      "kebabName": "windsock",
+      "size": 1622,
+      "originalSize": 1622,
+      "compression": "0.0",
+      "isMultiColor": true,
+      "groups": 2,
+      "groupData": [
+        {
+          "paths": 1
+        },
+        {
+          "paths": 1
+        }
+      ]
+    }
+  ],
+  "multiColorIcons": [
+    "barometer",
+    "celsius",
+    "cloud-down",
+    "cloud-fog",
+    "cloud-rain-single",
+    "cloud-rain",
+    "cloud-snow-single",
+    "cloud-snow",
+    "cloud-up",
+    "cloud-wind",
+    "clouds",
+    "compass-east",
+    "compass-north-east",
+    "compass-north-west",
+    "compass-north",
+    "compass-south-east",
+    "compass-south-west",
+    "compass-south",
+    "compass-west",
+    "compass",
+    "fahrenheit",
+    "fog",
+    "hail",
+    "lightning",
+    "moon-cloud-lightning",
+    "moon-cloud-rain",
+    "moon-cloud-snow",
+    "moon-cloud-wind",
+    "moon-cloud",
+    "moon-first-quarter",
+    "moon-fog",
+    "moon-last-quarter",
+    "moon-waning-crescent",
+    "moon-waning-gibbous",
+    "moon-waxing-crescent",
+    "moon-waxing-gibbous",
+    "rainbow",
+    "raindrop",
+    "sun-cloud-lightning",
+    "sun-cloud-rain",
+    "sun-cloud-snow",
+    "sun-cloud-wind",
+    "sun-cloud",
+    "sun-fog",
+    "sun-low",
+    "sun-medium",
+    "sunrise",
+    "sunset",
+    "thermometer-cold",
+    "thermometer-hot",
+    "thermometer-medium",
+    "umbrella",
+    "wind-high",
+    "wind",
+    "windsock"
+  ],
+  "totalIcons": 63,
+  "totalSize": 125844,
+  "totalOriginalSize": 125844,
+  "buildDate": "2025-08-29T08:36:23.979Z"
+}

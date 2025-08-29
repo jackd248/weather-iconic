@@ -1,0 +1,45 @@
+import React from 'react'
+import type { IconProps } from '../types'
+
+export const WeatherSnowflake = React.forwardRef<SVGSVGElement, IconProps>(({
+  size = 24,
+  color = 'currentColor',
+  multiColor = false,
+  primaryColor,
+  secondaryColor,
+  className,
+  style,
+  title,
+  ...props
+}, ref) => {
+  const combinedClassName = `${className || ''} ${multiColor ? 'weather-multi-color weather-snowflake' : ''}`.trim()
+  const combinedStyle = multiColor ? {
+    ...style,
+    ...(primaryColor && { '--weather-primary-fill': primaryColor }),
+    ...(secondaryColor && { '--weather-secondary-fill': secondaryColor })
+  } as React.CSSProperties : style
+
+  return (
+    <svg
+      ref={ref}
+      width={size}
+      height={size}
+      viewBox="0 0 32 32"
+      fill={multiColor ? 'none' : color}
+      className={combinedClassName}
+      style={combinedStyle}
+      role={title ? 'img' : 'presentation'}
+      aria-hidden={title ? 'false' : 'true'}
+      aria-label={title}
+      {...props}
+    >
+      {title && <title>{title}</title>}
+      <path 
+        d="M24.064 16.544c.128.48-.16.96-.64 1.088l-.672.192.864.48c.416.256.576.8.32 1.216a.86.86 0 0 1-.768.448.74.74 0 0 1-.448-.128l-.864-.48.192.672c.128.48-.16.96-.64 1.088-.096 0-.16.032-.224.032a.885.885 0 0 1-.864-.672l-.64-2.4-2.176-1.248v2.464l1.76 1.76a.91.91 0 0 1 0 1.28c-.16.192-.384.256-.64.256-.224 0-.448-.096-.64-.256l-.48-.48v.992c0 .48-.384.896-.896.896a.894.894 0 0 1-.896-.896v-.992l-.48.48a.91.91 0 0 1-1.28 0 .91.91 0 0 1 0-1.28l1.76-1.76v-2.464l-2.048 1.184-.64 2.368a.89.89 0 0 1-.864.704c-.064 0-.16 0-.224-.032a.89.89 0 0 1-.64-1.088l.192-.704-.896.512a.74.74 0 0 1-.448.128.86.86 0 0 1-.768-.448c-.256-.416-.096-.992.32-1.216l.896-.512-.672-.192a.89.89 0 0 1-.64-1.088.89.89 0 0 1 1.088-.64l2.432.64 2.048-1.152-2.048-1.184-2.432.64c-.064 0-.16.032-.224.032a.885.885 0 0 1-.864-.672.89.89 0 0 1 .64-1.088l.672-.16-.896-.512c-.416-.256-.576-.8-.32-1.216s.8-.576 1.216-.32l.896.512-.192-.672a.89.89 0 0 1 .64-1.088c.48-.128.96.16 1.088.64l.64 2.368 2.048 1.184v-2.368L13.952 9.6a.91.91 0 0 1 0-1.28.91.91 0 0 1 1.28 0l.48.48v-.992c0-.512.416-.896.896-.896.512 0 .896.416.896.896V8.8l.48-.48a.91.91 0 0 1 1.28 0 .91.91 0 0 1 0 1.28l-1.76 1.76v2.368l2.176-1.248.64-2.368a.89.89 0 0 1 1.088-.64c.48.128.768.608.64 1.088l-.192.64.864-.48c.416-.256.992-.096 1.216.32.256.416.096.992-.32 1.216l-.896.512.704.192c.48.128.768.608.64 1.088a.92.92 0 0 1-.864.672c-.064 0-.16 0-.256-.064l-2.432-.64-2.144 1.248 2.208 1.28 2.4-.64c.48-.128.96.16 1.088.64"
+        fill={multiColor ? (primaryColor || "currentColor") : color}
+      />
+    </svg>
+  )
+})
+
+WeatherSnowflake.displayName = 'WeatherSnowflake'

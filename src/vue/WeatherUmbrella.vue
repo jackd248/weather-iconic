@@ -1,0 +1,63 @@
+<template>
+  <svg
+    :width="size"
+    :height="size"
+    viewBox="0 0 32 32"
+    :fill="multiColor ? 'none' : color"
+    :class="combinedClassName"
+    :style="combinedStyle"
+    :role="title ? 'img' : 'presentation'"
+    :aria-hidden="title ? 'false' : 'true'"
+    :aria-label="title"
+    v-bind="$attrs"
+  >
+    <title v-if="title">{{ title }}</title>
+    <path 
+        d="M15.616,16.096L10.272,13.344C9.824,13.12 9.664,12.576 9.888,12.128C10.688,10.56 12.192,9.472 14.112,9.088C15.936,8.704 17.952,9.024 19.776,9.952C21.6,10.88 23.008,12.352 23.744,14.08C24.512,15.872 24.512,17.696 23.712,19.232C23.552,19.552 23.232,19.712 22.912,19.712C22.784,19.712 22.624,19.68 22.496,19.616L17.216,16.896L15.616,16.096ZM22.432,17.568C22.624,16.704 22.528,15.744 22.112,14.752C21.92,14.336 21.696,13.952 21.408,13.568C21.376,14.528 21.152,15.584 20.704,16.672L22.432,17.568ZM14.464,10.848C13.44,11.072 12.576,11.52 12,12.224L13.76,13.12C14.368,12.128 15.072,11.328 15.84,10.752C15.36,10.72 14.912,10.752 14.464,10.848ZM17.248,14.912L19.072,15.872C19.904,13.792 19.776,11.936 18.944,11.552C18.144,11.136 16.544,12.096 15.36,13.952L17.248,14.912Z"
+        :fill="multiColor ? (primaryColor || 'currentColor') : color"
+      />
+    <path 
+        d="M15.616,16.096L17.216,16.896L15.136,20.896L15.104,20.928C15.008,21.184 14.976,21.44 15.072,21.664C15.168,21.92 15.36,22.144 15.584,22.272C16.096,22.528 16.736,22.336 17.024,21.824C17.248,21.376 17.792,21.216 18.24,21.44C18.688,21.664 18.848,22.208 18.624,22.656C18.112,23.68 17.12,24.224 16.064,24.224C15.616,24.224 15.168,24.128 14.752,23.904C13.344,23.168 12.8,21.44 13.536,20.032C13.568,20 13.6,19.936 13.632,19.904L15.616,16.096Z"
+        :fill="multiColor ? (secondaryColor || '#666666') : color"
+      />
+  </svg>
+</template>
+
+<script setup lang="ts">
+import { computed } from 'vue'
+
+interface Props {
+  size?: number | string
+  color?: string
+  multiColor?: boolean
+  primaryColor?: string
+  secondaryColor?: string
+  className?: string
+  style?: Record<string, any>
+  title?: string
+}
+
+const props = withDefaults(defineProps<Props>(), {
+  size: 24,
+  color: 'currentColor',
+  multiColor: false
+})
+
+const combinedClassName = computed(() => {
+  const classes = [props.className]
+  if (props.multiColor) {
+    classes.push('weather-multi-color', 'weather-umbrella')
+  }
+  return classes.filter(Boolean).join(' ')
+})
+
+const combinedStyle = computed(() => {
+  if (!props.multiColor) return props.style
+  
+  return {
+    ...props.style,
+    ...(props.primaryColor && { '--weather-primary-fill': props.primaryColor }),
+    ...(props.secondaryColor && { '--weather-secondary-fill': props.secondaryColor })
+  }
+})
+</script>

@@ -1,0 +1,423 @@
+const e = [
+  "barometer",
+  "celsius",
+  "cloud-down",
+  "cloud-fog",
+  "cloud-rain-single",
+  "cloud-rain",
+  "cloud-snow-single",
+  "cloud-snow",
+  "cloud-up",
+  "cloud-wind",
+  "cloud",
+  "clouds",
+  "compass-east",
+  "compass-north-east",
+  "compass-north-west",
+  "compass-north",
+  "compass-south-east",
+  "compass-south-west",
+  "compass-south",
+  "compass-west",
+  "compass",
+  "fahrenheit",
+  "fog",
+  "hail",
+  "lightning",
+  "moon-cloud-lightning",
+  "moon-cloud-rain",
+  "moon-cloud-snow",
+  "moon-cloud-wind",
+  "moon-cloud",
+  "moon-first-quarter",
+  "moon-fog",
+  "moon-fullmoon",
+  "moon-last-quarter",
+  "moon-newmoon",
+  "moon-waning-crescent",
+  "moon-waning-gibbous",
+  "moon-waxing-crescent",
+  "moon-waxing-gibbous",
+  "moon",
+  "rainbow",
+  "raindrop",
+  "refresh",
+  "snowflake",
+  "sun-cloud-lightning",
+  "sun-cloud-rain",
+  "sun-cloud-snow",
+  "sun-cloud-wind",
+  "sun-cloud",
+  "sun-fog",
+  "sun-low",
+  "sun-medium",
+  "sun",
+  "sunrise",
+  "sunset",
+  "thermometer-cold",
+  "thermometer-hot",
+  "thermometer-medium",
+  "tornado",
+  "umbrella",
+  "wind-high",
+  "wind",
+  "windsock"
+], n = {
+  barometer: {
+    name: "barometer",
+    pascalName: "Barometer",
+    kebabName: "barometer"
+  },
+  celsius: {
+    name: "celsius",
+    pascalName: "Celsius",
+    kebabName: "celsius"
+  },
+  "cloud-down": {
+    name: "cloud-down",
+    pascalName: "CloudDown",
+    kebabName: "cloud-down"
+  },
+  "cloud-fog": {
+    name: "cloud-fog",
+    pascalName: "CloudFog",
+    kebabName: "cloud-fog"
+  },
+  "cloud-rain-single": {
+    name: "cloud-rain-single",
+    pascalName: "CloudRainSingle",
+    kebabName: "cloud-rain-single"
+  },
+  "cloud-rain": {
+    name: "cloud-rain",
+    pascalName: "CloudRain",
+    kebabName: "cloud-rain"
+  },
+  "cloud-snow-single": {
+    name: "cloud-snow-single",
+    pascalName: "CloudSnowSingle",
+    kebabName: "cloud-snow-single"
+  },
+  "cloud-snow": {
+    name: "cloud-snow",
+    pascalName: "CloudSnow",
+    kebabName: "cloud-snow"
+  },
+  "cloud-up": {
+    name: "cloud-up",
+    pascalName: "CloudUp",
+    kebabName: "cloud-up"
+  },
+  "cloud-wind": {
+    name: "cloud-wind",
+    pascalName: "CloudWind",
+    kebabName: "cloud-wind"
+  },
+  cloud: {
+    name: "cloud",
+    pascalName: "Cloud",
+    kebabName: "cloud"
+  },
+  clouds: {
+    name: "clouds",
+    pascalName: "Clouds",
+    kebabName: "clouds"
+  },
+  "compass-east": {
+    name: "compass-east",
+    pascalName: "CompassEast",
+    kebabName: "compass-east"
+  },
+  "compass-north-east": {
+    name: "compass-north-east",
+    pascalName: "CompassNorthEast",
+    kebabName: "compass-north-east"
+  },
+  "compass-north-west": {
+    name: "compass-north-west",
+    pascalName: "CompassNorthWest",
+    kebabName: "compass-north-west"
+  },
+  "compass-north": {
+    name: "compass-north",
+    pascalName: "CompassNorth",
+    kebabName: "compass-north"
+  },
+  "compass-south-east": {
+    name: "compass-south-east",
+    pascalName: "CompassSouthEast",
+    kebabName: "compass-south-east"
+  },
+  "compass-south-west": {
+    name: "compass-south-west",
+    pascalName: "CompassSouthWest",
+    kebabName: "compass-south-west"
+  },
+  "compass-south": {
+    name: "compass-south",
+    pascalName: "CompassSouth",
+    kebabName: "compass-south"
+  },
+  "compass-west": {
+    name: "compass-west",
+    pascalName: "CompassWest",
+    kebabName: "compass-west"
+  },
+  compass: {
+    name: "compass",
+    pascalName: "Compass",
+    kebabName: "compass"
+  },
+  fahrenheit: {
+    name: "fahrenheit",
+    pascalName: "Fahrenheit",
+    kebabName: "fahrenheit"
+  },
+  fog: {
+    name: "fog",
+    pascalName: "Fog",
+    kebabName: "fog"
+  },
+  hail: {
+    name: "hail",
+    pascalName: "Hail",
+    kebabName: "hail"
+  },
+  lightning: {
+    name: "lightning",
+    pascalName: "Lightning",
+    kebabName: "lightning"
+  },
+  "moon-cloud-lightning": {
+    name: "moon-cloud-lightning",
+    pascalName: "MoonCloudLightning",
+    kebabName: "moon-cloud-lightning"
+  },
+  "moon-cloud-rain": {
+    name: "moon-cloud-rain",
+    pascalName: "MoonCloudRain",
+    kebabName: "moon-cloud-rain"
+  },
+  "moon-cloud-snow": {
+    name: "moon-cloud-snow",
+    pascalName: "MoonCloudSnow",
+    kebabName: "moon-cloud-snow"
+  },
+  "moon-cloud-wind": {
+    name: "moon-cloud-wind",
+    pascalName: "MoonCloudWind",
+    kebabName: "moon-cloud-wind"
+  },
+  "moon-cloud": {
+    name: "moon-cloud",
+    pascalName: "MoonCloud",
+    kebabName: "moon-cloud"
+  },
+  "moon-first-quarter": {
+    name: "moon-first-quarter",
+    pascalName: "MoonFirstQuarter",
+    kebabName: "moon-first-quarter"
+  },
+  "moon-fog": {
+    name: "moon-fog",
+    pascalName: "MoonFog",
+    kebabName: "moon-fog"
+  },
+  "moon-fullmoon": {
+    name: "moon-fullmoon",
+    pascalName: "MoonFullmoon",
+    kebabName: "moon-fullmoon"
+  },
+  "moon-last-quarter": {
+    name: "moon-last-quarter",
+    pascalName: "MoonLastQuarter",
+    kebabName: "moon-last-quarter"
+  },
+  "moon-newmoon": {
+    name: "moon-newmoon",
+    pascalName: "MoonNewmoon",
+    kebabName: "moon-newmoon"
+  },
+  "moon-waning-crescent": {
+    name: "moon-waning-crescent",
+    pascalName: "MoonWaningCrescent",
+    kebabName: "moon-waning-crescent"
+  },
+  "moon-waning-gibbous": {
+    name: "moon-waning-gibbous",
+    pascalName: "MoonWaningGibbous",
+    kebabName: "moon-waning-gibbous"
+  },
+  "moon-waxing-crescent": {
+    name: "moon-waxing-crescent",
+    pascalName: "MoonWaxingCrescent",
+    kebabName: "moon-waxing-crescent"
+  },
+  "moon-waxing-gibbous": {
+    name: "moon-waxing-gibbous",
+    pascalName: "MoonWaxingGibbous",
+    kebabName: "moon-waxing-gibbous"
+  },
+  moon: {
+    name: "moon",
+    pascalName: "Moon",
+    kebabName: "moon"
+  },
+  rainbow: {
+    name: "rainbow",
+    pascalName: "Rainbow",
+    kebabName: "rainbow"
+  },
+  raindrop: {
+    name: "raindrop",
+    pascalName: "Raindrop",
+    kebabName: "raindrop"
+  },
+  refresh: {
+    name: "refresh",
+    pascalName: "Refresh",
+    kebabName: "refresh"
+  },
+  snowflake: {
+    name: "snowflake",
+    pascalName: "Snowflake",
+    kebabName: "snowflake"
+  },
+  "sun-cloud-lightning": {
+    name: "sun-cloud-lightning",
+    pascalName: "SunCloudLightning",
+    kebabName: "sun-cloud-lightning"
+  },
+  "sun-cloud-rain": {
+    name: "sun-cloud-rain",
+    pascalName: "SunCloudRain",
+    kebabName: "sun-cloud-rain"
+  },
+  "sun-cloud-snow": {
+    name: "sun-cloud-snow",
+    pascalName: "SunCloudSnow",
+    kebabName: "sun-cloud-snow"
+  },
+  "sun-cloud-wind": {
+    name: "sun-cloud-wind",
+    pascalName: "SunCloudWind",
+    kebabName: "sun-cloud-wind"
+  },
+  "sun-cloud": {
+    name: "sun-cloud",
+    pascalName: "SunCloud",
+    kebabName: "sun-cloud"
+  },
+  "sun-fog": {
+    name: "sun-fog",
+    pascalName: "SunFog",
+    kebabName: "sun-fog"
+  },
+  "sun-low": {
+    name: "sun-low",
+    pascalName: "SunLow",
+    kebabName: "sun-low"
+  },
+  "sun-medium": {
+    name: "sun-medium",
+    pascalName: "SunMedium",
+    kebabName: "sun-medium"
+  },
+  sun: {
+    name: "sun",
+    pascalName: "Sun",
+    kebabName: "sun"
+  },
+  sunrise: {
+    name: "sunrise",
+    pascalName: "Sunrise",
+    kebabName: "sunrise"
+  },
+  sunset: {
+    name: "sunset",
+    pascalName: "Sunset",
+    kebabName: "sunset"
+  },
+  "thermometer-cold": {
+    name: "thermometer-cold",
+    pascalName: "ThermometerCold",
+    kebabName: "thermometer-cold"
+  },
+  "thermometer-hot": {
+    name: "thermometer-hot",
+    pascalName: "ThermometerHot",
+    kebabName: "thermometer-hot"
+  },
+  "thermometer-medium": {
+    name: "thermometer-medium",
+    pascalName: "ThermometerMedium",
+    kebabName: "thermometer-medium"
+  },
+  tornado: {
+    name: "tornado",
+    pascalName: "Tornado",
+    kebabName: "tornado"
+  },
+  umbrella: {
+    name: "umbrella",
+    pascalName: "Umbrella",
+    kebabName: "umbrella"
+  },
+  "wind-high": {
+    name: "wind-high",
+    pascalName: "WindHigh",
+    kebabName: "wind-high"
+  },
+  wind: {
+    name: "wind",
+    pascalName: "Wind",
+    kebabName: "wind"
+  },
+  windsock: {
+    name: "windsock",
+    pascalName: "Windsock",
+    kebabName: "windsock"
+  }
+}, m = `
+/* Weather Iconic Base Styles */
+.weather-icon {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1;
+}
+
+.weather-icon--interactive {
+  cursor: pointer;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.weather-icon--interactive:hover {
+  opacity: 0.8;
+}
+
+.weather-icon--spinning {
+  animation: weather-icon-spin 2s linear infinite;
+}
+
+.weather-icon--pulse {
+  animation: weather-icon-pulse 2s ease-in-out infinite;
+}
+
+@keyframes weather-icon-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes weather-icon-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+`, s = (a) => a.toLowerCase().replace(/_/g, "-"), l = (a) => a.split(/[-_]/).map((o) => o.charAt(0).toUpperCase() + o.slice(1).toLowerCase()).join(" ");
+export {
+  l as formatIconName,
+  s as getIconName,
+  n as iconData,
+  e as iconNames,
+  m as weatherIconicCSS
+};
+//# sourceMappingURL=index.esm.js.map

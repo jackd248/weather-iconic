@@ -1,0 +1,49 @@
+import React from 'react'
+import type { IconProps } from '../types'
+
+export const WeatherSunFog = React.forwardRef<SVGSVGElement, IconProps>(({
+  size = 24,
+  color = 'currentColor',
+  multiColor = false,
+  primaryColor,
+  secondaryColor,
+  className,
+  style,
+  title,
+  ...props
+}, ref) => {
+  const combinedClassName = `${className || ''} ${multiColor ? 'weather-multi-color weather-sun-fog' : ''}`.trim()
+  const combinedStyle = multiColor ? {
+    ...style,
+    ...(primaryColor && { '--weather-primary-fill': primaryColor }),
+    ...(secondaryColor && { '--weather-secondary-fill': secondaryColor })
+  } as React.CSSProperties : style
+
+  return (
+    <svg
+      ref={ref}
+      width={size}
+      height={size}
+      viewBox="0 0 32 32"
+      fill={multiColor ? 'none' : color}
+      className={combinedClassName}
+      style={combinedStyle}
+      role={title ? 'img' : 'presentation'}
+      aria-hidden={title ? 'false' : 'true'}
+      aria-label={title}
+      {...props}
+    >
+      {title && <title>{title}</title>}
+      <path 
+        d="M14.848,18.016L22.72,18.016C23.232,18.016 23.616,18.432 23.616,18.912C23.616,19.392 23.232,19.808 22.752,19.808L14.848,19.808C14.336,19.808 13.952,19.392 13.952,18.912C13.952,18.432 14.368,18.016 14.848,18.016ZM15.232,16.896L7.968,16.896C7.456,16.896 7.072,16.48 7.072,16C7.072,15.488 7.488,15.104 7.968,15.104L15.232,15.104C15.744,15.104 16.128,15.52 16.128,16C16.128,16.512 15.712,16.896 15.232,16.896ZM16,12.256L25.056,12.256C25.568,12.256 25.952,12.672 25.952,13.152C25.952,13.632 25.536,14.048 25.056,14.048L16,14.048C15.488,14.048 15.104,13.632 15.104,13.152C15.104,12.672 15.52,12.256 16,12.256Z"
+        fill={multiColor ? (primaryColor || "currentColor") : color}
+      />
+      <path 
+        d="M8.384,15.104C8.832,11.488 11.872,8.704 15.616,8.704C18.272,8.704 20.608,10.112 21.888,12.256L19.648,12.256C18.624,11.168 17.216,10.496 15.616,10.496C12.864,10.496 10.592,12.48 10.176,15.104L8.384,15.104ZM22.656,14.048C22.816,14.656 22.912,15.328 22.912,16C22.912,16.704 22.816,17.376 22.624,18.016L20.736,18.016C20.992,17.376 21.12,16.704 21.12,16C21.12,15.296 20.992,14.656 20.768,14.048L22.656,14.048ZM21.856,19.808C20.544,21.888 18.24,23.296 15.616,23.296C11.904,23.296 8.832,20.512 8.384,16.896L10.176,16.896C10.624,19.52 12.896,21.504 15.616,21.504C17.184,21.504 18.592,20.864 19.584,19.808L21.856,19.808Z"
+        fill={multiColor ? (secondaryColor || "#666666") : color}
+      />
+    </svg>
+  )
+})
+
+WeatherSunFog.displayName = 'WeatherSunFog'

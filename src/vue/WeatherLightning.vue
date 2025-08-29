@@ -1,0 +1,63 @@
+<template>
+  <svg
+    :width="size"
+    :height="size"
+    viewBox="0 0 32 32"
+    :fill="multiColor ? 'none' : color"
+    :class="combinedClassName"
+    :style="combinedStyle"
+    :role="title ? 'img' : 'presentation'"
+    :aria-hidden="title ? 'false' : 'true'"
+    :aria-label="title"
+    v-bind="$attrs"
+  >
+    <title v-if="title">{{ title }}</title>
+    <path 
+        d="M17.856,21.12L17.088,21.12L18.592,18.944C18.88,18.528 18.784,17.984 18.368,17.696C17.952,17.408 17.408,17.504 17.12,17.92L14.624,21.504C14.432,21.792 14.4,22.144 14.56,22.432C14.72,22.72 15.04,22.912 15.36,22.912L16.224,22.912L14.592,25.472C14.336,25.888 14.464,26.464 14.88,26.72C15.04,26.816 15.2,26.848 15.36,26.848C15.648,26.848 15.936,26.688 16.128,26.464L18.624,22.528C18.816,22.24 18.816,21.888 18.656,21.6C18.496,21.312 18.176,21.12 17.856,21.12Z"
+        :fill="multiColor ? (primaryColor || 'currentColor') : color"
+      />
+    <path 
+        d="M23.744,15.648L23.744,15.264C23.744,11.968 21.056,9.312 17.792,9.312C15.808,9.312 13.984,10.272 12.864,11.936C12.608,11.872 12.32,11.84 12.032,11.84C9.024,11.84 6.592,14.272 6.592,17.28L6.592,17.376C6.592,20.384 9.024,22.816 12.032,22.816C12.512,22.816 12.928,22.4 12.928,21.92C12.928,21.44 12.544,21.024 12.032,21.024C10.048,21.024 8.448,19.456 8.384,17.472C8.384,17.408 8.416,17.376 8.416,17.312C8.416,16.704 8.576,16.128 8.832,15.616C9.44,14.496 10.656,13.728 12.032,13.728C12.288,13.728 12.608,13.76 12.864,13.824C13.312,13.984 13.76,14.24 14.08,14.464C14.496,14.72 15.04,14.624 15.328,14.208C15.584,13.792 15.488,13.248 15.072,12.96C14.912,12.864 14.752,12.736 14.56,12.64C15.328,11.68 16.512,11.072 17.792,11.072C20.064,11.072 21.92,12.928 21.92,15.2C21.92,15.424 21.888,15.648 21.856,15.904C21.792,16.288 21.984,16.704 22.368,16.864C23.136,17.216 23.616,17.984 23.616,18.816C23.616,20 22.656,20.96 21.472,20.96C20.992,20.96 20.576,21.376 20.576,21.856C20.576,22.336 20.96,22.752 21.472,22.752C23.648,22.752 25.44,20.992 25.472,18.912C25.472,17.6 24.8,16.384 23.744,15.648Z"
+        :fill="multiColor ? (secondaryColor || '#666666') : color"
+      />
+  </svg>
+</template>
+
+<script setup lang="ts">
+import { computed } from 'vue'
+
+interface Props {
+  size?: number | string
+  color?: string
+  multiColor?: boolean
+  primaryColor?: string
+  secondaryColor?: string
+  className?: string
+  style?: Record<string, any>
+  title?: string
+}
+
+const props = withDefaults(defineProps<Props>(), {
+  size: 24,
+  color: 'currentColor',
+  multiColor: false
+})
+
+const combinedClassName = computed(() => {
+  const classes = [props.className]
+  if (props.multiColor) {
+    classes.push('weather-multi-color', 'weather-lightning')
+  }
+  return classes.filter(Boolean).join(' ')
+})
+
+const combinedStyle = computed(() => {
+  if (!props.multiColor) return props.style
+  
+  return {
+    ...props.style,
+    ...(props.primaryColor && { '--weather-primary-fill': props.primaryColor }),
+    ...(props.secondaryColor && { '--weather-secondary-fill': props.secondaryColor })
+  }
+})
+</script>

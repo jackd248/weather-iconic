@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Iconic - Beautiful Weather Icons</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <!-- Preload critical JavaScript modules -->
+    <link rel="modulepreload" href="./assets/js/config.js">
+    <link rel="modulepreload" href="./assets/js/components.js">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-main">
+                    <div class="hero-badge">
+                        <span class="badge-icon">✨</span>
+                        <span>63 Icons</span>
+                        <span class="badge-separator">•</span>
+                        <span>Open Source</span>
+                        <span class="badge-separator">•</span>
+                        <span>Multi-Format</span>
+                    </div>
+                    
+                    <div class="hero-title">
+                        <img src="./assets/images/logo.png" alt="Weather Iconic" class="hero-logo" />
+                        <h1>Weather Iconic</h1>
+                        <div class="hero-tagline">Beautiful weather icons for modern applications</div>
+                    </div>
+                    
+                    <p class="hero-description">
+                        A comprehensive collection of weather icons available as <strong>SVG</strong>, <strong>PNG</strong>, 
+                        <strong>React components</strong>, <strong>Vue components</strong>, and <strong>web fonts</strong>. 
+                        Perfect for weather apps, dashboards, and modern web applications.
+                    </p>
+                    
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">63</div>
+                            <div class="stat-label">Icons</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">5+</div>
+                            <div class="stat-label">Formats</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-label">Free</div>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-actions">
+                        <a href="#gallery" class="btn-primary btn-large">
+                            <span class="btn-icon">🚀</span>
+                            <span>Explore Icons</span>
+                        </a>
+                        <a href="https://www.npmjs.com/package/weather-iconic" class="btn-secondary btn-large">
+                            <span class="btn-icon">📦</span>
+                            <span>Install Package</span>
+                        </a>
+                    </div>
+                    
+                    <div class="hero-quick-install">
+                        <div class="quick-install-label">Quick install:</div>
+                        <div class="quick-install-command">
+                            <code>npm install weather-iconic</code>
+                            <button class="copy-btn-mini" onclick="copyToClipboard('npm install weather-iconic')" title="Copy to clipboard">
+                                📋
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-visual">
+                    <div class="icon-showcase">
+                        <div class="showcase-grid">
+                            <div class="showcase-icon showcase-icon-1">
+                                <svg viewBox="0 0 32 32"><use href="./dist/sprites.svg#weather-sun"></use></svg>
+                            </div>
+                            <div class="showcase-icon showcase-icon-2">
+                                <svg viewBox="0 0 32 32"><use href="./dist/sprites.svg#weather-cloud-rain"></use></svg>
+                            </div>
+                            <div class="showcase-icon showcase-icon-3">
+                                <svg viewBox="0 0 32 32"><use href="./dist/sprites.svg#weather-wind"></use></svg>
+                            </div>
+                            <div class="showcase-icon showcase-icon-4">
+                                <svg viewBox="0 0 32 32"><use href="./dist/sprites.svg#weather-snowflake"></use></svg>
+                            </div>
+                            <div class="showcase-icon showcase-icon-5">
+                                <svg viewBox="0 0 32 32"><use href="./dist/sprites.svg#weather-lightning"></use></svg>
+                            </div>
+                            <div class="showcase-icon showcase-icon-6">
+                                <svg viewBox="0 0 32 32"><use href="./dist/sprites.svg#weather-moon-cloud"></use></svg>
+                            </div>
+                            <div class="showcase-icon showcase-icon-7">
+                                <svg viewBox="0 0 32 32"><use href="./dist/sprites.svg#weather-thermometer-hot"></use></svg>
+                            </div>
+                            <div class="showcase-icon showcase-icon-8">
+                                <svg viewBox="0 0 32 32"><use href="./dist/sprites.svg#weather-rainbow"></use></svg>
+                            </div>
+                            <div class="showcase-icon showcase-icon-9">
+                                <svg viewBox="0 0 32 32"><use href="./dist/sprites.svg#weather-fog"></use></svg>
+                            </div>
+                            <div class="showcase-icon showcase-icon-10">
+                                <svg viewBox="0 0 32 32"><use href="./dist/sprites.svg#weather-hail"></use></svg>
+                            </div>
+                        </div>
+                        <div class="showcase-glow"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="features">
+        <div class="container">
+            <h2>Why Choose Weather Iconic?</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📦</div>
+                    <h3>Multiple Formats</h3>
+                    <p>Available as SVG, PNG, webfont, and React/Vue components</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎨</div>
+                    <h3>Multi-Color Support</h3>
+                    <p>Customizable color schemes with CSS variables</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Lightweight</h3>
+                    <p>Optimized for performance with minimal file sizes</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔧</div>
+                    <h3>Easy Integration</h3>
+                    <p>Simple CSS classes or component imports</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="examples">
+        <div class="container">
+            <h2>Weather Examples</h2>
+            <div class="weather-cards">
+                <div class="weather-card sunny">
+                    <div class="weather-icon">
+                        <svg class="icon-sun" viewBox="0 0 24 24">
+                            <use href="./dist/sprites.svg#weather-sun"></use>
+                        </svg>
+                    </div>
+                    <div class="weather-info">
+                        <h3>Berlin</h3>
+                        <div class="temperature">24°C</div>
+                        <div class="condition">Sunny</div>
+                    </div>
+                </div>
+
+                <div class="weather-card rainy">
+                    <div class="weather-icon">
+                        <svg class="icon-rain" viewBox="0 0 24 24">
+                            <use href="./dist/sprites.svg#weather-cloud-rain"></use>
+                        </svg>
+                    </div>
+                    <div class="weather-info">
+                        <h3>London</h3>
+                        <div class="temperature">18°C</div>
+                        <div class="condition">Rainy</div>
+                    </div>
+                </div>
+
+                <div class="weather-card cloudy">
+                    <div class="weather-icon">
+                        <svg class="icon-cloud" viewBox="0 0 24 24">
+                            <use href="./dist/sprites.svg#weather-cloud"></use>
+                        </svg>
+                    </div>
+                    <div class="weather-info">
+                        <h3>Tokyo</h3>
+                        <div class="temperature">21°C</div>
+                        <div class="condition">Cloudy</div>
+                    </div>
+                </div>
+
+                <div class="weather-card snowy">
+                    <div class="weather-icon">
+                        <svg class="icon-snow" viewBox="0 0 24 24">
+                            <use href="./dist/sprites.svg#weather-cloud-snow"></use>
+                        </svg>
+                    </div>
+                    <div class="weather-info">
+                        <h3>Oslo</h3>
+                        <div class="temperature">-2°C</div>
+                        <div class="condition">Snowy</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="installation">
+        <div class="container">
+            <h2>Installation</h2>
+            <div class="install-options">
+                <div class="install-card">
+                    <h3>📦 NPM Package</h3>
+                    <div class="install-command">
+                        <code>npm install weather-iconic</code>
+                        <button class="copy-btn" onclick="copyToClipboard('npm install weather-iconic')">Copy</button>
+                    </div>
+                    <p>Complete package with React/Vue components, CSS classes, and SVG sprites</p>
+                </div>
+                <div class="install-card">
+                    <h3>🔗 CDN</h3>
+                    <div class="install-command">
+                        <code>&lt;link rel="stylesheet" href="https://unpkg.com/weather-iconic/dist/weather-iconic.css"&gt;</code>
+                        <button class="copy-btn" onclick="copyToClipboard('<link rel=\"stylesheet\" href=\"https://unpkg.com/weather-iconic/dist/weather-iconic.css\">')">Copy</button>
+                    </div>
+                    <p>Direct CSS inclusion via CDN for quick prototyping</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="integration">
+        <div class="container">
+            <h2>Usage Examples</h2>
+            <div class="integration-tabs">
+                <button class="tab-btn active" data-tab="css">CSS</button>
+                <button class="tab-btn" data-tab="react">React</button>
+                <button class="tab-btn" data-tab="vue">Vue</button>
+            </div>
+            <div class="tab-content">
+                <div class="tab-panel active" id="css">
+                    <pre><code>&lt;!-- Include the stylesheet via CDN --&gt;
+&lt;link rel="stylesheet" href="https://unpkg.com/weather-iconic/dist/weather-iconic.css"&gt;
+
+&lt;!-- Or if installed via npm --&gt;
+&lt;link rel="stylesheet" href="node_modules/weather-iconic/dist/weather-iconic.css"&gt;
+
+&lt;!-- Use icons with CSS classes --&gt;
+&lt;span class="weather weather-sun"&gt;&lt;/span&gt;
+&lt;span class="weather weather-cloud-rain"&gt;&lt;/span&gt;</code></pre>
+                </div>
+                <div class="tab-panel" id="react">
+                    <pre><code>import { WeatherSun, WeatherCloudRain } from 'weather-iconic/react'
+
+function WeatherDisplay() {
+  return (
+    &lt;div&gt;
+      &lt;WeatherSun size={32} color="#80BBB2" /&gt;
+      &lt;WeatherCloudRain size={32} multiColor primaryColor="#80BBB2" /&gt;
+    &lt;/div&gt;
+  )
+}</code></pre>
+                </div>
+                <div class="tab-panel" id="vue">
+                    <pre><code>&lt;template&gt;
+  &lt;div&gt;
+    &lt;WeatherSun :size="32" color="#80BBB2" /&gt;
+    &lt;WeatherCloudRain :size="32" multi-color primary-color="#80BBB2" /&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+import { WeatherSun, WeatherCloudRain } from 'weather-iconic/vue'
+&lt;/script&gt;</code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="downloads" id="downloads">
+        <div class="container">
+            <h2>Downloads</h2>
+            <div class="download-options">
+                <div class="download-card">
+                    <h3>🎨 PNG Icons</h3>
+                    <p>High-quality PNG icons in multiple sizes (16px, 24px, 32px, 48px, 64px). Perfect for desktop apps, mobile development, and when SVG isn't supported.</p>
+                    <div class="download-actions">
+                        <a href="https://github.com/your-username/weather-iconic/releases/latest" class="btn-primary">Download from GitHub</a>
+                        <div class="download-info">
+                            <small>All sizes • Multi-color variants • ~2MB ZIP</small>
+                            <br><small>💡 Use in: Electron, React Native, Flutter, Unity</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="download-card">
+                    <h3>🖼️ SVG Sprites</h3>
+                    <p>Optimized SVG sprite file for web applications</p>
+                    <div class="download-actions">
+                        <a href="./dist/sprites.svg" download="weather-iconic-sprites.svg" class="btn-primary">Download Sprite</a>
+                        <div class="download-info">
+                            <small>Single file • 100KB • All icons</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="download-card">
+                    <h3>🔤 Icon Fonts</h3>
+                    <p>Web fonts for CSS-based icon usage</p>
+                    <div class="download-actions">
+                        <a href="https://github.com/your-username/weather-iconic/releases/latest" class="btn-primary">Download Fonts</a>
+                        <div class="download-info">
+                            <small>WOFF2, WOFF, TTF • CSS included</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="gallery-header">
+                <h2>Icon Gallery</h2>
+                <div class="gallery-controls">
+                    <div class="search-box">
+                        <input type="text" id="search" placeholder="Search icons..." />
+                        <svg class="search-icon" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <div class="color-controls">
+                        <label for="primaryColor">Primary</label>
+                        <input type="color" id="primaryColor" value="#80BBB2" />
+                        <label for="secondaryColor">Secondary</label>
+                        <input type="color" id="secondaryColor" value="#666666" />
+                        <button id="resetColors" class="btn-reset">Reset</button>
+                    </div>
+                </div>
+            </div>
+            <div class="icon-grid" id="iconGrid">
+                <!-- Icons will be loaded here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Weather Iconic. Open source icon library.</p>
+            <div class="footer-links">
+                <a href="https://github.com/your-username/weather-iconic">GitHub</a>
+                <a href="https://www.npmjs.com/package/weather-iconic">NPM</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Load JavaScript modules -->
+    <script src="./assets/js/config.js"></script>
+    <script src="./assets/js/components.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>

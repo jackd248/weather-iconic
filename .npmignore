@@ -1,0 +1,23 @@
+# Development files
+src/
+scripts/
+node_modules/
+.git/
+.github/
+.claude/
+
+# Build configuration
+tsconfig.json
+vite.config.js
+
+# Tests
+*.test.js
+*.spec.js
+__tests__/
+
+# Temporary files
+*.tmp
+*.log
+.DS_Store
+
+# Only include dist/ in published package
