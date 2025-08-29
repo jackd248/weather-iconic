@@ -55,6 +55,9 @@ async function generateIconFonts() {
     // Generate fonts
     const results = await generateFonts(config)
     
+    // Fix font paths in generated CSS
+    await fixFontPaths(join(distDir, 'weather-iconic.css'))
+    
     // Generate enhanced CSS with modern features and multi-color support
     const enhancedCss = await generateEnhancedCSS(iconNames, results.codepoints)
     await writeFile(join(distDir, 'weather-iconic-enhanced.css'), enhancedCss)
@@ -199,6 +202,24 @@ export function getAllWeatherIcons() {
   return Object.keys(WEATHER_UNICODE)
 }
 `
+}
+
+// Fix font paths in generated CSS to use ./fonts/ prefix
+async function fixFontPaths(cssFilePath) {
+  try {
+    let cssContent = await readFile(cssFilePath, 'utf-8')
+    
+    // Replace direct font file references with fonts/ subfolder
+    cssContent = cssContent.replace(
+      /url\("\.\/weather-iconic\.(woff2|woff|ttf|eot)([^"]*?)"\)/g,
+      'url("./fonts/weather-iconic.$1$2")'
+    )
+    
+    await writeFile(cssFilePath, cssContent)
+    console.log('✅ Fixed font paths in CSS')
+  } catch (error) {
+    console.error('❌ Error fixing font paths:', error)
+  }
 }
 
 // Run if called directly

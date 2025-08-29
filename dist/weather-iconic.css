@@ -1,9 +1,9 @@
 @font-face {
     font-family: "weather-iconic";
-    src: url("./weather-iconic.woff2?c0737c916c3e27b45637674e9a8b36e7") format("woff2"),
-url("./weather-iconic.woff?c0737c916c3e27b45637674e9a8b36e7") format("woff"),
-url("./weather-iconic.ttf?c0737c916c3e27b45637674e9a8b36e7") format("truetype"),
-url("./weather-iconic.eot?c0737c916c3e27b45637674e9a8b36e7#iefix") format("embedded-opentype");
+    src: url("./fonts/weather-iconic.woff2?c0737c916c3e27b45637674e9a8b36e7") format("woff2"),
+url("./fonts/weather-iconic.woff?c0737c916c3e27b45637674e9a8b36e7") format("woff"),
+url("./fonts/weather-iconic.ttf?c0737c916c3e27b45637674e9a8b36e7") format("truetype"),
+url("./fonts/weather-iconic.eot?c0737c916c3e27b45637674e9a8b36e7#iefix") format("embedded-opentype");
 }
 
 .weather:before {
