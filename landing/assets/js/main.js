@@ -151,10 +151,10 @@ function applyIconColors(iconItem, iconName) {
             });
         });
     } else {
-        // Single color for all paths
+        // Single path icons use secondary color (base)
         paths.forEach(path => {
-            path.setAttribute('fill', currentPrimaryColor);
-            path.style.fill = currentPrimaryColor; // Force style as backup
+            path.setAttribute('fill', currentSecondaryColor);
+            path.style.fill = currentSecondaryColor; // Force style as backup
         });
     }
 }
@@ -441,7 +441,7 @@ async function downloadSVGIcon(iconName) {
     if (MULTI_COLOR_ICONS.includes(iconName)) {
         svgContent = applyColorsToSVG(svgContent, currentPrimaryColor, currentSecondaryColor);
     } else {
-        svgContent = applyColorsToSVG(svgContent, currentPrimaryColor, currentPrimaryColor);
+        svgContent = applyColorsToSVG(svgContent, currentSecondaryColor, currentSecondaryColor);
     }
     
     // Download the file
@@ -688,20 +688,6 @@ function showCopyFeedback() {
     }, 2000);
 }
 
-// Initialize slideshow
-function initSlideshow() {
-    const slides = document.querySelectorAll('.slide');
-    let currentSlide = 0;
-    
-    function nextSlide() {
-        slides[currentSlide].classList.remove('active');
-        currentSlide = (currentSlide + 1) % slides.length;
-        slides[currentSlide].classList.add('active');
-    }
-    
-    // Change slide every 3 seconds
-    setInterval(nextSlide, 3000);
-}
 
 // Initialize table of contents smooth scrolling
 function initTableOfContents() {
@@ -727,7 +713,6 @@ function initTableOfContents() {
 // Initialize interactive effects after DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
     setTimeout(addInteractiveEffects, 100);
-    initSlideshow();
     initTableOfContents();
     
     // Apply initial colors immediately
