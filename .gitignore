@@ -33,3 +33,7 @@ coverage/
 # Temporary folders
 tmp/
 temp/
+
+# Landing
+landing/dist
+landing/src

@@ -278,8 +278,10 @@
     align-items: center;
     justify-content: center;
     box-shadow: 0 4px 20px rgba(128, 187, 178, 0.15);
-    transition: all 0.6s ease;
+    transition: box-shadow 0.3s ease, background 0.3s ease;
     border: 1px solid rgba(128, 187, 178, 0.1);
+    width: 72px;
+    height: 72px;
 }
 
 .showcase-icon svg {
@@ -310,8 +312,7 @@
 .showcase-icon-4 {
     grid-column: 3;
     grid-row: 2;
-    animation: float 3s ease-in-out infinite 0.9s;
-    transform: scale(1.1);
+    animation: float-large 3s ease-in-out infinite 0.9s;
 }
 
 .showcase-icon-5 {
@@ -376,7 +377,8 @@
 
 /* Size variations for visual hierarchy */
 .showcase-icon.large {
-    transform: scale(1.4);
+    width: 88px;
+    height: 88px;
 }
 
 .showcase-icon.large svg {
@@ -385,7 +387,8 @@
 }
 
 .showcase-icon.small {
-    transform: scale(0.8);
+    width: 56px;
+    height: 56px;
 }
 
 .showcase-icon.small svg {
@@ -419,13 +422,12 @@
 }
 
 .showcase-icon:hover {
-    transform: scale(1.1) rotate(5deg);
     box-shadow: 0 8px 30px rgba(128, 187, 178, 0.25);
+    background: rgba(255, 255, 255, 1);
 }
 
 .showcase-icon:hover svg {
-    fill: var(--primary-dark);
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 .showcase-glow {
@@ -447,6 +449,15 @@
     }
     50% {
         transform: translateY(-10px) rotate(2deg);
+    }
+}
+
+@keyframes float-large {
+    0%, 100% {
+        transform: translateY(0px) rotate(0deg) scale(1.1);
+    }
+    50% {
+        transform: translateY(-12px) rotate(2deg) scale(1.1);
     }
 }
 

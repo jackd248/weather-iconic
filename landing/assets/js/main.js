@@ -329,10 +329,12 @@ function handleSecondaryColorChange(event) {
 
 function updateIconColors() {
     const root = document.documentElement;
-    root.style.setProperty('--icon-primary-color', currentPrimaryColor);
-    root.style.setProperty('--icon-secondary-color', currentSecondaryColor);
+    root.style.setProperty('--weather-primary-fill', currentPrimaryColor);
+    root.style.setProperty('--weather-secondary-fill', currentSecondaryColor);
     
     // Also update CSS variables for backward compatibility
+    root.style.setProperty('--icon-primary-color', currentPrimaryColor);
+    root.style.setProperty('--icon-secondary-color', currentSecondaryColor);
     root.style.setProperty('--primary-fill', currentPrimaryColor);
     root.style.setProperty('--secondary-fill', currentSecondaryColor);
     

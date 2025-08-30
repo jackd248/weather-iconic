@@ -895,30 +895,30 @@ code {
 
 /* Multi-color support - Enhanced for active color application */
 .icon-item svg {
-    fill: var(--icon-primary-color, #80BBB2);
+    fill: var(--weather-secondary-fill, #666666);
 }
 
 .icon-item.multi-color svg path:nth-child(1) {
-    fill: var(--icon-primary-color, #80BBB2);
+    fill: var(--weather-primary-fill, #80BBB2);
 }
 
 .icon-item.multi-color svg path:nth-child(2) {
-    fill: var(--icon-secondary-color, #666666);
+    fill: var(--weather-secondary-fill, #666666);
 }
 
 /* Single path icons use secondary color (base) */
 .icon-item.multi-color svg path:only-child {
-    fill: var(--icon-secondary-color, #666666);
+    fill: var(--weather-secondary-fill, #666666);
 }
 
 /* Single group icons use secondary color (base) */
 .icon-item.multi-color svg g:only-child path {
-    fill: var(--icon-secondary-color, #666666);
+    fill: var(--weather-secondary-fill, #666666);
 }
 
 .icon-item.single-color svg,
 .icon-item.single-color svg path {
-    fill: var(--icon-primary-color, #80BBB2);
+    fill: var(--weather-primary-fill, #80BBB2);
 }
 
 /* Icon hover effects */
