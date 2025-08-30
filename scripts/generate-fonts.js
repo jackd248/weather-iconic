@@ -134,13 +134,13 @@ ${iconNames.map(name => `.weather-${name}:before {
 }`).join('\n')}
 
 /* Size variations */
-.weather-icon--xs { font-size: 0.75rem; }
-.weather-icon--sm { font-size: 0.875rem; }
-.weather-icon--md { font-size: 1rem; }
-.weather-icon--lg { font-size: 1.25rem; }
-.weather-icon--xl { font-size: 1.5rem; }
-.weather-icon--2xl { font-size: 2rem; }
-.weather-icon--3xl { font-size: 3rem; }
+.weather-icon--xs { font-size: 1rem; }
+.weather-icon--sm { font-size: 1.25rem; }
+.weather-icon--md { font-size: 1.5rem; }
+.weather-icon--lg { font-size: 2rem; }
+.weather-icon--xl { font-size: 2.5rem; }
+.weather-icon--2xl { font-size: 3.5rem; }
+.weather-icon--3xl { font-size: 5rem; }
 
 /* Animation utilities */
 .weather-icon--spin {
