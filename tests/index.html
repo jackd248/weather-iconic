@@ -120,6 +120,16 @@
             fill: var(--weather-secondary-fill);
         }
         
+        /* Single path icons use secondary color (base) */
+        .multi-color-sprites svg path:only-child {
+            fill: var(--weather-secondary-fill);
+        }
+        
+        /* Single group icons use secondary color (base) */
+        .multi-color-sprites svg g:only-child path {
+            fill: var(--weather-secondary-fill);
+        }
+        
         /* PNG grid styles */
         .png-grid .icon-item img {
             width: 32px;
@@ -255,13 +265,13 @@
                 </div>
                 <div style="text-align: center;">
                     <svg width="48" height="48" class="weather-icon--spin" style="fill: #80BBB2;">
-                        <use href="../dist/sprites.svg#weather-wind"></use>
+                        <use xlink:href="../dist/sprites.svg#weather-wind"></use>
                     </svg>
                     <div>Sprite Spinning</div>
                 </div>
                 <div style="text-align: center;">
                     <svg width="48" height="48" class="weather-icon--pulse" style="fill: #80BBB2;">
-                        <use href="../dist/sprites.svg#weather-lightning"></use>
+                        <use xlink:href="../dist/sprites.svg#weather-lightning"></use>
                     </svg>
                     <div>Sprite Pulsing</div>
                 </div>
@@ -324,7 +334,7 @@
                 item.className = 'icon-item';
                 item.innerHTML = `
                     <svg class="icon" viewBox="0 0 32 32" width="32" height="32">
-                        <use href="../dist/sprites.svg#weather-${name}"></use>
+                        <use xlink:href="../dist/sprites.svg#weather-${name}"></use>
                     </svg>
                     <div class="name">${name}</div>
                 `;
@@ -374,7 +384,7 @@
                     item.className = 'icon-item';
                     item.innerHTML = `
                         <svg class="icon" viewBox="0 0 32 32" width="32" height="32">
-                            <use href="../dist/sprites.svg#weather-${name}"></use>
+                            <use xlink:href="../dist/sprites.svg#weather-${name}"></use>
                         </svg>
                         <div class="name">${name} (fallback)</div>
                     `;

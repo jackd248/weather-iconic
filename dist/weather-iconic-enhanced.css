@@ -281,12 +281,22 @@
   fill: var(--weather-secondary-fill);
 }
 
+/* Single path icons use secondary color (base) */
+.weather-multi-color svg path:only-child {
+  fill: var(--weather-secondary-fill);
+}
+
 /* Special handling for icons with groups */
 .weather-multi-color svg g:first-child path {
   fill: var(--weather-primary-fill);
 }
 
 .weather-multi-color svg g:nth-child(2) path {
+  fill: var(--weather-secondary-fill);
+}
+
+/* Single group icons use secondary color (base) */
+.weather-multi-color svg g:only-child path {
   fill: var(--weather-secondary-fill);
 }
 
