@@ -81,8 +81,8 @@
     }
   ],
   "totalFiles": 441,
-  "totalSize": 259203,
-  "generatedAt": "2025-08-30T10:08:43.210Z",
+  "totalSize": 259159,
+  "generatedAt": "2025-08-30T10:31:04.770Z",
   "standard": {
     "barometer": {
       "16px": {
@@ -1826,7 +1826,7 @@
     },
     "cloud": {
       "-teal-gray": {
-        "bytes": 473,
+        "bytes": 467,
         "path": "./dist/png/48px-multi-color/cloud-teal-gray.png",
         "colors": {
           "primary": "#80BBB2",
@@ -2046,7 +2046,7 @@
     },
     "moon-fullmoon": {
       "-teal-gray": {
-        "bytes": 355,
+        "bytes": 338,
         "path": "./dist/png/48px-multi-color/moon-fullmoon-teal-gray.png",
         "colors": {
           "primary": "#80BBB2",
@@ -2066,7 +2066,7 @@
     },
     "moon-newmoon": {
       "-teal-gray": {
-        "bytes": 473,
+        "bytes": 459,
         "path": "./dist/png/48px-multi-color/moon-newmoon-teal-gray.png",
         "colors": {
           "primary": "#80BBB2",
@@ -2116,7 +2116,7 @@
     },
     "moon": {
       "-teal-gray": {
-        "bytes": 438,
+        "bytes": 429,
         "path": "./dist/png/48px-multi-color/moon-teal-gray.png",
         "colors": {
           "primary": "#80BBB2",
@@ -2146,7 +2146,7 @@
     },
     "refresh": {
       "-teal-gray": {
-        "bytes": 443,
+        "bytes": 442,
         "path": "./dist/png/48px-multi-color/refresh-teal-gray.png",
         "colors": {
           "primary": "#80BBB2",
@@ -2156,7 +2156,7 @@
     },
     "snowflake": {
       "-teal-gray": {
-        "bytes": 544,
+        "bytes": 549,
         "path": "./dist/png/48px-multi-color/snowflake-teal-gray.png",
         "colors": {
           "primary": "#80BBB2",
@@ -2246,7 +2246,7 @@
     },
     "sun": {
       "-teal-gray": {
-        "bytes": 529,
+        "bytes": 541,
         "path": "./dist/png/48px-multi-color/sun-teal-gray.png",
         "colors": {
           "primary": "#80BBB2",
@@ -2306,7 +2306,7 @@
     },
     "tornado": {
       "-teal-gray": {
-        "bytes": 624,
+        "bytes": 610,
         "path": "./dist/png/48px-multi-color/tornado-teal-gray.png",
         "colors": {
           "primary": "#80BBB2",

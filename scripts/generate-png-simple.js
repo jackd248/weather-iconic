@@ -28,6 +28,8 @@ function applyMultiColorToSVG(svgContent, primaryColor, secondaryColor) {
   
   // Find all path elements and apply colors
   const pathRegex = /<path\s+([^>]*?)>/g
+  const pathMatches = svgContent.match(pathRegex) || []
+  const totalPaths = pathMatches.length
   let pathCount = 0
   
   modifiedSvg = modifiedSvg.replace(pathRegex, (match, attributes) => {
@@ -36,8 +38,9 @@ function applyMultiColorToSVG(svgContent, primaryColor, secondaryColor) {
     // Remove any existing fill attribute
     attributes = attributes.replace(/\s*fill="[^"]*"/g, '')
     
-    // Apply color based on path position
-    const color = pathCount === 1 ? primaryColor : secondaryColor
+    // For single path icons, use secondary color (base)
+    // For multi-path icons, use primary for first path (highlight), secondary for others (base)
+    const color = (totalPaths === 1) ? secondaryColor : (pathCount === 1 ? primaryColor : secondaryColor)
     return `<path fill="${color}" ${attributes}>`
   })
   

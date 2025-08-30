@@ -353,6 +353,9 @@ npm install weather-iconic
 
 Weather Iconic supports multi-color icons for enhanced visual communication. Many weather icons contain multiple elements (e.g., thermometer mercury + body, sun + cloud) that can be styled with different colors.
 
+> [!TIP]
+> **Color Philosophy**: The primary color (`--weather-primary-fill`) is used for **highlight elements** like lightning bolts, sun rays, or thermometer mercury. The secondary color (`--weather-secondary-fill`) serves as the **base color** for clouds, thermometer bodies, and single-element icons. This creates a natural visual hierarchy where important elements stand out.
+
 ### CSS Multi-Color
 
 ![CSS Multi-Color](dist/png/48px-multi-color/sun-cloud-lightning-teal-gray.png)
@@ -365,8 +368,8 @@ Weather Iconic supports multi-color icons for enhanced visual communication. Man
 ```css
 /* Basic multi-color usage with CSS custom properties */
 .weather-multi-color {
-  --weather-primary-fill: #80BBB2;   /* Primary element color */
-  --weather-secondary-fill: #666666; /* Secondary element color */
+  --weather-primary-fill: #80BBB2;   /* Highlight color (lightning, sun rays, mercury) */
+  --weather-secondary-fill: #666666; /* Base color (clouds, bodies, single elements) */
 }
 ```
 
