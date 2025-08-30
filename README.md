@@ -25,15 +25,9 @@ A minimal multi-color weather icon set containing 63 icons offered in multiple i
 - [Icons](#icons)
 - [Installation](#installation)
 - [Usage](#usage)
-  - [React Components](#react-components)
-  - [Vue Components](#vue-components)
   - [Webfonts](#webfonts)
-  - [PNG Images](#png-images)
   - [SVG Sprites](#svg-sprites)
 - [Multi-Color Support](#multi-color-support)
-  - [Multi-Color PNGs](#multi-color-pngs)
-  - [React Multi-Color](#react-multi-color)
-  - [Vue Multi-Color](#vue-multi-color)
   - [CSS Multi-Color](#css-multi-color)
 - [Development](#development)
 
@@ -325,31 +319,6 @@ npm install weather-iconic
 
 ## ⚡ Usage
 
-### React Components
-
-![React Usage](dist/png/24px/sun.png) ![React Usage](dist/png/24px/cloud-rain.png)
-
-```jsx
-import { WeatherSun, WeatherCloudRain } from 'weather-iconic/react'
-
-<WeatherSun size={32} color="orange" />
-<WeatherCloudRain size={24} color="blue" title="Rainy weather" />
-```
-
-### Vue Components
-
-![Vue Usage](dist/png/24px/sun.png)
-
-```vue
-<template>
-  <WeatherSun :size="32" color="orange" />
-</template>
-
-<script setup>
-import { WeatherSun } from 'weather-iconic/vue'
-</script>
-```
-
 ### Webfonts
 
 ![Webfont Usage](dist/png/24px/sun.png) ![Webfont Usage](dist/png/24px/cloud-rain.png)
@@ -366,129 +335,23 @@ import { WeatherSun } from 'weather-iconic/vue'
 > [!TIP]
 > See the [CodePen example](https://codepen.io/knrd/pen/bNVmbVG) for more details.
 
-### PNG Images
-
-![PNG Usage](dist/png/24px/sun.png) ![PNG Usage](dist/png/32px/sun.png) ![PNG Usage](dist/png/48px/sun.png)
-
-```javascript
-import { getPNGPath } from 'weather-iconic/png-utils'
-
-// Get PNG path
-const iconPath = getPNGPath('sun', 24) // 24px standard
-const iconPath48 = getPNGPath('sun', 48) // 48px standard
-
-// HTML usage
-<img src={getPNGPath('sun', 24)} alt="Sunny weather" />
-<img src={getPNGPath('cloud-rain', 32)} alt="Rainy weather" />
-```
-
 ### SVG Sprites
 
 ![Sprite Usage](dist/png/24px/sun.png) ![Sprite Usage](dist/png/24px/moon.png)
 
-```javascript
-import { loadSprite } from 'weather-iconic/sprites'
-
-// Load sprite into DOM
-await loadSprite()
-
-// Use sprite icons
-<svg><use href="#weather-sun"></use></svg>
-<svg><use href="#weather-moon"></use></svg>
+```html
+<!-- Use sprite icons directly -->
+<svg width="32" height="32">
+  <use xlink:href="/path/to/sprites.svg#weather-sun"></use>
+</svg>
+<svg width="32" height="32">
+  <use xlink:href="/path/to/sprites.svg#weather-moon"></use>
+</svg>
 ```
 
 ## 🌈 Multi-Color Support
 
 Weather Iconic supports multi-color icons for enhanced visual communication. Many weather icons contain multiple elements (e.g., thermometer mercury + body, sun + cloud) that can be styled with different colors.
-
-### Multi-Color PNGs
-
-Pre-generated multi-color PNG icons are available at 48px with a teal/gray color scheme:
-
-<table>
-<tr>
-  <td align="center">
-    <strong>Standard</strong><br>
-    <img src="dist/png/48px/sun-cloud-lightning.png" width="48" height="48" alt="Standard"><br>
-    <sub><code>sun-cloud-lightning.png</code></sub>
-  </td>
-  <td align="center">
-    <strong>Multi-Color</strong><br>
-    <img src="dist/png/48px-multi-color/sun-cloud-lightning-teal-gray.png" width="48" height="48" alt="Multi-Color"><br>
-    <sub><code>sun-cloud-lightning-teal-gray.png</code></sub>
-  </td>
-</tr>
-</table>
-
-```javascript
-import { getMultiColorPNGPath } from 'weather-iconic/png-utils'
-
-// Multi-color PNG variant
-const multiColorIcon = getMultiColorPNGPath('sun-cloud-lightning', '-teal-gray')
-
-// HTML usage
-<img src={getMultiColorPNGPath('sun-cloud-lightning', '-teal-gray')} alt="Stormy weather" />
-<img src={getMultiColorPNGPath('moon-cloud', '-teal-gray')} alt="Moon with cloud" />
-```
-
-**Available for all 63 icons** with consistent color scheme:
-- **Teal/Gray**: `#80BBB2` primary, `#666666` secondary
-
-### React Multi-Color
-
-![React Multi-Color](dist/png/48px-multi-color/sun-cloud-lightning-teal-gray.png)
-
-```jsx
-import { WeatherSunCloudLightning } from 'weather-iconic/react'
-
-// Multi-color with custom colors
-<WeatherSunCloudLightning 
-  multiColor={true}
-  primaryColor="#80BBB2"
-  secondaryColor="#666666"
-  size={48}
-/>
-
-// Multi-color with CSS custom properties
-<WeatherSunCloudLightning 
-  multiColor={true}
-  size={48}
-  style={{
-    '--weather-primary-fill': '#80BBB2',
-    '--weather-secondary-fill': '#666666'
-  }}
-/>
-```
-
-### Vue Multi-Color
-
-![Vue Multi-Color](dist/png/48px-multi-color/sun-cloud-lightning-teal-gray.png)
-
-```vue
-<template>
-  <!-- Multi-color with custom colors -->
-  <WeatherSunCloudLightning 
-    :multi-color="true"
-    primary-color="#80BBB2"
-    secondary-color="#666666"
-    :size="48"
-  />
-
-  <!-- Multi-color with CSS custom properties -->
-  <WeatherSunCloudLightning 
-    :multi-color="true"
-    :size="48"
-    :style="{
-      '--weather-primary-fill': '#80BBB2',
-      '--weather-secondary-fill': '#666666'
-    }"
-  />
-</template>
-
-<script setup>
-import { WeatherSunCloudLightning } from 'weather-iconic/vue'
-</script>
-```
 
 ### CSS Multi-Color
 
@@ -511,12 +374,12 @@ import { WeatherSunCloudLightning } from 'weather-iconic/vue'
 ```html
 <!-- Multi-color with CSS custom properties -->
 <div class="weather-multi-color" style="--weather-primary-fill: #80BBB2; --weather-secondary-fill: #666666;">
-  <svg><use href="#weather-sun-cloud-lightning"></use></svg>
+  <svg><use xlink:href="/path/to/sprites.svg#weather-sun-cloud-lightning"></use></svg>
 </div>
 
 <!-- Multi-color with utility classes -->
 <div class="weather-multi-color weather-primary-teal">
-  <svg><use href="#weather-sun-cloud-lightning"></use></svg>
+  <svg><use xlink:href="/path/to/sprites.svg#weather-sun-cloud-lightning"></use></svg>
 </div>
 ```
 
@@ -575,11 +438,9 @@ open index.html
 ```
 
 ### Package Information
-- **Bundle Sizes**: React (~1.3MB), Vue (~1.5MB), SVG Sprite (~104KB)
-- **Total Package**: ~4.9MB (includes all formats and assets)
-- **Formats**: ESM + CommonJS with full TypeScript definitions
-- **Multi-Format**: React/Vue components, SVG sprites, webfonts, PNG exports
-- **PNG Sizes**: 16px, 24px, 32px, 48px, 64px, 128px (standard + multi-color variants)
+- **Bundle Sizes**: SVG Sprite (~104KB), Webfonts (~256KB)
+- **Total Package**: ~500KB (optimized distribution without PNG assets)
+- **Formats**: SVG sprites, webfonts with TypeScript definitions
 - **Font Formats**: WOFF2, WOFF, TTF, EOT for maximum browser support
 - **Node.js**: Requires Node.js >=16.0.0
 

@@ -42,54 +42,8 @@ async function generateTypes() {
     // Write updated types file
     await writeFile(typesPath, typesContent)
     
-    // Generate React component types
-    const reactTypesContent = `// Auto-generated React component types
-import * as React from 'react'
-import type { IconProps } from '../types'
-
-${iconNames.map(name => {
-  const pascalName = toPascalCase(name)
-  return `export declare const Weather${pascalName}: React.ForwardRefExoticComponent<IconProps & React.RefAttributes<SVGSVGElement>>`
-}).join('\n')}
-
-// Component mapping type
-export interface IconComponentMap {
-${iconNames.map(name => {
-  const pascalName = toPascalCase(name)
-  return `  '${name}': typeof Weather${pascalName}`
-}).join('\n')}
-}
-`
-    
-    const reactTypesPath = join(rootDir, 'src/react/types.ts')
-    await writeFile(reactTypesPath, reactTypesContent)
-    
-    // Generate Vue component types
-    const vueTypesContent = `// Auto-generated Vue component types
-import type { VueIconProps } from '../types'
-import type { DefineComponent } from 'vue'
-
-${iconNames.map(name => {
-  const pascalName = toPascalCase(name)
-  return `export declare const Weather${pascalName}: DefineComponent<VueIconProps>`
-}).join('\n')}
-
-// Component mapping type
-export interface IconComponentMap {
-${iconNames.map(name => {
-  const pascalName = toPascalCase(name)
-  return `  '${name}': typeof Weather${pascalName}`
-}).join('\n')}
-}
-`
-    
-    const vueTypesPath = join(rootDir, 'src/vue/types.ts')
-    await writeFile(vueTypesPath, vueTypesContent)
-    
     console.log('✅ TypeScript definitions generated successfully')
     console.log(`🏷️  Updated main types: ${typesPath}`)
-    console.log(`⚛️  Generated React types: ${reactTypesPath}`)
-    console.log(`🟢 Generated Vue types: ${vueTypesPath}`)
     
     return { iconNames, totalTypes: iconNames.length }
     
