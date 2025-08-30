@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Iconic - Beautiful Weather Icons</title>
+    <link rel="icon" type="image/png" href="./assets/images/logo.png">
     <link rel="stylesheet" href="./assets/css/main.css">
     <!-- Preload critical JavaScript modules -->
     <link rel="modulepreload" href="./assets/js/config.js">
@@ -77,35 +78,58 @@
                 <div class="hero-visual">
                     <div class="icon-showcase">
                         <div class="showcase-grid">
-                            <div class="showcase-icon showcase-icon-1">
-                                <svg viewBox="0 0 32 32"><use xlink:href="./dist/sprites.svg#weather-sun"></use></svg>
+                            <!-- Large primary icons -->
+                            <div class="showcase-icon showcase-icon-1 large">
+                                <svg viewBox="0 0 32 32" class="multi-color-icon" style="--weather-primary-fill: #ffa500; --weather-secondary-fill: #666666;">
+                                    <use xlink:href="./dist/sprites.svg#weather-sun-cloud-lightning"></use>
+                                </svg>
                             </div>
-                            <div class="showcase-icon showcase-icon-2">
-                                <svg viewBox="0 0 32 32"><use xlink:href="./dist/sprites.svg#weather-cloud-rain"></use></svg>
+                            <div class="showcase-icon showcase-icon-2 large">
+                                <svg viewBox="0 0 32 32" class="multi-color-icon" style="--weather-primary-fill: #80BBB2; --weather-secondary-fill: #4682b4;">
+                                    <use xlink:href="./dist/sprites.svg#weather-thermometer-hot"></use>
+                                </svg>
                             </div>
-                            <div class="showcase-icon showcase-icon-3">
-                                <svg viewBox="0 0 32 32"><use xlink:href="./dist/sprites.svg#weather-wind"></use></svg>
+                            <div class="showcase-icon showcase-icon-3 large">
+                                <svg viewBox="0 0 32 32" class="multi-color-icon" style="--weather-primary-fill: #ffff00; --weather-secondary-fill: #87ceeb;">
+                                    <use xlink:href="./dist/sprites.svg#weather-moon-cloud-lightning"></use>
+                                </svg>
                             </div>
+                            
+                            <!-- Medium floating icons -->
                             <div class="showcase-icon showcase-icon-4">
-                                <svg viewBox="0 0 32 32"><use xlink:href="./dist/sprites.svg#weather-snowflake"></use></svg>
+                                <svg viewBox="0 0 32 32" style="fill: #4682b4;"><use xlink:href="./dist/sprites.svg#weather-cloud-rain"></use></svg>
                             </div>
                             <div class="showcase-icon showcase-icon-5">
-                                <svg viewBox="0 0 32 32"><use xlink:href="./dist/sprites.svg#weather-lightning"></use></svg>
+                                <svg viewBox="0 0 32 32" style="fill: #87ceeb;"><use xlink:href="./dist/sprites.svg#weather-wind"></use></svg>
                             </div>
                             <div class="showcase-icon showcase-icon-6">
-                                <svg viewBox="0 0 32 32"><use xlink:href="./dist/sprites.svg#weather-moon-cloud"></use></svg>
+                                <svg viewBox="0 0 32 32" style="fill: #f0f8ff;"><use xlink:href="./dist/sprites.svg#weather-snowflake"></use></svg>
                             </div>
                             <div class="showcase-icon showcase-icon-7">
-                                <svg viewBox="0 0 32 32"><use xlink:href="./dist/sprites.svg#weather-thermometer-hot"></use></svg>
+                                <svg viewBox="0 0 32 32" style="fill: #666666;"><use xlink:href="./dist/sprites.svg#weather-moon"></use></svg>
                             </div>
                             <div class="showcase-icon showcase-icon-8">
-                                <svg viewBox="0 0 32 32"><use xlink:href="./dist/sprites.svg#weather-rainbow"></use></svg>
+                                <svg viewBox="0 0 32 32" style="fill: #ff6b6b;"><use xlink:href="./dist/sprites.svg#weather-tornado"></use></svg>
                             </div>
-                            <div class="showcase-icon showcase-icon-9">
-                                <svg viewBox="0 0 32 32"><use xlink:href="./dist/sprites.svg#weather-fog"></use></svg>
+                            
+                            <!-- Small floating icons -->
+                            <div class="showcase-icon showcase-icon-9 small">
+                                <svg viewBox="0 0 32 32" style="fill: #80BBB2;"><use xlink:href="./dist/sprites.svg#weather-rainbow"></use></svg>
                             </div>
-                            <div class="showcase-icon showcase-icon-10">
-                                <svg viewBox="0 0 32 32"><use xlink:href="./dist/sprites.svg#weather-hail"></use></svg>
+                            <div class="showcase-icon showcase-icon-10 small">
+                                <svg viewBox="0 0 32 32" style="fill: #666666;"><use xlink:href="./dist/sprites.svg#weather-fog"></use></svg>
+                            </div>
+                            <div class="showcase-icon showcase-icon-11 small">
+                                <svg viewBox="0 0 32 32" style="fill: #87ceeb;"><use xlink:href="./dist/sprites.svg#weather-hail"></use></svg>
+                            </div>
+                            <div class="showcase-icon showcase-icon-12 small">
+                                <svg viewBox="0 0 32 32" style="fill: #ffa500;"><use xlink:href="./dist/sprites.svg#weather-sunrise"></use></svg>
+                            </div>
+                            <div class="showcase-icon showcase-icon-13 small">
+                                <svg viewBox="0 0 32 32" style="fill: #4682b4;"><use xlink:href="./dist/sprites.svg#weather-raindrop"></use></svg>
+                            </div>
+                            <div class="showcase-icon showcase-icon-14 small">
+                                <svg viewBox="0 0 32 32" style="fill: #80BBB2;"><use xlink:href="./dist/sprites.svg#weather-compass"></use></svg>
                             </div>
                         </div>
                         <div class="showcase-glow"></div>
@@ -138,6 +162,11 @@
                     <div class="feature-icon">🔧</div>
                     <h3>Easy Integration</h3>
                     <p>Simple CSS classes or SVG sprite usage</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌐</div>
+                    <h3>Browser Support</h3>
+                    <p>Works across all modern browsers with fallback support</p>
                 </div>
             </div>
         </div>
