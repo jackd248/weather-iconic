@@ -169,12 +169,6 @@ ${iconNames.map(name => `.weather-${name}:before {
 .weather-icon--warning { color: #ffc107; }
 .weather-icon--danger { color: #dc3545; }
 
-/* Weather-specific colors */
-.weather-sun { color: #ffa500; }
-.weather-cloud { color: #87ceeb; }
-.weather-rain { color: #4682b4; }
-.weather-snow { color: #f0f8ff; }
-.weather-lightning { color: #ffff00; }
 `
 }
 
