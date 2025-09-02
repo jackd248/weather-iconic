@@ -9,20 +9,32 @@ const iconsDir = join(rootDir, 'src/icons')
 const distDir = join(rootDir, 'dist')
 const pngDir = join(distDir, 'png')
 
-// PNG export sizes
-const SIZES = [16, 24, 32, 48, 64, 128]
+// PNG export sizes (removed 16px and 24px - too small for meaningful display)
+const SIZES = [32, 48, 64, 128]
 
-// Multi-color configuration for 48px variants
-const MULTI_COLOR_CONFIGS = [
+// Color configurations for all sizes
+const COLOR_CONFIGS = [
+  {
+    suffix: '-black',
+    primaryColor: '#000000',
+    secondaryColor: '#000000',
+    label: 'Black'
+  },
+  {
+    suffix: '-white',
+    primaryColor: '#ffffff',
+    secondaryColor: '#ffffff',
+    label: 'White'
+  },
   {
     suffix: '-teal-gray',
     primaryColor: '#80BBB2',
     secondaryColor: '#666666',
-    label: 'Teal Primary, Gray Secondary'
+    label: 'Multi-Color (Teal/Gray)'
   }
 ]
 
-function applyMultiColorToSVG(svgContent, primaryColor, secondaryColor) {
+function applyColorsToSVG(svgContent, primaryColor, secondaryColor) {
   // Replace the SVG content to apply colors to the first and second path
   let modifiedSvg = svgContent
   
@@ -51,13 +63,13 @@ async function generatePNGs() {
   console.log('🖼️  Generating PNG exports with Sharp...')
   
   try {
-    // Create PNG directories
+    // Create PNG directories for all sizes and color variants
     await mkdir(pngDir, { recursive: true })
     for (const size of SIZES) {
-      await mkdir(join(pngDir, `${size}px`), { recursive: true })
+      for (const config of COLOR_CONFIGS) {
+        await mkdir(join(pngDir, `${size}px${config.suffix}`), { recursive: true })
+      }
     }
-    // Create multi-color directory for 48px
-    await mkdir(join(pngDir, '48px-multi-color'), { recursive: true })
     
     // Read icon metadata
     const metadataPath = join(iconsDir, 'metadata.json')
@@ -75,93 +87,57 @@ async function generatePNGs() {
       const svgPath = join(iconsDir, `${iconName}.svg`)
       const svgContent = await readFile(svgPath, 'utf-8')
       
-      // Generate PNGs for all sizes
+      // Generate PNGs for all sizes and color variants
       for (const size of SIZES) {
-        const outputPath = join(pngDir, `${size}px`, `${iconName}.png`)
-        
-        try {
-          // Convert SVG to PNG using Sharp
-          const pngBuffer = await sharp(Buffer.from(svgContent))
-            .resize(size, size)
-            .png({
-              quality: 95,
-              compressionLevel: 9,
-              adaptiveFiltering: true
+        for (const config of COLOR_CONFIGS) {
+          const coloredSvg = applyColorsToSVG(svgContent, config.primaryColor, config.secondaryColor)
+          const outputPath = join(pngDir, `${size}px${config.suffix}`, `${iconName}.png`)
+          
+          try {
+            // Convert SVG to PNG using Sharp
+            const pngBuffer = await sharp(Buffer.from(coloredSvg))
+              .resize(size, size)
+              .png({
+                quality: 95,
+                compressionLevel: 9,
+                adaptiveFiltering: true
+              })
+              .toBuffer()
+            
+            await writeFile(outputPath, pngBuffer)
+            
+            results.push({
+              icon: iconName,
+              size: `${size}px`,
+              variant: config.suffix,
+              path: outputPath,
+              bytes: pngBuffer.length,
+              colors: {
+                primary: config.primaryColor,
+                secondary: config.secondaryColor
+              }
             })
-            .toBuffer()
-          
-          await writeFile(outputPath, pngBuffer)
-          
-          results.push({
-            icon: iconName,
-            size: `${size}px`,
-            path: outputPath,
-            bytes: pngBuffer.length
-          })
-          
-        } catch (error) {
-          console.warn(`⚠️  Failed to generate ${iconName} at ${size}px:`, error.message)
-        }
-      }
-      
-      // Generate multi-color variants at 48px
-      console.log(`🌈 Generating multi-color variants for ${iconName} at 48px...`)
-      for (const config of MULTI_COLOR_CONFIGS) {
-        const multiColorSvg = applyMultiColorToSVG(svgContent, config.primaryColor, config.secondaryColor)
-        const outputPath = join(pngDir, '48px-multi-color', `${iconName}${config.suffix}.png`)
-        
-        try {
-          const pngBuffer = await sharp(Buffer.from(multiColorSvg))
-            .resize(48, 48)
-            .png({
-              quality: 95,
-              compressionLevel: 9,
-              adaptiveFiltering: true
-            })
-            .toBuffer()
-          
-          await writeFile(outputPath, pngBuffer)
-          
-          results.push({
-            icon: iconName,
-            size: '48px-multi-color',
-            variant: config.suffix,
-            path: outputPath,
-            bytes: pngBuffer.length,
-            colors: {
-              primary: config.primaryColor,
-              secondary: config.secondaryColor
-            }
-          })
-          
-        } catch (error) {
-          console.warn(`⚠️  Failed to generate multi-color ${iconName}${config.suffix} at 48px:`, error.message)
+            
+          } catch (error) {
+            console.warn(`⚠️  Failed to generate ${iconName}${config.suffix} at ${size}px:`, error.message)
+          }
         }
       }
     }
     
     // Generate PNG manifest
-    const standardResults = results.filter(r => !r.variant)
-    const multiColorResults = results.filter(r => r.variant)
     
     const manifest = {
       icons: iconNames,
       sizes: SIZES,
-      multiColorConfigs: MULTI_COLOR_CONFIGS,
+      colorConfigs: COLOR_CONFIGS,
       totalFiles: results.length,
       totalSize: results.reduce((sum, r) => sum + r.bytes, 0),
       generatedAt: new Date().toISOString(),
-      standard: standardResults.reduce((acc, result) => {
+      variants: results.reduce((acc, result) => {
         if (!acc[result.icon]) acc[result.icon] = {}
-        acc[result.icon][result.size] = {
-          bytes: result.bytes,
-          path: result.path.replace(rootDir, '.')
-        }
-        return acc
-      }, {}),
-      multiColor: multiColorResults.reduce((acc, result) => {
-        if (!acc[result.icon]) acc[result.icon] = {}
-        acc[result.icon][result.variant] = {
+        if (!acc[result.icon][result.size]) acc[result.icon][result.size] = {}
+        acc[result.icon][result.size][result.variant] = {
           bytes: result.bytes,
           path: result.path.replace(rootDir, '.'),
           colors: result.colors
@@ -176,26 +152,22 @@ async function generatePNGs() {
     const pngUtilsContent = `// Weather Iconic - PNG Utilities
 export const PNG_SIZES = [${SIZES.join(', ')}]
 export const PNG_ICONS = [${iconNames.map(name => `'${name}'`).join(', ')}]
-export const MULTI_COLOR_VARIANTS = [${MULTI_COLOR_CONFIGS.map(c => `'${c.suffix}'`).join(', ')}]
+export const COLOR_VARIANTS = [${COLOR_CONFIGS.map(c => `'${c.suffix}'`).join(', ')}]
 
-export function getPNGPath(iconName, size = 24) {
-  return \`./png/\${size}px/\${iconName}.png\`
+export function getPNGPath(iconName, size = 32, variant = '-black') {
+  return \`./png/\${size}px\${variant}/\${iconName}.png\`
 }
 
-export function getMultiColorPNGPath(iconName, variant = '-teal-gray') {
-  return \`./png/48px-multi-color/\${iconName}\${variant}.png\`
-}
-
-export function getAvailableMultiColorVariants() {
-  return ${JSON.stringify(MULTI_COLOR_CONFIGS, null, 2)}
+export function getAvailableColorVariants() {
+  return ${JSON.stringify(COLOR_CONFIGS, null, 2)}
 }
 `
     
     await writeFile(join(distDir, 'png-utils.js'), pngUtilsContent)
     
     console.log(`✅ Generated ${results.length} PNG files`)
-    console.log(`📏 Standard sizes: ${SIZES.join('px, ')}px`)
-    console.log(`🌈 Multi-color variants: ${multiColorResults.length} files at 48px`)
+    console.log(`📏 Sizes: ${SIZES.join('px, ')}px`)
+    console.log(`🎨 Color variants: ${COLOR_CONFIGS.map(c => c.label).join(', ')}`)
     console.log(`💾 Total PNG size: ${Math.round(manifest.totalSize / 1024)}KB`)
     console.log(`📁 Output directory: ${pngDir}`)
     
