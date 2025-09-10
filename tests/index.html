@@ -180,7 +180,7 @@
         <div class="section">
             <h2>Webfont Icons - Monocolor</h2>
             <div class="test-info">
-                <strong>Test:</strong> All 63 icons using CSS webfont with single color (#80BBB2)
+                <strong>Test:</strong> All 98 icons using CSS webfont with single color (#80BBB2)
             </div>
             <div class="icon-grid" id="monoColorGrid">
                 <!-- Icons will be populated by JavaScript -->
@@ -280,37 +280,24 @@
     </div>
 
     <script>
-        // Icon names array (all 63 icons)
+        // Icon names array (all 100 icons)
         const iconNames = [
-            'barometer', 'celsius', 'cloud-down', 'cloud-fog', 'cloud-rain-single', 'cloud-rain',
-            'cloud-snow-single', 'cloud-snow', 'cloud-up', 'cloud-wind', 'cloud', 'clouds',
-            'compass-east', 'compass-north-east', 'compass-north-west', 'compass-north',
-            'compass-south-east', 'compass-south-west', 'compass-south', 'compass-west', 'compass',
-            'fahrenheit', 'fog', 'hail', 'lightning', 'moon-cloud-lightning', 'moon-cloud-rain',
-            'moon-cloud-snow', 'moon-cloud-wind', 'moon-cloud', 'moon-first-quarter', 'moon-fog',
-            'moon-fullmoon', 'moon-last-quarter', 'moon-newmoon', 'moon-waning-crescent',
-            'moon-waning-gibbous', 'moon-waxing-crescent', 'moon-waxing-gibbous', 'moon',
-            'rainbow', 'raindrop', 'refresh', 'snowflake', 'sun-cloud-lightning', 'sun-cloud-rain',
-            'sun-cloud-snow', 'sun-cloud-wind', 'sun-cloud', 'sun-fog', 'sun-low', 'sun-medium',
-            'sun', 'sunrise', 'sunset', 'thermometer-cold', 'thermometer-hot', 'thermometer-medium',
-            'tornado', 'umbrella', 'wind-high', 'wind', 'windsock'
+            'barometer', 'celsius', 'cloud-alt', 'cloud-down', 'cloud-fog', 'cloud-hail', 'cloud-haze', 'cloud-rain-alt', 'cloud-rain', 'cloud-sleet',
+            'cloud-smog', 'cloud-snow-alt', 'cloud-snow', 'cloud-up', 'cloud-wind', 'cloud', 'clouds-alt', 'clouds',
+            'compass-east', 'compass-north-east', 'compass-north-west', 'compass-north', 'compass-south-east', 'compass-south-west', 'compass-south', 'compass-west',
+            'date', 'earthquake', 'fahrenheit', 'fire', 'flood', 'fog', 'humidity', 'hurricane', 'info', 'lightning',
+            'moon-cloud-fog', 'moon-cloud-hail', 'moon-cloud-haze', 'moon-cloud-lightning', 'moon-cloud-rain-alt', 'moon-cloud-rain', 'moon-cloud-sleet',
+            'moon-cloud-snow-alt', 'moon-cloud-snow', 'moon-cloud-wind', 'moon-cloud', 'moon-first-quarter', 'moon-fog',
+            'moon-fullmoon', 'moon-last-quarter', 'moon-newmoon', 'moon-waning-crescent', 'moon-waning-gibbous', 'moon-waxing-crescent', 'moon-waxing-gibbous',
+            'moon', 'moonrise', 'moonset', 'na', 'pollen', 'rainbow', 'raindrop', 'refresh', 'sandstorm', 'shooting-star', 'snowflake',
+            'star', 'stars', 'sun-cloud-fog', 'sun-cloud-hail', 'sun-cloud-haze', 'sun-cloud-lightning', 'sun-cloud-rain-alt', 'sun-cloud-rain',
+            'sun-cloud-sleet', 'sun-cloud-snow-alt', 'sun-cloud-snow', 'sun-cloud-wind', 'sun-cloud', 'sun-eclipse', 'sun-fog', 'sun-high',
+            'sun-low', 'sun-medium', 'sun', 'sunrise', 'sunset', 'thermometer-cold', 'thermometer-freeze', 'thermometer-heat', 'thermometer-hot',
+            'thermometer-medium', 'time', 'tornado', 'umbrella', 'warning', 'wind-high', 'wind', 'windsock'
         ];
 
-        // Multi-color capable icons (detected from build system)
-        const multiColorIcons = [
-            'barometer', 'celsius', 'cloud-down', 'cloud-fog', 'cloud-rain-single', 'cloud-rain',
-            'cloud-snow-single', 'cloud-snow', 'cloud-up', 'cloud-wind', 'cloud', 'clouds',
-            'compass-east', 'compass-north-east', 'compass-north-west', 'compass-north',
-            'compass-south-east', 'compass-south-west', 'compass-south', 'compass-west', 'compass',
-            'fahrenheit', 'fog', 'hail', 'lightning', 'moon-cloud-lightning', 'moon-cloud-rain',
-            'moon-cloud-snow', 'moon-cloud-wind', 'moon-cloud', 'moon-first-quarter', 'moon-fog',
-            'moon-fullmoon', 'moon-last-quarter', 'moon-newmoon', 'moon-waning-crescent',
-            'moon-waning-gibbous', 'moon-waxing-crescent', 'moon-waxing-gibbous', 'moon',
-            'rainbow', 'raindrop', 'refresh', 'snowflake', 'sun-cloud-lightning', 'sun-cloud-rain',
-            'sun-cloud-snow', 'sun-cloud-wind', 'sun-cloud', 'sun-fog', 'sun-low', 'sun-medium',
-            'sun', 'sunrise', 'sunset', 'thermometer-cold', 'thermometer-hot', 'thermometer-medium',
-            'tornado', 'umbrella', 'wind-high', 'wind', 'windsock'
-        ];
+        // Multi-color capable icons - using all 100 icons for demonstration
+        const multiColorIcons = iconNames;
 
         // Populate monocolor webfont grid
         function populateMonoColorGrid() {
@@ -400,7 +387,7 @@
                 const item = document.createElement('div');
                 item.className = 'icon-item';
                 item.innerHTML = `
-                    <img class="icon" src="../dist/png/32px/${name}.png" alt="${name}" loading="lazy">
+                    <img class="icon" src="../dist/png/48px-black/${name}.png" alt="${name}" loading="lazy">
                     <div class="name">${name}</div>
                 `;
                 grid.appendChild(item);
@@ -414,7 +401,7 @@
                 const item = document.createElement('div');
                 item.className = 'icon-item';
                 item.innerHTML = `
-                    <img class="icon" src="../dist/png/48px-multi-color/${name}-teal-gray.png" alt="${name}" loading="lazy">
+                    <img class="icon" src="../dist/png/48px-teal-gray/${name}.png" alt="${name}" loading="lazy">
                     <div class="name">${name} (teal-gray)</div>
                 `;
                 grid.appendChild(item);
@@ -429,7 +416,7 @@
             populatePNGGrid();
             populateMultiColorPNGGrid();
             
-            console.log('✅ Test page loaded with', iconNames.length, 'icons');
+            console.log('✅ Test page loaded with', iconNames.length, 'icons (should be 100)');
             console.log('📊 Multi-color icons:', multiColorIcons.length);
             console.log('🖼️ PNG variants loaded');
         });
