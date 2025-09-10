@@ -1,15 +1,21 @@
-const e = [
+const o = [
   "barometer",
   "celsius",
+  "cloud-alt",
   "cloud-down",
   "cloud-fog",
-  "cloud-rain-single",
+  "cloud-hail",
+  "cloud-haze",
+  "cloud-rain-alt",
   "cloud-rain",
-  "cloud-snow-single",
+  "cloud-sleet",
+  "cloud-smog",
+  "cloud-snow-alt",
   "cloud-snow",
   "cloud-up",
   "cloud-wind",
   "cloud",
+  "clouds-alt",
   "clouds",
   "compass-east",
   "compass-north-east",
@@ -19,13 +25,24 @@ const e = [
   "compass-south-west",
   "compass-south",
   "compass-west",
-  "compass",
+  "date",
+  "earthquake",
   "fahrenheit",
+  "fire",
+  "flood",
   "fog",
-  "hail",
+  "humidity",
+  "hurricane",
+  "info",
   "lightning",
+  "moon-cloud-fog",
+  "moon-cloud-hail",
+  "moon-cloud-haze",
   "moon-cloud-lightning",
+  "moon-cloud-rain-alt",
   "moon-cloud-rain",
+  "moon-cloud-sleet",
+  "moon-cloud-snow-alt",
   "moon-cloud-snow",
   "moon-cloud-wind",
   "moon-cloud",
@@ -39,26 +56,46 @@ const e = [
   "moon-waxing-crescent",
   "moon-waxing-gibbous",
   "moon",
+  "moonrise",
+  "moonset",
+  "na",
+  "pollen",
   "rainbow",
   "raindrop",
   "refresh",
+  "sandstorm",
+  "shooting-star",
   "snowflake",
+  "star",
+  "stars",
+  "sun-cloud-fog",
+  "sun-cloud-hail",
+  "sun-cloud-haze",
   "sun-cloud-lightning",
+  "sun-cloud-rain-alt",
   "sun-cloud-rain",
+  "sun-cloud-sleet",
+  "sun-cloud-snow-alt",
   "sun-cloud-snow",
   "sun-cloud-wind",
   "sun-cloud",
+  "sun-eclipse",
   "sun-fog",
+  "sun-high",
   "sun-low",
   "sun-medium",
   "sun",
   "sunrise",
   "sunset",
   "thermometer-cold",
+  "thermometer-freeze",
+  "thermometer-heat",
   "thermometer-hot",
   "thermometer-medium",
+  "time",
   "tornado",
   "umbrella",
+  "warning",
   "wind-high",
   "wind",
   "windsock"
@@ -73,6 +110,11 @@ const e = [
     pascalName: "Celsius",
     kebabName: "celsius"
   },
+  "cloud-alt": {
+    name: "cloud-alt",
+    pascalName: "CloudAlt",
+    kebabName: "cloud-alt"
+  },
   "cloud-down": {
     name: "cloud-down",
     pascalName: "CloudDown",
@@ -83,20 +125,40 @@ const e = [
     pascalName: "CloudFog",
     kebabName: "cloud-fog"
   },
-  "cloud-rain-single": {
-    name: "cloud-rain-single",
-    pascalName: "CloudRainSingle",
-    kebabName: "cloud-rain-single"
+  "cloud-hail": {
+    name: "cloud-hail",
+    pascalName: "CloudHail",
+    kebabName: "cloud-hail"
+  },
+  "cloud-haze": {
+    name: "cloud-haze",
+    pascalName: "CloudHaze",
+    kebabName: "cloud-haze"
+  },
+  "cloud-rain-alt": {
+    name: "cloud-rain-alt",
+    pascalName: "CloudRainAlt",
+    kebabName: "cloud-rain-alt"
   },
   "cloud-rain": {
     name: "cloud-rain",
     pascalName: "CloudRain",
     kebabName: "cloud-rain"
   },
-  "cloud-snow-single": {
-    name: "cloud-snow-single",
-    pascalName: "CloudSnowSingle",
-    kebabName: "cloud-snow-single"
+  "cloud-sleet": {
+    name: "cloud-sleet",
+    pascalName: "CloudSleet",
+    kebabName: "cloud-sleet"
+  },
+  "cloud-smog": {
+    name: "cloud-smog",
+    pascalName: "CloudSmog",
+    kebabName: "cloud-smog"
+  },
+  "cloud-snow-alt": {
+    name: "cloud-snow-alt",
+    pascalName: "CloudSnowAlt",
+    kebabName: "cloud-snow-alt"
   },
   "cloud-snow": {
     name: "cloud-snow",
@@ -117,6 +179,11 @@ const e = [
     name: "cloud",
     pascalName: "Cloud",
     kebabName: "cloud"
+  },
+  "clouds-alt": {
+    name: "clouds-alt",
+    pascalName: "CloudsAlt",
+    kebabName: "clouds-alt"
   },
   clouds: {
     name: "clouds",
@@ -163,40 +230,95 @@ const e = [
     pascalName: "CompassWest",
     kebabName: "compass-west"
   },
-  compass: {
-    name: "compass",
-    pascalName: "Compass",
-    kebabName: "compass"
+  date: {
+    name: "date",
+    pascalName: "Date",
+    kebabName: "date"
+  },
+  earthquake: {
+    name: "earthquake",
+    pascalName: "Earthquake",
+    kebabName: "earthquake"
   },
   fahrenheit: {
     name: "fahrenheit",
     pascalName: "Fahrenheit",
     kebabName: "fahrenheit"
   },
+  fire: {
+    name: "fire",
+    pascalName: "Fire",
+    kebabName: "fire"
+  },
+  flood: {
+    name: "flood",
+    pascalName: "Flood",
+    kebabName: "flood"
+  },
   fog: {
     name: "fog",
     pascalName: "Fog",
     kebabName: "fog"
   },
-  hail: {
-    name: "hail",
-    pascalName: "Hail",
-    kebabName: "hail"
+  humidity: {
+    name: "humidity",
+    pascalName: "Humidity",
+    kebabName: "humidity"
+  },
+  hurricane: {
+    name: "hurricane",
+    pascalName: "Hurricane",
+    kebabName: "hurricane"
+  },
+  info: {
+    name: "info",
+    pascalName: "Info",
+    kebabName: "info"
   },
   lightning: {
     name: "lightning",
     pascalName: "Lightning",
     kebabName: "lightning"
   },
+  "moon-cloud-fog": {
+    name: "moon-cloud-fog",
+    pascalName: "MoonCloudFog",
+    kebabName: "moon-cloud-fog"
+  },
+  "moon-cloud-hail": {
+    name: "moon-cloud-hail",
+    pascalName: "MoonCloudHail",
+    kebabName: "moon-cloud-hail"
+  },
+  "moon-cloud-haze": {
+    name: "moon-cloud-haze",
+    pascalName: "MoonCloudHaze",
+    kebabName: "moon-cloud-haze"
+  },
   "moon-cloud-lightning": {
     name: "moon-cloud-lightning",
     pascalName: "MoonCloudLightning",
     kebabName: "moon-cloud-lightning"
   },
+  "moon-cloud-rain-alt": {
+    name: "moon-cloud-rain-alt",
+    pascalName: "MoonCloudRainAlt",
+    kebabName: "moon-cloud-rain-alt"
+  },
   "moon-cloud-rain": {
     name: "moon-cloud-rain",
     pascalName: "MoonCloudRain",
     kebabName: "moon-cloud-rain"
+  },
+  "moon-cloud-sleet": {
+    name: "moon-cloud-sleet",
+    pascalName: "MoonCloudSleet",
+    kebabName: "moon-cloud-sleet"
+  },
+  "moon-cloud-snow-alt": {
+    name: "moon-cloud-snow-alt",
+    pascalName: "MoonCloudSnowAlt",
+    kebabName: "moon-cloud-snow-alt"
   },
   "moon-cloud-snow": {
     name: "moon-cloud-snow",
@@ -263,6 +385,26 @@ const e = [
     pascalName: "Moon",
     kebabName: "moon"
   },
+  moonrise: {
+    name: "moonrise",
+    pascalName: "Moonrise",
+    kebabName: "moonrise"
+  },
+  moonset: {
+    name: "moonset",
+    pascalName: "Moonset",
+    kebabName: "moonset"
+  },
+  na: {
+    name: "na",
+    pascalName: "Na",
+    kebabName: "na"
+  },
+  pollen: {
+    name: "pollen",
+    pascalName: "Pollen",
+    kebabName: "pollen"
+  },
   rainbow: {
     name: "rainbow",
     pascalName: "Rainbow",
@@ -278,20 +420,70 @@ const e = [
     pascalName: "Refresh",
     kebabName: "refresh"
   },
+  sandstorm: {
+    name: "sandstorm",
+    pascalName: "Sandstorm",
+    kebabName: "sandstorm"
+  },
+  "shooting-star": {
+    name: "shooting-star",
+    pascalName: "ShootingStar",
+    kebabName: "shooting-star"
+  },
   snowflake: {
     name: "snowflake",
     pascalName: "Snowflake",
     kebabName: "snowflake"
+  },
+  star: {
+    name: "star",
+    pascalName: "Star",
+    kebabName: "star"
+  },
+  stars: {
+    name: "stars",
+    pascalName: "Stars",
+    kebabName: "stars"
+  },
+  "sun-cloud-fog": {
+    name: "sun-cloud-fog",
+    pascalName: "SunCloudFog",
+    kebabName: "sun-cloud-fog"
+  },
+  "sun-cloud-hail": {
+    name: "sun-cloud-hail",
+    pascalName: "SunCloudHail",
+    kebabName: "sun-cloud-hail"
+  },
+  "sun-cloud-haze": {
+    name: "sun-cloud-haze",
+    pascalName: "SunCloudHaze",
+    kebabName: "sun-cloud-haze"
   },
   "sun-cloud-lightning": {
     name: "sun-cloud-lightning",
     pascalName: "SunCloudLightning",
     kebabName: "sun-cloud-lightning"
   },
+  "sun-cloud-rain-alt": {
+    name: "sun-cloud-rain-alt",
+    pascalName: "SunCloudRainAlt",
+    kebabName: "sun-cloud-rain-alt"
+  },
   "sun-cloud-rain": {
     name: "sun-cloud-rain",
     pascalName: "SunCloudRain",
     kebabName: "sun-cloud-rain"
+  },
+  "sun-cloud-sleet": {
+    name: "sun-cloud-sleet",
+    pascalName: "SunCloudSleet",
+    kebabName: "sun-cloud-sleet"
+  },
+  "sun-cloud-snow-alt": {
+    name: "sun-cloud-snow-alt",
+    pascalName: "SunCloudSnowAlt",
+    kebabName: "sun-cloud-snow-alt"
   },
   "sun-cloud-snow": {
     name: "sun-cloud-snow",
@@ -308,10 +500,20 @@ const e = [
     pascalName: "SunCloud",
     kebabName: "sun-cloud"
   },
+  "sun-eclipse": {
+    name: "sun-eclipse",
+    pascalName: "SunEclipse",
+    kebabName: "sun-eclipse"
+  },
   "sun-fog": {
     name: "sun-fog",
     pascalName: "SunFog",
     kebabName: "sun-fog"
+  },
+  "sun-high": {
+    name: "sun-high",
+    pascalName: "SunHigh",
+    kebabName: "sun-high"
   },
   "sun-low": {
     name: "sun-low",
@@ -343,6 +545,16 @@ const e = [
     pascalName: "ThermometerCold",
     kebabName: "thermometer-cold"
   },
+  "thermometer-freeze": {
+    name: "thermometer-freeze",
+    pascalName: "ThermometerFreeze",
+    kebabName: "thermometer-freeze"
+  },
+  "thermometer-heat": {
+    name: "thermometer-heat",
+    pascalName: "ThermometerHeat",
+    kebabName: "thermometer-heat"
+  },
   "thermometer-hot": {
     name: "thermometer-hot",
     pascalName: "ThermometerHot",
@@ -353,6 +565,11 @@ const e = [
     pascalName: "ThermometerMedium",
     kebabName: "thermometer-medium"
   },
+  time: {
+    name: "time",
+    pascalName: "Time",
+    kebabName: "time"
+  },
   tornado: {
     name: "tornado",
     pascalName: "Tornado",
@@ -362,6 +579,11 @@ const e = [
     name: "umbrella",
     pascalName: "Umbrella",
     kebabName: "umbrella"
+  },
+  warning: {
+    name: "warning",
+    pascalName: "Warning",
+    kebabName: "warning"
   },
   "wind-high": {
     name: "wind-high",
@@ -412,12 +634,12 @@ const e = [
   0%, 100% { opacity: 1; }
   50% { opacity: 0.5; }
 }
-`, s = (a) => a.toLowerCase().replace(/_/g, "-"), l = (a) => a.split(/[-_]/).map((o) => o.charAt(0).toUpperCase() + o.slice(1).toLowerCase()).join(" ");
+`, s = (a) => a.toLowerCase().replace(/_/g, "-"), l = (a) => a.split(/[-_]/).map((e) => e.charAt(0).toUpperCase() + e.slice(1).toLowerCase()).join(" ");
 export {
   l as formatIconName,
   s as getIconName,
   n as iconData,
-  e as iconNames,
+  o as iconNames,
   m as weatherIconicCSS
 };
 //# sourceMappingURL=index.esm.js.map

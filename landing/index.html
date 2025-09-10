@@ -20,7 +20,7 @@
                 <div class="hero-main">
                     <div class="hero-badge">
                         <span class="badge-icon">✨</span>
-                        <span>63 Icons</span>
+                        <span>100 Icons</span>
                         <span class="badge-separator">•</span>
                         <span>Open Source</span>
                         <span class="badge-separator">•</span>
@@ -40,7 +40,7 @@
                     
                     <div class="hero-stats">
                         <div class="stat-item">
-                            <div class="stat-number">63</div>
+                            <div class="stat-number">100</div>
                             <div class="stat-label">Icons</div>
                         </div>
                         <div class="stat-item">
@@ -247,7 +247,7 @@
                     <h3>🔗 CDN</h3>
                     <div class="install-command">
                         <code>&lt;link rel="stylesheet" href="https://unpkg.com/weather-iconic/dist/weather-iconic.css"&gt;</code>
-                        <button class="copy-btn" onclick="copyToClipboard('<link rel=\"stylesheet\" href=\"https://unpkg.com/weather-iconic/dist/weather-iconic.css\">')">Copy</button>
+                        <button class="copy-btn" onclick="copyToClipboard('&lt;link rel=&quot;stylesheet&quot; href=&quot;https://unpkg.com/weather-iconic/dist/weather-iconic.css&quot;&gt;')">Copy</button>
                     </div>
                     <p>Direct CSS inclusion via CDN for quick prototyping</p>
                 </div>
@@ -296,7 +296,7 @@
                     <h3>🎨 PNG Icons</h3>
                     <p>High-quality PNG icons in multiple sizes (16px, 24px, 32px, 48px, 64px). Perfect for desktop apps, mobile development, and when SVG isn't supported.</p>
                     <div class="download-actions">
-                        <a href="https://github.com/your-username/weather-iconic/releases/latest" class="btn-primary">Download from GitHub</a>
+                        <a href="https://github.com/jackd248/weather-iconic/releases/latest" class="btn-primary">Download from GitHub</a>
                         <div class="download-info">
                             <small>All sizes • Multi-color variants • ~2MB ZIP</small>
                             <br><small>💡 Use in: Electron, React Native, Flutter, Unity</small>
@@ -317,7 +317,7 @@
                     <h3>🔤 Icon Fonts</h3>
                     <p>Web fonts for CSS-based icon usage</p>
                     <div class="download-actions">
-                        <a href="https://github.com/your-username/weather-iconic/releases/latest" class="btn-primary">Download Fonts</a>
+                        <a href="https://github.com/jackd248/weather-iconic/releases/latest" class="btn-primary">Download Fonts</a>
                         <div class="download-info">
                             <small>WOFF2, WOFF, TTF • CSS included</small>
                         </div>
@@ -346,9 +346,19 @@
                         <button id="resetColors" class="btn-reset">Reset</button>
                     </div>
                 </div>
+                <div class="gallery-info">
+                    <div class="info-block">
+                        <h4>💡 Download Options</h4>
+                        <p>Click any icon to download it with your custom colors as <strong>SVG</strong>, or get the original <strong>PNG</strong> files in multiple sizes. Colors are applied live in the gallery!</p>
+                    </div>
+                    <div class="info-block version-info">
+                        <h4>🆕 Version 2.2 Updates</h4>
+                        <p>This release includes <strong><span id="newIconCount">37</span> new icons</strong> <span class="new-badge-inline">NEW</span> and <strong><span id="updatedIconCount">7</span> improved icons</strong> <span class="updated-badge-inline">UPDATED</span> with enhanced visual quality and consistency.</p>
+                    </div>
+                </div>
             </div>
-            <div class="icon-grid" id="iconGrid">
-                <!-- Icons will be loaded here by JavaScript -->
+            <div id="iconGrid">
+                <!-- Icons will be loaded here by JavaScript with category sections -->
             </div>
         </div>
     </section>

@@ -447,6 +447,35 @@ code {
     justify-content: center;
 }
 
+.category-filter {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.category-filter label {
+    font-weight: 500;
+    color: var(--text-primary);
+    font-size: 0.875rem;
+}
+
+.category-filter select {
+    padding: 0.5rem;
+    border: 1px solid var(--border-light);
+    border-radius: 6px;
+    background: white;
+    color: var(--text-primary);
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: border-color 0.2s ease;
+}
+
+.category-filter select:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(128, 187, 178, 0.1);
+}
+
 .search-box {
     position: relative;
     min-width: 300px;
@@ -558,6 +587,128 @@ code {
     color: var(--text-secondary);
     font-weight: 500;
     word-break: break-word;
+    position: relative;
+}
+
+.new-badge {
+    background: #ffa500;
+    color: white;
+    font-size: 0.6rem;
+    padding: 0.15rem 0.4rem;
+    border-radius: 8px;
+    font-weight: 600;
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    display: inline-block;
+    animation: pulse-new 2s ease-in-out infinite;
+    box-shadow: 0 2px 4px rgba(255, 165, 0, 0.3);
+}
+
+.updated-badge {
+    background: #80B1D3;
+    color: white;
+    font-size: 0.6rem;
+    padding: 0.15rem 0.4rem;
+    border-radius: 8px;
+    font-weight: 600;
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    display: inline-block;
+    animation: pulse-updated 2s ease-in-out infinite;
+    box-shadow: 0 2px 4px rgba(128, 177, 211, 0.3);
+}
+
+@keyframes pulse-new {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.8; transform: scale(0.95); }
+}
+
+@keyframes pulse-updated {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.85; transform: scale(0.96); }
+}
+
+.icon-item.new-icon {
+    border-color: #ffa500;
+    background: linear-gradient(135deg, rgba(255, 165, 0, 0.02), rgba(255, 255, 255, 1));
+    position: relative;
+}
+
+.icon-item.updated-icon {
+    border-color: #80B1D3;
+    background: linear-gradient(135deg, rgba(128, 177, 211, 0.02), rgba(255, 255, 255, 1));
+    position: relative;
+}
+
+/* Gallery info block */
+.gallery-info {
+    margin: 1.5rem 0;
+}
+
+.new-badge-inline, .updated-badge-inline {
+    font-size: 0.65rem;
+    padding: 0.2rem 0.5rem;
+    border-radius: 6px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    display: inline-block;
+    margin-left: 0.3rem;
+    position: relative;
+    top: -1px;
+}
+
+.new-badge-inline {
+    background: #ffa500;
+    color: white;
+    box-shadow: 0 1px 3px rgba(255, 165, 0, 0.3);
+}
+
+.updated-badge-inline {
+    background: #80B1D3;
+    color: white;
+    box-shadow: 0 1px 3px rgba(128, 177, 211, 0.3);
+}
+
+.version-info {
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    border-left: 4px solid #80BBB2;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.version-info h4 {
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+}
+
+.info-block {
+    background: linear-gradient(135deg, #f8f9ff, #ffffff);
+    border: 1px solid #e3f2fd;
+    border-left: 4px solid var(--primary-color);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.info-block h4 {
+    margin: 0 0 0.5rem 0;
+    color: var(--primary-color);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.info-block p {
+    margin: 0;
+    color: var(--text-secondary);
+    line-height: 1.5;
 }
 
 .download-btn {
@@ -616,6 +767,28 @@ code {
 
 .footer-links a:hover {
     color: var(--primary-color);
+}
+
+/* Category sections for icon organization */
+.category-section {
+    margin-bottom: 3rem;
+}
+
+.category-header {
+    margin-bottom: 1.5rem;
+}
+
+.category-header h3 {
+    color: var(--primary-color);
+    margin: 0 0 0.5rem 0;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.category-count {
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+    opacity: 0.8;
 }
 
 /* Responsive Design */
