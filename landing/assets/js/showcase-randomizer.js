@@ -1,20 +1,23 @@
 // Weather Iconic - Showcase Icon Randomizer
 // Randomly selects and displays icons in the hero showcase
 
-// All available icon names for showcase
 const SHOWCASE_ICON_NAMES = [
-    'barometer', 'celsius', 'cloud-down', 'cloud-fog', 'cloud-rain-single', 'cloud-rain',
-    'cloud-snow-single', 'cloud-snow', 'cloud-up', 'cloud-wind', 'cloud', 'clouds',
-    'compass-east', 'compass-north-east', 'compass-north-west', 'compass-north',
-    'compass-south-east', 'compass-south-west', 'compass-south', 'compass-west', 'compass',
-    'fahrenheit', 'fog', 'hail', 'lightning', 'moon-cloud-lightning', 'moon-cloud-rain',
-    'moon-cloud-snow', 'moon-cloud-wind', 'moon-cloud', 'moon-first-quarter', 'moon-fog',
+    'barometer', 'celsius', 'cloud', 'cloud-alt', 'cloud-down', 'cloud-fog', 'cloud-hail', 'cloud-rain', 'cloud-rain-alt',
+    'cloud-sleet', 'cloud-snow', 'cloud-snow-alt', 'cloud-up', 'cloud-wind', 'clouds', 'clouds-alt',
+    'compass-east', 'compass-north', 'compass-north-east', 'compass-north-west',
+    'compass-south', 'compass-south-east', 'compass-south-west', 'compass-west',
+    'earthquake', 'fahrenheit', 'fire', 'flood', 'fog', 'humidity', 'hurricane',
+    'lightning', 'moon', 'moon-cloud', 'moon-cloud-fog', 'moon-cloud-hail',
+    'moon-cloud-lightning', 'moon-cloud-rain', 'moon-cloud-rain-alt', 'moon-cloud-sleet',
+    'moon-cloud-snow', 'moon-cloud-snow-alt', 'moon-cloud-wind', 'moon-first-quarter', 'moon-fog',
     'moon-fullmoon', 'moon-last-quarter', 'moon-newmoon', 'moon-waning-crescent',
-    'moon-waning-gibbous', 'moon-waxing-crescent', 'moon-waxing-gibbous', 'moon',
-    'rainbow', 'raindrop', 'refresh', 'snowflake', 'sun-cloud-lightning', 'sun-cloud-rain',
-    'sun-cloud-snow', 'sun-cloud-wind', 'sun-cloud', 'sun-fog', 'sun-low', 'sun-medium',
-    'sun', 'sunrise', 'sunset', 'thermometer-cold', 'thermometer-hot', 'thermometer-medium',
-    'tornado', 'umbrella', 'wind-high', 'wind', 'windsock'
+    'moon-waning-gibbous', 'moon-waxing-crescent', 'moon-waxing-gibbous',
+    'moonrise', 'moonset', 'rainbow', 'raindrop', 'refresh', 'sandstorm', 'snowflake', 'star', 'stars',
+    'sun', 'sun-cloud', 'sun-cloud-fog', 'sun-cloud-hail', 'sun-cloud-lightning', 'sun-cloud-rain',
+    'sun-cloud-rain-alt', 'sun-cloud-sleet', 'sun-cloud-snow', 'sun-cloud-snow-alt', 'sun-cloud-wind',
+    'sun-eclipse', 'sun-fog', 'sun-high', 'sun-low', 'sun-medium', 'sunrise', 'sunset',
+    'thermometer-cold', 'thermometer-hot', 'thermometer-medium', 'tornado', 'umbrella',
+    'warning', 'wind', 'wind-high', 'windsock'
 ];
 
 // Multi-color configuration
