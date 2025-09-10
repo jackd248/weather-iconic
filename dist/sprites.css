@@ -16,20 +16,35 @@
 .weather-sprite-celsius {
   background-image: url('#weather-celsius');
 }
+.weather-sprite-cloud-alt {
+  background-image: url('#weather-cloud-alt');
+}
 .weather-sprite-cloud-down {
   background-image: url('#weather-cloud-down');
 }
 .weather-sprite-cloud-fog {
   background-image: url('#weather-cloud-fog');
 }
-.weather-sprite-cloud-rain-single {
-  background-image: url('#weather-cloud-rain-single');
+.weather-sprite-cloud-hail {
+  background-image: url('#weather-cloud-hail');
+}
+.weather-sprite-cloud-haze {
+  background-image: url('#weather-cloud-haze');
+}
+.weather-sprite-cloud-rain-alt {
+  background-image: url('#weather-cloud-rain-alt');
 }
 .weather-sprite-cloud-rain {
   background-image: url('#weather-cloud-rain');
 }
-.weather-sprite-cloud-snow-single {
-  background-image: url('#weather-cloud-snow-single');
+.weather-sprite-cloud-sleet {
+  background-image: url('#weather-cloud-sleet');
+}
+.weather-sprite-cloud-smog {
+  background-image: url('#weather-cloud-smog');
+}
+.weather-sprite-cloud-snow-alt {
+  background-image: url('#weather-cloud-snow-alt');
 }
 .weather-sprite-cloud-snow {
   background-image: url('#weather-cloud-snow');
@@ -42,6 +57,9 @@
 }
 .weather-sprite-cloud {
   background-image: url('#weather-cloud');
+}
+.weather-sprite-clouds-alt {
+  background-image: url('#weather-clouds-alt');
 }
 .weather-sprite-clouds {
   background-image: url('#weather-clouds');
@@ -70,26 +88,59 @@
 .weather-sprite-compass-west {
   background-image: url('#weather-compass-west');
 }
-.weather-sprite-compass {
-  background-image: url('#weather-compass');
+.weather-sprite-date {
+  background-image: url('#weather-date');
+}
+.weather-sprite-earthquake {
+  background-image: url('#weather-earthquake');
 }
 .weather-sprite-fahrenheit {
   background-image: url('#weather-fahrenheit');
 }
+.weather-sprite-fire {
+  background-image: url('#weather-fire');
+}
+.weather-sprite-flood {
+  background-image: url('#weather-flood');
+}
 .weather-sprite-fog {
   background-image: url('#weather-fog');
 }
-.weather-sprite-hail {
-  background-image: url('#weather-hail');
+.weather-sprite-humidity {
+  background-image: url('#weather-humidity');
+}
+.weather-sprite-hurricane {
+  background-image: url('#weather-hurricane');
+}
+.weather-sprite-info {
+  background-image: url('#weather-info');
 }
 .weather-sprite-lightning {
   background-image: url('#weather-lightning');
 }
+.weather-sprite-moon-cloud-fog {
+  background-image: url('#weather-moon-cloud-fog');
+}
+.weather-sprite-moon-cloud-hail {
+  background-image: url('#weather-moon-cloud-hail');
+}
+.weather-sprite-moon-cloud-haze {
+  background-image: url('#weather-moon-cloud-haze');
+}
 .weather-sprite-moon-cloud-lightning {
   background-image: url('#weather-moon-cloud-lightning');
 }
+.weather-sprite-moon-cloud-rain-alt {
+  background-image: url('#weather-moon-cloud-rain-alt');
+}
 .weather-sprite-moon-cloud-rain {
   background-image: url('#weather-moon-cloud-rain');
+}
+.weather-sprite-moon-cloud-sleet {
+  background-image: url('#weather-moon-cloud-sleet');
+}
+.weather-sprite-moon-cloud-snow-alt {
+  background-image: url('#weather-moon-cloud-snow-alt');
 }
 .weather-sprite-moon-cloud-snow {
   background-image: url('#weather-moon-cloud-snow');
@@ -130,6 +181,18 @@
 .weather-sprite-moon {
   background-image: url('#weather-moon');
 }
+.weather-sprite-moonrise {
+  background-image: url('#weather-moonrise');
+}
+.weather-sprite-moonset {
+  background-image: url('#weather-moonset');
+}
+.weather-sprite-na {
+  background-image: url('#weather-na');
+}
+.weather-sprite-pollen {
+  background-image: url('#weather-pollen');
+}
 .weather-sprite-rainbow {
   background-image: url('#weather-rainbow');
 }
@@ -139,14 +202,44 @@
 .weather-sprite-refresh {
   background-image: url('#weather-refresh');
 }
+.weather-sprite-sandstorm {
+  background-image: url('#weather-sandstorm');
+}
+.weather-sprite-shooting-star {
+  background-image: url('#weather-shooting-star');
+}
 .weather-sprite-snowflake {
   background-image: url('#weather-snowflake');
+}
+.weather-sprite-star {
+  background-image: url('#weather-star');
+}
+.weather-sprite-stars {
+  background-image: url('#weather-stars');
+}
+.weather-sprite-sun-cloud-fog {
+  background-image: url('#weather-sun-cloud-fog');
+}
+.weather-sprite-sun-cloud-hail {
+  background-image: url('#weather-sun-cloud-hail');
+}
+.weather-sprite-sun-cloud-haze {
+  background-image: url('#weather-sun-cloud-haze');
 }
 .weather-sprite-sun-cloud-lightning {
   background-image: url('#weather-sun-cloud-lightning');
 }
+.weather-sprite-sun-cloud-rain-alt {
+  background-image: url('#weather-sun-cloud-rain-alt');
+}
 .weather-sprite-sun-cloud-rain {
   background-image: url('#weather-sun-cloud-rain');
+}
+.weather-sprite-sun-cloud-sleet {
+  background-image: url('#weather-sun-cloud-sleet');
+}
+.weather-sprite-sun-cloud-snow-alt {
+  background-image: url('#weather-sun-cloud-snow-alt');
 }
 .weather-sprite-sun-cloud-snow {
   background-image: url('#weather-sun-cloud-snow');
@@ -157,8 +250,14 @@
 .weather-sprite-sun-cloud {
   background-image: url('#weather-sun-cloud');
 }
+.weather-sprite-sun-eclipse {
+  background-image: url('#weather-sun-eclipse');
+}
 .weather-sprite-sun-fog {
   background-image: url('#weather-sun-fog');
+}
+.weather-sprite-sun-high {
+  background-image: url('#weather-sun-high');
 }
 .weather-sprite-sun-low {
   background-image: url('#weather-sun-low');
@@ -178,17 +277,29 @@
 .weather-sprite-thermometer-cold {
   background-image: url('#weather-thermometer-cold');
 }
+.weather-sprite-thermometer-freeze {
+  background-image: url('#weather-thermometer-freeze');
+}
+.weather-sprite-thermometer-heat {
+  background-image: url('#weather-thermometer-heat');
+}
 .weather-sprite-thermometer-hot {
   background-image: url('#weather-thermometer-hot');
 }
 .weather-sprite-thermometer-medium {
   background-image: url('#weather-thermometer-medium');
 }
+.weather-sprite-time {
+  background-image: url('#weather-time');
+}
 .weather-sprite-tornado {
   background-image: url('#weather-tornado');
 }
 .weather-sprite-umbrella {
   background-image: url('#weather-umbrella');
+}
+.weather-sprite-warning {
+  background-image: url('#weather-warning');
 }
 .weather-sprite-wind-high {
   background-image: url('#weather-wind-high');
