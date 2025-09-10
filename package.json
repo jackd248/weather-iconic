@@ -1,7 +1,7 @@
 {
   "name": "weather-iconic",
   "version": "2.1.0",
-  "description": "A minimal multi-color weather icon set containing 63 icons offered in multiple integration options.",
+  "description": "A minimal multi-color weather icon set containing 100 icons offered in multiple integration options.",
   "type": "module",
   "main": "./dist/index.js",
   "module": "./dist/index.esm.js",
